@@ -173,7 +173,7 @@
 			<top>316</top>
 			<width>30</width>
 			<height>30</height>
-			<texture>tetradui_logo_clean.png</texture>
+			<texture colordiffuse="bbffffff">tetradui_logo_clean_noshadow.png</texture>
 		</control>
 	</include>
 	<include name="Container9000BladesRunner">
