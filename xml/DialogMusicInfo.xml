@@ -154,14 +154,19 @@
 									<visible>!String.IsEmpty(ListItem.Property(Album_Type))</visible>
 								</item>
 								<item>
-									<label>$LOCALIZE[21899]:</label>
-									<label2>$INFO[ListItem.Property(Album_Label)]</label2>
-									<visible>!String.IsEmpty(ListItem.Property(Album_Label))</visible>
+									<label>$LOCALIZE[14087]:</label>
+									<label2>$INFO[ListItem.TotalDiscs]</label2>
+									<visible>ListItem.IsBoxset + !String.IsEmpty(ListItem.TotalDiscs)</visible>
 								</item>
 								<item>
 									<label>$LOCALIZE[562]:</label>
 									<label2>$INFO[ListItem.Year]</label2>
 									<visible>!String.IsEmpty(ListItem.Year)</visible>
+								</item>
+								<item>
+									<label>$LOCALIZE[21899]:</label>
+									<label2>$INFO[ListItem.Property(Album_Label)]</label2>
+									<visible>!String.IsEmpty(ListItem.Property(Album_Label))</visible>
 								</item>
 							</content>
 						</control>

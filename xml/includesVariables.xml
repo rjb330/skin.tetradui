@@ -68,7 +68,7 @@
 		<value>$LOCALIZE[20159]</value>
 	</variable>
 	<variable name="DialogMusicInfoTitleValue">
-		<value condition="String.IsEqual(ListItem.DBTYPE,album)">$INFO[Listitem.Album]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,album)">$INFO[Listitem.Album]$INFO[ListItem.DiscTitle, (,)]</value>
 		<value condition="String.IsEqual(ListItem.DBTYPE,artist)">$INFO[Listitem.Artist]</value>
 		<value>$INFO[Listitem.Title]</value>
 	</variable>

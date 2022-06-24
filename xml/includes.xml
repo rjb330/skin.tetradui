@@ -1425,7 +1425,7 @@
 				<height>25</height>
 				<align>left</align>
 				<font>font12</font>
-				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]</label>
+				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]$INFO[MusicPlayer.DiscTitle, (,)]</label>
 				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
