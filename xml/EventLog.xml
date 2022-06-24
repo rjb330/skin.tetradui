@@ -77,6 +77,7 @@
 						<selectedcolor>orange</selectedcolor>
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
+						<align>right</align>
 						<info>ListItem.Label2</info>
 					</control>
 				</itemlayout>
@@ -135,15 +136,14 @@
 			<include>Container9000BladesRunner</include>
 			<control type="grouplist">
 				<include>Container9000Header</include>
-				<control type="togglebutton" id="4">
-					<description>Order by button</description>
-					<left>0</left>
-					<include>SortAscendingButton</include>
-				</control>
 				<control type="button" id="21">
 					<description>Level button</description>
-					<left>2</left>
 					<include>ButtonCommonValues</include>
+				</control>
+				<control type="togglebutton" id="4">
+					<description>Order by button</description>
+					<left>2</left>
+					<include>SortAscendingButton</include>
 				</control>
 				<control type="radiobutton" id="22">
 					<description>Only show current level</description>
