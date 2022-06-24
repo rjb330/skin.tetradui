@@ -510,9 +510,9 @@
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="ThumbnailInfoViewPlot">
-		<value condition="Container.Content(Addons)">$INFO[ListItem.AddonDescription]</value>
-		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Album_Description)]</value>
-		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Artist_Description)]</value>
+		<value condition="Container.Content(Addons) + !String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]</value>
+		<value condition="Container.Content(Albums) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
+		<value condition="Container.Content(Artists) + !String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
 		<value>$INFO[ListItem.Plot]</value>
 	</variable>
 	<variable name="ThumbnailInfoViewTitle">
