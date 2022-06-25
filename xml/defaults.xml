@@ -129,6 +129,7 @@
 		<textoffsetx>15</textoffsetx>
 		<textcolor>white</textcolor>
 		<focusedcolor>white</focusedcolor>
+		<invalidcolor>ffff0000</invalidcolor>
 		<disabledcolor>disabled</disabledcolor>
 		<font>font12</font>
 		<texturefocus>buttons/button-focus.png</texturefocus>
