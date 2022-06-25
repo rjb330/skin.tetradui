@@ -92,7 +92,7 @@
 					<control type="image">
 						<width>540</width>
 						<height>45</height>
-						<texture border="10">button-nofocus.png</texture>
+						<texture border="10">buttons/button-nofocus.png</texture>
 					</control>
 					<control type="image">
 						<left>15</left>
@@ -128,13 +128,13 @@
 						<width>540</width>
 						<height>45</height>
 						<visible>!Control.HasFocus(20)</visible>
-						<texture border="10">button-nofocus.png</texture>
+						<texture border="10">buttons/button-nofocus.png</texture>
 					</control>
 					<control type="image">
 						<width>540</width>
 						<height>45</height>
 						<visible>Control.HasFocus(20)</visible>
-						<texture border="10">button-focus.png</texture>
+						<texture border="10">buttons/button-focus.png</texture>
 					</control>
 					<control type="image">
 						<left>15</left>
@@ -235,7 +235,7 @@
 					<control type="image">
 						<width>540</width>
 						<height>45</height>
-						<texture border="10">button-nofocus.png</texture>
+						<texture border="10">buttons/button-nofocus.png</texture>
 					</control>
 					<control type="image">
 						<left>15</left>
@@ -271,13 +271,13 @@
 						<width>540</width>
 						<height>45</height>
 						<visible>!Control.HasFocus(21)</visible>
-						<texture border="10">button-nofocus.png</texture>
+						<texture border="10">buttons/button-nofocus.png</texture>
 					</control>
 					<control type="image">
 						<width>540</width>
 						<height>45</height>
 						<visible>Control.HasFocus(21)</visible>
-						<texture border="10">button-focus.png</texture>
+						<texture border="10">buttons/button-focus.png</texture>
 					</control>
 					<control type="image">
 						<left>15</left>

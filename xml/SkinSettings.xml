@@ -44,8 +44,8 @@
 					<height>50</height>
 					<width>250</width>
 					<textcolor>white</textcolor>
-					<texturefocus border="10">button-focus.png</texturefocus>
-					<texturenofocus border="10">button-nofocus.png</texturenofocus>
+					<texturefocus border="10">buttons/button-focus.png</texturefocus>
+					<texturenofocus border="10">buttons/button-nofocus.png</texturenofocus>
 					<label>128</label>
 					<onfocus>Skin.SetString(SkinSettings,1)</onfocus>
 				</control>
@@ -54,8 +54,8 @@
 					<height>50</height>
 					<width>250</width>
 					<textcolor>white</textcolor>
-					<texturefocus border="10">button-focus.png</texturefocus>
-					<texturenofocus border="10">button-nofocus.png</texturenofocus>
+					<texturefocus border="10">buttons/button-focus.png</texturefocus>
+					<texturenofocus border="10">buttons/button-nofocus.png</texturenofocus>
 					<label>31502</label>
 					<onfocus>Skin.SetString(SkinSettings,3)</onfocus>
 				</control>
@@ -64,8 +64,8 @@
 					<height>50</height>
 					<width>250</width>
 					<textcolor>white</textcolor>
-					<texturefocus border="10">button-focus.png</texturefocus>
-					<texturenofocus border="10">button-nofocus.png</texturenofocus>
+					<texturefocus border="10">buttons/button-focus.png</texturefocus>
+					<texturenofocus border="10">buttons/button-nofocus.png</texturenofocus>
 					<label>31503</label>
 					<onfocus>Skin.SetString(SkinSettings,4)</onfocus>
 				</control>
@@ -74,8 +74,8 @@
 					<height>50</height>
 					<width>250</width>
 					<textcolor>white</textcolor>
-					<texturefocus border="10">button-focus.png</texturefocus>
-					<texturenofocus border="10">button-nofocus.png</texturenofocus>
+					<texturefocus border="10">buttons/button-focus.png</texturefocus>
+					<texturenofocus border="10">buttons/button-nofocus.png</texturenofocus>
 					<label>33069</label>
 					<onfocus>Skin.SetString(SkinSettings,5)</onfocus>
 				</control>
@@ -84,8 +84,8 @@
 					<height>50</height>
 					<width>250</width>
 					<textcolor>white</textcolor>
-					<texturefocus border="10">button-focus.png</texturefocus>
-					<texturenofocus border="10">button-nofocus.png</texturenofocus>
+					<texturefocus border="10">buttons/button-focus.png</texturefocus>
+					<texturenofocus border="10">buttons/button-nofocus.png</texturenofocus>
 					<label>24001</label>
 					<onfocus>Skin.SetString(SkinSettings,2)</onfocus>
 				</control>
@@ -94,8 +94,8 @@
 					<height>50</height>
 					<width>250</width>
 					<textcolor>white</textcolor>
-					<texturefocus border="10">button-focus.png</texturefocus>
-					<texturenofocus border="10">button-nofocus.png</texturenofocus>
+					<texturefocus border="10">buttons/button-focus.png</texturefocus>
+					<texturenofocus border="10">buttons/button-nofocus.png</texturenofocus>
 					<label>31539</label>
 					<onfocus>Skin.SetString(SkinSettings,6)</onfocus>
 				</control>
@@ -104,8 +104,8 @@
 					<height>50</height>
 					<width>250</width>
 					<textcolor>white</textcolor>
-					<texturefocus border="10">button-focus.png</texturefocus>
-					<texturenofocus border="10">button-nofocus.png</texturenofocus>
+					<texturefocus border="10">buttons/button-focus.png</texturefocus>
+					<texturenofocus border="10">buttons/button-nofocus.png</texturenofocus>
 					<label>31538</label>
 					<onfocus>Skin.SetString(SkinSettings,7)</onfocus>
 				</control>

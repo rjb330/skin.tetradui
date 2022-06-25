@@ -72,7 +72,7 @@
 				<left>-5</left>
 				<width>320</width>
 				<height>50</height>
-				<texture>button.png</texture>
+				<texture>buttons/button.png</texture>
 				<animation effect="slide" end="0,50" time="200" easing="out" condition="ControlGroup(9001).HasFocus(5)">Conditional</animation>
 				<animation effect="fade" start="100" end="25" time="200" condition="!ControlGroup(9001).HasFocus">Conditional</animation>
 			</control>
@@ -93,7 +93,7 @@
 					<control type="image">
 						<width>368</width>
 						<height>90</height>
-						<texture border="8">dialog-button-nofocus.png</texture>
+						<texture border="8">buttons/button-nofocus.png</texture>
 					</control>
 					<control type="image">
 						<left>15</left>
@@ -140,7 +140,7 @@
 					<control type="image">
 						<width>368</width>
 						<height>90</height>
-						<texture border="8">dialog-button-focus.png</texture>
+						<texture border="8">buttons/button-focus.png</texture>
 					</control>
 					<control type="image">
 						<left>15</left>

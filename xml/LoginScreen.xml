@@ -70,7 +70,7 @@
 							<width>212</width>
 							<height>250</height>
 							<aspectratio>stretch</aspectratio>
-							<texture border="10">list-nofocus.png</texture>
+							<texture border="10">buttons/list-nofocus.png</texture>
 						</control>
 						<control type="image">
 							<left>12</left>
@@ -89,7 +89,7 @@
 							<width>212</width>
 							<height>250</height>
 							<aspectratio>stretch</aspectratio>
-							<texture border="10">list-focus.png</texture>
+							<texture border="10">buttons/list-focus.png</texture>
 							<visible>Control.HasFocus(52)</visible>
 						</control>
 						<control type="image">

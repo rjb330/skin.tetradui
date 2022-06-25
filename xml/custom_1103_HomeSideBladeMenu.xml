@@ -55,7 +55,7 @@
 							<description>Button focus</description>
 							<width>340</width>
 							<height>50</height>
-							<texture>button.png</texture>
+							<texture>buttons/button.png</texture>
 							<animation effect="slide" start="0,-52" time="200" tween="sine" easing="out" condition="Container(610).OnNext" reversible="false">Focus</animation>
 							<animation effect="slide" start="0,52" time="200" tween="sine" easing="out" condition="Container(610).OnPrevious" reversible="false">Focus</animation>
 							<animation effect="fade" start="100" end="25" time="200" condition="!Control.HasFocus(610)">Conditional</animation>

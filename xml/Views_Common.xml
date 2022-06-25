@@ -40,7 +40,7 @@
 				<control type="image">
 					<width>615</width>
 					<height>40</height>
-					<texture border="10">list-focus.png</texture>
+					<texture border="10">buttons/list-focus.png</texture>
 				</control>
 				<control type="label">
 					<left>10</left>
@@ -107,7 +107,7 @@
 					<left>2</left>
 					<width>176</width>
 					<height>160</height>
-					<texture border="10">list-nofocus.png</texture>
+					<texture border="10">buttons/list-nofocus.png</texture>
 				</control>
 				<control type="image">
 					<left>6</left>
@@ -145,7 +145,7 @@
 					<left>2</left>
 					<width>176</width>
 					<height>160</height>
-					<texture border="10">list-focus.png</texture>
+					<texture border="10">buttons/list-focus.png</texture>
 				</control>
 				<control type="image">
 					<left>6</left>
@@ -183,7 +183,7 @@
 					<width>148</width>
 					<height>240</height>
 					<aspectratio>stretch</aspectratio>
-					<texture border="10">list-nofocus.png</texture>
+					<texture border="10">buttons/list-nofocus.png</texture>
 				</control>
 				<control type="image">
 					<left>6</left>
@@ -221,7 +221,7 @@
 					<left>2</left>
 					<width>148</width>
 					<height>240</height>
-					<texture border="10">list-focus.png</texture>
+					<texture border="10">buttons/list-focus.png</texture>
 				</control>
 				<control type="image">
 					<left>6</left>
@@ -275,7 +275,7 @@
 					<left>2</left>
 					<width>521</width>
 					<height>126</height>
-					<texture border="10">list-nofocus.png</texture>
+					<texture border="10">buttons/list-nofocus.png</texture>
 				</control>
 				<control type="image">
 					<left>9</left>
@@ -326,7 +326,7 @@
 					<top>1</top>
 					<width>519</width>
 					<height>124</height>
-					<texture border="10">list-focus.png</texture>
+					<texture border="10">buttons/list-focus.png</texture>
 				</control>
 				<control type="image">
 					<left>9</left>
@@ -420,7 +420,7 @@
 					<width>214</width>
 					<height>306</height>
 					<aspectratio>stretch</aspectratio>
-					<bordertexture border="10">list-nofocus.png</bordertexture>
+					<bordertexture border="10">buttons/list-nofocus.png</bordertexture>
 					<bordersize>10</bordersize>
 					<texture background="true">$VAR[ListItemPosterVar]</texture>
 				</control>
@@ -462,7 +462,7 @@
 					<width>416</width>
 					<height>306</height>
 					<aspectratio aligny="top">scale</aspectratio>
-					<bordertexture border="10">list-nofocus.png</bordertexture>
+					<bordertexture border="10">buttons/list-nofocus.png</bordertexture>
 					<bordersize>10</bordersize>
 					<texture background="true">$VAR[ListItemPosterVar]</texture>
 				</control>
@@ -560,7 +560,7 @@
 					<top>1</top>
 					<width>175</width>
 					<height>158</height>
-					<texture border="10">list-nofocus.png</texture>
+					<texture border="10">buttons/list-nofocus.png</texture>
 				</control>
 				<control type="image">
 					<left>5</left>
@@ -598,7 +598,7 @@
 					<top>1</top>
 					<width>175</width>
 					<height>158</height>
-					<texture border="10">list-focus.png</texture>
+					<texture border="10">buttons/list-focus.png</texture>
 				</control>
 				<control type="image">
 					<left>5</left>
@@ -636,7 +636,7 @@
 					<top>3</top>
 					<width>148</width>
 					<height>238</height>
-					<texture border="10">list-nofocus.png</texture>
+					<texture border="10">buttons/list-nofocus.png</texture>
 				</control>
 				<control type="image">
 					<left>6</left>
@@ -676,7 +676,7 @@
 					<top>3</top>
 					<width>148</width>
 					<height>238</height>
-					<texture border="10">list-focus.png</texture>
+					<texture border="10">buttons/list-focus.png</texture>
 				</control>
 				<control type="image">
 					<left>6</left>

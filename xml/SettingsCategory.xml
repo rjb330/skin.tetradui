@@ -78,8 +78,8 @@
 				<height>50</height>
 				<width>250</width>
 				<textcolor>white</textcolor>
-				<texturefocus border="10">button-focus.png</texturefocus>
-				<texturenofocus border="10">button-nofocus.png</texturenofocus>
+				<texturefocus border="10">buttons/button-focus.png</texturefocus>
+				<texturenofocus border="10">buttons/button-nofocus.png</texturenofocus>
 				<label>10037</label>
 				<onclick>SettingsLevelChange</onclick>
 				<align>left</align>
@@ -143,8 +143,8 @@
 			<height>50</height>
 			<width>250</width>
 			<textcolor>white</textcolor>
-			<texturefocus border="10">button-focus.png</texturefocus>
-			<texturenofocus border="10">button-nofocus.png</texturenofocus>
+			<texturefocus border="10">buttons/button-focus.png</texturefocus>
+			<texturenofocus border="10">buttons/button-nofocus.png</texturenofocus>
 			<label />
 			<align>left</align>
 		</control>

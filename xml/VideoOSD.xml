@@ -22,8 +22,8 @@
 					<height>45</height>
 					<label>210</label>
 					<font />
-					<texturefocus>OSDPrevTrackFO.png</texturefocus>
-					<texturenofocus>OSDPrevTrackNF.png</texturenofocus>
+					<texturefocus>osd/OSDPrevTrackFO.png</texturefocus>
+					<texturenofocus>osd/OSDPrevTrackNF.png</texturenofocus>
 					<onclick>PlayerControl(Previous)</onclick>
 				</control>
 				<control type="button" id="601">
@@ -32,8 +32,8 @@
 					<height>45</height>
 					<label>31354</label>
 					<font />
-					<texturefocus>OSDRewindFO.png</texturefocus>
-					<texturenofocus>OSDRewindNF.png</texturenofocus>
+					<texturefocus>osd/OSDRewindFO.png</texturefocus>
+					<texturenofocus>osd/OSDRewindNF.png</texturenofocus>
 					<onclick>PlayerControl(Rewind)</onclick>
 				</control>
 				<control type="togglebutton" id="602">
@@ -43,11 +43,11 @@
 					<label>31351</label>
 					<altlabel>208</altlabel>
 					<font />
-					<texturefocus>OSDPauseFO.png</texturefocus>
-					<texturenofocus>OSDPauseNF.png</texturenofocus>
+					<texturefocus>osd/OSDPauseFO.png</texturefocus>
+					<texturenofocus>osd/OSDPauseNF.png</texturenofocus>
 					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-					<alttexturefocus>OSDPlayFO.png</alttexturefocus>
-					<alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
+					<alttexturefocus>osd/OSDPlayFO.png</alttexturefocus>
+					<alttexturenofocus>osd/OSDPlayNF.png</alttexturenofocus>
 					<onclick>PlayerControl(Play)</onclick>
 				</control>
 				<control type="button" id="603">
@@ -56,8 +56,8 @@
 					<height>45</height>
 					<label>31352</label>
 					<font />
-					<texturefocus>OSDStopFO.png</texturefocus>
-					<texturenofocus>OSDStopNF.png</texturenofocus>
+					<texturefocus>osd/OSDStopFO.png</texturefocus>
+					<texturenofocus>osd/OSDStopNF.png</texturenofocus>
 					<onclick>PlayerControl(Stop)</onclick>
 				</control>
 				<control type="button" id="604">
@@ -66,8 +66,8 @@
 					<height>45</height>
 					<label>31353</label>
 					<font />
-					<texturefocus>OSDForwardFO.png</texturefocus>
-					<texturenofocus>OSDForwardNF.png</texturenofocus>
+					<texturefocus>osd/OSDForwardFO.png</texturefocus>
+					<texturenofocus>osd/OSDForwardNF.png</texturenofocus>
 					<onclick>PlayerControl(Forward)</onclick>
 				</control>
 				<control type="button" id="605">
@@ -76,8 +76,8 @@
 					<height>45</height>
 					<label>209</label>
 					<font />
-					<texturefocus>OSDNextTrackFO.png</texturefocus>
-					<texturenofocus>OSDNextTrackNF.png</texturenofocus>
+					<texturefocus>osd/OSDNextTrackFO.png</texturefocus>
+					<texturenofocus>osd/OSDNextTrackNF.png</texturenofocus>
 					<onclick>PlayerControl(Next)</onclick>
 				</control>
 			</control>
@@ -95,8 +95,8 @@
 					<height>45</height>
 					<label>31356</label>
 					<font />
-					<texturefocus>OSDStereoscopicFO.png</texturefocus>
-					<texturenofocus>OSDStereoscopicNF.png</texturenofocus>
+					<texturefocus>osd/OSDStereoscopicFO.png</texturefocus>
+					<texturenofocus>osd/OSDStereoscopicNF.png</texturenofocus>
 					<onclick>SetProperty(settingslist_content,3d,home)</onclick>
 					<onclick>SetProperty(settingslist_header,$LOCALIZE[36501],home)</onclick>
 					<onclick>ActivateWindow(1101)</onclick>
@@ -108,8 +108,8 @@
 					<height>45</height>
 					<label>31356</label>
 					<font />
-					<texturefocus>OSDSubtitlesFO.png</texturefocus>
-					<texturenofocus>OSDSubtitlesNF.png</texturenofocus>
+					<texturefocus>osd/OSDSubtitlesFO.png</texturefocus>
+					<texturenofocus>osd/OSDSubtitlesNF.png</texturenofocus>
 					<onclick>ActivateWindow(OSDSubtitleSettings)</onclick>
 				</control>
 				<control type="button" id="702">
@@ -118,8 +118,8 @@
 					<height>45</height>
 					<label>13395</label>
 					<font />
-					<texturefocus>OSDVideoFO.png</texturefocus>
-					<texturenofocus>OSDVideoNF.png</texturenofocus>
+					<texturefocus>osd/OSDVideoFO.png</texturefocus>
+					<texturenofocus>osd/OSDVideoNF.png</texturenofocus>
 					<onclick>ActivateWindow(OSDVideoSettings)</onclick>
 				</control>
 				<control type="button" id="703">
@@ -128,8 +128,8 @@
 					<height>45</height>
 					<label>13396</label>
 					<font />
-					<texturefocus>OSDAudioFO.png</texturefocus>
-					<texturenofocus>OSDAudioNF.png</texturenofocus>
+					<texturefocus>osd/OSDAudioFO.png</texturefocus>
+					<texturenofocus>osd/OSDAudioNF.png</texturenofocus>
 					<onclick>ActivateWindow(OSDAudioSettings)</onclick>
 				</control>
 				<control type="button" id="704">
@@ -138,8 +138,8 @@
 					<height>45</height>
 					<label>31355</label>
 					<font />
-					<texturefocus>OSDBookmarksFO.png</texturefocus>
-					<texturenofocus>OSDBookmarksNF.png</texturenofocus>
+					<texturefocus>osd/OSDBookmarksFO.png</texturefocus>
+					<texturenofocus>osd/OSDBookmarksNF.png</texturenofocus>
 					<onclick>ActivateWindow(VideoBookmarks)</onclick>
 				</control>
 				<control type="button" id="705">
@@ -148,8 +148,8 @@
 					<height>45</height>
 					<label>31355</label>
 					<font />
-					<texturefocus>OSDDvdFO.png</texturefocus>
-					<texturenofocus>OSDDvdNF.png</texturenofocus>
+					<texturefocus>osd/OSDDvdFO.png</texturefocus>
+					<texturenofocus>osd/OSDDvdNF.png</texturenofocus>
 					<onclick>PlayerControl(ShowVideoMenu)</onclick>
 					<enable>VideoPlayer.HasMenu</enable>
 					<animation effect="fade" start="100" end="50" time="100" condition="!VideoPlayer.HasMenu">Conditional</animation>
@@ -160,8 +160,8 @@
 					<height>45</height>
 					<label>5</label>
 					<font />
-					<texturefocus>OSDPresetSettingsFO.png</texturefocus>
-					<texturenofocus>OSDPresetSettingsNF.png</texturenofocus>
+					<texturefocus>osd/OSDPresetSettingsFO.png</texturefocus>
+					<texturenofocus>osd/OSDPresetSettingsNF.png</texturenofocus>
 					<onclick>SetProperty(settingslist_content,settings,home)</onclick>
 					<onclick>SetProperty(settingslist_header,$LOCALIZE[5],home)</onclick>
 					<onclick>ActivateWindow(1101)</onclick>

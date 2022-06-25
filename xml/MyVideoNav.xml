@@ -90,8 +90,8 @@
 					<include>ButtonCommonValues</include>
 					<label>$LOCALIZE[653]</label>
 					<altlabel>$LOCALIZE[13353]</altlabel>
-					<alttexturefocus border="4,6,4,8">button-focus.png</alttexturefocus>
-					<alttexturenofocus border="4,6,4,8">button-nofocus.png</alttexturenofocus>
+					<alttexturefocus border="4,6,4,8">buttons/button-focus.png</alttexturefocus>
+					<alttexturenofocus border="4,6,4,8">buttons/button-nofocus.png</alttexturenofocus>
 					<usealttexture>library.isscanningvideo</usealttexture>
 				</control>
 				<control type="radiobutton" id="16">
