@@ -302,14 +302,12 @@
 			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-left1.png</texture>
 		</control>
 		<control type="image">
 			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-size4-header.png</texture>
 		</control>
 		<control type="label">
@@ -325,7 +323,6 @@
 			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-right.png</texture>
 		</control>
 		<control type="image">
@@ -333,7 +330,6 @@
 			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-size1-right-NF.png</texture>
 			<animation type="WindowOpen" condition="Window.Previous(Weather)">
 				<effect type="slide" start="-150,0" end="-160,0" time="100" />
@@ -364,7 +360,6 @@
 			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-size2-right-NF.png</texture>
 			<animation type="WindowOpen" condition="Window.Previous(Weather)">
 				<effect type="slide" start="-150,0" end="-160,0" time="100" />
@@ -395,7 +390,6 @@
 			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-size3-right-NF.png</texture>
 			<animation type="WindowOpen" condition="Window.Previous(Weather)">
 				<effect type="slide" start="-150,0" end="-160,0" time="100" />
@@ -426,7 +420,6 @@
 			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-right.png</texture>
 			<animation effect="fade" start="100" end="0" time="100" delay="HomeBladeAnimationSpeed" condition="Window.Next(Weather)">WindowClose</animation>
 		</control>
@@ -439,7 +432,6 @@
 			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-left.png</texture>
 		</control>
 		<control type="image">
@@ -447,7 +439,6 @@
 			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-size3-left-NF.png</texture>
 			<animation type="WindowOpen" condition="Window.Previous(1111)">
 				<effect type="slide" start="50,0" end="60,0" time="100" />
@@ -478,7 +469,6 @@
 			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-left1.png</texture>
 			<animation effect="fade" start="100" end="0" time="100" delay="HomeBladeAnimationSpeed" condition="Window.Next(1111)">WindowClose</animation>
 		</control>
@@ -486,7 +476,6 @@
 			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-size4-header.png</texture>
 			<animation type="WindowOpen" condition="Window.Previous(1111)">
 				<effect type="slide" start="50,0" end="60,0" time="100" />
@@ -518,7 +507,6 @@
 			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-right.png</texture>
 		</control>
 		<control type="image">
@@ -526,7 +514,6 @@
 			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-size2-right-NF.png</texture>
 			<animation type="WindowOpen" condition="Window.Previous(1111)">
 				<effect type="slide" start="-100,0" end="-110,0" time="100" />
@@ -557,7 +544,6 @@
 			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-size3-right-NF.png</texture>
 			<animation type="WindowOpen" condition="Window.Previous(1111)">
 				<effect type="slide" start="-100,0" end="-110,0" time="100" />
@@ -588,7 +574,6 @@
 			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-right.png</texture>
 			<animation effect="fade" start="100" end="0" time="100" delay="HomeBladeAnimationSpeed" condition="Window.Next(1111)">WindowClose</animation>
 		</control>
@@ -601,7 +586,6 @@
 			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-left.png</texture>
 		</control>
 		<control type="image">
@@ -609,7 +593,6 @@
 			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-size2-left-NF.png</texture>
 			<animation type="WindowOpen" condition="Window.Previous(Home)">
 				<effect type="slide" start="100,0" end="110,0" time="100" />
@@ -640,7 +623,6 @@
 			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-size3-left-NF.png</texture>
 			<animation type="WindowOpen" condition="Window.Previous(Home)">
 				<effect type="slide" start="100,0" end="110,0" time="100" />
@@ -671,7 +653,6 @@
 			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-left1.png</texture>
 			<animation effect="fade" start="100" end="0" time="100" delay="HomeBladeAnimationSpeed" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
@@ -679,7 +660,6 @@
 			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-size4-header.png</texture>
 			<animation type="WindowOpen" condition="Window.Previous(Home)">
 				<effect type="slide" start="100,0" end="110,0" time="100" />
@@ -711,7 +691,6 @@
 			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-right.png</texture>
 		</control>
 		<control type="image">
@@ -719,7 +698,6 @@
 			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-size3-right-NF.png</texture>
 			<animation type="WindowOpen" condition="Window.Previous(Home)">
 				<effect type="slide" start="-50,0" end="-60,0" time="100" />
@@ -750,7 +728,6 @@
 			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-right.png</texture>
 			<animation effect="fade" start="100" end="0" time="100" delay="HomeBladeAnimationSpeed" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
@@ -763,7 +740,6 @@
 			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-left1.png</texture>
 			<animation effect="fade" start="0" end="100" time="0" delay="HomeBladeAnimationSpeed" condition="Window.Next(Settings)">WindowClose</animation>
 		</control>
@@ -772,7 +748,6 @@
 			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-size1-left-NF.png</texture>
 			<animation type="WindowOpen" condition="Window.Previous(Settings)">
 				<effect type="slide" start="150,0" end="160,0" time="100" />
@@ -803,7 +778,6 @@
 			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-size2-left-NF.png</texture>
 			<animation type="WindowOpen" condition="Window.Previous(Settings)">
 				<effect type="slide" start="150,0" end="160,0" time="100" />
@@ -834,7 +808,6 @@
 			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-size3-left-NF.png</texture>
 			<animation type="WindowOpen" condition="Window.Previous(Settings)">
 				<effect type="slide" start="150,0" end="160,0" time="100" />
@@ -865,7 +838,6 @@
 			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-left1.png</texture>
 			<animation effect="fade" start="100" end="0" time="100" delay="HomeBladeAnimationSpeed" condition="Window.Next(Settings)">WindowClose</animation>
 		</control>
@@ -873,7 +845,6 @@
 			<top>-40</top>
 			<width>115</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-size4-header.png</texture>
 			<animation type="WindowOpen" condition="Window.Previous(Settings)">
 				<effect type="slide" start="150,0" end="160,0" time="100" />
@@ -907,7 +878,6 @@
 			<control type="image">
 				<width>74</width>
 				<height>256</height>
-				<aspectratio>stretch</aspectratio>
 				<texture border="25,5,5,5">power-panel.png</texture>
 			</control>
 			<control type="image">
@@ -934,7 +904,6 @@
 			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<texture>blades-runner-right.png</texture>
 		</control>
 	</include>

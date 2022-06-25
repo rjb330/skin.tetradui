@@ -54,13 +54,6 @@
 		<onright>2</onright>
 		<animation effect="slide" end="ButtonSlideBackDistance,0" time="ButtonSlideBackTime" reversible="false">focus</animation>
 	</include>
-	<include name="HomeButtonHighlightCommonValues">
-		<left>0</left>
-		<top>-17</top>
-		<width>450</width>
-		<height>350</height>
-		<aspectratio>stretch</aspectratio>
-	</include>
 	<include name="BlankBladeSlideLeft">
 		<control type="button" id="$PARAM[id]">
 			<left>80r</left>
@@ -186,7 +179,6 @@
 			<top>-40</top>
 			<width>160</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<colordiffuse>EFFFFFFF</colordiffuse>
 			<texture>blades-runner-right-edge.png</texture>
 		</control>
@@ -195,7 +187,6 @@
 			<top>-40</top>
 			<width>180</width>
 			<height>800</height>
-			<aspectratio>stretch</aspectratio>
 			<colordiffuse>EFFFFFFF</colordiffuse>
 			<texture>blades-runner-left1.png</texture>
 		</control>
@@ -275,13 +266,6 @@
 		<pulseonselect>no</pulseonselect>
 		<onright>1</onright>
 		<animation effect="slide" end="ButtonSlideBackDistance,0" time="ButtonSlideBackTime" reversible="false">focus</animation>
-	</include>
-	<include name="WeatherButtonHighlightCommonValues">
-		<left>0</left>
-		<top>0</top>
-		<width>350</width>
-		<height>505</height>
-		<aspectratio>stretch</aspectratio>
 	</include>
 	<include name="WeatherCurrentIcon">
 		<control type="image">
@@ -519,13 +503,6 @@
 		<onleft>1</onleft>
 		<onright>2</onright>
 		<animation effect="slide" end="ButtonSlideBackDistance,0" time="ButtonSlideBackTime" reversible="false">focus</animation>
-	</include>
-	<include name="SystemButtonHighlightCommonValues">
-		<left>0</left>
-		<top>-1</top>
-		<width>440</width>
-		<height>472</height>
-		<aspectratio>stretch</aspectratio>
 	</include>
 	<include name="HeaderTextCommons">
 		<top>25</top>

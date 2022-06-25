@@ -182,7 +182,6 @@
 					<left>2</left>
 					<width>148</width>
 					<height>240</height>
-					<aspectratio>stretch</aspectratio>
 					<texture border="10">buttons/list-nofocus.png</texture>
 				</control>
 				<control type="image">
@@ -419,7 +418,7 @@
 					<left>2</left>
 					<width>214</width>
 					<height>306</height>
-					<aspectratio>stretch</aspectratio>
+					<aspectratio>scale</aspectratio>
 					<bordertexture border="10">buttons/list-nofocus.png</bordertexture>
 					<bordersize>10</bordersize>
 					<texture background="true">$VAR[ListItemPosterVar]</texture>
@@ -437,7 +436,7 @@
 				<control type="image">
 					<width>218</width>
 					<height>310</height>
-					<aspectratio>stretch</aspectratio>
+					<aspectratio>scale</aspectratio>
 					<bordertexture border="10">thumb-focus.png</bordertexture>
 					<bordersize>10</bordersize>
 					<texture background="true">$VAR[ListItemPosterVar]</texture>

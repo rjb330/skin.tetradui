@@ -241,7 +241,6 @@
 			<control type="image">
 				<width>74</width>
 				<height>256</height>
-				<aspectratio>stretch</aspectratio>
 				<texture border="25,5,5,5">power-panel.png</texture>
 			</control>
 			<control type="button" id="10">
@@ -313,7 +312,6 @@
 				<top>-40</top>
 				<width>115</width>
 				<height>800</height>
-				<aspectratio>stretch</aspectratio>
 				<texture>blades-size2-left-NF.png</texture>
 			</control>
 			<control type="label">
@@ -328,7 +326,6 @@
 				<top>-40</top>
 				<width>115</width>
 				<height>800</height>
-				<aspectratio>stretch</aspectratio>
 				<texture>blades-size3-left-NF.png</texture>
 			</control>
 			<control type="label">
@@ -343,7 +340,6 @@
 				<top>-40</top>
 				<width>115</width>
 				<height>800</height>
-				<aspectratio>stretch</aspectratio>
 				<texture>blades-size4-header.png</texture>
 			</control>
 			<control type="label">
@@ -360,7 +356,6 @@
 				<top>-40</top>
 				<width>180</width>
 				<height>800</height>
-				<aspectratio>stretch</aspectratio>
 				<texture>blades-runner-right.png</texture>
 			</control>
 		</control>
@@ -383,7 +378,6 @@
 				<top>-40</top>
 				<width>115</width>
 				<height>800</height>
-				<aspectratio>stretch</aspectratio>
 				<texture>blades-size3-left-NF.png</texture>
 			</control>
 			<control type="label">
@@ -398,7 +392,6 @@
 				<top>-40</top>
 				<width>115</width>
 				<height>800</height>
-				<aspectratio>stretch</aspectratio>
 				<texture>blades-size4-header.png</texture>
 				<visible>Control.HasFocus(1)</visible>
 				<animation effect="fade" time="HomeBladeAnimationSpeed">visible</animation>
