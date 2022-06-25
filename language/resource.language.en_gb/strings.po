@@ -464,7 +464,19 @@ msgctxt "#31525"
 msgid "Select rating"
 msgstr ""
 
-# empty strings from id 31526 to 31537
+msgctxt "#31526"
+msgid "Animate all fanart backgrounds"
+msgstr ""
+
+msgctxt "#31527"
+msgid "Animate fanart backgrounds for music playing"
+msgstr ""
+
+msgctxt "#31528"
+msgid "Enable Artist Slideshow fanart backgrounds"
+msgstr ""
+
+# empty strings from id 31529 to 31537
 
 msgctxt "#31538"
 msgid "About"

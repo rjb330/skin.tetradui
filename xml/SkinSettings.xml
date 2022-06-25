@@ -151,11 +151,24 @@
 					</control>
 					<control type="radiobutton" id="105">
 						<include>SkinSettingsRadioButtonCommonValues</include>
+						<label>31526</label>
+						<onclick>Skin.ToggleSetting(AnimateFanart)</onclick>
+						<selected>Skin.HasSetting(AnimateFanart)</selected>
+					</control>
+					<control type="radiobutton" id="107">
+						<include>SkinSettingsRadioButtonCommonValues</include>
+						<label>31527</label>
+						<onclick>Skin.ToggleSetting(AnimateMusicPlayingFanart)</onclick>
+						<selected>Skin.HasSetting(AnimateMusicPlayingFanart)</selected>
+						<enable>!Skin.HasSetting(AnimateFanart)</enable>
+					</control>
+					<control type="radiobutton" id="108">
+						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>31523</label>
 						<onclick>Skin.ToggleSetting(HideRainDrops)</onclick>
 						<selected>Skin.HasSetting(HideRainDrops)</selected>
 					</control>
-					<control type="button" id="106">
+					<control type="button" id="109">
 						<include>SkinSettingsButtonCommonValues</include>
 						<label>$LOCALIZE[31525]: $VAR[RatingTypeLabel]</label>
 						<onclick>Skin.SelectBool(31525, 38018|RatingTypeUser, 571|RatingTypeDefault)</onclick>
@@ -179,6 +192,14 @@
 						<include>SkinSettingsButtonCommonValues</include>
 						<label>$LOCALIZE[31540]$INFO[Skin.String(LyricScript_Path),: [COLOR grey2],[/COLOR]]</label>
 						<onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
+					</control>
+					<control type="radiobutton" id="202">
+						<include>SkinSettingsRadioButtonCommonValues</include>
+						<label>$LOCALIZE[31528]</label>
+						<onclick condition="System.AddonIsEnabled(script.artistslideshow)">Skin.ToggleSetting(EnableArtistSlideshow)</onclick>
+						<onclick condition="!System.HasAddon(script.artistslideshow)">InstallAddon(script.artistslideshow)</onclick>
+						<onclick condition="System.HasAddon(script.artistslideshow) + !System.AddonIsEnabled(script.artistslideshow)">EnableAddon(script.artistslideshow)</onclick>
+						<selected>Skin.HasSetting(EnableArtistSlideshow)</selected>
 					</control>
 				</control>
 
@@ -675,13 +696,21 @@
 					</control>
 					<control type="button" id="605">
 						<include>SkinSettingsButtonCommonValues</include>
+						<label>Artist Slideshow</label>
+						<label2>$VAR[StatusArtistSlideshowVar]</label2>
+						<onclick condition="System.AddonIsEnabled(script.artistslideshow)">Addon.OpenSettings(script.artistslideshow)</onclick>
+						<onclick condition="!System.HasAddon(script.artistslideshow)">InstallAddon(script.artistslideshow)</onclick>
+						<onclick condition="System.HasAddon(script.artistslideshow) + !System.AddonIsEnabled(script.artistslideshow)">EnableAddon(script.artistslideshow)</onclick>
+					</control>
+					<control type="button" id="606">
+						<include>SkinSettingsButtonCommonValues</include>
 						<label>Global Search</label>
 						<label2>$VAR[StatusGlobalSearchVar]</label2>
 						<onclick condition="System.AddonIsEnabled(script.globalsearch)">Addon.OpenSettings(script.globalsearch)</onclick>
 						<onclick condition="!System.HasAddon(script.globalsearch)">InstallAddon(script.globalsearch)</onclick>
 						<onclick condition="System.HasAddon(script.globalsearch) + !System.AddonIsEnabled(script.globalsearch)">EnableAddon(script.globalsearch)</onclick>
 					</control>
-					<control type="button" id="606">
+					<control type="button" id="607">
 						<include>SkinSettingsButtonCommonValues</include>
 						<label>YouTube</label>
 						<label2>$VAR[StatusYouTubeVar]</label2>

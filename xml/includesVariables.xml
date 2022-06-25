@@ -202,6 +202,11 @@
 		<value condition="System.HasAddon(script.image.resource.select) + !System.AddonIsEnabled(script.image.resource.select)">$LOCALIZE[24023]</value>
 		<value>$LOCALIZE[31499]</value>
 	</variable>
+	<variable name="StatusArtistSlideshowVar">
+		<value condition="System.AddonIsEnabled(script.artistslideshow)">$INFO[System.AddonVersion(script.artistslideshow)] $LOCALIZE[39019]</value>
+		<value condition="System.HasAddon(script.artistslideshow) + !System.AddonIsEnabled(script.artistslideshow)">$LOCALIZE[24023]</value>
+		<value>$LOCALIZE[31499]</value>
+	</variable>
 	<variable name="StatusGlobalSearchVar">
 		<value condition="System.AddonIsEnabled(script.globalsearch)">$INFO[System.AddonVersion(script.globalsearch)] $LOCALIZE[39019]</value>
 		<value condition="System.HasAddon(script.globalsearch) + !System.AddonIsEnabled(script.globalsearch)">$LOCALIZE[24023]</value>
@@ -283,5 +288,11 @@
 	<variable name="SortLetterNotificationVar2">
 		<value condition="Container.Scrolling + !String.IsEmpty(Container.ListItem.SortLetter)">$INFO[Container.ListItem.SortLetter, - ,]</value>
 		<value condition="Container.Scrolling + !String.IsEmpty(ListItem.SortLetter)">$INFO[ListItem.SortLetter, - ,]</value>
+	</variable>
+	<variable name="MusicPlayingArtistFanartSlideshowVar">
+		<value condition="Skin.HasSetting(EnableArtistSlideshow) + System.AddonIsEnabled(script.artistslideshow) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady))">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</value>
+		<value condition="Skin.HasSetting(EnableArtistSlideshow) + System.AddonIsEnabled(script.artistslideshow) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))">$INFO[Window(Visualisation).Property(ArtistSlideshow.Image)]</value>
+		<value condition="!String.IsEmpty(Player.Art(artist.fanart))">$INFO[Player.Art(artist.fanart)]</value>
+		<value>$INFO[Player.Art(fanart)]</value>
 	</variable>
 </includes>

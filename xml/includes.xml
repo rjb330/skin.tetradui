@@ -1014,6 +1014,11 @@
 	<include name="VisibleFadeEffect">
 		<animation effect="fade" time="200">VisibleChange</animation>
 	</include>
+	<include name="BackgroundAnim">
+		<animation effect="zoom" start="110" end="135" center="auto" time="15000" tween="cubic" easing="inout" pulse="true" condition="true">Conditional</animation>
+		<animation effect="slide" end="-20,-20" delay="4000" time="8000" tween="sine" easing="inout" pulse="true" condition="true">Conditional</animation>
+		<animation effect="slide" end="40,0" delay="10000" time="6000" tween="sine" easing="inout" pulse="true" condition="true">Conditional</animation>
+	</include>
 	<include name="Common_Now_Playing">
 		<control type="group">
 			<animation effect="fade" delay="500" time="HomeVisibleFadeAnimationSpeed" condition="Window.Previous(FullscreenVideo) | Window.Previous(Visualisation)">WindowOpen</animation>
