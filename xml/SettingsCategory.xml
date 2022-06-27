@@ -3,14 +3,8 @@
 	<defaultcontrol>3</defaultcontrol>
 	<controls>
 		<include condition="!Skin.HasSetting(DontBlendBackground)">CommonVideoVizBackground</include>
-		<control type="group">
-			<visible>!Window.Previous(Weather)</visible>
-			<include>CommonSystemBackground</include>
-		</control>
-		<control type="group">
-			<visible>Window.Previous(Weather)</visible>
-			<include>CommonWeatherBackground</include>
-		</control>
+		<include condition="!Window.Previous(Weather)">CommonSystemBackground</include>
+		<include condition="Window.Previous(Weather)">CommonWeatherBackground</include>
 		<include condition="Skin.HasSetting(DontBlendBackground)">CommonVideoVizBackground</include>
 
 		<control type="group">

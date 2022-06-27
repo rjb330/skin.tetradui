@@ -5,24 +5,11 @@
 	<views>50,52,55</views>
 	<controls>
 		<include condition="!Skin.HasSetting(DontBlendBackground)">CommonVideoVizBackground</include>
-		<control type="group">
-			<visible>![Window.Previous(Videos) | Window.Previous(Music) | Window.Previous(Pictures)]</visible>
-			<include>CommonAppsBackground</include>
-		</control>
-		<control type="group">
-			<visible>Window.Previous(Videos) | Window.Previous(Music) | Window.Previous(Pictures)</visible>
-			<include>CommonMediaBackground</include>
-		</control>
+		<include condition="![Window.Previous(Videos) | Window.Previous(Music) | Window.Previous(Pictures)]">CommonAppsBackground</include>
+		<include condition="Window.Previous(Videos) | Window.Previous(Music) | Window.Previous(Pictures)">CommonMediaBackground</include>
 		<include condition="Skin.HasSetting(DontBlendBackground)">CommonVideoVizBackground</include>
-
-		<control type="group">
-			<visible>![Window.Previous(Videos) | Window.Previous(Music) | Window.Previous(Pictures)]</visible>
-			<include>CommonAppsBlackwash</include>
-		</control>
-		<control type="group">
-			<visible>Window.Previous(Videos) | Window.Previous(Music) | Window.Previous(Pictures)</visible>
-			<include>CommonMediaBlackwash</include>
-		</control>
+		<include condition="![Window.Previous(Videos) | Window.Previous(Music) | Window.Previous(Pictures)]">CommonAppsBlackwash</include>
+		<include condition="Window.Previous(Videos) | Window.Previous(Music) | Window.Previous(Pictures)">CommonMediaBlackwash</include>
 
 		<control type="group">
 			<left>130</left>

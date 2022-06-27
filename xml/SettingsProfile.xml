@@ -2,13 +2,8 @@
 <window>
 	<defaultcontrol always="true">4</defaultcontrol>
 	<controls>
-		<control type="group">
-			<include>CommonSystemBackground</include>
-		</control>
-
-		<control type="group">
-			<include>CommonSystemBlackwash</include>
-		</control>
+		<include>CommonSystemBackground</include>
+		<include>CommonSystemBlackwash</include>
 		<control type="group">
 			<left>130</left>
 			<animation effect="fade" delay="500" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>

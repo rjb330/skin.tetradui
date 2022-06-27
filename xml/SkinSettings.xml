@@ -3,13 +3,9 @@
 	<defaultcontrol always="true">3</defaultcontrol>
 	<controls>
 		<include condition="!Skin.HasSetting(DontBlendBackground)">CommonVideoVizBackground</include>
-		<control type="group">
-			<include>CommonSystemBackground</include>
-		</control>
+		<include>CommonSystemBackground</include>
 		<include condition="Skin.HasSetting(DontBlendBackground)">CommonVideoVizBackground</include>
-		<control type="group">
-			<include>CommonSystemBlackwash</include>
-		</control>
+		<include>CommonSystemBlackwash</include>
 		<control type="group">
 			<left>130</left>
 			<animation effect="fade" delay="500" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>

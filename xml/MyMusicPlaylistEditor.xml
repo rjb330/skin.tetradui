@@ -4,13 +4,9 @@
 	<views>50</views>
 	<controls>
 		<include condition="!Skin.HasSetting(DontBlendBackground)">CommonVideoVizBackground</include>
-		<control type="group">
-			<include>CommonMediaBackground</include>
-		</control>
+		<include>CommonMediaBackground</include>
 		<include condition="Skin.HasSetting(DontBlendBackground)">CommonVideoVizBackground</include>
-		<control type="group">
-			<include>CommonMediaBlackwash</include>
-		</control>
+		<include>CommonMediaBlackwash</include>
 		<control type="group">
 			<left>130</left>
 			<animation effect="fade" delay="500" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>
