@@ -198,13 +198,15 @@
 		<itemgap>-5</itemgap>
 		<onleft>50</onleft>
 		<onright>50</onright>
-		<onup>611</onup>
-		<ondown>610</ondown>
+		<onup condition="Player.HasMedia">606</onup>
+		<onup condition="!Player.HasMedia">610</onup>
+		<ondown condition="Player.HasMedia">603</ondown>
+		<ondown condition="!Player.HasMedia">610</ondown>
 		<usecontrolcoords>true</usecontrolcoords>
 		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus</visible>
 		<animation effect="fade" start="0" end="100" delay="SideMenuSlideOutTime" time="200">Visible</animation>
 		<animation effect="fade" start="100" end="0" delay="0" time="SideMenuSlideOutTime">Hidden</animation>
-		<control type="label">
+		<control type="label" id="621">
 			<description>Header Label</description>
 			<width>220</width>
 			<height>20</height>
@@ -215,7 +217,7 @@
 			<align>left</align>
 			<aligny>center</aligny>
 		</control>
-		<control type="image">
+		<control type="image" id="622">
 			<height>30</height>
 			<texture />
 		</control>
@@ -633,118 +635,120 @@
 		<scroll>true</scroll>
 	</include>
 	<include name="CommonPlayerControls">
-		<control type="label">
-			<description>Player Controls Label</description>
-			<left>6</left>
-			<top>365</top>
-			<width>220</width>
-			<height>20</height>
-			<font>font12</font>
-			<label>31203</label>
-			<textcolor>orange</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<align>left</align>
-			<aligny>center</aligny>
+		<control type="group">
 			<visible>Player.HasMedia</visible>
 			<include>VisibleFadeEffect</include>
-		</control>
-		<control type="group" id="">
-			<left>-4</left>
-			<top>395</top>
-			<visible>Player.HasMedia</visible>
-			<include>VisibleFadeEffect</include>
-			<control type="button" id="600">
-				<width>40</width>
-				<height>40</height>
-				<texturefocus>mediacontrol/mediacontrol-skipback-focus.png</texturefocus>
-				<texturenofocus>mediacontrol/mediacontrol-skipback.png</texturenofocus>
-				<onclick>PlayerControl(Previous)</onclick>
-				<label />
-				<onleft>50</onleft>
-				<onright>601</onright>
-				<onup>610</onup>
-				<ondown>606</ondown>
+			<left>100</left>
+			<top>140</top>
+			<control type="label">
+				<description>Player Controls Label</description>
+				<left>6</left>
+				<top>365</top>
+				<width>220</width>
+				<height>20</height>
+				<font>font12</font>
+				<label>31203</label>
+				<textcolor>orange</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
 			</control>
-			<control type="button" id="601">
-				<left>34</left>
-				<width>40</width>
-				<height>40</height>
-				<texturefocus>mediacontrol/mediacontrol-rewind-focus.png</texturefocus>
-				<texturenofocus>mediacontrol/mediacontrol-rewind.png</texturenofocus>
-				<onclick>PlayerControl(Rewind)</onclick>
-				<label />
-				<onleft>600</onleft>
-				<onright>602</onright>
-				<onup>610</onup>
-				<ondown>606</ondown>
-			</control>
-			<control type="button" id="602">
-				<left>68</left>
-				<width>40</width>
-				<height>40</height>
-				<texturefocus>mediacontrol/mediacontrol-stop-focus.png</texturefocus>
-				<texturenofocus>mediacontrol/mediacontrol-stop.png</texturenofocus>
-				<onclick>PlayerControl(Stop)</onclick>
-				<label />
-				<onleft>601</onleft>
-				<onright>603</onright>
-				<onup>610</onup>
-				<ondown>606</ondown>
-			</control>
-			<control type="togglebutton" id="603">
-				<left>102</left>
-				<width>40</width>
-				<height>40</height>
-				<texturefocus>mediacontrol/mediacontrol-pause-focus.png</texturefocus>
-				<texturenofocus>mediacontrol/mediacontrol-pause.png</texturenofocus>
-				<alttexturefocus>mediacontrol/mediacontrol-play-focus.png</alttexturefocus>
-				<alttexturenofocus>mediacontrol/mediacontrol-play.png</alttexturenofocus>
-				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-				<onclick>PlayerControl(Play)</onclick>
-				<label />
-				<onleft>602</onleft>
-				<onright>604</onright>
-				<onup>610</onup>
-				<ondown>606</ondown>
-			</control>
-			<control type="button" id="604">
-				<left>136</left>
-				<width>40</width>
-				<height>40</height>
-				<texturefocus>mediacontrol/mediacontrol-fastforward-focus.png</texturefocus>
-				<texturenofocus>mediacontrol/mediacontrol-fastforward.png</texturenofocus>
-				<onclick>PlayerControl(Forward)</onclick>
-				<label />
-				<onleft>603</onleft>
-				<onright>605</onright>
-				<onup>610</onup>
-				<ondown>606</ondown>
-			</control>
-			<control type="button" id="605">
-				<left>170</left>
-				<width>40</width>
-				<height>40</height>
-				<texturefocus>mediacontrol/mediacontrol-skipforward-focus.png</texturefocus>
-				<texturenofocus>mediacontrol/mediacontrol-skipforward.png</texturenofocus>
-				<onclick>PlayerControl(Next)</onclick>
-				<label />
-				<onleft>604</onleft>
-				<onright>50</onright>
-				<onup>610</onup>
-				<ondown>606</ondown>
-			</control>
-			<control type="radiobutton" id="606">
-				<description>Random</description>
-				<left>-3</left>
-				<top>36</top>
-				<include>ButtonCommonValues</include>
-				<label>590</label>
-				<onclick>PlayerControl(Random)</onclick>
-				<selected>Playlist.IsRandom</selected>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>603</onup>
-				<ondown>611</ondown>
+			<control type="group">
+				<left>-4</left>
+				<top>395</top>
+				<control type="button" id="600">
+					<width>40</width>
+					<height>40</height>
+					<texturefocus>mediacontrol/mediacontrol-skipback-focus.png</texturefocus>
+					<texturenofocus>mediacontrol/mediacontrol-skipback.png</texturenofocus>
+					<onclick>PlayerControl(Previous)</onclick>
+					<label />
+					<onleft>50</onleft>
+					<onright>601</onright>
+					<onup>610</onup>
+					<ondown>606</ondown>
+				</control>
+				<control type="button" id="601">
+					<left>34</left>
+					<width>40</width>
+					<height>40</height>
+					<texturefocus>mediacontrol/mediacontrol-rewind-focus.png</texturefocus>
+					<texturenofocus>mediacontrol/mediacontrol-rewind.png</texturenofocus>
+					<onclick>PlayerControl(Rewind)</onclick>
+					<label />
+					<onleft>600</onleft>
+					<onright>602</onright>
+					<onup>610</onup>
+					<ondown>606</ondown>
+				</control>
+				<control type="button" id="602">
+					<left>68</left>
+					<width>40</width>
+					<height>40</height>
+					<texturefocus>mediacontrol/mediacontrol-stop-focus.png</texturefocus>
+					<texturenofocus>mediacontrol/mediacontrol-stop.png</texturenofocus>
+					<onclick>PlayerControl(Stop)</onclick>
+					<label />
+					<onleft>601</onleft>
+					<onright>603</onright>
+					<onup>610</onup>
+					<ondown>606</ondown>
+				</control>
+				<control type="togglebutton" id="603">
+					<left>102</left>
+					<width>40</width>
+					<height>40</height>
+					<texturefocus>mediacontrol/mediacontrol-pause-focus.png</texturefocus>
+					<texturenofocus>mediacontrol/mediacontrol-pause.png</texturenofocus>
+					<alttexturefocus>mediacontrol/mediacontrol-play-focus.png</alttexturefocus>
+					<alttexturenofocus>mediacontrol/mediacontrol-play.png</alttexturenofocus>
+					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+					<onclick>PlayerControl(Play)</onclick>
+					<label />
+					<onleft>602</onleft>
+					<onright>604</onright>
+					<onup>610</onup>
+					<ondown>606</ondown>
+				</control>
+				<control type="button" id="604">
+					<left>136</left>
+					<width>40</width>
+					<height>40</height>
+					<texturefocus>mediacontrol/mediacontrol-fastforward-focus.png</texturefocus>
+					<texturenofocus>mediacontrol/mediacontrol-fastforward.png</texturenofocus>
+					<onclick>PlayerControl(Forward)</onclick>
+					<label />
+					<onleft>603</onleft>
+					<onright>605</onright>
+					<onup>610</onup>
+					<ondown>606</ondown>
+				</control>
+				<control type="button" id="605">
+					<left>170</left>
+					<width>40</width>
+					<height>40</height>
+					<texturefocus>mediacontrol/mediacontrol-skipforward-focus.png</texturefocus>
+					<texturenofocus>mediacontrol/mediacontrol-skipforward.png</texturenofocus>
+					<onclick>PlayerControl(Next)</onclick>
+					<label />
+					<onleft>604</onleft>
+					<onright>50</onright>
+					<onup>610</onup>
+					<ondown>606</ondown>
+				</control>
+				<control type="radiobutton" id="606">
+					<description>Random</description>
+					<left>-3</left>
+					<top>36</top>
+					<include>ButtonCommonValues</include>
+					<label>590</label>
+					<onclick>PlayerControl(Random)</onclick>
+					<selected>Playlist.IsRandom</selected>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>603</onup>
+					<ondown>610</ondown>
+				</control>
 			</control>
 		</control>
 	</include>

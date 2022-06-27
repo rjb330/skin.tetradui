@@ -31,7 +31,7 @@
 		<include>BackgroundDim</include>
 		<control type="group" id="9000">
 			<include>Container9000BladesRunner</include>
-			<control type="grouplist">
+			<control type="grouplist" id="610">
 				<include>Container9000Header</include>
 				<control type="button" id="2">
 					<description>View As button</description>
@@ -77,20 +77,8 @@
 					<include>ButtonCommonValues</include>
 					<label>10004</label>
 				</control>
-				<control type="button" id="610">
-					<description>Fake Button to fix Player Controls Navigation</description>
-					<onup>5</onup>
-					<ondown>603</ondown>
-					<visible>false</visible>
-				</control>
-				<control type="button" id="611">
-					<description>Fake Button to fix Player Controls Navigation</description>
-					<onup>606</onup>
-					<ondown>2</ondown>
-					<visible>false</visible>
-				</control>
-				<include>CommonPlayerControls</include>
 			</control>
+			<include>CommonPlayerControls</include>
 		</control>
 		<include>AllViewCommonPageControls</include>
 		<control type="group">

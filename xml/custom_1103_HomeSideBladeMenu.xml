@@ -116,8 +116,7 @@
 					</content>
 				</control>
 				<control type="group">
-					<left>20</left>
-					<top>140</top>
+					<left>-80</left>
 					<include>CommonPlayerControls</include>
 				</control>
 			</control>
