@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1111">
 	<defaultcontrol always="true">9050</defaultcontrol>
+	<onload condision="!String.IsEmpty(SubBladeType))">Skin.Reset(SubBladeType)</onload>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(1)">WindowClose</animation>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(2)">WindowClose</animation>
 	<controls>
@@ -243,16 +244,19 @@
 					<content>
 						<item>
 							<label>1037</label>
+							<onclick>Skin.SetString(SubBladeType,apps)</onclick>
 							<onclick>ActivateWindow(Videos,Addons,Return)</onclick>
 							<icon>defaultaddonvideo.png</icon>
 						</item>
 						<item>
 							<label>1038</label>
+							<onclick>Skin.SetString(SubBladeType,apps)</onclick>
 							<onclick>ActivateWindow(Music,Addons,Return)</onclick>
 							<icon>DefaultAddonMusic.png</icon>
 						</item>
 						<item>
 							<label>1039</label>
+							<onclick>Skin.SetString(SubBladeType,apps)</onclick>
 							<onclick>ActivateWindow(Pictures,Addons,Return)</onclick>
 							<icon>DefaultAddonPicture.png</icon>
 						</item>

@@ -88,7 +88,8 @@
 		</control>
 		<include>AllViewCommonPageControls</include>
 		<control type="group">
-			<include>MediaToSubBlades</include>
+			<include condition="Skin.String(SubBladeType,apps)">AppsToSubBlades</include>
+			<include condition="!Skin.String(SubBladeType,apps)">MediaToSubBlades</include>
 		</control>
 		<include>Common_Now_Playing</include>
 	</controls>
