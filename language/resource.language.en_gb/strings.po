@@ -69,7 +69,7 @@ msgid "Forecast"
 msgstr ""
 
 msgctxt "#31023"
-msgid "Updated :"
+msgid "Updated:"
 msgstr ""
 
 msgctxt "#31024"
