@@ -2,10 +2,10 @@
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<onunload>Skin.Reset(MusicInfo9002Toggle)</onunload>
+	<include>BladesRunnerRightAnimation2</include>
 	<controls>
 		<control type="group">
 			<visible>!Window.IsVisible(FileBrowser)</visible>
-			<include>BladesRunnerRightAnimation2</include>
 			<include>BladesRunnerRight</include>
 
 			<control type="group">
