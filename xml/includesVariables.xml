@@ -295,4 +295,8 @@
 		<value condition="!String.IsEmpty(Player.Art(artist.fanart))">$INFO[Player.Art(artist.fanart)]</value>
 		<value>$INFO[Player.Art(fanart)]</value>
 	</variable>
+	<variable name="AddonLifecycleType">
+		<value condition="String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])">$LOCALIZE[24049]</value>
+		<value condition="String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])">$LOCALIZE[24096]</value>
+	</variable>
 </includes>

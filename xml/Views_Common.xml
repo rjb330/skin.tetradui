@@ -85,6 +85,27 @@
 				<aspectratio>keep</aspectratio>
 				<info>Listitem.Overlay</info>
 			</control>
+			<control type="group">
+				<visible>$EXP[AddonLifecycleType]</visible>
+				<include>VisibleFadeEffect</include>
+				<left>16</left>
+				<top>26</top>
+				<control type="image">
+					<width>388</width>
+					<height>388</height>
+					<texture colordiffuse="AAFFFFFF">black-back.png</texture>
+				</control>
+				<control type="textbox">
+					<left>25</left>
+					<top>25</top>
+					<width>338</width>
+					<height>338</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font13</font>
+					<label>$VAR[AddonLifecycleType]</label>
+				</control>
+			</control>
 		</control>
 	</include>
 	<include name="ThumbnailView">
@@ -118,6 +139,27 @@
 					<bordertexture>black-back.png</bordertexture>
 					<bordersize>1</bordersize>
 					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="group">
+					<visible>$EXP[AddonLifecycleType]</visible>
+					<left>27</left>
+					<top>7</top>
+					<control type="image">
+						<width>126</width>
+						<height>126</height>
+						<texture colordiffuse="AAFFFFFF">black-back.png</texture>
+					</control>
+					<control type="textbox">
+						<left>5</left>
+						<top>5</top>
+						<width>116</width>
+						<height>116</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font8</font>
+						<textcolor>grey2</textcolor>
+						<label>$VAR[AddonLifecycleType]</label>
+					</control>
 				</control>
 				<control type="label">
 					<left>8</left>
@@ -156,6 +198,26 @@
 					<bordertexture>black-back.png</bordertexture>
 					<bordersize>1</bordersize>
 					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="group">
+					<visible>$EXP[AddonLifecycleType]</visible>
+					<left>27</left>
+					<top>7</top>
+					<control type="image">
+						<width>126</width>
+						<height>126</height>
+						<texture colordiffuse="AAFFFFFF">black-back.png</texture>
+					</control>
+					<control type="textbox">
+						<left>5</left>
+						<top>5</top>
+						<width>116</width>
+						<height>116</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font8</font>
+						<label>$VAR[AddonLifecycleType]</label>
+					</control>
 				</control>
 				<control type="label">
 					<left>8</left>
@@ -571,6 +633,27 @@
 					<bordersize>1</bordersize>
 					<aspectratio>keep</aspectratio>
 				</control>
+				<control type="group">
+					<visible>$EXP[AddonLifecycleType]</visible>
+					<left>24</left>
+					<top>9</top>
+					<control type="image">
+						<width>126</width>
+						<height>126</height>
+						<texture colordiffuse="AAFFFFFF">black-back.png</texture>
+					</control>
+					<control type="textbox">
+						<left>5</left>
+						<top>5</top>
+						<width>116</width>
+						<height>116</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font8</font>
+						<textcolor>grey2</textcolor>
+						<label>$VAR[AddonLifecycleType]</label>
+					</control>
+				</control>
 				<control type="label">
 					<left>7</left>
 					<top>132</top>
@@ -608,6 +691,26 @@
 					<bordertexture>black-back.png</bordertexture>
 					<bordersize>1</bordersize>
 					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="group">
+					<visible>$EXP[AddonLifecycleType]</visible>
+					<left>24</left>
+					<top>9</top>
+					<control type="image">
+						<width>126</width>
+						<height>126</height>
+						<texture colordiffuse="AAFFFFFF">black-back.png</texture>
+					</control>
+					<control type="textbox">
+						<left>5</left>
+						<top>5</top>
+						<width>116</width>
+						<height>116</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font8</font>
+						<label>$VAR[AddonLifecycleType]</label>
+					</control>
 				</control>
 				<control type="label">
 					<left>7</left>

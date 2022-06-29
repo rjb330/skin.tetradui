@@ -15,6 +15,8 @@
 	<constant name="FanartCrossfadeTime">600</constant>
 	<constant name="IconCrossfadeTime">400</constant>
 	<constant name="SideMenuSlideOutTime">200</constant>
+	
+	<expression name="AddonLifecycleType">String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170]) | String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])</expression>
 
 	<include name="HomeLogoButton">
 		<control type="group">
