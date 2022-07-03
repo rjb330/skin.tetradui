@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>2000</defaultcontrol>
+	<include>BladesRunnerRightAnimation1</include>
 	<coordinates>
 		<system>1</system>
 		<left>730</left>
@@ -8,7 +9,6 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<include>BladesRunnerRightAnimation1</include>
 			<include>BladesRunnerRight</include>
 			<control type="label" id="411">
 				<description>Header label</description>

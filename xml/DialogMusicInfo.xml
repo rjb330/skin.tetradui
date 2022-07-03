@@ -17,21 +17,6 @@
 					<label>$VAR[DialogInfoTitleLabel]</label>
 					<include>DialogHeaderTextCommons</include>
 				</control>
-				<control type="group">
-					<visible>Control.HasFocus(12)</visible>
-					<include>VisibleFadeEffect</include>
-					<control type="largeimage">
-						<description>Fanart image</description>
-						<left>200</left>
-						<top>110</top>
-						<width>1050</width>
-						<height>500</height>
-						<texture background="true">$INFO[Listitem.Art(fanart)]</texture>
-						<aspectratio>keep</aspectratio>
-						<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
-						<bordersize>18,2,18,2</bordersize>
-					</control>
-				</control>
 				<control type="label">
 					<description>Title value</description>
 					<left>200</left>
@@ -46,7 +31,7 @@
 					<font>font30</font>
 				</control>
 				<control type="group">
-					<visible>!Control.HasFocus(12) + !Control.IsVisible(50)</visible>
+					<visible>!Control.IsVisible(50)</visible>
 					<include>VisibleFadeEffect</include>
 					<control type="group">
 						<left>200</left>

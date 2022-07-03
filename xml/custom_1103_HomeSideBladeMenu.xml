@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1103">
 	<defaultcontrol>610</defaultcontrol>
+	<include>BladesRunnerRightAnimation1</include>
 	<coordinates>
 		<system>1</system>
 		<left>730</left>
@@ -8,7 +9,6 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<include>BladesRunnerRightAnimation1</include>
 			<include>BladesRunnerRight</include>
 			<animation type="Conditional" condition="![Window.IsActive(Favourites) | Window.IsActive(ShutdownMenu)]">
 				<effect type="fade" start="0" end="100" time="100" />
