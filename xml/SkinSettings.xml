@@ -338,6 +338,10 @@
 					<control type="radiobutton" id="332">
 						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$LOCALIZE[24001]</label>
+						<onclick condition="!Skin.HasSetting(AppsBlade_HideAddons) + !String.IsEmpty(Skin.String(AddonShortcut1))">Skin.Reset(AddonShortcut1)</onclick>
+						<onclick condition="!Skin.HasSetting(AppsBlade_HideAddons) + !String.IsEmpty(Skin.String(AddonShortcut2))">Skin.Reset(AddonShortcut2)</onclick>
+						<onclick condition="!Skin.HasSetting(AppsBlade_HideAddons) + !String.IsEmpty(Skin.String(AddonShortcut3))">Skin.Reset(AddonShortcut3)</onclick>
+						<onclick condition="!Skin.HasSetting(AppsBlade_HideAddons) + !String.IsEmpty(Skin.String(AddonShortcut4))">Skin.Reset(AddonShortcut4)</onclick>
 						<onclick>Skin.ToggleSetting(AppsBlade_HideAddons)</onclick>
 						<selected>Skin.HasSetting(AppsBlade_HideAddons)</selected>
 					</control>
@@ -352,6 +356,30 @@
 						<label>$LOCALIZE[31309]$LOCALIZE[1036]</label>
 						<onclick>Skin.ToggleSetting(AppsBlade_HideFavourites)</onclick>
 						<selected>Skin.HasSetting(AppsBlade_HideFavourites)</selected>
+					</control>
+					<control type="button" id="336">
+						<include>SkinSettingsButtonCommonValues</include>
+						<label>$LOCALIZE[31228] $NUMBER[1][COLOR grey2]$INFO[system.addontitle(Skin.String(AddonShortcut1)),: ,][/COLOR]</label>
+						<onclick>Skin.SetAddon(AddonShortcut1,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
+						<enable>!Skin.HasSetting(AppsBlade_HideAddons)</enable>
+					</control>
+					<control type="button" id="337">
+						<include>SkinSettingsButtonCommonValues</include>
+						<label>$LOCALIZE[31228] $NUMBER[2][COLOR grey2]$INFO[system.addontitle(Skin.String(AddonShortcut2)),: ,][/COLOR]</label>
+						<onclick>Skin.SetAddon(AddonShortcut2,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
+						<enable>!Skin.HasSetting(AppsBlade_HideAddons)</enable>
+					</control>
+					<control type="button" id="338">
+						<include>SkinSettingsButtonCommonValues</include>
+						<label>$LOCALIZE[31228] $NUMBER[3][COLOR grey2]$INFO[system.addontitle(Skin.String(AddonShortcut3)),: ,][/COLOR]</label>
+						<onclick>Skin.SetAddon(AddonShortcut3,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
+						<enable>!Skin.HasSetting(AppsBlade_HideAddons)</enable>
+					</control>
+					<control type="button" id="339">
+						<include>SkinSettingsButtonCommonValues</include>
+						<label>$LOCALIZE[31228] $NUMBER[4][COLOR grey2]$INFO[system.addontitle(Skin.String(AddonShortcut4)),: ,][/COLOR]</label>
+						<onclick>Skin.SetAddon(AddonShortcut4,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.executable,xbmc.addon.image,kodi.gameclient)</onclick>
+						<enable>!Skin.HasSetting(AppsBlade_HideAddons)</enable>
 					</control>
 				</control>
 				

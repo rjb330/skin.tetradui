@@ -934,6 +934,88 @@
 			</control>
 		</control>
 	</include>
+	
+	<include name="AddonShortcuts">
+		<control type="panel" id="520">
+			<top>285</top>
+			<left>65</left>
+			<onup>9000</onup>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<animation effect="slide" end="100,0" condition="String.IsEqual(Container(520).NumItems,3)">Conditional</animation>
+			<animation effect="slide" end="200,0" condition="String.IsEqual(Container(520).NumItems,2)">Conditional</animation>
+			<animation effect="slide" end="300,0" condition="String.IsEqual(Container(520).NumItems,1)">Conditional</animation>
+			<animation effect="fade" time="HomeVisibleFadeAnimationSpeed">VisibleChange</animation>
+			<visible>Container(9000).HasFocus(1)</visible>
+			<itemlayout width="200">
+				<control type="image">
+					<left>5</left>
+					<width>180</width>
+					<height>180</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true">$INFO[ListItem.Thumb]</texture>
+					<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
+					<bordersize>18,2,18,2</bordersize>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<top>167</top>
+					<width>160</width>
+					<font>font10</font>
+					<textcolor>white</textcolor>
+					<align>center</align>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout width="200">
+				<control type="image">
+					<left>5</left>
+					<width>180</width>
+					<height>180</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true">$INFO[ListItem.Thumb]</texture>
+					<bordertexture border="19,3,19,3">thumb-border-focus.png</bordertexture>
+					<bordersize>18,2,18,2</bordersize>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<top>167</top>
+					<width>160</width>
+					<font>font10</font>
+					<textcolor>orange</textcolor>
+					<align>center</align>
+					<scroll>true</scroll>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</focusedlayout>
+			<content>
+				<item>
+					<onclick>RunAddon($INFO[Skin.String(AddonShortcut1)])</onclick>
+					<thumb>$INFO[system.addonicon(Skin.String(AddonShortcut1))]</thumb>
+					<label>$INFO[system.addontitle(Skin.String(AddonShortcut1))]</label>
+					<visible>!String.IsEmpty(Skin.String(AddonShortcut1))</visible>
+				</item>
+				<item>
+					<onclick>RunAddon($INFO[Skin.String(AddonShortcut2)])</onclick>
+					<thumb>$INFO[system.addonicon(Skin.String(AddonShortcut2))]</thumb>
+					<label>$INFO[system.addontitle(Skin.String(AddonShortcut2))]</label>
+					<visible>!String.IsEmpty(Skin.String(AddonShortcut2))</visible>
+				</item>
+				<item>
+					<onclick>RunAddon($INFO[Skin.String(AddonShortcut3)])</onclick>
+					<thumb>$INFO[system.addonicon(Skin.String(AddonShortcut3))]</thumb>
+					<label>$INFO[system.addontitle(Skin.String(AddonShortcut3))]</label>
+					<visible>!String.IsEmpty(Skin.String(AddonShortcut3))</visible>
+				</item>
+				<item>
+					<onclick>RunAddon($INFO[Skin.String(AddonShortcut4)])</onclick>
+					<thumb>$INFO[system.addonicon(Skin.String(AddonShortcut4))]</thumb>
+					<label>$INFO[system.addontitle(Skin.String(AddonShortcut4))]</label>
+					<visible>!String.IsEmpty(Skin.String(AddonShortcut4))</visible>
+				</item>
+			</content>
+		</control>
+	</include>
 
 	<include name="AllViewCommonPageControls">
 		<control type="grouplist">
@@ -1063,7 +1145,7 @@
 						<description>Now Playing Studio</description>
 						<left>60</left>
 						<top>20</top>
-						<width>345</width>
+						<width>355</width>
 						<height>20</height>
 						<align>right</align>
 						<aligny>center</aligny>
@@ -1134,7 +1216,7 @@
 						<description>Now Playing TVShow</description>
 						<left>60</left>
 						<top>20</top>
-						<width>345</width>
+						<width>355</width>
 						<height>20</height>
 						<align>right</align>
 						<aligny>center</aligny>
@@ -1211,7 +1293,7 @@
 						<description>Now Playing title</description>
 						<left>60</left>
 						<top>20</top>
-						<width>345</width>
+						<width>355</width>
 						<height>20</height>
 						<align>right</align>
 						<aligny>center</aligny>

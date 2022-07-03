@@ -190,7 +190,9 @@ msgctxt "#31227"
 msgid "available"
 msgstr ""
 
-# empty string with id 31228
+msgctxt "#31228"
+msgid "Add-on shortcut"
+msgstr ""
 
 msgctxt "#31229"
 msgid "Play speed"

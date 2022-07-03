@@ -68,7 +68,8 @@
 				<control type="list" id="9000">
 					<width>450</width>
 					<height>314</height>
-					<onleft>1</onleft>
+					<onleft condition="Container(9000).HasFocus(1) + ![String.IsEmpty(Skin.String(AddonShortcut1)) + String.IsEmpty(Skin.String(AddonShortcut2)) + String.IsEmpty(Skin.String(AddonShortcut3)) + String.IsEmpty(Skin.String(AddonShortcut4)]">520</onleft>
+					<onleft condition="!Container(9000).HasFocus(1) | [String.IsEmpty(Skin.String(AddonShortcut1)) + String.IsEmpty(Skin.String(AddonShortcut2)) + String.IsEmpty(Skin.String(AddonShortcut3)) + String.IsEmpty(Skin.String(AddonShortcut4)]">1</onleft>
 					<onright condition="Container(9000).HasFocus(1)">9100</onright>
 					<onright condition="!Container(9000).HasFocus(1)">2</onright>
 					<onup>9050</onup>
@@ -169,8 +170,11 @@
 					<width>450</width>
 					<height>238</height>
 					<onleft>9000</onleft>
-					<onright>2</onright>
+					<onright condition="Container(9000).HasFocus(1) + ![String.IsEmpty(Skin.String(AddonShortcut1)) + String.IsEmpty(Skin.String(AddonShortcut2)) + String.IsEmpty(Skin.String(AddonShortcut3)) + String.IsEmpty(Skin.String(AddonShortcut4)]">520</onright>
+					<onright condition="!Container(9000).HasFocus(1) | [String.IsEmpty(Skin.String(AddonShortcut1)) + String.IsEmpty(Skin.String(AddonShortcut2)) + String.IsEmpty(Skin.String(AddonShortcut3)) + String.IsEmpty(Skin.String(AddonShortcut4)]">2</onright>
 					<onup>9050</onup>
+					<ondown condition="Container(9000).HasFocus(1) + ![String.IsEmpty(Skin.String(AddonShortcut1)) + String.IsEmpty(Skin.String(AddonShortcut2)) + String.IsEmpty(Skin.String(AddonShortcut3)) + String.IsEmpty(Skin.String(AddonShortcut4)]">520</ondown>
+					<ondown condition="!Container(9000).HasFocus(1) | [String.IsEmpty(Skin.String(AddonShortcut1)) + String.IsEmpty(Skin.String(AddonShortcut2)) + String.IsEmpty(Skin.String(AddonShortcut3)) + String.IsEmpty(Skin.String(AddonShortcut4)]">2</ondown>
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>200</scrolltime>
@@ -283,7 +287,8 @@
 						</item>
 					</content>
 				</control>
-				<include>SystemCard</include>
+				<include condition="!Skin.String(AddonShortcut1) + !Skin.String(AddonShortcut2) + !Skin.String(AddonShortcut3) + !Skin.String(AddonShortcut4)">SystemCard</include>
+				<include condition="Skin.String(AddonShortcut1) | Skin.String(AddonShortcut2) | Skin.String(AddonShortcut3) | Skin.String(AddonShortcut4)">AddonShortcuts</include>
 			</control>
 			<include condition="System.GetBool(LookAndFeel.EnableRSSFeeds)">CommonRSSFeed</include>
 		</control>
