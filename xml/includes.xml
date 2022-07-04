@@ -937,21 +937,20 @@
 	
 	<include name="AddonShortcuts">
 		<control type="panel" id="520">
-			<top>285</top>
+			<top>300</top>
 			<left>65</left>
 			<onup>9000</onup>
 			<onleft>9000</onleft>
 			<onright>9000</onright>
-			<animation effect="slide" end="100,0" condition="String.IsEqual(Container(520).NumItems,3)">Conditional</animation>
-			<animation effect="slide" end="200,0" condition="String.IsEqual(Container(520).NumItems,2)">Conditional</animation>
-			<animation effect="slide" end="300,0" condition="String.IsEqual(Container(520).NumItems,1)">Conditional</animation>
-			<animation effect="fade" time="HomeVisibleFadeAnimationSpeed">VisibleChange</animation>
-			<visible>Container(9000).HasFocus(1)</visible>
-			<itemlayout width="200">
+			<animation effect="slide" end="80,0" condition="String.IsEqual(Container(520).NumItems,4)">Conditional</animation>
+			<animation effect="slide" end="160,0" condition="String.IsEqual(Container(520).NumItems,3)">Conditional</animation>
+			<animation effect="slide" end="240,0" condition="String.IsEqual(Container(520).NumItems,2)">Conditional</animation>
+			<animation effect="slide" end="320,0" condition="String.IsEqual(Container(520).NumItems,1)">Conditional</animation>
+			<itemlayout width="160">
 				<control type="image">
 					<left>5</left>
-					<width>180</width>
-					<height>180</height>
+					<width>140</width>
+					<height>140</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Thumb]</texture>
 					<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
@@ -959,19 +958,19 @@
 				</control>
 				<control type="label">
 					<left>15</left>
-					<top>167</top>
-					<width>160</width>
+					<top>125</top>
+					<width>120</width>
 					<font>font10</font>
 					<textcolor>white</textcolor>
 					<align>center</align>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
-			<focusedlayout width="200">
+			<focusedlayout width="160">
 				<control type="image">
 					<left>5</left>
-					<width>180</width>
-					<height>180</height>
+					<width>140</width>
+					<height>140</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Thumb]</texture>
 					<bordertexture border="19,3,19,3">thumb-border-focus.png</bordertexture>
@@ -979,8 +978,8 @@
 				</control>
 				<control type="label">
 					<left>15</left>
-					<top>167</top>
-					<width>160</width>
+					<top>125</top>
+					<width>120</width>
 					<font>font10</font>
 					<textcolor>orange</textcolor>
 					<align>center</align>
@@ -990,28 +989,39 @@
 			</focusedlayout>
 			<content>
 				<item>
+					<onclick>Skin.SetString(SubBladeType,apps)</onclick>
 					<onclick>RunAddon($INFO[Skin.String(AddonShortcut1)])</onclick>
 					<thumb>$INFO[system.addonicon(Skin.String(AddonShortcut1))]</thumb>
 					<label>$INFO[system.addontitle(Skin.String(AddonShortcut1))]</label>
 					<visible>!String.IsEmpty(Skin.String(AddonShortcut1))</visible>
 				</item>
 				<item>
+					<onclick>Skin.SetString(SubBladeType,apps)</onclick>
 					<onclick>RunAddon($INFO[Skin.String(AddonShortcut2)])</onclick>
 					<thumb>$INFO[system.addonicon(Skin.String(AddonShortcut2))]</thumb>
 					<label>$INFO[system.addontitle(Skin.String(AddonShortcut2))]</label>
 					<visible>!String.IsEmpty(Skin.String(AddonShortcut2))</visible>
 				</item>
 				<item>
+					<onclick>Skin.SetString(SubBladeType,apps)</onclick>
 					<onclick>RunAddon($INFO[Skin.String(AddonShortcut3)])</onclick>
 					<thumb>$INFO[system.addonicon(Skin.String(AddonShortcut3))]</thumb>
 					<label>$INFO[system.addontitle(Skin.String(AddonShortcut3))]</label>
 					<visible>!String.IsEmpty(Skin.String(AddonShortcut3))</visible>
 				</item>
 				<item>
+					<onclick>Skin.SetString(SubBladeType,apps)</onclick>
 					<onclick>RunAddon($INFO[Skin.String(AddonShortcut4)])</onclick>
 					<thumb>$INFO[system.addonicon(Skin.String(AddonShortcut4))]</thumb>
 					<label>$INFO[system.addontitle(Skin.String(AddonShortcut4))]</label>
 					<visible>!String.IsEmpty(Skin.String(AddonShortcut4))</visible>
+				</item>
+				<item>
+					<onclick>Skin.SetString(SubBladeType,apps)</onclick>
+					<onclick>RunAddon($INFO[Skin.String(AddonShortcut5)])</onclick>
+					<thumb>$INFO[system.addonicon(Skin.String(AddonShortcut5))]</thumb>
+					<label>$INFO[system.addontitle(Skin.String(AddonShortcut5))]</label>
+					<visible>!String.IsEmpty(Skin.String(AddonShortcut5))</visible>
 				</item>
 			</content>
 		</control>
