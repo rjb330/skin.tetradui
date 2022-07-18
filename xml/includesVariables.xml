@@ -172,6 +172,10 @@
 		<value condition="Container(9000).HasFocus(3)">$INFO[Window(Home).Property(TVShows.Count),, $LOCALIZE[20343]]$INFO[Window(Home).Property(TVShows.UnWatched),  -  , $LOCALIZE[16101]]</value>
 		<value condition="Container(9000).HasFocus(6) + Library.HasContent(Music)">$INFO[Window(Home).Property(Music.AlbumsCount),, $LOCALIZE[132]]$INFO[Window(Home).Property(Music.SongsCount),  -  , $LOCALIZE[134]]</value>
 		<value condition="Container(9000).HasFocus(6)">$LOCALIZE[31300]</value>
+		<value condition="Container(9000).HasFocus(8) + PVR.IsRecordingTV">$LOCALIZE[19158]: $INFO[PVR.TVNowRecordingChannel]$INFO[PVR.TVNowRecordingTitle, - ,]</value>
+		<value condition="Container(9000).HasFocus(8) + PVR.HasNonRecordingTVTimer">$LOCALIZE[19157]: $INFO[PVR.TVNextRecordingChannel]$INFO[PVR.TVNextRecordingTitle, - ,]</value>
+		<value condition="Container(9000).HasFocus(9) + PVR.IsRecordingRadio">$LOCALIZE[19158]: $INFO[PVR.RadioNowRecordingChannel]$INFO[PVR.RadioNowRecordingTitle, - ,]</value>
+		<value condition="Container(9000).HasFocus(9) + PVR.HasNonRecordingRadioTimer">$LOCALIZE[19157]: $INFO[PVR.RadioNextRecordingChannel]$INFO[PVR.RadioNextRecordingTitle, - ,]</value>
 	</variable>
 	<variable name="RatingTypeLabel">
 		<value condition="Skin.HasSetting(RatingTypeUser)">$LOCALIZE[38018]</value>
@@ -282,6 +286,7 @@
 		<value>$LOCALIZE[24001][COLOR=grey2]$VAR[SortLetterNotificationVar][/COLOR]</value>
 	</variable>
 	<variable name="SortLetterNotificationVar">
+		<value condition="!String.IsEmpty(PVR.ChannelNumberInput)">$INFO[PVR.ChannelNumberInput, - ,]</value>
 		<value condition="Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[515]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[572]) | String.IsEqual(Container.SortMethod,$LOCALIZE[574]) | String.IsEqual(Container.SortMethod,$LOCALIZE[578])] + !String.IsEmpty(Container.ListItem.SortLetter)">$INFO[Container.ListItem.SortLetter, - ,]</value>
 		<value condition="Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[515]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[572]) | String.IsEqual(Container.SortMethod,$LOCALIZE[574]) | String.IsEqual(Container.SortMethod,$LOCALIZE[578])] + !String.IsEmpty(ListItem.SortLetter)">$INFO[ListItem.SortLetter, - ,]</value>
 	</variable>
@@ -298,5 +303,48 @@
 	<variable name="AddonLifecycleType">
 		<value condition="String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170])">$LOCALIZE[24049]</value>
 		<value condition="String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])">$LOCALIZE[24096]</value>
+	</variable>
+	<variable name="NavigationGrouplistButton1Label">
+		<value condition="Window.IsActive(MyPVRChannels.xml)">$LOCALIZE[22020]</value>
+		<value>$LOCALIZE[19019]</value>
+	</variable>
+	<variable name="NavigationGrouplistButton2Label">
+		<value condition="Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml)">$LOCALIZE[19163]</value>
+		<value>$LOCALIZE[22020]</value>
+	</variable>
+	<variable name="NavigationGrouplistButton3Label">
+		<value condition="Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml)">$LOCALIZE[19138]</value>
+		<value>$LOCALIZE[19163]</value>
+	</variable>
+	<variable name="NavigationGrouplistButton4Label">
+		<value condition="Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">$LOCALIZE[19040]</value>
+		<value>$LOCALIZE[19138]</value>
+	</variable>
+	<variable name="NavigationGrouplistButton5Label">
+		<value condition="Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)">$LOCALIZE[137]</value>
+		<value>$LOCALIZE[19040]</value>
+	</variable>
+	<variable name="NowPlayingLine2Var">
+		<value condition="!String.IsEmpty(VideoPlayer.TVShowTitle)">$INFO[VideoPlayer.TVShowTitle]</value>
+		<value condition="!String.IsEmpty(VideoPlayer.ChannelName)">$INFO[VideoPlayer.ChannelName]</value>
+	</variable>
+	<variable name="PVRListItemSubLabel">
+		<value condition="$EXP[listitem_has_episode_info] + !String.IsEmpty(ListItem.EpgEventTitle) + !String.StartsWith(ListItem.EpisodeName,ListItem.EpgEventTitle)">$INFO[ListItem.EpgEventTitle] - $INFO[ListItem.Season,,x]$INFO[ListItem.Episode,,. ]$INFO[ListItem.EpisodeName]</value>
+		<value condition="$EXP[listitem_has_episode_info]">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode,,. ]$INFO[ListItem.EpisodeName]</value>
+		<value>$INFO[ListItem.EpgEventTitle]</value>
+	</variable>
+	<variable name="PVRTimerIcon">
+		<value condition="ListItem.IsRecording">pvr/PVR-IsRecording.png</value>
+		<value condition="ListItem.HasReminder">pvr/bell.png</value>
+		<value condition="ListItem.HasTimerSchedule + ListItem.TimerHasError">pvr/PVR-HasTimerScheduleError.png</value>
+		<value condition="ListItem.HasTimer + ListItem.TimerHasError">pvr/PVR-HasTimerError.png</value>
+		<value condition="ListItem.HasTimerSchedule + ListItem.TimerHasConflict">pvr/PVR-HasTimerScheduleConflict.png</value>
+		<value condition="ListItem.HasTimer + ListItem.TimerHasConflict">pvr/PVR-HasTimerConflict.png</value>
+		<value condition="ListItem.HasRecording">pvr/PVR-HasRecording.png</value>
+		<value condition="ListItem.HasTimerSchedule + !ListItem.TimerIsActive">pvr/PVR-HasTimerScheduleDisabled.png</value>
+		<value condition="ListItem.HasTimer + !ListItem.TimerIsActive">pvr/PVR-HasTimerDisabled.png</value>
+		<value condition="ListItem.HasTimerSchedule">pvr/PVR-HasTimerSchedule.png</value>
+		<value condition="ListItem.HasTimer">pvr/PVR-HasTimer.png</value>
+		<value condition="ListItem.IsPlayable">pvr/PVR-HasRecording.png</value>
 	</variable>
 </includes>

@@ -238,7 +238,15 @@ msgctxt "#31239"
 msgid "Never show again"
 msgstr ""
 
-# empty strings from id 31240 to 31249
+msgctxt "#31240"
+msgid "Hidden channels"
+msgstr ""
+
+msgctxt "#31241"
+msgid "Navigation"
+msgstr ""
+
+# empty strings from id 31242 to 31249
 
 msgctxt "#31250"
 msgid "Poster Big"

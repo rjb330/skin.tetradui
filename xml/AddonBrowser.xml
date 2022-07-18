@@ -5,11 +5,11 @@
 	<views>50,52,55</views>
 	<controls>
 		<include condition="!Skin.HasSetting(DontBlendBackground)">CommonVideoVizBackground</include>
-		<include condition="![Window.Previous(Videos) | Window.Previous(Music) | Window.Previous(Pictures)]">CommonAppsBackground</include>
-		<include condition="Window.Previous(Videos) | Window.Previous(Music) | Window.Previous(Pictures)">CommonMediaBackground</include>
+		<include condition="![Window.Previous(Videos) | Window.Previous(Music) | Window.Previous(Pictures) | Skin.String(SubBladeType,media)]">CommonAppsBackground</include>
+		<include condition="Window.Previous(Videos) | Window.Previous(Music) | Window.Previous(Pictures) | Skin.String(SubBladeType,media)">CommonMediaBackground</include>
 		<include condition="Skin.HasSetting(DontBlendBackground)">CommonVideoVizBackground</include>
-		<include condition="![Window.Previous(Videos) | Window.Previous(Music) | Window.Previous(Pictures)]">CommonAppsBlackwash</include>
-		<include condition="Window.Previous(Videos) | Window.Previous(Music) | Window.Previous(Pictures)">CommonMediaBlackwash</include>
+		<include condition="![Window.Previous(Videos) | Window.Previous(Music) | Window.Previous(Pictures) | Skin.String(SubBladeType,media)]">CommonAppsBlackwash</include>
+		<include condition="Window.Previous(Videos) | Window.Previous(Music) | Window.Previous(Pictures) | Skin.String(SubBladeType,media)">CommonMediaBlackwash</include>
 
 		<control type="group">
 			<left>130</left>
@@ -32,7 +32,10 @@
 		<control type="group" id="9000">
 			<include>Container9000BladesRunner</include>
 			<control type="grouplist" id="610">
-				<include>Container9000Header</include>
+				<include content="Container9000Header">
+					<param name="left" value="100" />
+					<param name="top" value="100" />
+				</include>
 				<control type="button" id="2">
 					<description>View As button</description>
 					<include>ButtonCommonValues</include>
@@ -78,11 +81,15 @@
 					<label>10004</label>
 				</control>
 			</control>
-			<include>CommonPlayerControls</include>
+			<include content="CommonPlayerControls">
+				<param name="left" value="100" />
+				<param name="top" value="140" />
+			</include>
 		</control>
 		<include>AllViewCommonPageControls</include>
 		<control type="group">
-			<include>AppsToSubBlades</include>
+			<include condition="Skin.String(SubBladeType,media)">MediaToSubBlades</include>
+			<include condition="!Skin.String(SubBladeType,media)">AppsToSubBlades</include>
 		</control>
 		<include>Common_Now_Playing</include>
 	</controls>

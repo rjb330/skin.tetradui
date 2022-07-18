@@ -40,7 +40,10 @@
 		<control type="group" id="9000">
 			<include>Container9000BladesRunner</include>
 			<control type="grouplist" id="610">
-				<include>Container9000Header</include>
+				<include content="Container9000Header">
+					<param name="left" value="100" />
+					<param name="top" value="100" />
+				</include>
 				<control type="button" id="2">
 					<description>View As button</description>
 					<include>ButtonCommonValues</include>
@@ -110,7 +113,10 @@
 					<visible>System.HasLocks</visible>
 				</control>
 			</control>
-			<include>CommonPlayerControls</include>
+			<include content="CommonPlayerControls">
+				<param name="left" value="100" />
+				<param name="top" value="140" />
+			</include>
 		</control>
 		<include>AllViewCommonPageControls</include>
 		<control type="group">

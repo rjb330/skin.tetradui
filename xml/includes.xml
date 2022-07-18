@@ -17,6 +17,8 @@
 	<constant name="SideMenuSlideOutTime">200</constant>
 	
 	<expression name="AddonLifecycleType">String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170]) | String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])</expression>
+	<expression name="listitem_has_episode_info">!String.IsEmpty(ListItem.Episode) | !String.IsEmpty(ListItem.EpisodeName) | !String.IsEmpty(ListItem.Season)</expression>
+	<expression name="IsPVR">Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRRecordings.xml)</expression>
 
 	<include name="HomeLogoButton">
 		<control type="group">
@@ -194,16 +196,17 @@
 		</control>
 	</include>
 	<include name="Container9000Header">
-		<left>100</left>
-		<top>100</top>
+		<left>$PARAM[left]</left>
+		<top>$PARAM[top]</top>
 		<orientation>vertical</orientation>
 		<itemgap>-5</itemgap>
 		<onleft>50</onleft>
 		<onright>50</onright>
 		<onup condition="Player.HasMedia">606</onup>
 		<onup condition="!Player.HasMedia">610</onup>
-		<ondown condition="Player.HasMedia">603</ondown>
-		<ondown condition="!Player.HasMedia">610</ondown>
+		<ondown condition="$EXP[IsPVR]">625</ondown>
+		<ondown condition="Player.HasMedia + ![$EXP[IsPVR]]">603</ondown>
+		<ondown condition="!Player.HasMedia + ![$EXP[IsPVR]]">610</ondown>
 		<usecontrolcoords>true</usecontrolcoords>
 		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus</visible>
 		<animation effect="fade" start="0" end="100" delay="SideMenuSlideOutTime" time="200">Visible</animation>
@@ -224,6 +227,88 @@
 			<texture />
 		</control>
 	</include>
+	<include name="NavigationGrouplist">
+		<control type="grouplist" id="620">
+			<left>$PARAM[left]</left>
+			<top>$PARAM[top]</top>
+			<orientation>vertical</orientation>
+			<itemgap>-8</itemgap>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<onup>9002</onup>
+			<ondown condition="Player.HasMedia">603</ondown>
+			<ondown condition="!Player.HasMedia">3</ondown>
+			<usecontrolcoords>true</usecontrolcoords>
+			<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus</visible>
+			<animation effect="fade" start="0" end="100" delay="SideMenuSlideOutTime" time="200">Visible</animation>
+			<animation effect="fade" start="100" end="0" delay="0" time="SideMenuSlideOutTime">Hidden</animation>
+			<control type="label" id="623">
+				<description>Header Label</description>
+				<left>25</left>
+				<width>220</width>
+				<height>20</height>
+				<font>font12</font>
+				<label>[UPPERCASE]$LOCALIZE[31241][/UPPERCASE]</label>
+				<textcolor>orange</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<aligny>center</aligny>
+			</control>
+			<control type="image" id="624">
+				<height>30</height>
+				<texture />
+			</control>
+			<control type="button" id="625">
+				<description>Button 1</description>
+				<left>14</left>
+				<include>ButtonCommonValues</include>
+				<label>$VAR[NavigationGrouplistButton1Label]</label>
+				<onclick condition="!Window.IsActive(MyPVRChannels.xml) + String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
+				<onclick condition="!Window.IsActive(MyPVRChannels.xml) + !String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
+				<onclick condition="Window.IsActive(MyPVRChannels.xml) + String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
+				<onclick condition="Window.IsActive(MyPVRChannels.xml) + !String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
+			</control>
+			<control type="button" id="626">
+				<description>Button 2</description>
+				<left>14</left>
+				<include>ButtonCommonValues</include>
+				<label>$VAR[NavigationGrouplistButton2Label]</label>
+				<onclick condition="!Window.IsActive(MyPVRGuide.xml) + String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
+				<onclick condition="!Window.IsActive(MyPVRGuide.xml) + !String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
+				<onclick condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml)] + String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
+				<onclick condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml)] + !String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
+			</control>
+			<control type="button" id="627">
+				<description>Button 3</description>
+				<left>13</left>
+				<include>ButtonCommonValues</include>
+				<label>$VAR[NavigationGrouplistButton3Label]</label>
+				<onclick condition="!Window.IsActive(MyPVRRecordings.xml) + String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
+				<onclick condition="!Window.IsActive(MyPVRRecordings.xml) + !String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
+				<onclick condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml)] + String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimerRules)</onclick>
+				<onclick condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml)] + !String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimerRules)</onclick>
+			</control>
+			<control type="button" id="628">
+				<description>Button 4</description>
+				<left>10</left>
+				<include>ButtonCommonValues</include>
+				<label>$VAR[NavigationGrouplistButton4Label]</label>
+				<onclick condition="![Window.IsActive(tvtimerrules) | Window.IsActive(radiotimerrules)] + String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimerRules)</onclick>
+				<onclick condition="![Window.IsActive(tvtimerrules) | Window.IsActive(radiotimerrules)] + !String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimerRules)</onclick>
+				<onclick condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(tvtimerrules) | Window.IsActive(radiotimerrules)] + String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
+				<onclick condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(tvtimerrules) | Window.IsActive(radiotimerrules)] + !String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+			</control>
+			<control type="button" id="629">
+				<description>Button 5</description>
+				<left>7</left>
+				<include>ButtonCommonValues</include>
+				<label>$VAR[NavigationGrouplistButton5Label]</label>
+				<onclick condition="![Window.IsActive(tvtimers) | Window.IsActive(radiotimers)] + String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
+				<onclick condition="![Window.IsActive(tvtimers) | Window.IsActive(radiotimers)] + !String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+				<onclick condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
+				<onclick condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + !String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
+			</control>
+		</control>
+	</include>
 	<include name="BackgroundDim">
 		<control type="image">
 			<width>1280</width>
@@ -238,7 +323,7 @@
 		<label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
 		<altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
 		<alttexturefocus border="4,6,4,8">buttons/button-focus.png</alttexturefocus>
-		<alttexturenofocus border="4,6,4,8">buttons/button-nofocus.png</alttexturenofocus>
+		<alttexturenofocus />
 		<include>ButtonCommonValues</include>
 	</include>
 	<include name="WeatherLabelCommonValues">
@@ -640,8 +725,8 @@
 		<control type="group">
 			<visible>Player.HasMedia</visible>
 			<include>VisibleFadeEffect</include>
-			<left>100</left>
-			<top>140</top>
+			<left>$PARAM[left]</left>
+			<top>$PARAM[top]</top>
 			<control type="label">
 				<description>Player Controls Label</description>
 				<left>6</left>
@@ -658,6 +743,8 @@
 			<control type="group">
 				<left>-4</left>
 				<top>395</top>
+				<animation effect="slide" end="-4,0" condition="Window.IsVisible(MyPVRChannels.xml)">Conditional</animation>
+				<animation effect="slide" end="-2,0" condition="Window.IsVisible(MyPVRRecordings.xml)">Conditional</animation>
 				<control type="button" id="600">
 					<width>40</width>
 					<height>40</height>
@@ -667,7 +754,8 @@
 					<label />
 					<onleft>50</onleft>
 					<onright>601</onright>
-					<onup>610</onup>
+					<onup condition="$EXP[IsPVR]">629</onup>
+					<onup condition="![$EXP[IsPVR]]">610</onup>
 					<ondown>606</ondown>
 				</control>
 				<control type="button" id="601">
@@ -680,7 +768,8 @@
 					<label />
 					<onleft>600</onleft>
 					<onright>602</onright>
-					<onup>610</onup>
+					<onup condition="$EXP[IsPVR]">629</onup>
+					<onup condition="![$EXP[IsPVR]]">610</onup>
 					<ondown>606</ondown>
 				</control>
 				<control type="button" id="602">
@@ -693,7 +782,8 @@
 					<label />
 					<onleft>601</onleft>
 					<onright>603</onright>
-					<onup>610</onup>
+					<onup condition="$EXP[IsPVR]">629</onup>
+					<onup condition="![$EXP[IsPVR]]">610</onup>
 					<ondown>606</ondown>
 				</control>
 				<control type="togglebutton" id="603">
@@ -709,7 +799,8 @@
 					<label />
 					<onleft>602</onleft>
 					<onright>604</onright>
-					<onup>610</onup>
+					<onup condition="$EXP[IsPVR]">629</onup>
+					<onup condition="![$EXP[IsPVR]]">610</onup>
 					<ondown>606</ondown>
 				</control>
 				<control type="button" id="604">
@@ -722,7 +813,8 @@
 					<label />
 					<onleft>603</onleft>
 					<onright>605</onright>
-					<onup>610</onup>
+					<onup condition="$EXP[IsPVR]">629</onup>
+					<onup condition="![$EXP[IsPVR]]">610</onup>
 					<ondown>606</ondown>
 				</control>
 				<control type="button" id="605">
@@ -735,7 +827,8 @@
 					<label />
 					<onleft>604</onleft>
 					<onright>50</onright>
-					<onup>610</onup>
+					<onup condition="$EXP[IsPVR]">629</onup>
+					<onup condition="![$EXP[IsPVR]]">610</onup>
 					<ondown>606</ondown>
 				</control>
 				<control type="radiobutton" id="606">
@@ -750,6 +843,7 @@
 					<onright>50</onright>
 					<onup>603</onup>
 					<ondown>610</ondown>
+					<animation effect="slide" end="0,-5" condition="$EXP[IsPVR]">Conditional</animation>
 				</control>
 			</control>
 		</control>
@@ -759,15 +853,17 @@
 		<control type="group">
 			<top>221</top>
 			<left>515</left>
-			<animation effect="slide" end="0,-30" condition="Integer.IsGreater(Container(9000).NumItems,5)">Conditional</animation>
+			<animation effect="slide" end="0,6" condition="Integer.IsEqual(Container(9000).NumItems,7)">Conditional</animation>
+			<animation effect="slide" end="0,-36" condition="Integer.IsEqual(Container(9000).NumItems,6)">Conditional</animation>
 			<include>VisibleFadeEffect</include>
 			<visible>![Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | Container(9000).HasFocus(7)]</visible>
 			<control type="image">
 				<width>34</width>
 				<height>34</height>
 				<texture>DefaultAddonInfoProvider.png</texture>
+				<visible>!String.IsEmpty(Control.GetLabel(999))</visible>
 			</control>
-			<control type="label">
+			<control type="label" id="999">
 				<top>4</top>
 				<left>58</left>
 				<width>342</width>
@@ -775,6 +871,7 @@
 				<font>font12</font>
 				<textcolor>white2</textcolor>
 				<shadowcolor>black</shadowcolor>
+				<scroll>true</scroll>
 			</control>
 		</control>
 	</include>
@@ -1232,7 +1329,7 @@
 						<aligny>center</aligny>
 						<textcolor>orange</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>$INFO[VideoPlayer.TVShowTitle]</label>
+						<label>$VAR[NowPlayingLine2Var]</label>
 						<font>font10</font> 
 						<scrollout>false</scrollout> 
 						<pauseatend>1000</pauseatend> 

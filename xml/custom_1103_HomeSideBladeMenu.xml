@@ -115,10 +115,10 @@
 						</item>
 					</content>
 				</control>
-				<control type="group">
-					<left>-80</left>
-					<include>CommonPlayerControls</include>
-				</control>
+				<include content="CommonPlayerControls">
+					<param name="left" value="20" />
+					<param name="top" value="140" />
+				</include>
 			</control>
 		</control>
 	</controls>

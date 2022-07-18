@@ -273,58 +273,24 @@
 					</control>
 					<control type="radiobutton" id="316">
 						<include>SkinSettingsRadioButtonCommonValues</include>
+						<label>$LOCALIZE[31309]$LOCALIZE[19020]</label>
+						<onclick>Skin.ToggleSetting(MediaBlade_HideTV)</onclick>
+						<selected>Skin.HasSetting(MediaBlade_HideTV)</selected>
+						<enabled>System.HasPVRAddon</enabled>
+					</control>
+					<control type="radiobutton" id="317">
+						<include>SkinSettingsRadioButtonCommonValues</include>
+						<label>$LOCALIZE[31309]$LOCALIZE[19021]</label>
+						<onclick>Skin.ToggleSetting(MediaBlade_HideRadio)</onclick>
+						<selected>Skin.HasSetting(MediaBlade_HideRadio)</selected>
+						<enabled>System.HasPVRAddon</enabled>
+					</control>
+					<control type="radiobutton" id="318">
+						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$LOCALIZE[1]</label>
 						<onclick>Skin.ToggleSetting(MediaBlade_HidePictures)</onclick>
 						<selected>Skin.HasSetting(MediaBlade_HidePictures)</selected>
 					</control>
-					<!--
-					<control type="label" id="317">
-						<description>Heading label</description>
-						<width>790</width>
-						<height>30</height>
-						<align>center</align>
-						<font>font13</font>
-						<label>31551</label>
-						<textcolor>orange</textcolor>
-						<shadowcolor>black</shadowcolor>
-					</control>
-					<control type="radiobutton" id="318">
-						<include>SkinSettingsRadioButtonCommonValues</include>
-						<label>$LOCALIZE[31309]$INFO[Skin.String(MediaBlade_NameSmartPlaylist1)]</label>
-						<onclick>Skin.ToggleSetting(MediaBlade_ShowSmartPlaylist1)</onclick>
-						<selected>!Skin.HasSetting(MediaBlade_ShowSmartPlaylist1)</selected>
-					</control>
-					<control type="button" id="319">
-						<include>SkinSettingsButtonCommonValues</include>
-						<label> - $LOCALIZE[31311]</label>
-						<label2>$INFO[Skin.String(MediaBlade_NameSmartPlaylist1)]</label2>
-						<onclick>Skin.SetString(MediaBlade_NameSmartPlaylist1)</onclick>
-					</control>
-					<control type="button" id="320">
-						<include>SkinSettingsButtonCommonValues</include>
-						<label> - $LOCALIZE[31310]</label>
-						<label2>$INFO[Skin.String(MediaBlade_LinkSmartPlaylist1)]</label2>
-						<onclick>Skin.SetFile(MediaBlade_LinkSmartPlaylist1,,special://videoplaylists/)</onclick>
-					</control>
-					<control type="radiobutton" id="321">
-						<include>SkinSettingsRadioButtonCommonValues</include>
-						<label>$LOCALIZE[31309]$INFO[Skin.String(MediaBlade_NameSmartPlaylist2)]</label>
-						<onclick>Skin.ToggleSetting(MediaBlade_ShowSmartPlaylist2)</onclick>
-						<selected>!Skin.HasSetting(MediaBlade_ShowSmartPlaylist2)</selected>
-					</control>
-					<control type="button" id="322">
-						<include>SkinSettingsButtonCommonValues</include>
-						<label> - $LOCALIZE[31311]</label>
-						<label2>$INFO[Skin.String(MediaBlade_NameSmartPlaylist2)]</label2>
-						<onclick>Skin.SetString(MediaBlade_NameSmartPlaylist2)</onclick>
-					</control>
-					<control type="button" id="323">
-						<include>SkinSettingsButtonCommonValues</include>
-						<label> - $LOCALIZE[31310]</label>
-						<label2>$INFO[Skin.String(MediaBlade_LinkSmartPlaylist2)]</label2>
-						<onclick>Skin.SetFile(MediaBlade_LinkSmartPlaylist2,,special://videoplaylists/)</onclick>
-					</control>
-					-->
 					<control type="label" id="331">
 						<description>Heading label</description>
 						<width>790</width>
