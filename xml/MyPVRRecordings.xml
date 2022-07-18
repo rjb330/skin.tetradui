@@ -11,7 +11,7 @@
 			<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
 			<control type="label">
 				<description>Header label</description>
-				<label>$LOCALIZE[19017][COLOR=grey2]$VAR[SortLetterNotificationVar][/COLOR]</label>
+				<label>$VAR[BreadcrumbsPVRRecordingsVar][COLOR=grey2]$VAR[SortLetterNotificationVar][/COLOR]</label>
 				<include>HeaderTextCommons</include>
 			</control>
 			<control type="group">
@@ -37,6 +37,7 @@
 							<top>6</top>
 							<width>50</width>
 							<height>50</height>
+							<aspectratio>keep</aspectratio>
 							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
@@ -108,6 +109,7 @@
 							<top>6</top>
 							<width>50</width>
 							<height>50</height>
+							<aspectratio>keep</aspectratio>
 							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">

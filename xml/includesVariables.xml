@@ -43,7 +43,6 @@
 		<value>$INFO[VideoPlayer.Time]</value>
 	</variable>
 	<variable name="VideoFullScreenLabel">
-		<value condition="VideoPlayer.Content(Movies)">$INFO[VideoPlayer.Studio]</value>
 		<value condition="VideoPlayer.Content(Episodes)">$INFO[VideoPlayer.TVShowTitle] ($INFO[VideoPlayer.Season]x$INFO[VideoPlayer.Episode])</value>
 		<value condition="VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Artist] $INFO[VideoPlayer.Album, - ]</value>
 	</variable>
@@ -284,6 +283,28 @@
 		<value condition="String.IsEmpty(Container.Property(RepoName)) + !String.IsEmpty(Container.Property(AddonCategory))">$LOCALIZE[24001]$INFO[Container.Property(AddonCategory), - ][COLOR=grey2]$VAR[SortLetterNotificationVar][/COLOR]</value>
 		<value condition="!String.IsEmpty(Container.Property(RepoName)) + !String.IsEmpty(Container.Property(AddonCategory))">$INFO[Container.Property(RepoName)]$INFO[Container.Property(AddonCategory), - ][COLOR=grey2]$VAR[SortLetterNotificationVar][/COLOR]</value>
 		<value>$LOCALIZE[24001][COLOR=grey2]$VAR[SortLetterNotificationVar][/COLOR]</value>
+	</variable>
+	<variable name="BreadcrumbsPVRChannelsVar">
+		<value condition="Window.IsActive(TVChannels)">$LOCALIZE[10700]$INFO[Control.GetLabel(29), - ,]</value>
+		<value>$LOCALIZE[10705]$INFO[Control.GetLabel(29), - ,]</value>
+	</variable>
+	<variable name="BreadcrumbsPVRRecordingsVar">
+		<value condition="Window.IsActive(TVRecordings)">$LOCALIZE[10701]</value>
+		<value>$LOCALIZE[10706]</value>
+	</variable>
+	<variable name="BreadcrumbsPVRGuideVar">
+		<value condition="Window.IsActive(TVGuide)">$LOCALIZE[10702]$INFO[Control.GetLabel(30), - ,]</value>
+		<value>$LOCALIZE[10707]$INFO[Control.GetLabel(30), - ,]</value>
+	</variable>
+	<variable name="BreadcrumbsPVRTimersVar">
+		<value condition="Window.IsActive(TVTimers)">$LOCALIZE[10703]</value>
+		<value condition="Window.IsActive(TVTimerRules)">$LOCALIZE[10710]</value>
+		<value condition="Window.IsActive(RadioTimers)">$LOCALIZE[10708]</value>
+		<value>$LOCALIZE[10711]</value>
+	</variable>
+	<variable name="BreadcrumbsPVRSearchVar">
+		<value condition="Window.IsActive(TVSearch)">$LOCALIZE[10704]$INFO[Control.GetLabel(29), - ,]$INFO[Control.GetLabel(30), ,]</value>
+		<value>$LOCALIZE[10709]$INFO[Control.GetLabel(29), - ,]$INFO[Control.GetLabel(30), ,]</value>
 	</variable>
 	<variable name="SortLetterNotificationVar">
 		<value condition="!String.IsEmpty(PVR.ChannelNumberInput)">$INFO[PVR.ChannelNumberInput, - ,]</value>

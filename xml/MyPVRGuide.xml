@@ -5,17 +5,21 @@
 	<views>50</views>
 	<controls>
 		<include>CommonMediaBackgrounds</include>
+		<control type="label" id="30">
+			<visible>false</visible>
+		</control>
 		<control type="group">
 			<left>130</left>
 			<animation effect="fade" delay="500" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>
 			<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
 			<control type="label">
 				<description>Header label</description>
-				<label>$LOCALIZE[19069][COLOR=grey2]$VAR[SortLetterNotificationVar][/COLOR]</label>
+				<label>$VAR[BreadcrumbsPVRGuideVar][COLOR=grey2]$VAR[SortLetterNotificationVar][/COLOR]</label>
 				<include>HeaderTextCommons</include>
 			</control>
 			<control type="group">
-				<top>80</top>
+				<top>100</top>
+				<left>-2</left>
 				<control type="epggrid" id="50">
 					<description>EPG Grid</description>
 					<width>1120</width>
@@ -54,7 +58,7 @@
 						<control type="label">
 							<left>7</left>
 							<width>40</width>
-							<height>48</height>
+							<height>50</height>
 							<font>font12</font>
 							<aligny>center</aligny>
 							<textcolor>grey</textcolor>
@@ -66,12 +70,13 @@
 							<top>5</top>
 							<width>42</width>
 							<height>42</height>
+							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label" id="1">
 							<left>94</left>
 							<width>178</width>
-							<height>48</height>
+							<height>50</height>
 							<font>special12</font>
 							<aligny>center</aligny>
 							<selectedcolor>selected</selectedcolor>
@@ -79,7 +84,7 @@
 						</control>
 					</channellayout>
 					<focusedchannellayout height="52" width="280">
-						<animation effect="fade" start="110" time="200">OnFocus</animation>
+						<animation effect="fade" start="110" time="200">Focus</animation>
 						<control type="image" id="1">
 							<top>-3</top>
 							<width>279</width>
@@ -89,10 +94,9 @@
 						<control type="label">
 							<left>7</left>
 							<width>40</width>
-							<height>48</height>
+							<height>50</height>
 							<font>font12</font>
 							<aligny>center</aligny>
-							<textcolor>grey</textcolor>
 							<selectedcolor>grey</selectedcolor>
 							<info>ListItem.ChannelNumberLabel</info>
 						</control>
@@ -106,10 +110,10 @@
 						<control type="label" id="1">
 							<left>94</left>
 							<width>178</width>
-							<height>48</height>
+							<height>50</height>
 							<font>special12</font>
 							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
+							<selectedcolor>orange</selectedcolor>
 							<label>$INFO[ListItem.ChannelName]</label>
 						</control>
 					</focusedchannellayout>
@@ -122,32 +126,42 @@
 						</control>
 						<control type="label" id="1">
 							<left>6</left>
-							<top>1</top>
+							<top>2</top>
 							<width>30</width>
 							<height>25</height>
 							<font>font12</font>
 							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
+							<selectedcolor>orange</selectedcolor>
 							<info>ListItem.Label</info>
-							<animation effect="slide" end="0,11" condition="![ListItem.IsRecording | ListItem.HasReminder | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasRecording | ListItem.IsPlayable]">Conditional</animation>
 						</control>
-						<control type="image">
+						<control type="label" id="1">
+							<left>6</left>
+							<top>25</top>
+							<width>30</width>
+							<height>25</height>
+							<font>font10</font>
+							<textcolor>grey2</textcolor>
+							<aligny>center</aligny>
+							<selectedcolor>grey2</selectedcolor>
+							<label>$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - ,]</label>
+						</control>
+						<control type="image" id="1">
 							<left>6</left>
 							<top>28</top>
 							<width>20</width>
 							<height>20</height>
-							<aspectratio>keep</aspectratio>
+							<aspectratio align="right">keep</aspectratio>
 							<texture colordiffuse="FF12A0C7">pvr/premiere.png</texture>
 							<visible>ListItem.IsNew | ListItem.IsPremiere | ListItem.IsFinale | ListItem.IsLive</visible>
 						</control>
-						<control type="image">
+						<control type="image" id="1">
 							<left>6</left>
 							<top>28</top>
 							<width>28</width>
 							<height>20</height>
-							<aspectratio align="left">keep</aspectratio>
+							<aspectratio align="right">keep</aspectratio>
 							<texture>$VAR[PVRTimerIcon]</texture>
-							<animation effect="slide" start="0,0" end="25,0" condition="ListItem.IsNew | ListItem.IsPremiere | ListItem.IsFinale | ListItem.IsLive">Conditional</animation>
+							<animation effect="slide" end="-53,0" condition="ListItem.IsNew | ListItem.IsPremiere | ListItem.IsFinale | ListItem.IsLive">Conditional</animation>
 						</control>
 					</itemlayout>
 					<focusedlayout height="52" width="40">
@@ -164,32 +178,41 @@
 						</control>
 						<control type="label" id="1">
 							<left>6</left>
-							<top>1</top>
+							<top>2</top>
 							<width>30</width>
 							<height>25</height>
 							<font>font12</font>
 							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
+							<selectedcolor>orange</selectedcolor>
 							<info>ListItem.Label</info>
-							<animation effect="slide" end="0,11" condition="![ListItem.IsRecording | ListItem.HasReminder | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasRecording | ListItem.IsPlayable]">Conditional</animation>
 						</control>
-						<control type="image">
+						<control type="label" id="1">
+							<left>6</left>
+							<top>25</top>
+							<width>30</width>
+							<height>25</height>
+							<font>font10</font>
+							<aligny>center</aligny>
+							<selectedcolor>white</selectedcolor>
+							<label>$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - ,]</label>
+						</control>
+						<control type="image" id="1">
 							<left>6</left>
 							<top>28</top>
 							<width>20</width>
 							<height>20</height>
-							<aspectratio>keep</aspectratio>
+							<aspectratio align="right">keep</aspectratio>
 							<texture colordiffuse="FF12A0C7">pvr/premiere.png</texture>
 							<visible>ListItem.IsNew | ListItem.IsPremiere | ListItem.IsFinale | ListItem.IsLive</visible>
 						</control>
-						<control type="image">
+						<control type="image" id="1">
 							<left>6</left>
 							<top>28</top>
 							<width>28</width>
 							<height>20</height>
-							<aspectratio align="left">keep</aspectratio>
+							<aspectratio align="right">keep</aspectratio>
 							<texture>$VAR[PVRTimerIcon]</texture>
-							<animation effect="slide" start="0,0" end="25,0" condition="ListItem.IsNew | ListItem.IsPremiere | ListItem.IsFinale | ListItem.IsLive">Conditional</animation>
+							<animation effect="slide" end="-53,0" condition="ListItem.IsNew | ListItem.IsPremiere | ListItem.IsFinale | ListItem.IsLive">Conditional</animation>
 						</control>
 					</focusedlayout>
 				</control>

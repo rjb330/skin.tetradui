@@ -18,7 +18,7 @@
 	
 	<expression name="AddonLifecycleType">String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170]) | String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])</expression>
 	<expression name="listitem_has_episode_info">!String.IsEmpty(ListItem.Episode) | !String.IsEmpty(ListItem.EpisodeName) | !String.IsEmpty(ListItem.Season)</expression>
-	<expression name="IsPVR">Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRRecordings.xml)</expression>
+	<expression name="IsPVR">Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(MyPVRTimers.xml) | Window.IsVisible(MyPVRSearch.xml)</expression>
 
 	<include name="HomeLogoButton">
 		<control type="group">
@@ -617,32 +617,34 @@
 		<shadowcolor>black</shadowcolor>
 	</include>
 	<include name="ClockTextCommons">
-		<control type="label">
-			<top>11</top>
-			<left>$PARAM[left]</left>
-			<width>380</width>
-			<height>20</height>
-			<align>right</align>
-			<aligny>center</aligny>
-			<font>font16</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<label>$INFO[System.Time]</label>
+		<control type="group">
 			<visible>!Window.IsVisible(Seekbar)</visible>
 			<include>VisibleFadeEffect</include>
-		</control>
-		<control type="label">
-			<description>date label</description>
-			<left>$PARAM[left]</left>
-			<top>39</top>
-			<width>380</width>
-			<height>30</height>
-			<align>right</align>
-			<aligny>top</aligny>
-			<font>font10</font>
-			<textcolor>white2</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<label>$INFO[System.Date]</label>
+			<control type="label">
+				<top>11</top>
+				<left>$PARAM[left]</left>
+				<width>380</width>
+				<height>20</height>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font16</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>$INFO[System.Time]</label>
+			</control>
+			<control type="label">
+				<description>date label</description>
+				<left>$PARAM[left]</left>
+				<top>39</top>
+				<width>380</width>
+				<height>30</height>
+				<align>right</align>
+				<aligny>top</aligny>
+				<font>font10</font>
+				<textcolor>white2</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>$INFO[System.Date]</label>
+			</control>
 		</control>
 	</include>
 	<include name="ButtonCommonValues">
@@ -1583,7 +1585,7 @@
 		</control>
 		<control type="group">
 			<left>330</left>
-			<top>175r</top>
+			<top>203r</top>
 			<control type="label" id="1">
 				<description>Heading label</description>
 				<width>910</width>
@@ -1606,23 +1608,25 @@
 				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
-			<control type="grouplist">
+			<control type="label">
 				<left>20</left>
-				<top>60</top>
+				<top>57</top>
+				<width min="10" max="710">auto</width>
+				<height>30</height>
+				<font>font30</font>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[MusicPlayer.Title]</label>
+				<textcolor>orange</textcolor>
+				<scroll>true</scroll>
+			</control>
+			<control type="grouplist">
+				<left>18</left>
+				<top>90</top>
 				<width>910</width>
 				<height>35</height>
 				<itemgap>5</itemgap>
 				<orientation>horizontal</orientation>
-				<control type="label">
-					<width min="10" max="710">auto</width>
-					<height>30</height>
-					<font>font30</font>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[MusicPlayer.Title]</label>
-					<textcolor>orange</textcolor>
-					<scroll>true</scroll>
-				</control>
 				<control type="image">
 					<description>Audio Codec Image</description>
 					<width>80</width>
@@ -1655,7 +1659,7 @@
 				</include>
 			</control>
 			<control type="label">
-				<top>120</top>
+				<top>148</top>
 				<width>910</width>
 				<height>25</height>
 				<label>$LOCALIZE[209]: $INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).Title]</label>

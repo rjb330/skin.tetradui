@@ -5,13 +5,16 @@
 	<views>50</views>
 	<controls>
 		<include>CommonMediaBackgrounds</include>
+		<control type="label" id="29">
+			<visible>false</visible>
+		</control>
 		<control type="group">
 			<left>130</left>
 			<animation effect="fade" delay="500" time="HomeVisibleFadeAnimationSpeed">WindowOpen</animation>
 			<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
 			<control type="label">
 				<description>Header label</description>
-				<label>$LOCALIZE[19023][COLOR=grey2]$VAR[SortLetterNotificationVar][/COLOR]</label>
+				<label>$VAR[BreadcrumbsPVRChannelsVar][COLOR=grey2]$VAR[SortLetterNotificationVar][/COLOR]</label>
 				<include>HeaderTextCommons</include>
 			</control>
 			<control type="group">
@@ -43,6 +46,22 @@
 							<selectedcolor>grey</selectedcolor>
 							<info>ListItem.ChannelNumberLabel</info>
 						</control>
+						<control type="image">
+							<left>5</left>
+							<top>35</top>
+							<width>30</width>
+							<height>20</height>
+							<texture>pvr/PVR-IsRecording.png</texture>
+							<visible>ListItem.IsRecording</visible>
+						</control>
+						<control type="image">
+							<left>395</left>
+							<top>6</top>
+							<width>50</width>
+							<height>50</height>
+							<aspectratio>keep</aspectratio>
+							<texture>$INFO[ListItem.Icon]</texture>
+						</control>
 						<control type="label">
 							<top>1</top>
 							<left>50</left>
@@ -73,21 +92,6 @@
 							<visible>ListItem.HasEpg</visible>
 							<info>ListItem.Progress</info>
 						</control>
-						<control type="image">
-							<left>395</left>
-							<top>6</top>
-							<width>50</width>
-							<height>50</height>
-							<texture>$INFO[ListItem.Icon]</texture>
-						</control>
-						<control type="image">
-							<left>5</left>
-							<top>35</top>
-							<width>30</width>
-							<height>20</height>
-							<texture>pvr/PVR-IsRecording.png</texture>
-							<visible>ListItem.IsRecording</visible>
-						</control>
 					</itemlayout>
 					<focusedlayout height="63" width="450">
 						<control type="image">
@@ -113,6 +117,22 @@
 							<aligny>center</aligny>
 							<selectedcolor>orange</selectedcolor>
 							<info>ListItem.ChannelNumberLabel</info>
+						</control>
+						<control type="image">
+							<left>5</left>
+							<top>35</top>
+							<width>30</width>
+							<height>20</height>
+							<texture>pvr/PVR-IsRecording.png</texture>
+							<visible>ListItem.IsRecording</visible>
+						</control>
+						<control type="image">
+							<left>395</left>
+							<top>6</top>
+							<width>50</width>
+							<height>50</height>
+							<aspectratio>keep</aspectratio>
+							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<top>1</top>
@@ -142,21 +162,6 @@
 							<height>6</height>
 							<visible>ListItem.HasEpg</visible>
 							<info>ListItem.Progress</info>
-						</control>
-						<control type="image">
-							<left>395</left>
-							<top>6</top>
-							<width>50</width>
-							<height>50</height>
-							<texture>$INFO[ListItem.Icon]</texture>
-						</control>
-						<control type="image">
-							<left>5</left>
-							<top>35</top>
-							<width>30</width>
-							<height>20</height>
-							<texture>pvr/PVR-IsRecording.png</texture>
-							<visible>ListItem.IsRecording</visible>
 						</control>
 					</focusedlayout>
 				</control>
