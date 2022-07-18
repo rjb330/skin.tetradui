@@ -2,8 +2,6 @@
 <includes>
 	<include name="ListViewCommons">
 		<control type="panel" id="50">
-			<left>0</left>
-			<top>0</top>
 			<width>615</width>
 			<height>480</height>
 			<onleft>9000</onleft>
@@ -111,8 +109,6 @@
 	<include name="ThumbnailView">
 		<control type="panel" id="52">
 			<visible>![Window.IsVisible(Videos) + Container.Content(TVShows)]</visible>
-			<left>0</left>
-			<top>0</top>
 			<width>1080</width>
 			<height>480</height>
 			<onleft>9000</onleft>
@@ -433,7 +429,6 @@
 	</include>
 	<include name="PosterWrapView">
 		<control type="group">
-			<left>0</left>
 			<top>-35</top>
 			<visible>Control.IsVisible(54)</visible>
 			<control type="label">
@@ -604,8 +599,6 @@
 	</include>
 	<include name="ThumbnailInfoView">
 		<control type="panel" id="55">
-			<left>0</left>
-			<top>0</top>
 			<width>720</width>
 			<height>480</height>
 			<onleft>9000</onleft>

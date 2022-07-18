@@ -21,7 +21,6 @@
 				<animation effect="fade" delay="500" time="DialogVisibleFadeAnimationSpeed">WindowOpen</animation>
 				<animation effect="fade" delay="100" time="DialogVisibleFadeAnimationSpeed">WindowClose</animation>
 				<control type="list" id="2000">
-					<left>0</left>
 					<top>140</top>
 					<width>340</width>
 					<height>400</height>
