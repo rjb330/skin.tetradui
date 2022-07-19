@@ -98,13 +98,7 @@
 
 		<control type="button" id="10">
 			<description>Default Category Button</description>
-			<width>200</width>
-			<height>45</height>
-			<align>center</align>
-			<aligny>center</aligny>
-			<font>font12</font>
-			<texturefocus border="10">buttons/button-dialog-focus.png</texturefocus>
-			<texturenofocus border="10">buttons/button-dialog-nofocus.png</texturenofocus>
+			<include>DialogButton2CommonValues</include>
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>

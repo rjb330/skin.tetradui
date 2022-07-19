@@ -43,7 +43,7 @@
 							<height>37</height>
 							<font>font12</font>
 							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
+							<selectedcolor>orange</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</rulerlayout>
@@ -79,7 +79,7 @@
 							<height>50</height>
 							<font>special12</font>
 							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
+							<selectedcolor>orange</selectedcolor>
 							<label>$INFO[ListItem.ChannelName]</label>
 						</control>
 					</channellayout>

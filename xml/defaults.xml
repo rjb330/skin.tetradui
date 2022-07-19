@@ -123,7 +123,6 @@
 		<pulseonselect>no</pulseonselect>
 	</default>
 	<default type="edit">
-		<description>Name Button</description>
 		<width>300</width>
 		<height>45</height>
 		<textoffsetx>15</textoffsetx>
@@ -132,8 +131,8 @@
 		<invalidcolor>ffff0000</invalidcolor>
 		<disabledcolor>disabled</disabledcolor>
 		<font>font12</font>
-		<texturefocus>buttons/button-focus.png</texturefocus>
-		<texturenofocus>buttons/button-nofocus.png</texturenofocus>
+		<texturefocus border="5,10,5,10">buttons/button-focus.png</texturefocus>
+		<texturenofocus border="5,10,5,10">buttons/button-nofocus.png</texturenofocus>
 	</default>
 	<default type="slider">
 		<texturesliderbar>osd_slider_bg.png</texturesliderbar>
