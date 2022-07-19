@@ -51,8 +51,7 @@
 							<top>35</top>
 							<width>30</width>
 							<height>20</height>
-							<texture>pvr/PVR-IsRecording.png</texture>
-							<visible>ListItem.IsRecording</visible>
+							<texture>$VAR[PVRTimerIcon]</texture>
 						</control>
 						<control type="image">
 							<left>395</left>
@@ -123,8 +122,7 @@
 							<top>35</top>
 							<width>30</width>
 							<height>20</height>
-							<texture>pvr/PVR-IsRecording.png</texture>
-							<visible>ListItem.IsRecording</visible>
+							<texture>$VAR[PVRTimerIcon]</texture>
 						</control>
 						<control type="image">
 							<left>395</left>

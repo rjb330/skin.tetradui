@@ -235,7 +235,8 @@
 			<itemgap>-8</itemgap>
 			<onleft>50</onleft>
 			<onright>50</onright>
-			<onup>9002</onup>
+			<onup condition="Window.IsVisible(MyPVRSearch.xml)">28</onup>
+			<onup condition="!Window.IsVisible(MyPVRSearch.xml)">9002</onup>
 			<ondown condition="Player.HasMedia">603</ondown>
 			<ondown condition="!Player.HasMedia">3</ondown>
 			<usecontrolcoords>true</usecontrolcoords>
@@ -684,6 +685,14 @@
 		<texturefocus border="10">buttons/button-dialog-focus.png</texturefocus>
 		<texturenofocus border="10">buttons/button-dialog-nofocus.png</texturenofocus>
 		<label />
+	</include>
+	<include name="DialogButton3CommonValues">
+		<width>300</width>
+		<height>45</height>
+		<font>font12</font>
+		<aligny>center</aligny>
+		<texturefocus border="10">buttons/button-dialog-focus.png</texturefocus>
+		<texturenofocus border="10">buttons/button-dialog-nofocus.png</texturenofocus>
 	</include>
 	<include name="SettingsButtonCommonValues">
 		<height>45</height>
@@ -1493,7 +1502,6 @@
 			</control>
 		</control>
 	</include>
-	
 	<include name="CodecFlaggingRating">
 		<control type="group">
 			<visible>$PARAM[visible]</visible>
@@ -1722,6 +1730,220 @@
 			<itemlayout />
 			<focusedlayout />
 			<content sortby="year" sortorder="ascending">$INFO[ListItem.Folderpath]</content>
+		</control>
+	</include>
+	
+	<include name="PVRHeader">
+		<top>90</top>
+		<left>-2</left>
+		<control type="image">
+			<width>280</width>
+			<height>37</height>
+			<texture border="5">buttons/button-nofocus.png</texture>
+		</control>
+		<control type="label">
+			<left>10</left>
+			<width>260</width>
+			<height>37</height>
+			<font>font12</font>
+			<aligny>center</aligny>
+			<label>19029</label>
+		</control>
+		<control type="image">
+			<left>280</left>
+			<width>380</width>
+			<height>37</height>
+			<texture border="5">buttons/button-nofocus.png</texture>
+		</control>
+		<control type="label">
+			<left>290</left>
+			<width>360</width>
+			<height>37</height>
+			<font>font12</font>
+			<aligny>center</aligny>
+			<label>369</label>
+		</control>
+		<control type="image">
+			<left>660</left>
+			<width>205</width>
+			<height>37</height>
+			<texture border="5">buttons/button-nofocus.png</texture>
+		</control>
+		<control type="label">
+			<left>670</left>
+			<width>185</width>
+			<height>37</height>
+			<font>font12</font>
+			<aligny>center</aligny>
+			<label>555</label>
+		</control>
+		<control type="image">
+			<left>865</left>
+			<width>205</width>
+			<height>37</height>
+			<texture border="5">buttons/button-nofocus.png</texture>
+		</control>
+		<control type="label">
+			<left>875</left>
+			<width>185</width>
+			<height>37</height>
+			<font>font12</font>
+			<aligny>center</aligny>
+			<label>552</label>
+		</control>
+	</include>
+	<include name="PVRItemlayoutContent">
+		<control type="image">
+			<top>-3</top>
+			<width>279</width>
+			<height>58</height>
+			<texture border="5">buttons/button-nofocus.png</texture>
+		</control>
+		<control type="image">
+			<left>45</left>
+			<top>5</top>
+			<width>42</width>
+			<height>42</height>
+			<aspectratio>keep</aspectratio>
+			<texture>$INFO[ListItem.Icon]</texture>
+			<visible>!String.IsEmpty(ListItem.ChannelName)</visible>
+		</control>
+		<control type="label">
+			<left>94</left>
+			<width>178</width>
+			<height>50</height>
+			<font>special12</font>
+			<aligny>center</aligny>
+			<selectedcolor>orange</selectedcolor>
+			<label>$INFO[ListItem.ChannelName]</label>
+		</control>
+		<control type="image">
+			<top>-3</top>
+			<left>279</left>
+			<width>380</width>
+			<height>58</height>
+			<texture border="5">buttons/button-nofocus.png</texture>
+		</control>
+		<control type="image">
+			<top>-3</top>
+			<left>659</left>
+			<width>205</width>
+			<height>58</height>
+			<texture border="5">buttons/button-nofocus.png</texture>
+		</control>
+		<control type="label">
+			<left>669</left>
+			<top>2</top>
+			<width>185</width>
+			<height>25</height>
+			<font>font12</font>
+			<aligny>center</aligny>
+			<selectedcolor>orange</selectedcolor>
+			<label>$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - ,]</label>
+		</control>
+		<control type="label">
+			<left>669</left>
+			<top>23</top>
+			<width>185</width>
+			<height>25</height>
+			<font>font10</font>
+			<textcolor>grey2</textcolor>
+			<aligny>center</aligny>
+			<selectedcolor>grey2</selectedcolor>
+			<label>$INFO[ListItem.Duration,$LOCALIZE[180]: ,]</label>
+		</control>
+		<control type="image">
+			<top>-3</top>
+			<left>864</left>
+			<width>205</width>
+			<height>58</height>
+			<texture border="5">buttons/button-nofocus.png</texture>
+		</control>
+		<control type="label">
+			<left>874</left>
+			<top>2</top>
+			<width>185</width>
+			<height>50</height>
+			<font>font12</font>
+			<aligny>center</aligny>
+			<selectedcolor>orange</selectedcolor>
+			<label>$INFO[ListItem.StartDate]</label>
+		</control>
+	</include>
+	<include name="PVRFocusedlayoutContent">
+		<control type="image">
+			<top>-3</top>
+			<width>279</width>
+			<height>58</height>
+			<texture border="5">buttons/button-focus.png</texture>
+		</control>
+		<control type="image">
+			<left>45</left>
+			<top>5</top>
+			<width>42</width>
+			<height>42</height>
+			<texture>$INFO[ListItem.Icon]</texture>
+			<visible>!String.IsEmpty(ListItem.ChannelName)</visible>
+		</control>
+		<control type="label">
+			<left>94</left>
+			<width>178</width>
+			<height>50</height>
+			<font>special12</font>
+			<aligny>center</aligny>
+			<selectedcolor>orange</selectedcolor>
+			<label>$INFO[ListItem.ChannelName]</label>
+		</control>
+		<control type="image">
+			<top>-3</top>
+			<left>279</left>
+			<width>380</width>
+			<height>58</height>
+			<texture border="5">buttons/button-focus.png</texture>
+		</control>
+		<control type="image">
+			<top>-3</top>
+			<left>659</left>
+			<width>205</width>
+			<height>58</height>
+			<texture border="5">buttons/button-focus.png</texture>
+		</control>
+		<control type="label">
+			<left>669</left>
+			<top>2</top>
+			<width>185</width>
+			<height>25</height>
+			<font>font12</font>
+			<aligny>center</aligny>
+			<selectedcolor>orange</selectedcolor>
+			<label>$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - ,]</label>
+		</control>
+		<control type="label">
+			<left>669</left>
+			<top>23</top>
+			<width>185</width>
+			<height>25</height>
+			<font>font10</font>
+			<aligny>center</aligny>
+			<selectedcolor>white</selectedcolor>
+			<label>$INFO[ListItem.Duration,$LOCALIZE[180]: ,]</label>
+		</control>
+		<control type="image">
+			<top>-3</top>
+			<left>864</left>
+			<width>205</width>
+			<height>58</height>
+			<texture border="5">buttons/button-focus.png</texture>
+		</control>
+		<control type="label">
+			<left>874</left>
+			<top>2</top>
+			<width>185</width>
+			<height>50</height>
+			<font>font12</font>
+			<aligny>center</aligny>
+			<selectedcolor>orange</selectedcolor>
+			<label>$INFO[ListItem.StartDate]</label>
 		</control>
 	</include>
 </includes>

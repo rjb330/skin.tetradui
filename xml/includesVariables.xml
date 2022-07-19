@@ -303,8 +303,8 @@
 		<value>$LOCALIZE[10711]</value>
 	</variable>
 	<variable name="BreadcrumbsPVRSearchVar">
-		<value condition="Window.IsActive(TVSearch)">$LOCALIZE[10704]$INFO[Control.GetLabel(29), - ,]$INFO[Control.GetLabel(30), ,]</value>
-		<value>$LOCALIZE[10709]$INFO[Control.GetLabel(29), - ,]$INFO[Control.GetLabel(30), ,]</value>
+		<value condition="Window.IsActive(TVSearch)">$LOCALIZE[10704]$INFO[Control.GetLabel(29), - ,]</value>
+		<value>$LOCALIZE[10709]$INFO[Control.GetLabel(29), - ,]</value>
 	</variable>
 	<variable name="SortLetterNotificationVar">
 		<value condition="!String.IsEmpty(PVR.ChannelNumberInput)">$INFO[PVR.ChannelNumberInput, - ,]</value>
@@ -352,7 +352,8 @@
 	<variable name="PVRListItemSubLabel">
 		<value condition="$EXP[listitem_has_episode_info] + !String.IsEmpty(ListItem.EpgEventTitle) + !String.StartsWith(ListItem.EpisodeName,ListItem.EpgEventTitle)">$INFO[ListItem.EpgEventTitle] - $INFO[ListItem.Season,,x]$INFO[ListItem.Episode,,. ]$INFO[ListItem.EpisodeName]</value>
 		<value condition="$EXP[listitem_has_episode_info]">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode,,. ]$INFO[ListItem.EpisodeName]</value>
-		<value>$INFO[ListItem.EpgEventTitle]</value>
+		<value condition="!String.IsEmpty(ListItem.EpgEventTitle)">$INFO[ListItem.EpgEventTitle]</value>
+		<value>$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="PVRTimerIcon">
 		<value condition="ListItem.IsRecording">pvr/PVR-IsRecording.png</value>
@@ -367,5 +368,9 @@
 		<value condition="ListItem.HasTimerSchedule">pvr/PVR-HasTimerSchedule.png</value>
 		<value condition="ListItem.HasTimer">pvr/PVR-HasTimer.png</value>
 		<value condition="ListItem.IsPlayable">pvr/PVR-HasRecording.png</value>
+	</variable>
+	<variable name="PVRChannelManagerHeader">
+		<value condition="!String.IsEmpty(Window.Property(IsRadio))">$LOCALIZE[19199] - $LOCALIZE[19024]</value>
+		<value>$LOCALIZE[19199] - $LOCALIZE[19023]</value>
 	</variable>
 </includes>
