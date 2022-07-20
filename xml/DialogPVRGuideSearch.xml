@@ -5,11 +5,11 @@
 	<controls>
 		<control type="group">
 			<left>110</left>
-			<top>17.5</top>
+			<top>17</top>
 			<control type="image">
 				<description>background image</description>
 				<width>1060</width>
-				<height>685</height>
+				<height>686</height>
 				<texture border="50,100,50,50">dialogs/Dialog.png</texture>
 			</control>
 			<control type="group">
@@ -37,17 +37,18 @@
 					<textcolor>grey2</textcolor>
 				</control>
 				<control type="edit" id="9">
-					<top>140</top>
-					<width>962</width>
+					<top>142</top>
+					<width>960</width>
 					<hinttext>$LOCALIZE[137]...</hinttext>
 					<aligny>center</aligny>
 					<ondown>10</ondown>
 					<onup>26</onup>
 					<onleft>28</onleft>
 					<onright>26</onright>
+					<include>DialogButtonCommonValues</include>
 				</control>
 				<control type="grouplist" id="5000">
-					<top>183</top>
+					<top>187</top>
 					<onright>6000</onright>
 					<onleft>28</onleft>
 					<ondown>28</ondown>
@@ -124,7 +125,7 @@
 				</control>
 				<control type="grouplist" id="6000">
 					<left>483</left>
-					<top>183</top>
+					<top>187</top>
 					<onright>26</onright>
 					<onleft>5000</onleft>
 					<ondown>26</ondown>
@@ -206,7 +207,7 @@
 					</control>
 				</control>
 				<control type="grouplist" id="9001">
-					<top>593</top>
+					<top>595</top>
 					<width>960</width>
 					<align>center</align>
 					<orientation>horizontal</orientation>

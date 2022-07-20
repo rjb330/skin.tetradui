@@ -316,7 +316,7 @@
 			<height>720</height>
 			<texture colordiffuse="77ffffff">black-back.png</texture>
 			<include>VisibleFadeEffect</include>
-			<visible>Window.IsActive(1103) | Window.IsActive(1105) | Window.IsActive(ShutdownMenu) | [!Window.IsVisible(Weather) + ControlGroup(9000).HasFocus] | Window.IsActive(DialogSelect.xml) | Window.IsActive(DialogAddonInfo.xml) | Window.IsActive(DialogAddonSettings.xml) | Window.IsActive(DialogConfirm.xml) | Window.IsActive(DialogContextMenu.xml) | Window.IsActive(DialogFavourites.xml) | Window.IsActive(DialogKeyboard.xml) | Window.IsActive(DialogMediaSource.xml) | Window.IsActive(DialogMusicInfo.xml) | Window.IsActive(DialogNumeric.xml) | Window.IsActive(DialogPictureInfo.xml) | Window.IsActive(DialogSettings.xml) | Window.IsActive(DialogTextViewer.xml) | Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(FileBrowser.xml) | Window.IsActive(SmartPlaylistEditor.xml) | Window.IsActive(SmartPlaylistRule.xml) | Window.IsActive(script-RSS_Editor.xml)</visible>
+			<visible>Window.IsActive(1103) | Window.IsActive(1105) | Window.IsActive(ShutdownMenu) | [!Window.IsVisible(Weather) + ControlGroup(9000).HasFocus] | Window.IsActive(DialogSelect.xml) | Window.IsActive(DialogAddonInfo.xml) | Window.IsActive(DialogAddonSettings.xml) | Window.IsActive(DialogConfirm.xml) | Window.IsActive(DialogContextMenu.xml) | Window.IsActive(DialogFavourites.xml) | Window.IsActive(DialogKeyboard.xml) | Window.IsActive(DialogMediaSource.xml) | Window.IsActive(DialogMusicInfo.xml) | Window.IsActive(DialogNumeric.xml) | Window.IsActive(DialogPictureInfo.xml) | Window.IsActive(DialogPVRChannelManager.xml) | Window.IsActive(DialogPVRGroupManager.xml) | Window.IsActive(DialogPVRGuideSearch.xml) | Window.IsActive(DialogPVRInfo.xml) | Window.IsActive(DialogSettings.xml) | Window.IsActive(DialogTextViewer.xml) | Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(FileBrowser.xml) | Window.IsActive(SmartPlaylistEditor.xml) | Window.IsActive(SmartPlaylistRule.xml) | Window.IsActive(script-RSS_Editor.xml)</visible>
 		</control>
 	</include>
 	<include name="SortAscendingButton">
@@ -1944,6 +1944,130 @@
 			<aligny>center</aligny>
 			<selectedcolor>orange</selectedcolor>
 			<label>$INFO[ListItem.StartDate]</label>
+		</control>
+	</include>
+	<include name="PVRGroupManagerList">
+		<control type="label">
+			<top>100</top>
+			<left>$PARAM[header_left]</left>
+			<font>font12</font>
+			<textcolor>blue</textcolor>
+			<width>260</width>
+			<height>45</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>$PARAM[header_label]</label>
+		</control>
+		<control type="list" id="$PARAM[id]">
+			<left>$PARAM[list_left]</left>
+			<top>145</top>
+			<width>290</width>
+			<height>450</height>
+			<onup>$PARAM[pagecontrol]</onup>
+			<ondown>$PARAM[pagecontrol]</ondown>
+			<onleft>$PARAM[onleft]</onleft>
+			<onright>$PARAM[onright]</onright>
+			<pagecontrol>$PARAM[pagecontrol]</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<itemlayout height="45">
+				<control type="image">
+					<width>290</width>
+					<height>45</height>
+					<texture border="10">buttons/list-nofocus.png</texture>
+				</control>
+				<control type="image">
+					<left>5</left>
+					<top>5</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Icon]</texture>
+				</control>
+				<control type="label">
+					<left>50</left>
+					<width>230</width>
+					<height>45</height>
+					<font>font12</font>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="45">
+				<control type="image">
+					<width>290</width>
+					<height>45</height>
+					<visible>!Control.HasFocus($PARAM[id])</visible>
+					<texture border="10">buttons/list-nofocus.png</texture>
+				</control>
+				<control type="image">
+					<width>290</width>
+					<height>45</height>
+					<visible>Control.HasFocus($PARAM[id])</visible>
+					<texture border="10">buttons/list-focus.png</texture>
+				</control>
+				<control type="image">
+					<left>5</left>
+					<top>5</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Icon]</texture>
+				</control>
+				<control type="label">
+					<left>50</left>
+					<width>230</width>
+					<height>45</height>
+					<font>font12</font>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+					<scroll>true</scroll>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="group">
+			<left>$PARAM[pagecontrol_left]</left>
+			<top>595</top>
+			<control type="label">
+				<description>Page Count Label NoFocus</description>
+				<width>200</width>
+				<height>45</height>
+				<font>font12</font>
+				<textcolor>grey2</textcolor>
+				<scroll>false</scroll>
+				<align>right</align>
+				<aligny>center</aligny>
+				<label>$INFO[Container($PARAM[id]).NumItems] $LOCALIZE[31200] - $LOCALIZE[31201] $INFO[Container($PARAM[id]).CurrentPage]/$INFO[Container($PARAM[id]).NumPages]</label>
+				<animation effect="slide" end="70,0" condition="!Control.IsVisible($PARAM[pagecontrol])">Conditional</animation>
+				<visible>!Control.HasFocus($PARAM[pagecontrol]) + !String.IsEqual(Container($PARAM[id]).NumItems,0)</visible>
+			</control>
+			<control type="label">
+				<description>Page Count Label Focus</description>
+				<width>200</width>
+				<height>45</height>
+				<font>font12</font>
+				<textcolor>orange</textcolor>
+				<scroll>false</scroll>
+				<align>right</align>
+				<aligny>center</aligny>
+				<label>$INFO[Container($PARAM[id]).NumItems] $LOCALIZE[31200] - $LOCALIZE[31201] $INFO[Container($PARAM[id]).CurrentPage]/$INFO[Container($PARAM[id]).NumPages]</label>
+				<animation effect="slide" end="70,0" condition="!Control.IsVisible($PARAM[pagecontrol])">Conditional</animation>
+				<visible>Control.HasFocus($PARAM[pagecontrol]) + !String.IsEqual(Container($PARAM[id]).NumItems,0)</visible>
+			</control>
+			<control type="spincontrol" id="$PARAM[pagecontrol]">
+				<description>Next page Spinner</description>
+				<top>6</top>
+				<left>210</left>
+				<subtype>page</subtype>
+				<textoffsetx>80</textoffsetx>
+				<textoffsety>3</textoffsety>
+				<font />
+				<align>right</align>
+				<onleft>$PARAM[id]</onleft>
+				<onright>$PARAM[pagecontrol_onright]</onright>
+				<onup>$PARAM[id]</onup>
+				<ondown>$PARAM[id]</ondown>
+				<showonepage>false</showonepage>
+			</control>
 		</control>
 	</include>
 </includes>

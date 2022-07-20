@@ -306,6 +306,19 @@
 		<value condition="Window.IsActive(TVSearch)">$LOCALIZE[10704]$INFO[Control.GetLabel(29), - ,]</value>
 		<value>$LOCALIZE[10709]$INFO[Control.GetLabel(29), - ,]</value>
 	</variable>
+	<variable name="BreadcrumbsPVRInfoVar">
+		<value condition="Window.IsVisible(pvrguideinfo)">$LOCALIZE[19047]</value>
+		<value condition="Window.IsVisible(pvrrecordinginfo)">$LOCALIZE[19053]</value>
+		<value>$LOCALIZE[19066]</value>
+	</variable>
+	<variable name="PVRChannelManagerHeader">
+		<value condition="!String.IsEmpty(Window.Property(IsRadio))">$LOCALIZE[19199] - $LOCALIZE[19024]</value>
+		<value>$LOCALIZE[19199] - $LOCALIZE[19023]</value>
+	</variable>
+	<variable name="PVRGroupManagerHeader">
+		<value condition="!String.IsEmpty(Window.Property(IsRadio))">$LOCALIZE[19048] - $LOCALIZE[19174]</value>
+		<value>$LOCALIZE[19048] - $LOCALIZE[19173]</value>
+	</variable>
 	<variable name="SortLetterNotificationVar">
 		<value condition="!String.IsEmpty(PVR.ChannelNumberInput)">$INFO[PVR.ChannelNumberInput, - ,]</value>
 		<value condition="Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[515]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[572]) | String.IsEqual(Container.SortMethod,$LOCALIZE[574]) | String.IsEqual(Container.SortMethod,$LOCALIZE[578])] + !String.IsEmpty(Container.ListItem.SortLetter)">$INFO[Container.ListItem.SortLetter, - ,]</value>
@@ -369,8 +382,16 @@
 		<value condition="ListItem.HasTimer">pvr/PVR-HasTimer.png</value>
 		<value condition="ListItem.IsPlayable">pvr/PVR-HasRecording.png</value>
 	</variable>
-	<variable name="PVRChannelManagerHeader">
-		<value condition="!String.IsEmpty(Window.Property(IsRadio))">$LOCALIZE[19199] - $LOCALIZE[19024]</value>
-		<value>$LOCALIZE[19199] - $LOCALIZE[19023]</value>
+	<variable name="PVRTitleLabel">
+		<value condition="ListItem.IsPremiere + !String.IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.Season]$INFO[ListItem.Episode,x,. ]$INFO[ListItem.EpisodeName] [COLOR=grey2]($LOCALIZE[838])[/COLOR]</value>
+		<value condition="ListItem.IsFinale + !String.IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.Season]$INFO[ListItem.Episode,x,. ]$INFO[ListItem.EpisodeName] [COLOR=grey2]($LOCALIZE[849])[/COLOR]</value>
+		<value condition="ListItem.IsLive + !String.IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.Season]$INFO[ListItem.Episode,x,. ]$INFO[ListItem.EpisodeName] [COLOR=grey2]($LOCALIZE[839])[/COLOR]</value>
+		<value condition="ListItem.IsNew + !String.IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.Season]$INFO[ListItem.Episode,x,. ]$INFO[ListItem.EpisodeName] [COLOR=grey2]($LOCALIZE[842])[/COLOR]</value>
+		<value condition="!String.IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.Season]$INFO[ListItem.Episode,x,. ]$INFO[ListItem.EpisodeName]</value>
+		<value condition="ListItem.IsPremiere">$INFO[ListItem.Title] [COLOR=grey2]($LOCALIZE[838])[/COLOR]</value>
+		<value condition="ListItem.IsFinale">$INFO[ListItem.Title] [COLOR=grey2]($LOCALIZE[849])[/COLOR]</value>
+		<value condition="ListItem.IsLive">$INFO[ListItem.Title] [COLOR=grey2]($LOCALIZE[839])[/COLOR]</value>
+		<value condition="ListItem.IsNew">$INFO[ListItem.Title] [COLOR=grey2]($LOCALIZE[842])[/COLOR]</value>
+		<value>$INFO[ListItem.Title]</value>
 	</variable>
 </includes>
