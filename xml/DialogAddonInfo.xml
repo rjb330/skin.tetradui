@@ -315,7 +315,7 @@
 						<onclick>$VAR[DialogAddonInfoButton9001Onclick]</onclick>
 						<visible>![String.IsEmpty(ListItem.AddonNews) + Integer.IsEqual(Container(50).NumItems,0)]</visible>
 					</control>
-					<control type="button" id ="6">
+					<control type="button" id="6">
 						<description>Install/Uninstall Addon button</description>
 						<width>148</width>
 						<include>InfoDialogButtonCommonValues</include>
