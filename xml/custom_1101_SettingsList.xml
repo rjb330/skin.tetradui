@@ -34,7 +34,7 @@
 				<top>100</top>
 				<control type="grouplist" id="9010">
 					<width>600</width>
-					<itemgap>5</itemgap>
+					<itemgap>0</itemgap>
 					<ondown>9001</ondown>
 					<onup>9001</onup>
 					<onleft>9001</onleft>
@@ -65,7 +65,7 @@
 				</control>
 				<control type="grouplist" id="9020">
 					<width>600</width>
-					<itemgap>5</itemgap>
+					<itemgap>0</itemgap>
 					<ondown>9001</ondown>
 					<onup>9001</onup>
 					<onleft>9001</onleft>
