@@ -1563,9 +1563,24 @@
 			<visible>!MusicPartyMode.Enabled</visible>
 		</control>
 		<control type="label">
-			<description>Clock label</description>
+			<description>Timeshift Header label</description>
 			<left>30</left>
 			<top>35</top>
+			<width>1000</width>
+			<height>25</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font13</font>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<label>$LOCALIZE[31247]: $INFO[PVR.TimeshiftCur] (-$INFO[PVR.TimeshiftOffset])</label>
+			<animation effect="slide" end="0,-30" condition="MusicPartyMode.Enabled | [String.IsEmpty(musicplayer.Playlistposition) + String.IsEmpty(musicplayer.Playlistlength)]">Conditional</animation>
+			<visible>MusicPlayer.Content(LiveTV) + PVR.IsTimeShift</visible>
+		</control>
+		<control type="label">
+			<description>Clock label</description>
+			<left>30</left>
+			<top>65</top>
 			<width>600</width>
 			<height>25</height>
 			<aligny>center</aligny>
@@ -1573,6 +1588,8 @@
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<label>$INFO[System.Time]</label>
+			<animation effect="slide" end="0,-30" condition="MusicPartyMode.Enabled | [String.IsEmpty(musicplayer.Playlistposition) + String.IsEmpty(musicplayer.Playlistlength)]">Conditional</animation>
+			<animation effect="slide" end="0,-30" condition="![MusicPlayer.Content(LiveTV) + PVR.IsTimeShift]">Conditional</animation>
 		</control>
 		<control type="image">
 			<top>230r</top>
@@ -1613,7 +1630,7 @@
 				<height>25</height>
 				<align>left</align>
 				<font>font12</font>
-				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]$INFO[MusicPlayer.DiscTitle, (,)]</label>
+				<label>$VAR[MusicFullScreenLabel]</label>
 				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>

@@ -27,9 +27,24 @@
 				<visible>Player.ChapterCount</visible>
 			</control>
 			<control type="label" id="1">
-				<description>Clock label</description>
+				<description>Timeshift Header label</description>
 				<left>30</left>
 				<top>35</top>
+				<width>1000</width>
+				<height>25</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>$LOCALIZE[31247]: $INFO[PVR.TimeshiftCur] (-$INFO[PVR.TimeshiftOffset])</label>
+				<animation effect="slide" end="0,-30" condition="!Player.ChapterCount">Conditional</animation>
+				<visible>VideoPlayer.Content(LiveTV) + PVR.IsTimeShift</visible>
+			</control>
+			<control type="label" id="1">
+				<description>Clock label</description>
+				<left>30</left>
+				<top>65</top>
 				<width>600</width>
 				<height>25</height>
 				<aligny>center</aligny>
@@ -38,6 +53,7 @@
 				<shadowcolor>black</shadowcolor>
 				<label>$INFO[System.Time]</label>
 				<animation effect="slide" end="0,-30" condition="!Player.ChapterCount">Conditional</animation>
+				<animation effect="slide" end="0,-30" condition="![VideoPlayer.Content(LiveTV) + PVR.IsTimeShift]">Conditional</animation>
 			</control>
 			<control type="image" id="1">
 				<top>230r</top>

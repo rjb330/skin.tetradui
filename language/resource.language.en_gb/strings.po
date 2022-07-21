@@ -266,7 +266,11 @@ msgctxt "#31246"
 msgid "Delete group"
 msgstr ""
 
-# empty strings from id 31247 to 31249
+msgctxt "#31247"
+msgid "Timeshift"
+msgstr ""
+
+# empty strings from id 31248 to 31249
 
 msgctxt "#31250"
 msgid "Poster Big"
