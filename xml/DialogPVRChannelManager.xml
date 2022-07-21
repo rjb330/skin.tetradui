@@ -6,6 +6,7 @@
 		<control type="group">
 			<left>62.5</left>
 			<top>41</top>
+			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(PVRGroupManager)">Conditional</animation>
 			<control type="image">
 				<description>background image</description>
 				<width>1155</width>
@@ -99,7 +100,7 @@
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(icon)]</texture>
+						<texture fallback="DefaultInProgressShows.png">$INFO[ListItem.Property(icon)]</texture>
 					</control>
 					<control type="label">
 						<left>50</left>
@@ -148,7 +149,7 @@
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(icon)]</texture>
+						<texture fallback="DefaultInProgressShows.png">$INFO[ListItem.Property(icon)]</texture>
 					</control>
 					<control type="label">
 						<left>50</left>

@@ -18,6 +18,7 @@
 	
 	<expression name="AddonLifecycleType">String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170]) | String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])</expression>
 	<expression name="listitem_has_episode_info">!String.IsEmpty(ListItem.Episode) | !String.IsEmpty(ListItem.EpisodeName) | !String.IsEmpty(ListItem.Season)</expression>
+	<expression name="videoplayer_has_episode_info">!String.IsEmpty(VideoPlayer.Episode) | !String.IsEmpty(VideoPlayer.EpisodeName) | !String.IsEmpty(VideoPlayer.Season)</expression>
 	<expression name="IsPVR">Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(MyPVRTimers.xml) | Window.IsVisible(MyPVRSearch.xml)</expression>
 
 	<include name="HomeLogoButton">

@@ -246,7 +246,27 @@ msgctxt "#31241"
 msgid "Navigation"
 msgstr ""
 
-# empty strings from id 31242 to 31249
+msgctxt "#31242"
+msgid "Available groups"
+msgstr ""
+
+msgctxt "#31243"
+msgid "Hidden channels"
+msgstr ""
+
+msgctxt "#31244"
+msgid "Add group"
+msgstr ""
+
+msgctxt "#31245"
+msgid "Rename group"
+msgstr ""
+
+msgctxt "#31246"
+msgid "Delete group"
+msgstr ""
+
+# empty strings from id 31247 to 31249
 
 msgctxt "#31250"
 msgid "Poster Big"
