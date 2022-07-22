@@ -184,7 +184,7 @@
 					<top>120r</top>
 					<width>300</width>
 					<height>25</height>
-					<label>$INFO[$LOCALIZE[31201] ($INFO[Container(400).CurrentPage]/$INFO[Container(400).NumPages])]</label>
+					<label>$LOCALIZE[31201] $INFO[Container(400).CurrentPage]/$INFO[Container(400).NumPages]</label>
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12</font>

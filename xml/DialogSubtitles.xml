@@ -226,7 +226,7 @@
 			<aligny>center</aligny>
 			<scroll>true</scroll>
 			<textcolor>white</textcolor>
-			<label>$LOCALIZE[31201] ($INFO[Container(120).CurrentPage]/$INFO[Container(120).NumPages])</label>
+			<label>$LOCALIZE[31201] $INFO[Container(120).CurrentPage]/$INFO[Container(120).NumPages]</label>
 		</control>
 		<control type="image">
 			<left>50</left>

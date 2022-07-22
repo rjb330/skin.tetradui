@@ -245,19 +245,16 @@
 				<control type="button" id="8">
 					<description>Optional button</description>
 					<label />
-					<textcolor>grey2</textcolor>
 					<include>DialogButton2CommonValues</include>
 				</control>
 				<control type="button" id="5">
 					<description>Manual button</description>
 					<label />
-					<textcolor>grey2</textcolor>
 					<include>DialogButton2CommonValues</include>
 				</control>
 				<control type="button" id="7">
 					<description>Cancel button</description>
 					<label />
-					<textcolor>grey2</textcolor>
 					<include>DialogButton2CommonValues</include>
 				</control>
 			</control>
