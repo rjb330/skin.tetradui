@@ -147,8 +147,8 @@
 		<value>$LOCALIZE[13419]</value>
 	</variable>
 	<variable name="DialogSelectContainerInfo">
-		<value condition="Control.IsVisible(3)">$LOCALIZE[31201] ($INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages])</value>
-		<value>$LOCALIZE[31201] ($INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages])</value>
+		<value condition="Control.IsVisible(3)">$LOCALIZE[31201] $INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages]</value>
+		<value>$LOCALIZE[31201] $INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages]</value>
 	</variable>
 	<variable name="DialogAddonInfoButton9001Label">
 		<value condition="String.IsEmpty(Skin.String(DialogAddonInfoButton9001)) + !String.IsEmpty(ListItem.AddonNews)">$LOCALIZE[29941]</value>
@@ -165,9 +165,9 @@
 		<value>$INFO[ListItem.AddonDescription]</value>
 	</variable>
 	<variable name="DialogAddonInfoContainerInfo">
-		<value condition="Control.IsVisible(400)">$LOCALIZE[31201] ($INFO[Container(400).CurrentPage]/$INFO[Container(400).NumPages])</value>
-		<value condition="Control.IsVisible(401)">$LOCALIZE[31201] ($INFO[Container(401).CurrentPage]/$INFO[Container(401).NumPages])</value>
-		<value condition="Control.IsVisible(50)">$LOCALIZE[31201] ($INFO[Container(50).CurrentPage]/$INFO[Container(50).NumPages])</value>
+		<value condition="Control.IsVisible(400)">$LOCALIZE[31201] $INFO[Container(400).CurrentPage]/$INFO[Container(400).NumPages]</value>
+		<value condition="Control.IsVisible(401)">$LOCALIZE[31201] $INFO[Container(401).CurrentPage]/$INFO[Container(401).NumPages]</value>
+		<value condition="Control.IsVisible(50)">$LOCALIZE[31201] $INFO[Container(50).CurrentPage]/$INFO[Container(50).NumPages]</value>
 	</variable>
 	<variable name="MediaInfoLabel">
 		<value condition="Container(9000).HasFocus(1) + [Library.HasContent(Movies) | Library.HasContent(TVShows)]">$INFO[Window(Home).Property(Movies.Count),, $LOCALIZE[20342]]$INFO[Window(Home).Property(TVShows.Count),  -  , $LOCALIZE[20343]]</value>
@@ -402,5 +402,9 @@
 		<value condition="ListItem.IsLive">$INFO[ListItem.Title] [COLOR=grey2]($LOCALIZE[839])[/COLOR]</value>
 		<value condition="ListItem.IsNew">$INFO[ListItem.Title] [COLOR=grey2]($LOCALIZE[842])[/COLOR]</value>
 		<value>$INFO[ListItem.Title]</value>
+	</variable>
+	<variable name="PVRChannelsOSDHeader">
+		<value condition="PVR.IsPlayingRadio">$LOCALIZE[19023] - $INFO[MusicPlayer.ChannelGroup]</value>
+		<value>$LOCALIZE[19023] - $INFO[VideoPlayer.ChannelGroup]</value>
 	</variable>
 </includes>

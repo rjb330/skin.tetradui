@@ -10,7 +10,7 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(DialogSettings.xml) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(1101) | Window.IsVisible(DialogPVRChannelGuide.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(DialogSettings.xml) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRChannelGuide.xml) | Window.IsVisible(1101) | Window.IsVisible(DialogPVRChannelGuide.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml)">Conditional</animation>
 			<control type="grouplist" id="100">
 				<left>325</left>
 				<top>670</top>
@@ -218,7 +218,6 @@
 					<onclick>SetProperty(settingslist_content,settings,home)</onclick>
 					<onclick>SetProperty(settingslist_header,$LOCALIZE[5],home)</onclick>
 					<onclick>ActivateWindow(1101)</onclick>
-					<animation effect="fade" start="100" end="75" time="100" condition="!VideoPlayer.HasMenu">Conditional</animation>
 				</control>
 			</control>
 		</control>

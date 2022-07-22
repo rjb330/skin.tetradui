@@ -270,7 +270,11 @@ msgctxt "#31247"
 msgid "Timeshift"
 msgstr ""
 
-# empty strings from id 31248 to 31249
+msgctxt "#31248"
+msgid "Channel group"
+msgstr ""
+
+# empty string with id 31249
 
 msgctxt "#31250"
 msgid "Poster Big"

@@ -3,7 +3,7 @@
 	<controls>
 		<!-- media infos -->
 		<control type="group" id="1">
-			<visible>[Player.ShowInfo | Window.IsActive(VideoOSD) | !String.IsEmpty(Player.SeekNumeric)] + ![Window.IsVisible(VideoBookmarks) | Window.IsVisible(DialogSettings.xml) | Window.IsVisible(124) | Window.IsVisible(125) | Window.IsVisible(1101)]</visible>
+			<visible>[Player.ShowInfo | Window.IsActive(VideoOSD) | !String.IsEmpty(Player.SeekNumeric)] + ![Window.IsVisible(VideoBookmarks) | Window.IsVisible(DialogSettings.xml) | Window.IsVisible(DialogPVRChannelsOSD.xml) | Window.IsVisible(DialogPVRChannelGuide.xml) | Window.IsVisible(124) | Window.IsVisible(125) | Window.IsVisible(1101)]</visible>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<control type="image" id="1">
 				<top>-150</top>
