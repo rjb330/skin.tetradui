@@ -274,7 +274,9 @@ msgctxt "#31248"
 msgid "Channel group"
 msgstr ""
 
-# empty string with id 31249
+msgctxt "#31249"
+msgid "Recently played"
+msgstr ""
 
 msgctxt "#31250"
 msgid "Poster Big"
