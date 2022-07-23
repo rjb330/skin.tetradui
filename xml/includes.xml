@@ -43,22 +43,6 @@
 			</control>
 		</control>
 	</include>
-	<include name="HomeButtonCommonValues">
-		<left>50</left>
-		<width>43</width>
-		<height>43</height>
-		<aligny>center</aligny>
-		<textoffsetx>70</textoffsetx>
-		<textwidth>330</textwidth>
-		<textcolor>white2</textcolor>
-		<focusedcolor>black</focusedcolor>
-		<shadowcolor />
-		<font>font30</font>
-		<pulseonselect>no</pulseonselect>
-		<onleft>1</onleft>
-		<onright>2</onright>
-		<animation effect="slide" end="ButtonSlideBackDistance,0" time="ButtonSlideBackTime" reversible="false">focus</animation>
-	</include>
 	<include name="BlankBladeSlideLeft">
 		<control type="button" id="$PARAM[id]">
 			<left>80r</left>
@@ -578,22 +562,6 @@
 			<shadowcolor>black</shadowcolor>
 			<visible>![String.IsEmpty(Window(Weather).Property(Hourly.$PARAM[value].WindSpeed)) + String.IsEmpty(Window(Weather).Property(Hourly.$PARAM[value].WindDirection))]</visible>
 		</control>
-	</include>
-	<include name="SystemButtonCommonValues">
-		<left>50</left>
-		<width>40</width>
-		<height>40</height>
-		<aligny>center</aligny>
-		<textoffsetx>70</textoffsetx>
-		<textwidth>330</textwidth>
-		<textcolor>white2</textcolor>
-		<focusedcolor>black</focusedcolor>
-		<shadowcolor />
-		<font>font30</font>
-		<pulseonselect>no</pulseonselect>
-		<onleft>1</onleft>
-		<onright>2</onright>
-		<animation effect="slide" end="ButtonSlideBackDistance,0" time="ButtonSlideBackTime" reversible="false">focus</animation>
 	</include>
 	<include name="HeaderTextCommons">
 		<top>25</top>
