@@ -24,6 +24,7 @@
 	<include name="HomeLogoButton">
 		<control type="group">
 			<animation effect="slide" end="445.5,0" condition="Skin.HasSetting(Blades_CenterLogoButton)">Conditional</animation>
+			<animation effect="slide" end="105,0" condition="Skin.HasSetting(Blades_CenterLogoButton) + Window.IsVisible(LoginScreen)">Conditional</animation>
 			<control type="button" id="9050">
 				<left>-8</left>
 				<top>13</top>
