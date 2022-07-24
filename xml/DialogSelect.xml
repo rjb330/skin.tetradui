@@ -85,7 +85,6 @@
 						<font>font12</font>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
-						<visible>Control.HasFocus(3)</visible>
 					</control>
 				</focusedlayout>
 			</control>
@@ -97,7 +96,7 @@
 				<onup>61</onup>
 				<ondown>61</ondown>
 				<onleft>61</onleft>
-				<onright>9001</onright>
+				<onright>9011</onright>
 				<pagecontrol>61</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<itemlayout height="45">
@@ -209,7 +208,8 @@
 				<font />
 				<onleft condition="Control.IsVisible(3)">9001</onleft>
 				<onleft condition="Control.IsVisible(6)">6</onleft>
-				<onright>9001</onright>
+				<onright condition="Control.IsVisible(3)">9001</onright>
+				<onright condition="Control.IsVisible(6)">9011</onright>
 				<onup condition="Control.IsVisible(3)">3</onup>
 				<onup condition="Control.IsVisible(6)">6</onup>
 				<textcolor>white</textcolor>
@@ -227,35 +227,95 @@
 				<scroll>true</scroll>
 				<textcolor>grey2</textcolor>
 				<label>$VAR[DialogSelectContainerInfo]</label>
+				<visible>!Control.HasFocus(61)</visible>
+			</control>
+			<control type="label">
+				<description>number of files/pages in list text label focus</description>
+				<left>215</left>
+				<top>565</top>
+				<width>320</width>
+				<height>35</height>
+				<font>font12</font>
+				<align>right</align>
+				<aligny>center</aligny>
+				<scroll>true</scroll>
+				<textcolor>orange</textcolor>
+				<label>$VAR[DialogSelectContainerInfo]</label>
+				<visible>Control.HasFocus(61)</visible>
+			</control>
+			<control type="group">
+				<left>2000</left>
+				<control type="button" id="8">
+				</control>
+				<control type="button" id="5">
+				</control>
+				<control type="button" id="7">
+				</control>
 			</control>
 			<control type="grouplist" id="9001">
+				<left>50</left>
+				<bottom>28</bottom>
+				<height>135</height>
+				<itemgap>2</itemgap>
+				<onleft>61</onleft>
+				<onright>61</onright>
+				<onup>3</onup>
+				<orientation>horizontal</orientation>
+				<visible>Control.IsVisible(3)</visible>
+				<control type="button" id="9002">
+					<description>Optional button</description>
+					<label>$INFO[Control.GetLabel(8)]</label>
+					<include>DialogButton2CommonValues</include>
+					<onclick>SendClick(8)</onclick>
+					<visible>Control.IsVisible(8)</visible>
+				</control>
+				<control type="button" id="9003">
+					<description>Manual button</description>
+					<label>$INFO[Control.GetLabel(5)]</label>
+					<include>DialogButton2CommonValues</include>
+					<onclick>SendClick(5)</onclick>
+					<visible>Control.IsVisible(5)</visible>
+				</control>
+				<control type="button" id="9004">
+					<description>Cancel button</description>
+					<label>$INFO[Control.GetLabel(7)]</label>
+					<include>DialogButton2CommonValues</include>
+					<onclick>SendClick(7)</onclick>
+					<visible>Control.IsVisible(7)</visible>
+				</control>
+			</control>
+			<control type="grouplist" id="9011">
 				<left>610</left>
 				<bottom>125</bottom>
 				<height>135</height>
 				<itemgap>0</itemgap>
 				<onleft>61</onleft>
-				<onright condition="Control.IsVisible(3)">61</onright>
-				<onright condition="Control.IsVisible(6)">6</onright>
-				<onup condition="Control.IsVisible(3)">3</onup>
-				<onup condition="Control.IsVisible(6)">6</onup>
+				<onright>6</onright>
+				<onup>6</onup>
 				<orientation>vertical</orientation>
 				<animation effect="slide" end="0,45" condition="!Control.IsVisible(8)">Conditional</animation>
 				<animation effect="slide" end="0,45" condition="!Control.IsVisible(5)">Conditional</animation>
-				<animation effect="slide" end="-560,7" condition="Control.IsVisible(3)">Conditional</animation>
-				<control type="button" id="8">
+				<visible>Control.IsVisible(6)</visible>
+				<control type="button" id="9012">
 					<description>Optional button</description>
-					<label />
+					<label>$INFO[Control.GetLabel(8)]</label>
 					<include>DialogButton2CommonValues</include>
+					<onclick>SendClick(8)</onclick>
+					<visible>Control.IsVisible(8)</visible>
 				</control>
-				<control type="button" id="5">
+				<control type="button" id="9013">
 					<description>Manual button</description>
-					<label />
+					<label>$INFO[Control.GetLabel(5)]</label>
 					<include>DialogButton2CommonValues</include>
+					<onclick>SendClick(5)</onclick>
+					<visible>Control.IsVisible(5)</visible>
 				</control>
-				<control type="button" id="7">
+				<control type="button" id="9014">
 					<description>Cancel button</description>
-					<label />
+					<label>$INFO[Control.GetLabel(7)]</label>
 					<include>DialogButton2CommonValues</include>
+					<onclick>SendClick(7)</onclick>
+					<visible>Control.IsVisible(7)</visible>
 				</control>
 			</control>
 		</control>
