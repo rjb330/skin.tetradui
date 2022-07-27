@@ -22,6 +22,8 @@
 				<onright condition="!Control.IsVisible(708) + !Control.IsVisible(709) + Control.IsVisible(710)">710</onright>
 				<onright condition="!Control.IsVisible(708) + !Control.IsVisible(709) + !Control.IsVisible(710)">705</onright>
 				<orientation>horizontal</orientation>
+				<onup>801</onup>
+				<ondown>801</ondown>
 				<control type="button" id="600">
 					<width>45</width>
 					<height>45</height>
@@ -184,6 +186,8 @@
 				<onleft condition="Control.IsVisible(608)">608</onleft>
 				<onleft condition="!Control.IsVisible(608)">607</onleft>
 				<onright>600</onright>
+				<onup>801</onup>
+				<ondown>801</ondown>
 				<control type="button" id="708">
 					<width>45</width>
 					<height>45</height>
@@ -202,7 +206,7 @@
 					<texturefocus>osd/OSDepgFO.png</texturefocus>
 					<texturenofocus>osd/OSDepgNF.png</texturenofocus>
 					<onclick>ActivateWindow(pvrchannelguide)</onclick>
-					<visible>MusicPlayer.Content(livetv) + MusicPlayer.HasEPG</visible>
+					<visible>MusicPlayer.Content(livetv) + [MusicPlayer.HasEPG | VideoPlayer.HasEPG]</visible>
 				</control>
 				<control type="button" id="710">
 					<width>45</width>
@@ -267,6 +271,52 @@
 					<onclick>ActivateWindow(VisualisationPresetList)</onclick>
 					<animation effect="fade" start="100" end="50" time="100" condition="!Visualisation.HasPresets">Conditional</animation>
 					<enable>Visualisation.HasPresets</enable>
+				</control>
+			</control>
+			<control type="group">
+				<left>430</left>
+				<top>648</top>
+				<control type="slider" id="801">
+					<description>Seek Slider</description>
+					<width>720</width>
+					<height>16</height>
+					<texturesliderbar>seekslider.png</texturesliderbar>
+					<textureslidernib>slider_nibNF.png</textureslidernib>
+					<textureslidernibfocus>slider_nibFO.png</textureslidernibfocus>
+					<visible>true</visible>
+					<onup>100</onup>
+					<ondown>100</ondown>
+					<action>seek</action>
+					<info>Player.Progress</info>
+					<visible>!MusicPlayer.Content(LiveTV)</visible>
+				</control>
+				<control type="slider" id="801">
+					<description>Seek Slider</description>
+					<width>720</width>
+					<height>16</height>
+					<texturesliderbar>seekslider.png</texturesliderbar>
+					<textureslidernib>slider_nibNF.png</textureslidernib>
+					<textureslidernibfocus>slider_nibFO.png</textureslidernibfocus>
+					<visible>true</visible>
+					<onup>100</onup>
+					<ondown>100</ondown>
+					<action>seek</action>
+					<info>PVR.EpgEventProgress</info>
+					<visible>[MusicPlayer.HasEPG | VideoPlayer.HasEPG] + MusicPlayer.Content(LiveTV)</visible>
+				</control>
+				<control type="slider" id="801">
+					<description>Seek Slider</description>
+					<width>720</width>
+					<height>16</height>
+					<texturesliderbar>seekslider.png</texturesliderbar>
+					<textureslidernib>slider_nibNF.png</textureslidernib>
+					<textureslidernibfocus>slider_nibFO.png</textureslidernibfocus>
+					<visible>true</visible>
+					<onup>100</onup>
+					<ondown>100</ondown>
+					<action>seek</action>
+					<info>PVR.TimeshiftProgressPlayPos</info>
+					<visible>!MusicPlayer.HasEPG + !VideoPlayer.HasEPG + MusicPlayer.Content(LiveTV)</visible>
 				</control>
 			</control>
 		</control>
