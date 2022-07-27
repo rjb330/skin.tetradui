@@ -938,7 +938,7 @@
 				<aligny>center</aligny>
 				<font>font12</font>
 				<textcolor>grey</textcolor>
-				<label>$PARAM[label]</label>
+				<label>$PARAM[header]</label>
 				<visible>!Control.HasFocus($PARAM[id])</visible>
 			</control>
 			<control type="label">
@@ -949,7 +949,7 @@
 				<aligny>center</aligny>
 				<font>font12</font>
 				<textcolor>white</textcolor>
-				<label>$PARAM[label]</label>
+				<label>$PARAM[header]</label>
 				<visible>Control.HasFocus($PARAM[id])</visible>
 			</control>
 			<control type="image">
@@ -983,7 +983,7 @@
 				<font>font10</font>
 				<textcolor>white</textcolor>
 				<align>center</align>
-				<label>$INFO[Container($PARAM[id]).ListItem.Label]</label>
+				<label>$PARAM[label]</label>
 				<visible>!Control.HasFocus($PARAM[id])</visible>
 			</control>
 			<control type="label">
@@ -994,7 +994,7 @@
 				<textcolor>orange</textcolor>
 				<align>center</align>
 				<scroll>true</scroll>
-				<label>$INFO[Container($PARAM[id]).ListItem.Label]</label>
+				<label>$PARAM[label]</label>
 				<visible>Control.HasFocus($PARAM[id])</visible>
 			</control>
 			<control type="list" id="$PARAM[id]">
@@ -1652,18 +1652,22 @@
 					<param name="visible" value="!String.IsEmpty(MusicPlayer.Rating)" />
 					<param name="info" value="$VAR[PlayerStarRating]" />
 				</include>
+				<include content="CodecFlaggingImage">
+					<param name="visible" value="RDS.HasRDS" />
+					<param name="info" value="$LOCALIZE[31318]" />
+				</include>
 			</control>
 			<control type="label">
 				<top>148</top>
 				<width>910</width>
 				<height>25</height>
-				<label>$LOCALIZE[209]: $INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).Title]</label>
+				<label>$VAR[MusicVisualisationSubLabel]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font10</font>
 				<textcolor>grey</textcolor>
 				<scroll>true</scroll>
-				<visible>MusicPlayer.HasNext + !Window.IsVisible(MusicOSD)</visible>
+				<visible>[MusicPlayer.HasNext | RDS.HasRadioText] + !Window.IsVisible(MusicOSD)</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 			</control>
 		</control>

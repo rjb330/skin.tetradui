@@ -540,8 +540,9 @@
 				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
 					<param name="visible" value="Library.HasContent(Movies) + Container(9000).HasFocus(2)" />
 					<param name="left" value="40" />
-					<param name="label" value="20382" />
+					<param name="header" value="20382" />
 					<param name="id" value="501" />
+					<param name="label" value="$INFO[Container(501).ListItem.Title]" />
 					<param name="thumb" value="$INFO[Container(501).ListItem.Art(poster)]" />
 					<param name="onleft" value="9000" />
 					<param name="onright" value="502" />
@@ -552,8 +553,9 @@
 				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
 					<param name="visible" value="Library.HasContent(Movies) + Container(9000).HasFocus(2)" />
 					<param name="left" value="255" />
-					<param name="label" value="31542" />
+					<param name="header" value="31542" />
 					<param name="id" value="502" />
+					<param name="label" value="$INFO[Container(502).ListItem.Title]" />
 					<param name="thumb" value="$INFO[Container(502).ListItem.Art(poster)]" />
 					<param name="onleft" value="501" />
 					<param name="onright" value="503" />
@@ -564,8 +566,9 @@
 				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
 					<param name="visible" value="Library.HasContent(Movies) + Container(9000).HasFocus(2)" />
 					<param name="left" value="470" />
-					<param name="label" value="$VAR[MovieWidget3Label]" />
+					<param name="header" value="$VAR[MovieWidget3Label]" />
 					<param name="id" value="503" />
+					<param name="label" value="$INFO[Container(503).ListItem.Title]" />
 					<param name="thumb" value="$INFO[Container(503).ListItem.Art(poster)]" />
 					<param name="onleft" value="502" />
 					<param name="onright" value="504" />
@@ -576,8 +579,9 @@
 				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
 					<param name="visible" value="Library.HasContent(Movies) + Container(9000).HasFocus(2)" />
 					<param name="left" value="685" />
-					<param name="label" value="$VAR[MovieWidget4Label]" />
+					<param name="header" value="$VAR[MovieWidget4Label]" />
 					<param name="id" value="504" />
+					<param name="label" value="$INFO[Container(504).ListItem.Title]" />
 					<param name="thumb" value="$INFO[Container(504).ListItem.Art(poster)]" />
 					<param name="onleft" value="503" />
 					<param name="onright" value="9000" />
@@ -588,8 +592,9 @@
 				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
 					<param name="visible" value="Library.HasContent(TVShows) + Container(9000).HasFocus(3)" />
 					<param name="left" value="245" />
-					<param name="label" value="20382" />
+					<param name="header" value="20382" />
 					<param name="id" value="505" />
+					<param name="label" value="$INFO[Container(505).ListItem.Label]" />
 					<param name="thumb" value="$INFO[Container(505).ListItem.Art(thumb)]" />
 					<param name="onleft" value="9000" />
 					<param name="onright" value="506" />
@@ -600,8 +605,9 @@
 				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
 					<param name="visible" value="Library.HasContent(TVShows) + Container(9000).HasFocus(3)" />
 					<param name="left" value="490" />
-					<param name="label" value="31542" />
+					<param name="header" value="31542" />
 					<param name="id" value="506" />
+					<param name="label" value="$INFO[Container(506).ListItem.Label]" />
 					<param name="thumb" value="$INFO[Container(506).ListItem.Art(thumb)]" />
 					<param name="onleft" value="505" />
 					<param name="onright" value="9000" />
@@ -612,8 +618,9 @@
 				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
 					<param name="visible" value="Library.HasContent(Music) + Container(9000).HasFocus(6)" />
 					<param name="left" value="117" />
-					<param name="label" value="359" />
+					<param name="header" value="359" />
 					<param name="id" value="509" />
+					<param name="label" value="$INFO[Container(509).ListItem.Album]" />
 					<param name="thumb" value="$INFO[Container(509).ListItem.Art(thumb)]" />
 					<param name="onleft" value="9000" />
 					<param name="onright" value="510" />
@@ -624,8 +631,9 @@
 				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
 					<param name="visible" value="Library.HasContent(Music) + Container(9000).HasFocus(6)" />
 					<param name="left" value="362.5" />
-					<param name="label" value="517" />
+					<param name="header" value="517" />
 					<param name="id" value="510" />
+					<param name="label" value="$INFO[Container(510).ListItem.Album]" />
 					<param name="thumb" value="$INFO[Container(510).ListItem.Art(thumb)]" />
 					<param name="onleft" value="509" />
 					<param name="onright" value="511" />
@@ -636,8 +644,9 @@
 				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
 					<param name="visible" value="Library.HasContent(Music) + Container(9000).HasFocus(6)" />
 					<param name="left" value="608" />
-					<param name="label" value="31501" />
+					<param name="header" value="31501" />
 					<param name="id" value="511" />
+					<param name="label" value="$INFO[Container(511).ListItem.Album]" />
 					<param name="thumb" value="$INFO[Container(511).ListItem.Art(thumb)]" />
 					<param name="onleft" value="510" />
 					<param name="onright" value="9000" />
@@ -648,8 +657,9 @@
 				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets) + System.HasPVRAddon">
 					<param name="visible" value="Container(9000).HasFocus(8)" />
 					<param name="left" value="40" />
-					<param name="label" value="31249" />
+					<param name="header" value="31249" />
 					<param name="id" value="513" />
+					<param name="label" value="$INFO[Container(513).ListItem.Label]" />
 					<param name="thumb" value="$INFO[Container(513).ListItem.Icon]" />
 					<param name="onleft" value="9000" />
 					<param name="onright" value="514" />
@@ -660,8 +670,9 @@
 				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets) + System.HasPVRAddon">
 					<param name="visible" value="Container(9000).HasFocus(8)" />
 					<param name="left" value="255" />
-					<param name="label" value="19163" />
+					<param name="header" value="19163" />
 					<param name="id" value="514" />
+					<param name="label" value="$INFO[Container(514).ListItem.Label]" />
 					<param name="thumb" value="$INFO[Container(514).ListItem.Icon]" />
 					<param name="onleft" value="513" />
 					<param name="onright" value="515" />
@@ -672,8 +683,9 @@
 				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets) + System.HasPVRAddon">
 					<param name="visible" value="Container(9000).HasFocus(8)" />
 					<param name="left" value="470" />
-					<param name="label" value="19040" />
+					<param name="header" value="19040" />
 					<param name="id" value="515" />
+					<param name="label" value="$INFO[Container(515).ListItem.Label]" />
 					<param name="thumb" value="$INFO[Container(515).ListItem.Icon]" />
 					<param name="onleft" value="514" />
 					<param name="onright" value="516" />
@@ -684,8 +696,9 @@
 				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets) + System.HasPVRAddon">
 					<param name="visible" value="Container(9000).HasFocus(8)" />
 					<param name="left" value="685" />
-					<param name="label" value="19019" />
+					<param name="header" value="19019" />
 					<param name="id" value="516" />
+					<param name="label" value="$INFO[Container(516).ListItem.Label]" />
 					<param name="thumb" value="$INFO[Container(516).ListItem.Icon]" />
 					<param name="onleft" value="515" />
 					<param name="onright" value="9000" />
@@ -696,8 +709,9 @@
 				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets) + System.HasPVRAddon">
 					<param name="visible" value="Container(9000).HasFocus(9)" />
 					<param name="left" value="40" />
-					<param name="label" value="31249" />
+					<param name="header" value="31249" />
 					<param name="id" value="517" />
+					<param name="label" value="$INFO[Container(517).ListItem.Label]" />
 					<param name="thumb" value="$INFO[Container(517).ListItem.Icon]" />
 					<param name="onleft" value="9000" />
 					<param name="onright" value="518" />
@@ -708,8 +722,9 @@
 				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets) + System.HasPVRAddon">
 					<param name="visible" value="Container(9000).HasFocus(9)" />
 					<param name="left" value="255" />
-					<param name="label" value="19163" />
+					<param name="header" value="19163" />
 					<param name="id" value="518" />
+					<param name="label" value="$INFO[Container(518).ListItem.Label]" />
 					<param name="thumb" value="$INFO[Container(518).ListItem.Icon]" />
 					<param name="onleft" value="517" />
 					<param name="onright" value="519" />
@@ -719,8 +734,9 @@
 				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets) + System.HasPVRAddon">
 					<param name="visible" value="Container(9000).HasFocus(9)" />
 					<param name="left" value="470" />
-					<param name="label" value="19040" />
+					<param name="header" value="19040" />
 					<param name="id" value="519" />
+					<param name="label" value="$INFO[Container(519).ListItem.Label]" />
 					<param name="thumb" value="$INFO[Container(519).ListItem.Icon]" />
 					<param name="onleft" value="518" />
 					<param name="onright" value="520" />
@@ -731,8 +747,9 @@
 				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets) + System.HasPVRAddon">
 					<param name="visible" value="Container(9000).HasFocus(9)" />
 					<param name="left" value="685" />
-					<param name="label" value="19019" />
+					<param name="header" value="19019" />
 					<param name="id" value="520" />
+					<param name="label" value="$INFO[Container(520).ListItem.Label]" />
 					<param name="thumb" value="$INFO[Container(520).ListItem.Icon]" />
 					<param name="onleft" value="519" />
 					<param name="onright" value="9000" />
