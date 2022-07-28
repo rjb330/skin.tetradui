@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1111">
 	<defaultcontrol always="true">9050</defaultcontrol>
-	<onload condision="!String.IsEmpty(SubBladeType))">Skin.Reset(SubBladeType)</onload>
+	<onload condition="!String.IsEmpty(SubBladeType))">Skin.Reset(SubBladeType)</onload>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(1)">WindowClose</animation>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(2)">WindowClose</animation>
 	<controls>

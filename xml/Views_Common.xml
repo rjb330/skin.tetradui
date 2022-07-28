@@ -742,7 +742,6 @@
 					<texture background="true">$VAR[ListItemPosterVar]</texture>
 					<bordertexture>black-back.png</bordertexture>
 					<bordersize>1</bordersize>
-					<aspectratio>scale</aspectratio>
 				</control>
 				<control type="label">
 					<left>8</left>
@@ -782,7 +781,6 @@
 					<texture background="true">$VAR[ListItemPosterVar]</texture>
 					<bordertexture>black-back.png</bordertexture>
 					<bordersize>1</bordersize>
-					<aspectratio>scale</aspectratio>
 				</control>
 				<control type="label">
 					<left>8</left>
