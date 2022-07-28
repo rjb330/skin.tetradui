@@ -537,8 +537,8 @@
 					</content>
 				</control>
 				<include>MediaInfoCard</include>
-				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
-					<param name="visible" value="Library.HasContent(Movies) + Container(9000).HasFocus(2)" />
+				<include content="HomeWidget" condition="Library.HasContent(Movies) + !Skin.HasSetting(Blades_HideWidgets)">
+					<param name="visible" value="Container(9000).HasFocus(2)" />
 					<param name="left" value="40" />
 					<param name="header" value="20382" />
 					<param name="id" value="501" />
@@ -550,8 +550,8 @@
 					<param name="content" value="videodb://movies/titles/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22playcount%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%220%22%7D%5D%7D%2C%22type%22%3A%22movies%22%7D" />
 					<param name="sortby" value="dateadded" />
 				</include>
-				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
-					<param name="visible" value="Library.HasContent(Movies) + Container(9000).HasFocus(2)" />
+				<include content="HomeWidget" condition="Library.HasContent(Movies) + !Skin.HasSetting(Blades_HideWidgets)">
+					<param name="visible" value="Container(9000).HasFocus(2)" />
 					<param name="left" value="255" />
 					<param name="header" value="31542" />
 					<param name="id" value="502" />
@@ -563,8 +563,8 @@
 					<param name="content" value="videodb://movies/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22inprogress%22%2c%22operator%22%3a%22true%22%2c%22value%22%3a%5b%5d%7d%5d%7d%2c%22type%22%3a%22movies%22%7d" />
 					<param name="sortby" value="lastplayed" />
 				</include>
-				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
-					<param name="visible" value="Library.HasContent(Movies) + Container(9000).HasFocus(2)" />
+				<include content="HomeWidget" condition="Library.HasContent(Movies) + !Skin.HasSetting(Blades_HideWidgets)">
+					<param name="visible" value="Container(9000).HasFocus(2)" />
 					<param name="left" value="470" />
 					<param name="header" value="$VAR[MovieWidget3Label]" />
 					<param name="id" value="503" />
@@ -576,8 +576,8 @@
 					<param name="content" value="$VAR[MovieWidget3Content]" />
 					<param name="sortby" value="$VAR[MovieWidgetSortby]" />
 				</include>
-				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
-					<param name="visible" value="Library.HasContent(Movies) + Container(9000).HasFocus(2)" />
+				<include content="HomeWidget" condition="Library.HasContent(Movies) + !Skin.HasSetting(Blades_HideWidgets)">
+					<param name="visible" value="Container(9000).HasFocus(2)" />
 					<param name="left" value="685" />
 					<param name="header" value="$VAR[MovieWidget4Label]" />
 					<param name="id" value="504" />
@@ -589,8 +589,8 @@
 					<param name="content" value="$VAR[MovieWidget4Content]" />
 					<param name="sortby" value="$VAR[MovieWidgetSortby]" />
 				</include>
-				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
-					<param name="visible" value="Library.HasContent(TVShows) + Container(9000).HasFocus(3)" />
+				<include content="HomeWidget" condition="Library.HasContent(TVShows) + !Skin.HasSetting(Blades_HideWidgets)">
+					<param name="visible" value="Container(9000).HasFocus(3)" />
 					<param name="left" value="245" />
 					<param name="header" value="20382" />
 					<param name="id" value="505" />
@@ -602,8 +602,8 @@
 					<param name="content" value="videodb://tvshows/titles/-1/-1/-1/-1/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22playcount%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%220%22%7D%5D%7D%2C%22type%22%3A%22episodes%22%7D" />
 					<param name="sortby" value="dateadded" />
 				</include>
-				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
-					<param name="visible" value="Library.HasContent(TVShows) + Container(9000).HasFocus(3)" />
+				<include content="HomeWidget" condition="Library.HasContent(TVShows) + !Skin.HasSetting(Blades_HideWidgets)">
+					<param name="visible" value="Container(9000).HasFocus(3)" />
 					<param name="left" value="490" />
 					<param name="header" value="31542" />
 					<param name="id" value="506" />
@@ -615,8 +615,8 @@
 					<param name="content" value="plugin://script.embuary.helper/?info=getnextup" />
 					<param name="sortby" value="dateadded" />
 				</include>
-				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
-					<param name="visible" value="Library.HasContent(Music) + Container(9000).HasFocus(6)" />
+				<include content="HomeWidget" condition="Library.HasContent(Music) + !Skin.HasSetting(Blades_HideWidgets)">
+					<param name="visible" value="Container(9000).HasFocus(6)" />
 					<param name="left" value="117" />
 					<param name="header" value="359" />
 					<param name="id" value="509" />
@@ -628,8 +628,8 @@
 					<param name="content" value="musicdb://albums/" />
 					<param name="sortby" value="dateadded" />
 				</include>
-				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
-					<param name="visible" value="Library.HasContent(Music) + Container(9000).HasFocus(6)" />
+				<include content="HomeWidget" condition="Library.HasContent(Music) + !Skin.HasSetting(Blades_HideWidgets)">
+					<param name="visible" value="Container(9000).HasFocus(6)" />
 					<param name="left" value="362.5" />
 					<param name="header" value="517" />
 					<param name="id" value="510" />
@@ -638,11 +638,11 @@
 					<param name="onleft" value="509" />
 					<param name="onright" value="511" />
 					<param name="target" value="music" />
-					<param name="content" value="musicdb://albums/titles/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22playcount%22%2C%22operator%22%3A%22greaterthan%22%2C%22value%22%3A%220%22%7D%5D%7D%2C%22type%22%3A%22albums%22%7D" />
+					<param name="content" value="musicdb://albums/?xsp=%7B%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22playcount%22%2C%22operator%22%3A%22greaterthan%22%2C%22value%22%3A%220%22%7D%5D%7D%2C%22type%22%3A%22albums%22%7D" />
 					<param name="sortby" value="playcount" />
 				</include>
-				<include content="HomeWidget" condition="!Skin.HasSetting(Blades_HideWidgets)">
-					<param name="visible" value="Library.HasContent(Music) + Container(9000).HasFocus(6)" />
+				<include content="HomeWidget" condition="Library.HasContent(Music) + !Skin.HasSetting(Blades_HideWidgets)">
+					<param name="visible" value="Container(9000).HasFocus(6)" />
 					<param name="left" value="608" />
 					<param name="header" value="31501" />
 					<param name="id" value="511" />
