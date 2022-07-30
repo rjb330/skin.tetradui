@@ -1648,13 +1648,17 @@
 					<param name="visible" value="!String.IsEmpty(MusicPlayer.SampleRate)" />
 					<param name="info" value="$INFO[MusicPlayer.SampleRate,, kHz]" />
 				</include>
+				<control type="image">
+					<description>RDS Image</description>
+					<width>80</width>
+					<height>35</height>
+					<aspectratio align="right">keep</aspectratio>
+					<texture>flagging/rds/rds.png</texture>
+					<visible>RDS.HasRDS</visible>
+				</control>
 				<include content="CodecFlaggingRating">
 					<param name="visible" value="!String.IsEmpty(MusicPlayer.Rating)" />
 					<param name="info" value="$VAR[PlayerStarRating]" />
-				</include>
-				<include content="CodecFlaggingImage">
-					<param name="visible" value="RDS.HasRDS" />
-					<param name="info" value="$LOCALIZE[31318]" />
 				</include>
 			</control>
 			<control type="label">
