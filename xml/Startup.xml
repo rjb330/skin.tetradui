@@ -5,7 +5,7 @@
 	<controls>
 		<control type="button" id="9001">
 			<left>2000</left>
-			<onfocus>PlayMedia(special://skin/media/video/splash.mp4,noresume)</onfocus>
+			<onfocus>PlayMedia(special://skin/resources/video/splash.mp4,noresume)</onfocus>
 			<visible>Skin.HasSetting(ShowSplashScreen)</visible>
 		</control>
 	</controls>
