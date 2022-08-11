@@ -10,7 +10,7 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<animation effect="slide" start="0,0" end="0,10" time="200" condition="Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)">conditional</animation>
+			<animation effect="slide" start="0,0" end="0,10" time="200" condition="Window.IsVisible(FullscreenVideo) | Window.IsVisible(FullscreenGame) | Window.IsVisible(Visualisation)">conditional</animation>
 			<animation effect="slide" start="0,0" end="-180,0" time="200" condition="Window.IsVisible(BusyDialog)">conditional</animation>
 			<control type="image">
 				<description>Media Overlay Image</description>
