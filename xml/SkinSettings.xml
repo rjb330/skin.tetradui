@@ -55,16 +55,6 @@
 					<label>31502</label>
 					<onfocus>Skin.SetString(SkinSettings,3)</onfocus>
 				</control>
-				<control type="button" id="13">
-					<description>Image Packs Category Button</description>
-					<height>50</height>
-					<width>250</width>
-					<textcolor>white</textcolor>
-					<texturefocus border="10">buttons/button-focus.png</texturefocus>
-					<texturenofocus border="10">buttons/button-nofocus.png</texturenofocus>
-					<label>31503</label>
-					<onfocus>Skin.SetString(SkinSettings,4)</onfocus>
-				</control>
 				<control type="button" id="14">
 					<description>Backgrounds Category Button</description>
 					<height>50</height>
@@ -74,6 +64,16 @@
 					<texturenofocus border="10">buttons/button-nofocus.png</texturenofocus>
 					<label>33069</label>
 					<onfocus>Skin.SetString(SkinSettings,5)</onfocus>
+				</control>
+				<control type="button" id="13">
+					<description>Image Packs Category Button</description>
+					<height>50</height>
+					<width>250</width>
+					<textcolor>white</textcolor>
+					<texturefocus border="10">buttons/button-focus.png</texturefocus>
+					<texturenofocus border="10">buttons/button-nofocus.png</texturenofocus>
+					<label>31503</label>
+					<onfocus>Skin.SetString(SkinSettings,4)</onfocus>
 				</control>
 				<control type="button" id="11">
 					<description>Addon Category Button</description>
@@ -166,11 +166,28 @@
 					</control>
 					<control type="radiobutton" id="108">
 						<include>SkinSettingsRadioButtonCommonValues</include>
+						<label>31529</label>
+						<onclick condition="System.AddonIsEnabled(script.litebox)">Skin.ToggleSetting(BlurFanart)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.litebox) + !Skin.HasSetting(BlurFanart)">Skin.SetString(litebox_effect,blur)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.litebox) + !Skin.HasSetting(BlurFanart)">Skin.SetString(litebox_quality,4)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.litebox) + !Skin.HasSetting(BlurFanart)">Skin.SetString(litebox_blursize,5)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.litebox) + !Skin.HasSetting(BlurFanart)">Skin.SetString(litebox_main,main:fhls*-;0.45;0.9)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.litebox) + !Skin.HasSetting(BlurFanart)">Skin.SetString(litebox_comp,main:hls*0.75;0;0@fhls*-;0.45;0.9)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.litebox) + !Skin.HasSetting(BlurFanart)">RunScript(script.litebox,daemon=True)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.litebox) + !Skin.HasSetting(BlurFanart)">SetProperty(FIVE_daemon_set,$INFO[Skin.String(litebox_effect)],home)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.litebox) + !Skin.HasSetting(BlurFanart)">AlarmClock(nms1,SetProperty(NINE_manual_set,"var=main,set=$INFO[Skin.String(litebox_main)]|var=comp,set=$INFO[Skin.String(litebox_comp)]|var=quality,set=$INFO[Skin.String(litebox_quality)]|var=blursize,set=$INFO[Skin.String(litebox_blursize)]]",home),00:05,true)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.litebox) + Skin.HasSetting(BlurFanart)">StopScript(script.litebox)</onclick>
+						<onclick condition="!System.HasAddon(script.litebox)">InstallAddon(script.litebox)</onclick>
+						<onclick condition="System.HasAddon(script.litebox) + !System.AddonIsEnabled(script.litebox)">EnableAddon(script.litebox)</onclick>
+						<selected>Skin.HasSetting(BlurFanart)</selected>
+					</control>
+					<control type="radiobutton" id="109">
+						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>31523</label>
 						<onclick>Skin.ToggleSetting(HideRainDrops)</onclick>
 						<selected>Skin.HasSetting(HideRainDrops)</selected>
 					</control>
-					<control type="button" id="109">
+					<control type="button" id="110">
 						<include>SkinSettingsButtonCommonValues</include>
 						<label>$LOCALIZE[31525]: $VAR[RatingTypeLabel]</label>
 						<onclick>Skin.SelectBool(31525, 38018|RatingTypeUser, 571|RatingTypeDefault)</onclick>
@@ -716,6 +733,14 @@
 						<onclick condition="System.AddonIsEnabled(plugin.video.youtube)">Addon.OpenSettings(plugin.video.youtube)</onclick>
 						<onclick condition="!System.HasAddon(plugin.video.youtube)">InstallAddon(plugin.video.youtube)</onclick>
 						<onclick condition="System.HasAddon(plugin.video.youtube) + !System.AddonIsEnabled(plugin.video.youtube)">EnableAddon(plugin.video.youtube)</onclick>
+					</control>
+					<control type="button" id="608">
+						<include>SkinSettingsButtonCommonValues</include>
+						<label>litebox Script</label>
+						<label2>$VAR[StatusLiteboxVar]</label2>
+						<onclick condition="System.AddonIsEnabled(script.litebox)">Addon.OpenSettings(script.litebox)</onclick>
+						<onclick condition="!System.HasAddon(script.litebox)">InstallAddon(script.litebox)</onclick>
+						<onclick condition="System.HasAddon(script.litebox) + !System.AddonIsEnabled(script.litebox)">EnableAddon(script.litebox)</onclick>
 					</control>
 				</control>
 				

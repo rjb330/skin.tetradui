@@ -229,6 +229,11 @@
 		<value condition="System.HasAddon(plugin.video.youtube) + !System.AddonIsEnabled(plugin.video.youtube)">$LOCALIZE[24023]</value>
 		<value>$LOCALIZE[31499]</value>
 	</variable>
+	<variable name="StatusLiteboxVar">
+		<value condition="System.AddonIsEnabled(script.litebox)">$INFO[System.AddonVersion(script.litebox)] $LOCALIZE[39019]</value>
+		<value condition="System.HasAddon(script.litebox) + !System.AddonIsEnabled(script.litebox)">$LOCALIZE[24023]</value>
+		<value>$LOCALIZE[31499]</value>
+	</variable>
 	<variable name="WeatherIconsAddonNameVar">
         <value condition="!String.IsEmpty(Skin.String(WeatherIconsAddon.name))">$INFO[Skin.String(WeatherIconsAddon.name)]</value>
         <value>$LOCALIZE[571]</value>
@@ -410,5 +415,9 @@
 	<variable name="PVRChannelsOSDHeader">
 		<value condition="PVR.IsPlayingRadio">$LOCALIZE[19023] - $INFO[MusicPlayer.ChannelGroup]</value>
 		<value>$LOCALIZE[19023] - $INFO[VideoPlayer.ChannelGroup]</value>
+	</variable>
+	<variable name="FiveImage">
+		<value condition="!String.IsEqual(Window(home).Property(FIVE_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageFilterFIVE))">$INFO[Window(home).Property(ImageFilterFIVE)]</value>
+		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 </includes>

@@ -12,11 +12,21 @@
 			<height>720</height>
 			<visible>Player.HasAudio + !Skin.HasSetting(Back_Vis)</visible>
 		</control>
+		<control type="multiimage" id="7975">
+            <left>-2160</left>
+            <width>1</width>
+            <height>1</height>
+            <timeperimage>7000</timeperimage>
+            <randomize>true</randomize>
+            <fadetime>600</fadetime>
+            <imagepath background="true">$INFO[ListItem.Art(fanart)]</imagepath>
+            <visible>System.AddonIsEnabled(script.litebox) + Skin.HasSetting(BlurFanart)</visible>
+        </control>
 		<control type="image">
 			<description>Background Fanart</description>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+			<texture background="true">$VAR[FiveImage]</texture>
 			<visible>!Skin.HasSetting(Back_Fanart) + ![Player.HasVideo + !Skin.HasSetting(Back_Video)] + ![Player.HasAudio + !Skin.HasSetting(Back_Vis)]</visible>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<animation effect="fade" start="0" end="100" time="300" delay="400">WindowOpen</animation>

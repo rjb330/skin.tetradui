@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+	<onload>Skin.SetString(litebox_effect,blur)</onload>
+    <onload>Skin.SetString(litebox_quality,4)</onload>
+    <onload>Skin.SetString(litebox_blursize,5)</onload>
+    <onload>Skin.SetString(litebox_main,main:fhls*-;0.45;0.9)</onload>
+    <onload>Skin.SetString(litebox_comp,main:hls*0.75;0;0@fhls*-;0.45;0.9)</onload>
+    <onload condition="System.AddonIsEnabled(script.litebox) + Skin.HasSetting(BlurFanart)">RunScript(script.litebox,daemon=True)</onload>
+    <onload condition="System.AddonIsEnabled(script.litebox) + Skin.HasSetting(BlurFanart)">SetProperty(FIVE_daemon_set,$INFO[Skin.String(litebox_effect)],home)</onload>
+    <onload condition="System.AddonIsEnabled(script.litebox) + Skin.HasSetting(BlurFanart)">AlarmClock(nms1,SetProperty(NINE_manual_set,"var=main,set=$INFO[Skin.String(litebox_main)]|var=comp,set=$INFO[Skin.String(litebox_comp)]|var=quality,set=$INFO[Skin.String(litebox_quality)]|var=blursize,set=$INFO[Skin.String(litebox_blursize)]]",home),00:05,true)</onload>
 	<onload condition="Skin.HasSetting(ShowSplashScreen)">SetFocus(9001)</onload>
 	<onload>ReplaceWindow($INFO[System.StartupWindow])</onload>
 	<controls>
