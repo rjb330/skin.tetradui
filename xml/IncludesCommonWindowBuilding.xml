@@ -13,15 +13,15 @@
 			<visible>Player.HasAudio + !Skin.HasSetting(Back_Vis)</visible>
 		</control>
 		<control type="multiimage" id="7975">
-            <left>-2160</left>
-            <width>1</width>
-            <height>1</height>
-            <timeperimage>7000</timeperimage>
-            <randomize>true</randomize>
-            <fadetime>600</fadetime>
-            <imagepath background="true">$INFO[ListItem.Art(fanart)]</imagepath>
-            <visible>System.AddonIsEnabled(script.litebox) + Skin.HasSetting(BlurFanart)</visible>
-        </control>
+			<left>-2160</left>
+			<width>1</width>
+			<height>1</height>
+			<timeperimage>7000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>600</fadetime>
+			<imagepath background="true">$INFO[ListItem.Art(fanart)]</imagepath>
+			<visible>System.AddonIsEnabled(script.litebox) + Skin.HasSetting(BlurFanart)</visible>
+		</control>
 		<control type="image">
 			<description>Background Fanart</description>
 			<width>1280</width>

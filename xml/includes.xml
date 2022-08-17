@@ -1817,7 +1817,7 @@
 			<left>94</left>
 			<width>178</width>
 			<height>50</height>
-			<font>special12</font>
+			<font>font12</font>
 			<aligny>center</aligny>
 			<selectedcolor>orange</selectedcolor>
 			<label>$INFO[ListItem.ChannelName]</label>
@@ -1894,7 +1894,7 @@
 			<left>94</left>
 			<width>178</width>
 			<height>50</height>
-			<font>special12</font>
+			<font>font12</font>
 			<aligny>center</aligny>
 			<selectedcolor>orange</selectedcolor>
 			<label>$INFO[ListItem.ChannelName]</label>

@@ -219,7 +219,7 @@
 						<include>DialogButton2CommonValues</include>
 						<onup>24</onup>
 					</control>
-					<control type="button" id="27">
+					<control type="button" id="25">
 						<description>Cancel Button</description>
 						<label>222</label>
 						<include>DialogButton2CommonValues</include>

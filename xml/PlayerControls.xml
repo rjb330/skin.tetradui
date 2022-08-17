@@ -37,7 +37,7 @@
 				<label>$INFO[MusicPlayer.Artist]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>13</font>
+				<font>font13</font>
 				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -108,7 +108,7 @@
 					<label>$INFO[VideoPlayer.Studio]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>13</font>
+					<font>font13</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -187,7 +187,7 @@
 					<label>$INFO[VideoPlayer.TVShowTitle]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>13</font>
+					<font>font13</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>VideoPlayer.Content(Episodes)</visible>
@@ -201,7 +201,7 @@
 					<label>$INFO[VideoPlayer.Artist]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>13</font>
+					<font>font13</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>VideoPlayer.Content(MusicVideos)</visible>

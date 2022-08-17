@@ -117,8 +117,6 @@
 			<control type="button" id="9011">
 				<left>200</left>
 				<top>328</top>
-				<left>200</left>
-				<top>470</top>
 				<label>15067</label>
 				<include>DialogButton2CommonValues</include>
 				<font>font12</font>

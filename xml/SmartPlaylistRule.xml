@@ -22,7 +22,7 @@
 			<height>35</height>
 			<align>center</align>
 			<aligny>center</aligny>
-			<font>font18</font>
+			<font>font16</font>
 			<label>21421</label>
 			<textcolor>orange</textcolor>
 		</control>
@@ -44,7 +44,7 @@
 				<top>140</top>
 				<width>348</width>
 				<height>45</height>
-				<font>font3</font>
+				<font>font13</font>
 				<texturefocus border="10">buttons/list-focus.png</texturefocus>
 				<texturenofocus border="10">buttons/list-nofocus.png</texturenofocus>
 				<onright>16</onright>

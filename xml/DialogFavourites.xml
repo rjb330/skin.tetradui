@@ -50,8 +50,6 @@
 							<left>10</left>
 							<width>330</width>
 							<height>45</height>
-							<font>font12_title</font>
-							<align>left</align>
 							<aligny>center</aligny>
 							<selectedcolor>orange</selectedcolor>
 							<info>ListItem.Label</info>
@@ -74,7 +72,6 @@
 							<left>10</left>
 							<width>330</width>
 							<height>45</height>
-							<font>font12_title</font>
 							<aligny>center</aligny>
 							<selectedcolor>orange</selectedcolor>
 							<info>ListItem.Label</info>
