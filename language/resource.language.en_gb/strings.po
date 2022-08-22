@@ -537,10 +537,22 @@ msgid "Enable Artist Slideshow fanart backgrounds"
 msgstr ""
 
 msgctxt "#31529"
-msgid "Blur fanart backgrounds"
+msgid "Blur backgrounds"
 msgstr ""
 
-# empty strings from id 31530 to 31537
+msgctxt "#31530"
+msgid "Fanart only"
+msgstr ""
+
+msgctxt "#31531"
+msgid "Backgrounds only"
+msgstr ""
+
+msgctxt "#31532"
+msgid "Fanart and backgrounds"
+msgstr ""
+
+# empty strings from id 31533 to 31537
 
 msgctxt "#31538"
 msgid "About"

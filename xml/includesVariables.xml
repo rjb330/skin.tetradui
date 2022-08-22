@@ -417,7 +417,7 @@
 		<value>$LOCALIZE[19023] - $INFO[VideoPlayer.ChannelGroup]</value>
 	</variable>
 	<variable name="FiveImage">
-		<value condition="!String.IsEqual(Window(home).Property(FIVE_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageFilterFIVE))">$INFO[Window(home).Property(ImageFilterFIVE)]</value>
+		<value condition="Skin.HasSetting(BlurFanart) + !String.IsEqual(Window(home).Property(FIVE_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageFilterFIVE))">$INFO[Window(home).Property(ImageFilterFIVE)]</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 </includes>
