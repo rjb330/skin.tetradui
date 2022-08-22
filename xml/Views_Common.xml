@@ -75,13 +75,12 @@
 				<fadetime>IconCrossfadeTime</fadetime>
 			</control>
 			<control type="image">
-				<left>480</left>
-				<top>465</top>
-				<width>64</width>
-				<height>64</height>
-				<colordiffuse>FFFFFFFF</colordiffuse>
+				<left>310</left>
+				<top>390</top>
+				<width>48</width>
+				<height>48</height>
 				<aspectratio>keep</aspectratio>
-				<info>Listitem.Overlay</info>
+				<texture>$INFO[ListItem.Overlay]</texture>
 			</control>
 			<control type="group">
 				<visible>$EXP[AddonLifecycleType]</visible>
