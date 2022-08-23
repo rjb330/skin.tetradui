@@ -12,6 +12,7 @@
 	<controls>
 		<control type="button" id="9001">
 			<left>2000</left>
+			<onfocus condition="Skin.HasSetting(ShowSplashScreen)">Skin.SetString(StartupAnimation,true)</onfocus>
 			<onfocus condition="Skin.HasSetting(ShowSplashScreen)">PlayMedia(special://skin/resources/video/splash.mp4,noresume)</onfocus>
 			<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
 			<animation effect="fade" start="0" end="100" time="0" delay="500" condition="!Skin.HasSetting(ShowSplashScreen)">Focus</animation>
