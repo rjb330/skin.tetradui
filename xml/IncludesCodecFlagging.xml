@@ -21,14 +21,14 @@
 			<height>35</height>
 			<texture>$INFO[ListItem.VideoCodec,flagging/videocodec/,.png]</texture>
 			<!-- Don't show if its one of the 500 divx codecs -->
-			<visible>![String.StartsWith(ListItem.VideoCodec,div) | String.IsEqual(ListItem.VideoCodec,dx50)]</visible>
+			<visible>!String.IsEmpty(ListItem.VideoCodec) + ![String.StartsWith(ListItem.VideoCodec,div) | String.IsEqual(ListItem.VideoCodec,dx50)]</visible>
 		</control>
 		<control type="image">
 			<description>Divx Codec Image</description>
 			<width>80</width>
 			<height>35</height>
 			<texture>flagging/videocodec/divx.png</texture>
-			<visible>[String.StartsWith(ListItem.VideoCodec,div) | String.IsEqual(ListItem.VideoCodec,dx50)]</visible>
+			<visible>String.StartsWith(ListItem.VideoCodec,div) | String.IsEqual(ListItem.VideoCodec,dx50)</visible>
 		</control>
 	</include>
 	<include name="AudioCodecFlagging">
@@ -134,14 +134,14 @@
 			<height>35</height>
 			<texture>$INFO[VideoPlayer.VideoCodec,flagging/videocodec/,.png]</texture>
 			<!-- Don't show if its one of the 500 divx codecs -->
-			<visible>![String.StartsWith(VideoPlayer.VideoCodec,div) | String.IsEqual(VideoPlayer.VideoCodec,dx50)]</visible>
+			<visible>!String.IsEmpty(VideoPlayer.VideoCodec) + ![String.StartsWith(VideoPlayer.VideoCodec,div) | String.IsEqual(VideoPlayer.VideoCodec,dx50)]</visible>
 		</control>
 		<control type="image" id="1">
 			<description>Divx Codec Image</description>
 			<width>80</width>
 			<height>35</height>
 			<texture>flagging/videocodec/divx.png</texture>
-			<visible>[String.StartsWith(VideoPlayer.VideoCodec,div) | String.IsEqual(VideoPlayer.VideoCodec,dx50)]</visible>
+			<visible>String.StartsWith(VideoPlayer.VideoCodec,div) | String.IsEqual(VideoPlayer.VideoCodec,dx50)</visible>
 		</control>
 	</include>
 	<include name="VideoPlayerAudioCodecFlagging">
