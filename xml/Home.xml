@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">9050</defaultcontrol>
 	<previouswindow>home</previouswindow>
 	<onload>SetProperty(RefreshList,1,Home)</onload>
-	<onload condition="!String.IsEmpty(SubBladeType))">Skin.Reset(SubBladeType)</onload>
+	<onload condition="!String.IsEmpty(Skin.String(SubBladeType))">Skin.Reset(SubBladeType)</onload>
 	<onload condition="Window.Previous(startup) + !Skin.HasSetting(DialogFirstRun)">AlarmClock(DialogFirstTime,ActivateWindow(1105),00:03,silent)</onload>
 	<onload condition="!String.IsEmpty(Skin.String(StartupAnimation))">AlarmClock(StartupAnimation,Skin.Reset(StartupAnimation),00:08,true)</onload>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(1)">WindowClose</animation>
