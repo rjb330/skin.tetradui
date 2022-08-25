@@ -552,7 +552,11 @@ msgctxt "#31532"
 msgid "Fanart and backgrounds"
 msgstr ""
 
-# empty strings from id 31533 to 31537
+# empty strings from id 31533 to 31536
+
+msgctxt "#31537"
+msgid "Movie set information"
+msgstr ""
 
 msgctxt "#31538"
 msgid "About"

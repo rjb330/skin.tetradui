@@ -66,6 +66,7 @@
 		<value condition="RDS.HasRadioText">$LOCALIZE[14304]: $INFO[RDS.GetLine(0)]</value>
 	</variable>
 	<variable name="DialogInfoTitleLabel">
+		<value condition="String.IsEqual(ListItem.DBTYPE,set)">$LOCALIZE[31537]</value>
 		<value condition="String.IsEqual(ListItem.DBTYPE,movie)">$LOCALIZE[13346]</value>
 		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow)">$LOCALIZE[20351]</value>
 		<value condition="String.IsEqual(ListItem.DBTYPE,episode)">$LOCALIZE[20352]</value>
