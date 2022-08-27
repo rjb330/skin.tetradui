@@ -48,34 +48,13 @@
 				<textcolor>white</textcolor>
 				<showonepage>true</showonepage>
 			</control>
-			<control type="label">
-				<description>number of files/pages in list text label</description>
-				<left>315</left>
-				<top>549</top>
-				<width>320</width>
-				<height>35</height>
-				<font>font12</font>
-				<align>right</align>
-				<aligny>center</aligny>
-				<scroll>true</scroll>
-				<textcolor>grey2</textcolor>
-				<label>$LOCALIZE[31201] $INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages]</label>
-				<visible>!Control.HasFocus(60)</visible>
-			</control>
-			<control type="label">
-				<description>number of files/pages in list text label</description>
-				<left>315</left>
-				<top>549</top>
-				<width>320</width>
-				<height>35</height>
-				<font>font12</font>
-				<align>right</align>
-				<aligny>center</aligny>
-				<scroll>true</scroll>
-				<textcolor>orange</textcolor>
-				<label>$LOCALIZE[31201] $INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages]</label>
-				<visible>Control.HasFocus(60)</visible>
-			</control>
+			<include content="PageLabel">
+				<param name="left" value="315" />
+				<param name="top" value="549" />
+				<param name="width" value="320" />
+				<param name="label" value="$LOCALIZE[31201] $INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages]" />
+				<param name="id" value="60" />
+			</include>
 			<control type="grouplist" id="9010">
 				<left>50</left>
 				<top>545</top>

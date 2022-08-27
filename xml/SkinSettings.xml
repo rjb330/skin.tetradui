@@ -116,9 +116,7 @@
 					<width>790</width>
 					<height>500</height>
 					<itemgap>-2</itemgap>
-					<pagecontrol>90</pagecontrol>
 					<onleft>3</onleft>
-					<onright>90</onright>
 					<onup>100</onup>
 					<ondown>100</ondown>
 					<control type="radiobutton" id="101">
@@ -202,9 +200,7 @@
 					<width>790</width>
 					<height>500</height>
 					<itemgap>-2</itemgap>
-					<pagecontrol>90</pagecontrol>
 					<onleft>3</onleft>
-					<onright>90</onright>
 					<onup>200</onup>
 					<ondown>200</ondown>
 					<control type="button" id="201">
@@ -232,7 +228,7 @@
 					<itemgap>-2</itemgap>
 					<pagecontrol>90</pagecontrol>
 					<onleft>3</onleft>
-					<onright>90</onright>
+					<onright condition="Control.IsVisible(90)">90</onright>
 					<onup>300</onup>
 					<ondown>300</ondown>
 					<control type="label" id="301">
@@ -383,9 +379,7 @@
 					<width>790</width>
 					<height>480</height>
 					<itemgap>-2</itemgap>
-					<pagecontrol>90</pagecontrol>
 					<onleft>3</onleft>
-					<onright>90</onright>
 					<onup>300</onup>
 					<ondown>300</ondown>
 					<control type="label" id="401">
@@ -431,7 +425,6 @@
 							<texture>back-fade.png</texture>
 						</control>
 						<control type="label">
-							<description>number of files/pages in list text label</description>
 							<left>10</left>
 							<top>5</top>
 							<width>350</width>
@@ -492,7 +485,6 @@
 							<texture>back-fade.png</texture>
 						</control>
 						<control type="label">
-							<description>number of files/pages in list text label</description>
 							<left>10</left>
 							<top>5</top>
 							<width>350</width>
@@ -553,7 +545,6 @@
 							<texture>back-fade.png</texture>
 						</control>
 						<control type="label">
-							<description>number of files/pages in list text label</description>
 							<left>10</left>
 							<top>5</top>
 							<width>350</width>
@@ -614,7 +605,6 @@
 							<texture>back-fade.png</texture>
 						</control>
 						<control type="label">
-							<description>number of files/pages in list text label</description>
 							<left>10</left>
 							<top>5</top>
 							<width>350</width>
@@ -675,9 +665,7 @@
 					<width>790</width>
 					<height>500</height>
 					<itemgap>-2</itemgap>
-					<pagecontrol>90</pagecontrol>
 					<onleft>3</onleft>
-					<onright>90</onright>
 					<control type="button" id="601">
 						<include>SkinSettingsButtonCommonValues</include>
 						<label>Embuary Helper</label>
@@ -791,16 +779,16 @@
 				<left>1000</left>
 				<top>120r</top>
 				<subtype>page</subtype>
-				<font>font13</font>
+				<font>font12</font>
 				<onleft>5</onleft>
-				<onright>3</onright>
-				<ondown>90</ondown>
-				<onup>90</onup>
-				<textcolor>white2</textcolor>
+				<onright>5</onright>
+				<onup>5</onup>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>orange</focusedcolor>
 				<showonepage>false</showonepage>
-				<animation effect="slide" start="0,0" end="-100,0" time="200" condition="Player.HasAudio">Conditional</animation>
-				<animation effect="slide" start="0,0" end="-100,0" time="200" condition="Player.HasVideo + VideoPlayer.Content(Movies)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-100,0" time="200" condition="Player.HasAudio | [Player.HasVideo + VideoPlayer.Content(Movies)]">Conditional</animation>
 				<animation effect="slide" start="0,0" end="-160,0" time="200" condition="Player.HasVideo + !VideoPlayer.Content(Movies)">Conditional</animation>
+				<visible>Control.IsVisible(300)</visible>
 			</control>
 		</control>
 		<control type="group">

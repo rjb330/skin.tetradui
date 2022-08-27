@@ -54,10 +54,21 @@
 				<top>585</top>
 				<width>480</width>
 				<font>font12</font>
-				<align>left</align>
 				<scroll>true</scroll>
 				<textcolor>grey2</textcolor>
 				<label>$INFO[Container(50).NumItems] $LOCALIZE[31200] - $LOCALIZE[31201] $INFO[Container(50).CurrentPage]/$INFO[Container(50).NumPages]</label>
+				<visible>!Control.HasFocus(30)</visible>
+			</control>
+			<control type="label">
+				<description>number of files in left list text label focus</description>
+				<left>190</left>
+				<top>585</top>
+				<width>480</width>
+				<font>font12</font>
+				<scroll>true</scroll>
+				<textcolor>orange</textcolor>
+				<label>$INFO[Container(50).NumItems] $LOCALIZE[31200] - $LOCALIZE[31201] $INFO[Container(50).CurrentPage]/$INFO[Container(50).NumPages]</label>
+				<visible>Control.HasFocus(30)</visible>
 			</control>
 			<control type="spincontrol" id="30">
 				<description>Next page button</description>
@@ -186,17 +197,13 @@
 			<control type="group">
 			<animation effect="slide" start="0,0" end="-110,0" time="200" condition="Player.HasAudio">Conditional</animation>
 			<animation effect="slide" start="0,0" end="-110,0" time="200" condition="Player.HasVideo">Conditional</animation>
-				<control type="label">
-					<description>number of files in right list text label</description>
-					<left>665</left>
-					<top>585</top>
-					<width>480</width>
-					<font>font12</font>
-					<align>right</align>
-					<scroll>true</scroll>
-					<textcolor>grey2</textcolor>
-					<label>$INFO[Container(100).NumItems] $LOCALIZE[31200] - $LOCALIZE[31201] $INFO[Container(100).CurrentPage]/$INFO[Container(100).NumPages]</label>
-				</control>
+				<include content="PageLabel">
+					<param name="left" value="665" />
+					<param name="top" value="581" />
+					<param name="width" value="480" />
+					<param name="label" value="$INFO[Container(100).NumItems] $LOCALIZE[31200] - $LOCALIZE[31201] $INFO[Container(100).CurrentPage]/$INFO[Container(100).NumPages]" />
+					<param name="id" value="31" />
+				</include>
 				<control type="spincontrol" id="31">
 					<description>Next page button</description>
 					<left>120r</left>

@@ -56,7 +56,7 @@
 					<orientation>vertical</orientation>
 					<onleft>450</onleft>
 					<onright>450</onright>
-					<onup>9000</onup>
+					<onup>450</onup>
 					<ondown>9000</ondown>
 					<control type="button" id="413">
 						<description>OK button</description>
@@ -99,12 +99,11 @@
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="panel" id="450">
-					<left>0</left>
 					<top>90</top>
 					<width>645</width>
 					<height>360</height>
 					<onleft>9000</onleft>
-					<onright>9000</onright>
+					<onright>60</onright>
 					<onup>450</onup>
 					<ondown>450</ondown>
 					<pagecontrol>60</pagecontrol>
@@ -155,12 +154,11 @@
 					</focusedlayout>
 				</control>
 				<control type="panel" id="451">
-					<left>0</left>
 					<top>90</top>
 					<width>645</width>
 					<height>360</height>
 					<onleft>9000</onleft>
-					<onright>9000</onright>
+					<onright>60</onright>
 					<onup>451</onup>
 					<ondown>451</ondown>
 					<pagecontrol>60</pagecontrol>
@@ -210,32 +208,24 @@
 						</control>
 					</focusedlayout>
 				</control>
-				<control type="label">
-					<description>Page label</description>
-					<left>90</left>
-					<top>670</top>
-					<width>560</width>
-					<height>30</height>
-					<align>right</align>
-					<aligny>center</aligny>
-					<textcolor>grey2</textcolor>
-					<font>font12</font>
-					<label>$INFO[Container(450).NumItems] $LOCALIZE[31200] - $LOCALIZE[31201] $INFO[Container(450).CurrentPage]/$INFO[Container(450).NumPages]</label>
-					<visible>!Control.IsVisible(451)</visible>
+				<control type="spincontrol" id="60">
+					<description>Next page Spinner</description>
+					<left>585</left>
+					<top>668</top>
+					<subtype>page</subtype>
+					<font />
+					<onleft>9000</onleft>
+					<onup condition="Control.IsVisible(450)">450</onup>
+					<onup condition="Control.IsVisible(451)">451</onup>
+					<showonepage>true</showonepage>
 				</control>
-				<control type="label">
-					<description>Page label</description>
-					<left>90</left>
-					<top>670</top>
-					<width>560</width>
-					<height>30</height>
-					<align>right</align>
-					<aligny>center</aligny>
-					<textcolor>grey2</textcolor>
-					<font>font12</font>
-					<label>$INFO[Container(451).NumItems] $LOCALIZE[31200] - $LOCALIZE[31201] $INFO[Container(451).CurrentPage]/$INFO[Container(451).NumPages]</label>
-					<visible>Control.IsVisible(451)</visible>
-				</control>
+				<include content="PageLabel">
+					<param name="left" value="15" />
+					<param name="top" value="668" />
+					<param name="width" value="560" />
+					<param name="label" value="$VAR[FileBrowserContainerInfo]" />
+					<param name="id" value="60" />
+				</include>
 			</control>
 		</control>
 	</controls>

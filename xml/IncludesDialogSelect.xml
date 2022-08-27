@@ -210,34 +210,13 @@
 				<textcolor>white</textcolor>
 				<showonepage>true</showonepage>
 			</control>
-			<control type="label">
-				<description>number of files/pages in list text label</description>
-				<left>215</left>
-				<top>565</top>
-				<width>320</width>
-				<height>35</height>
-				<font>font12</font>
-				<align>right</align>
-				<aligny>center</aligny>
-				<scroll>true</scroll>
-				<textcolor>grey2</textcolor>
-				<label>$VAR[DialogSelectContainerInfo]</label>
-				<visible>!Control.HasFocus(61)</visible>
-			</control>
-			<control type="label">
-				<description>number of files/pages in list text label focus</description>
-				<left>215</left>
-				<top>565</top>
-				<width>320</width>
-				<height>35</height>
-				<font>font12</font>
-				<align>right</align>
-				<aligny>center</aligny>
-				<scroll>true</scroll>
-				<textcolor>orange</textcolor>
-				<label>$VAR[DialogSelectContainerInfo]</label>
-				<visible>Control.HasFocus(61)</visible>
-			</control>
+			<include content="PageLabel">
+				<param name="left" value="215" />
+				<param name="top" value="565" />
+				<param name="width" value="320" />
+				<param name="label" value="$VAR[DialogSelectContainerInfo]" />
+				<param name="id" value="61" />
+			</include>
 			<control type="group">
 				<left>2000</left>
 				<control type="button" id="8">

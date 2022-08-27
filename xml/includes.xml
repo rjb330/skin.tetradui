@@ -2289,4 +2289,34 @@
 			</control>
 		</control>
 	</include>
+	<include name="PageLabel">
+		<control type="label">
+			<description>Page label</description>
+			<left>$PARAM[left]</left>
+			<top>$PARAM[top]</top>
+			<width>$PARAM[width]</width>
+			<height>35</height>
+			<align>right</align>
+			<aligny>center</aligny>
+			<textcolor>grey2</textcolor>
+			<font>font12</font>
+			<label>$PARAM[label]</label>
+			<scroll>true</scroll>
+			<visible>!Control.HasFocus($PARAM[id])</visible>
+		</control>
+		<control type="label">
+			<description>Page label focus</description>
+			<left>$PARAM[left]</left>
+			<top>$PARAM[top]</top>
+			<width>$PARAM[width]</width>
+			<height>35</height>
+			<align>right</align>
+			<aligny>center</aligny>
+			<textcolor>orange</textcolor>
+			<font>font12</font>
+			<label>$PARAM[label]</label>
+			<scroll>true</scroll>
+			<visible>Control.HasFocus($PARAM[id])</visible>
+		</control>
+	</include>
 </includes>

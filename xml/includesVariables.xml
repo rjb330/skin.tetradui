@@ -151,6 +151,10 @@
 		<value condition="Player.Process(videohwdecoder)">$LOCALIZE[13281]</value>
 		<value>$LOCALIZE[13419]</value>
 	</variable>
+	<variable name="FileBrowserContainerInfo">
+		<value condition="Control.IsVisible(450)">$INFO[Container(450).NumItems] $LOCALIZE[31200] - $LOCALIZE[31201] $INFO[Container(450).CurrentPage]/$INFO[Container(450).NumPages]</value>
+		<value condition="Control.IsVisible(451)">$INFO[Container(451).NumItems] $LOCALIZE[31200] - $LOCALIZE[31201] $INFO[Container(451).CurrentPage]/$INFO[Container(451).NumPages]</value>
+	</variable>
 	<variable name="DialogSelectContainerInfo">
 		<value condition="Control.IsVisible(3)">$LOCALIZE[31201] $INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages]</value>
 		<value>$LOCALIZE[31201] $INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages]</value>
