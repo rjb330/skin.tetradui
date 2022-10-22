@@ -320,9 +320,7 @@ msgctxt "#31307"
 msgid "Quit Kodi"
 msgstr ""
 
-msgctxt "#31308"
-msgid "IP:"
-msgstr ""
+# empty string with id 31308
 
 msgctxt "#31309"
 msgid "Hide Button - "
