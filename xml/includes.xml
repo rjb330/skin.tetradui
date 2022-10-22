@@ -870,12 +870,12 @@
 				<texture>DefaultAddonInfoProvider.png</texture>
 			</control>
 			<control type="label">
-				<description>IP Address Label</description>
+				<description>CPU Label</description>
 				<left>90</left>
 				<top>45</top>
 				<height>30</height>
 				<width>400</width>
-				<label>$LOCALIZE[31308] $INFO[Network.IPAddress]</label>
+				<label>$LOCALIZE[140] $INFO[System.CpuUsage]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
@@ -883,7 +883,7 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
-				<description>CPU Label</description>
+				<description>RAM Label</description>
 				<left>90</left>
 				<top>75</top>
 				<height>30</height>

@@ -94,7 +94,7 @@
 							<left>2</left>
 							<width>212</width>
 							<height>250</height>
-							<texture border="10">thumb-nofocus.png</texture>
+							<texture border="10">buttons/list-focus.png</texture>
 							<visible>!Control.HasFocus(52)</visible>
 						</control>
 						<control type="image">

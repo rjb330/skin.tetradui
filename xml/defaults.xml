@@ -44,10 +44,6 @@
 		<width>410</width>
 		<height>215</height>
 		<textcolor>white</textcolor>
-		<textureup>scroll-up.png</textureup>
-		<texturedown>scroll-down.png</texturedown>
-		<textureupfocus>scroll-up-focus.png</textureupfocus>
-		<texturedownfocus>scroll-down-focus.png</texturedownfocus>
 		<font>font13</font>
 	</default>
 	<default type="progress">
@@ -148,10 +144,6 @@
 		<texturesliderbar>osd_slider_bg.png</texturesliderbar>
 		<textureslidernib>slider_nibFO.png</textureslidernib>
 		<textureslidernibfocus>slider_nibFO.png</textureslidernibfocus>
-	</default>
-	<default type="mover">
-		<texturefocus>buttons/button-focus.png</texturefocus>
-		<texturenofocus>buttons/button-nofocus.png</texturenofocus>
 	</default>
 	<default type="resize">
 		<texturefocus>buttons/button-focus.png</texturefocus>
