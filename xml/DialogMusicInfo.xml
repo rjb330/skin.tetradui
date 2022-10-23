@@ -355,7 +355,7 @@
 								</item>
 								<item>
 									<label>$LOCALIZE[558]:</label>
-									<label2 fallback="161">$INFO[ListItem.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label2>
+									<label2>$INFO[ListItem.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label2>
 								</item>
 								<item>
 									<label>$LOCALIZE[515]:</label>

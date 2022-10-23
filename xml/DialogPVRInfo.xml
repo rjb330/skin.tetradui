@@ -148,7 +148,7 @@
 						</item>
 						<item id="10">
 							<description>Premiered</description>
-							<label>$LOCALIZE[31936]:</label>
+							<label>$LOCALIZE[31547]:</label>
 							<label2>$INFO[ListItem.Premiered]</label2>
 							<visible>!String.IsEmpty(ListItem.Premiered)</visible>
 						</item>

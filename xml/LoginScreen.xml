@@ -60,7 +60,7 @@
 					<height>260</height>
 					<onup>9050</onup>
 					<focusposition>2</focusposition>
-					<viewtype label="31028">list</viewtype>
+					<viewtype label="535">list</viewtype>
 					<scrolltime>200</scrolltime>
 					<orientation>horizontal</orientation>
 					<preloaditems>4</preloaditems>

@@ -590,7 +590,11 @@ msgctxt "#31546"
 msgid "Random movies"
 msgstr ""
 
-# empty strings from id 31547 to 31550
+msgctxt "#31547"
+msgid "Premiered"
+msgstr ""
+
+# empty strings from id 31548 to 31550
 
 msgctxt "#31551"
 msgid "Window custom smart playlist shortcuts"
