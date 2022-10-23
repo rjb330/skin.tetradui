@@ -274,35 +274,35 @@
 						<label>$LOCALIZE[31309]$LOCALIZE[342]</label>
 						<onclick>Skin.ToggleSetting(MediaBlade_HideMovies)</onclick>
 						<selected>Skin.HasSetting(MediaBlade_HideMovies)</selected>
-						<enabled>Library.HasContent(Movies)</enabled>
+						<enable>Library.HasContent(Movies)</enable>
 					</control>
 					<control type="radiobutton" id="314">
 						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$LOCALIZE[20343]</label>
 						<onclick>Skin.ToggleSetting(MediaBlade_HideTVShows)</onclick>
 						<selected>Skin.HasSetting(MediaBlade_HideTVShows)</selected>
-						<enabled>Library.HasContent(TVShows)</enabled>
+						<enable>Library.HasContent(TVShows)</enable>
 					</control>
 					<control type="radiobutton" id="315">
 						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$LOCALIZE[2]</label>
 						<onclick>Skin.ToggleSetting(MediaBlade_HideMusic)</onclick>
 						<selected>Skin.HasSetting(MediaBlade_HideMusic)</selected>
-						<enabled>Library.HasContent(Music)</enabled>
+						<enable>Library.HasContent(Music)</enable>
 					</control>
 					<control type="radiobutton" id="316">
 						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$LOCALIZE[19020]</label>
 						<onclick>Skin.ToggleSetting(MediaBlade_HideTV)</onclick>
 						<selected>Skin.HasSetting(MediaBlade_HideTV)</selected>
-						<enabled>System.HasPVRAddon</enabled>
+						<enable>System.HasPVRAddon</enable>
 					</control>
 					<control type="radiobutton" id="317">
 						<include>SkinSettingsRadioButtonCommonValues</include>
 						<label>$LOCALIZE[31309]$LOCALIZE[19021]</label>
 						<onclick>Skin.ToggleSetting(MediaBlade_HideRadio)</onclick>
 						<selected>Skin.HasSetting(MediaBlade_HideRadio)</selected>
-						<enabled>System.HasPVRAddon</enabled>
+						<enable>System.HasPVRAddon</enable>
 					</control>
 					<control type="radiobutton" id="318">
 						<include>SkinSettingsRadioButtonCommonValues</include>
