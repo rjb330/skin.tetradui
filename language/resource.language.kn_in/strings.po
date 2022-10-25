@@ -17,11 +17,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 
 msgctxt "Addon Summary"
-msgid "TetradUI is a skin Addon for Kodi media center"
+msgid "TetradUI is a skin add-on for Kodi media center"
 msgstr ""
 
 msgctxt "Addon Description"
-msgid "TetradUI is a skin add-on for Kodi media center. TetradUI is based on JX720 by Jezz_X.[CR]This add-on was created by TeamUI."
+msgid "TetradUI is a skin add-on for Kodi media center. The aim with TetradUI is to create a fresh modern homage of the classic blades-style UI found in the original Xbox360 dashboard. Also seen in the works of Team Blackbolt and Jezz_X with projects MC360 and JX720 respectively. TetradUI is based on JX720 by Jezz_X.[CR]This add-on was created by Jezz_X and TeamUI."
 msgstr ""
 
 msgctxt "#31001"
