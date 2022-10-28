@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Kodi Addons\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-10-28 19:44+0000\n"
+"PO-Revision-Date: 2022-10-28 20:15+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Danish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-tetradui/da_dk/>\n"
 "Language: da_dk\n"
@@ -334,66 +334,66 @@ msgstr "Arial-baseret (bedst til ikke-engelsk)"
 # empty strings from id 31392 to 31399
 msgctxt "#31400"
 msgid "Edit your display settings, including:[CR][CR]* Skin selection[CR]* View options[CR]* Screensaver[CR]* Date & time"
-msgstr ""
+msgstr "Rediger dine skærmindstillinger, herunder:[CR][CR]* Valg af skin[CR]* Visningsindstillinger[CR]* Pauseskærm[CR]* Dato og tid"
 
 # empty string with id 31401
 msgctxt "#31402"
 msgid "Watch and manage the logging of Kodi events, including:[CR][CR]* Failed video library scraping[CR]* Add-on updates[CR]* PVR activities"
-msgstr ""
+msgstr "Se og administrer logføringen af Kodi-begivenheder, herunder:[CR][CR]* Mislykket spraping af videobibliotek[CR]* Add-on-opdateringer[CR]* PVR-aktiviteter"
 
 msgctxt "#31403"
 msgid "Configure network and sharing settings, including:[CR][CR]* Proxy & DNS[CR]* Samba file sharing[CR]* UPNP server[CR]* Web server[CR]* External app control"
-msgstr ""
+msgstr "Konfigurer netværks- og delingsindstillinger, herunder:[CR][CR]* Proxy og DNS[CR]* Samba-fildeling[CR]* UPNP-server[CR]* Webserver[CR]* Ekstern programkontrol"
 
 msgctxt "#31404"
 msgid "Important system settings, including:[CR][CR]* Hardware[CR]* Power saving[CR]* Input devices[CR]* Master user locking"
-msgstr ""
+msgstr "Vigtige systemindstillinger, herunder:[CR][CR]* Hardware[CR]* Strømbesparelse[CR]* Inputenheder[CR]* Hovedbrugerlås"
 
 msgctxt "#31405"
 msgid "Manage user profiles, including:[CR][CR]* Creating profiles[CR]* Deleting profiles[CR]* Changing user settings"
-msgstr ""
+msgstr "Administrer brugerprofiler, herunder:[CR][CR]* Oprettelse af profiler[CR]* Sletning af profiler[CR]* Ændring af brugerindstillinger"
 
 msgctxt "#31406"
 msgid "Change skin specific settings, including:[CR][CR]* Window backgrounds[CR]* Media view options[CR]* Image packs[CR]* Other misc. options"
-msgstr ""
+msgstr "Skift skinspecifikke indstillinger, herunder:[CR][CR]* Baggrunde[CR]* Medievisningsindstillinger[CR]* Billedpakker[CR]* Andre indstillinger"
 
 msgctxt "#31407"
 msgid "Configure PVR settings, including:[CR][CR]* Channels[CR]* Guide[CR]* Playback[CR]* Recordings[CR]* Reminders"
-msgstr ""
+msgstr "Konfigurer PVR-indstillinger, herunder:[CR][CR]* Kanaler[CR]* Guide[CR]* Afspilning[CR]* Optagelser[CR]* Påmindelser"
 
 msgctxt "#31408"
 msgid "Configure player settings, including:[CR][CR]* Library options[CR]* Hardware acceleration[CR]* Subtitles[CR]* DVD playback"
-msgstr ""
+msgstr "Konfigurer indstillinger for afspiller, herunder:[CR][CR]* Biblioteksindstillinger[CR]* Hardwareacceleration[CR]* Undertekster[CR]* DVD-afspilning"
 
 msgctxt "#31409"
 msgid "Configure media settings, including:[CR][CR]* Library options[CR]* File management[CR]* Videos, music, pictures options"
-msgstr ""
+msgstr "Konfigurer medieindstillinger, herunder:[CR][CR]* Biblioteksindstillinger[CR]* Filhåndtering[CR]* Indstillinger for videoer, musik og billeder"
 
 msgctxt "#31410"
 msgid "Information on Kodi and your hardware, including:[CR][CR]* Storage[CR]* Network[CR]* Video[CR]* Hardware"
-msgstr ""
+msgstr "Oplysninger om Kodi og din hardware, herunder:[CR][CR]* Lagring[CR]* Netværk[CR]* Video[CR]* Hardware"
 
 msgctxt "#31411"
 msgid "Configure game settings, including:[CR][CR]* Gameplay options[CR]* RetroAchievements management"
-msgstr ""
+msgstr "Konfigurer spilindstillinger, herunder:[CR][CR]* Indstillinger under gameplay[CR]* RetroAchievements-administration"
 
 # empty strings from id 31412 to 31458
 msgctxt "#31460"
 msgid "Welcome to Kodi[CR]Please choose your profile and log in"
-msgstr ""
+msgstr "Velkommen til Kodi[CR]Vælg venligst din profil og log ind"
 
 msgctxt "#31461"
 msgid "Install add-ons"
-msgstr ""
+msgstr "Installer add-ons"
 
 # empty strings from id 31462 to 31479
 msgctxt "#31480"
 msgid "[COLOR=orange][B]WARNING[/B] !![/COLOR][CR]Hiding all buttons will cause Navigation issues when switching between blades."
-msgstr ""
+msgstr "[COLOR=orange][B]ADVARSEL[/B] !![/COLOR][CR]Hvis alle knapper skjules, vil det medføre navigationsproblemer, når du skifter mellem blade."
 
 msgctxt "#31481"
 msgid "These add-ons will improve the features and overall experience of the skin."
-msgstr ""
+msgstr "Disse add-ons vil forbedre funktionerne og den samlede oplevelse af dette skin."
 
 # empty strings from id 31482 to 31498
 msgctxt "#31499"
@@ -407,11 +407,11 @@ msgstr "Fremhævede"
 
 msgctxt "#31502"
 msgid "Blades"
-msgstr ""
+msgstr "Blade"
 
 msgctxt "#31503"
 msgid "Image packs"
-msgstr ""
+msgstr "Billedpakker"
 
 msgctxt "#31504"
 msgid "Change mode"
@@ -448,27 +448,27 @@ msgstr "Menu for spilindstillinger"
 
 msgctxt "#31519"
 msgid "Show splash screen"
-msgstr ""
+msgstr "Vis startskærm"
 
 msgctxt "#31520"
 msgid "Show now playing video in the background"
-msgstr ""
+msgstr "Vis afspillende video i baggrunden"
 
 msgctxt "#31521"
 msgid "Show music visualization in the background"
-msgstr ""
+msgstr "Vis musikvisualisering i baggrunden"
 
 msgctxt "#31522"
 msgid "Show media specific fanart in the background"
-msgstr ""
+msgstr "Vis mediespecifik fankunst i baggrunden"
 
 msgctxt "#31523"
 msgid "Hide rain drop animation in the background"
-msgstr ""
+msgstr "Skjul regndråbeanimation i baggrunden"
 
 msgctxt "#31524"
 msgid "Don't blend background with fanart,visualization,video"
-msgstr ""
+msgstr "Bland ikke baggrund med fankunst, visualisering, video"
 
 msgctxt "#31525"
 msgid "Select rating"
@@ -476,53 +476,53 @@ msgstr "Vælg bedømmelse"
 
 msgctxt "#31526"
 msgid "Animate all fanart backgrounds"
-msgstr ""
+msgstr "Animer alle fankunst baggrunde"
 
 msgctxt "#31527"
 msgid "Animate fanart backgrounds for music playing"
-msgstr ""
+msgstr "Animer fankunst-baggrunde under afspillende musik"
 
 msgctxt "#31528"
 msgid "Enable Artist Slideshow fanart backgrounds"
-msgstr ""
+msgstr "Aktiver Artist Slideshow fankunst-baggrunde"
 
 msgctxt "#31529"
 msgid "Blur backgrounds"
-msgstr ""
+msgstr "Sløring af baggrunde"
 
 msgctxt "#31530"
 msgid "Fanart only"
-msgstr ""
+msgstr "Kun fankunst"
 
 msgctxt "#31531"
 msgid "Backgrounds only"
-msgstr ""
+msgstr "Kun baggrunde"
 
 msgctxt "#31532"
 msgid "Fanart and backgrounds"
-msgstr ""
+msgstr "Fankunst og baggrunde"
 
 # empty strings from id 31533 to 31536
 msgctxt "#31537"
 msgid "Movie set information"
-msgstr ""
+msgstr "Filmsætinformation"
 
 msgctxt "#31538"
 msgid "About"
-msgstr ""
+msgstr "Om"
 
 msgctxt "#31539"
 msgid "Supported add-ons"
-msgstr ""
+msgstr "Understøttede add-ons"
 
 msgctxt "#31540"
 msgid "Set Default Lyric fetching add-on for Music OSD"
-msgstr ""
+msgstr "Indstil standard add-on til hentning af sangtekster til musik-OSD"
 
 # empty string with id 31543
 msgctxt "#31542"
 msgid "In progress"
-msgstr ""
+msgstr "Igangværende"
 
 msgctxt "#31543"
 msgid "In cinemas"
@@ -530,7 +530,7 @@ msgstr "Vises i biografer nu"
 
 msgctxt "#31544"
 msgid "Upcoming movies"
-msgstr ""
+msgstr "Kommende film"
 
 msgctxt "#31545"
 msgid "Unwatched movies"
@@ -543,15 +543,6 @@ msgstr "Tilfældige film"
 msgctxt "#31547"
 msgid "Premiered"
 msgstr "Haft premiere"
-
-# empty strings from id 31548 to 31550
-msgctxt "#31551"
-msgid "Window custom smart playlist shortcuts"
-msgstr ""
-
-msgctxt "#31552"
-msgid "Window custom add-on shortcuts"
-msgstr ""
 
 msgctxt "#31553"
 msgid "Settings level"

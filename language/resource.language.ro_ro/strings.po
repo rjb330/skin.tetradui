@@ -541,14 +541,6 @@ msgctxt "#31547"
 msgid "Premiered"
 msgstr ""
 
-msgctxt "#31551"
-msgid "Window custom smart playlist shortcuts"
-msgstr "Scurtături liste redare inteligente"
-
-msgctxt "#31552"
-msgid "Window custom add-on shortcuts"
-msgstr "Scurtături accesorii"
-
 msgctxt "#31553"
 msgid "Settings level"
 msgstr "Nivel stabiliri"
@@ -556,6 +548,14 @@ msgstr "Nivel stabiliri"
 msgctxt "#31554"
 msgid "Autologin"
 msgstr ""
+
+#~ msgctxt "#31551"
+#~ msgid "Window custom smart playlist shortcuts"
+#~ msgstr "Scurtături liste redare inteligente"
+
+#~ msgctxt "#31552"
+#~ msgid "Window custom add-on shortcuts"
+#~ msgstr "Scurtături accesorii"
 
 #~ msgctxt "#31020"
 #~ msgid "Weather Conditions"

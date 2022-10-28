@@ -544,15 +544,6 @@ msgctxt "#31547"
 msgid "Premiered"
 msgstr "Esilinastunud"
 
-# empty strings from id 31548 to 31550
-msgctxt "#31551"
-msgid "Window custom smart playlist shortcuts"
-msgstr ""
-
-msgctxt "#31552"
-msgid "Window custom add-on shortcuts"
-msgstr ""
-
 msgctxt "#31553"
 msgid "Settings level"
 msgstr "Seadete tase"
