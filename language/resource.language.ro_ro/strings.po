@@ -54,14 +54,6 @@ msgctxt "#31011"
 msgid "Applications"
 msgstr "Applicaţii"
 
-msgctxt "#31020"
-msgid "Weather Conditions"
-msgstr "Starea Vremii"
-
-msgctxt "#31021"
-msgid "Current Temp"
-msgstr "Temperatura Curentă"
-
 msgctxt "#31022"
 msgid "Forecast"
 msgstr "Prognoza"
@@ -74,21 +66,9 @@ msgctxt "#31024"
 msgid "Current Temperature"
 msgstr "Temperatura Curentă"
 
-msgctxt "#31025"
-msgid "Add-on manager"
-msgstr "Manager Accesorii"
-
 msgctxt "#31026"
 msgid "Current"
 msgstr "Curent"
-
-msgctxt "#31100"
-msgid "Video - Files"
-msgstr "Video - File"
-
-msgctxt "#31101"
-msgid "Music - Files"
-msgstr "Muzică - File"
 
 msgctxt "#31102"
 msgid "Power Options"
@@ -315,18 +295,6 @@ msgstr "Închide Kodi"
 msgctxt "#31309"
 msgid "Hide Button - "
 msgstr "Ascunde Buton - "
-
-msgctxt "#31310"
-msgid "Set Smart Playlist Shortcut"
-msgstr "Setează scurtătură listă redare inteligentă"
-
-msgctxt "#31311"
-msgid "Set Button Label"
-msgstr "Setează etichetă buton"
-
-msgctxt "#31312"
-msgid "Set Button Icon"
-msgstr "Setează iconiţă buton"
 
 msgctxt "#31313"
 msgid "No Weather add-on enabled go to Settings/Weather to enable weather forecast"
@@ -588,6 +556,38 @@ msgstr "Nivel stabiliri"
 msgctxt "#31554"
 msgid "Autologin"
 msgstr ""
+
+#~ msgctxt "#31020"
+#~ msgid "Weather Conditions"
+#~ msgstr "Starea Vremii"
+
+#~ msgctxt "#31021"
+#~ msgid "Current Temp"
+#~ msgstr "Temperatura Curentă"
+
+#~ msgctxt "#31025"
+#~ msgid "Add-on manager"
+#~ msgstr "Manager Accesorii"
+
+#~ msgctxt "#31100"
+#~ msgid "Video - Files"
+#~ msgstr "Video - File"
+
+#~ msgctxt "#31101"
+#~ msgid "Music - Files"
+#~ msgstr "Muzică - File"
+
+#~ msgctxt "#31310"
+#~ msgid "Set Smart Playlist Shortcut"
+#~ msgstr "Setează scurtătură listă redare inteligentă"
+
+#~ msgctxt "#31311"
+#~ msgid "Set Button Label"
+#~ msgstr "Setează etichetă buton"
+
+#~ msgctxt "#31312"
+#~ msgid "Set Button Icon"
+#~ msgstr "Setează iconiţă buton"
 
 #~ msgctxt "#31006"
 #~ msgid "Media"

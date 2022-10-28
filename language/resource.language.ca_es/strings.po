@@ -54,15 +54,6 @@ msgctxt "#31011"
 msgid "Applications"
 msgstr ""
 
-# empty strings from id 31012 to 31019
-msgctxt "#31020"
-msgid "Weather Conditions"
-msgstr ""
-
-msgctxt "#31021"
-msgid "Current Temp"
-msgstr "Temperatura actual"
-
 msgctxt "#31022"
 msgid "Forecast"
 msgstr "Predicció"
@@ -75,22 +66,9 @@ msgctxt "#31024"
 msgid "Current Temperature"
 msgstr ""
 
-msgctxt "#31025"
-msgid "Add-on manager"
-msgstr ""
-
 msgctxt "#31026"
 msgid "Current"
 msgstr "Actual"
-
-# empty strings from id 31027 to 31099
-msgctxt "#31100"
-msgid "Video - Files"
-msgstr ""
-
-msgctxt "#31101"
-msgid "Music - Files"
-msgstr "Música - Fitxers"
 
 msgctxt "#31102"
 msgid "Power Options"
@@ -318,18 +296,6 @@ msgstr ""
 # empty string with id 31308
 msgctxt "#31309"
 msgid "Hide Button - "
-msgstr ""
-
-msgctxt "#31310"
-msgid "Set Smart Playlist Shortcut"
-msgstr ""
-
-msgctxt "#31311"
-msgid "Set Button Label"
-msgstr ""
-
-msgctxt "#31312"
-msgid "Set Button Icon"
 msgstr ""
 
 msgctxt "#31313"
@@ -594,3 +560,11 @@ msgstr "Nivell d'opcions"
 msgctxt "#31554"
 msgid "Autologin"
 msgstr "Autenticació automàtica"
+
+#~ msgctxt "#31021"
+#~ msgid "Current Temp"
+#~ msgstr "Temperatura actual"
+
+#~ msgctxt "#31101"
+#~ msgid "Music - Files"
+#~ msgstr "Música - Fitxers"

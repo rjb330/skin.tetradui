@@ -54,14 +54,6 @@ msgctxt "#31011"
 msgid "Applications"
 msgstr "Programmer"
 
-msgctxt "#31020"
-msgid "Weather Conditions"
-msgstr "Vær forhold"
-
-msgctxt "#31021"
-msgid "Current Temp"
-msgstr "Nåværende Tempratur"
-
 msgctxt "#31022"
 msgid "Forecast"
 msgstr "Varsel"
@@ -74,21 +66,9 @@ msgctxt "#31024"
 msgid "Current Temperature"
 msgstr "Nåværende Tempratur"
 
-msgctxt "#31025"
-msgid "Add-on manager"
-msgstr "Add-on behandler"
-
 msgctxt "#31026"
 msgid "Current"
 msgstr "Nåværende"
-
-msgctxt "#31100"
-msgid "Video - Files"
-msgstr "Video - Filer"
-
-msgctxt "#31101"
-msgid "Music - Files"
-msgstr "Musikk - Filer"
 
 msgctxt "#31102"
 msgid "Power Options"
@@ -315,18 +295,6 @@ msgstr "Avslutt Kodi"
 msgctxt "#31309"
 msgid "Hide Button - "
 msgstr "Gjem knapp - "
-
-msgctxt "#31310"
-msgid "Set Smart Playlist Shortcut"
-msgstr "Sett Smart SPilleliste Snarvei"
-
-msgctxt "#31311"
-msgid "Set Button Label"
-msgstr "Sett Knappe-Merke"
-
-msgctxt "#31312"
-msgid "Set Button Icon"
-msgstr "Sett Knappe-Ikon"
 
 msgctxt "#31313"
 msgid "No Weather add-on enabled go to Settings/Weather to enable weather forecast"
@@ -588,6 +556,38 @@ msgstr "Nivå"
 msgctxt "#31554"
 msgid "Autologin"
 msgstr ""
+
+#~ msgctxt "#31020"
+#~ msgid "Weather Conditions"
+#~ msgstr "Vær forhold"
+
+#~ msgctxt "#31021"
+#~ msgid "Current Temp"
+#~ msgstr "Nåværende Tempratur"
+
+#~ msgctxt "#31025"
+#~ msgid "Add-on manager"
+#~ msgstr "Add-on behandler"
+
+#~ msgctxt "#31100"
+#~ msgid "Video - Files"
+#~ msgstr "Video - Filer"
+
+#~ msgctxt "#31101"
+#~ msgid "Music - Files"
+#~ msgstr "Musikk - Filer"
+
+#~ msgctxt "#31310"
+#~ msgid "Set Smart Playlist Shortcut"
+#~ msgstr "Sett Smart SPilleliste Snarvei"
+
+#~ msgctxt "#31311"
+#~ msgid "Set Button Label"
+#~ msgstr "Sett Knappe-Merke"
+
+#~ msgctxt "#31312"
+#~ msgid "Set Button Icon"
+#~ msgstr "Sett Knappe-Ikon"
 
 #~ msgctxt "#31006"
 #~ msgid "Media"

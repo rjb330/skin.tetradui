@@ -54,15 +54,6 @@ msgctxt "#31011"
 msgid "Applications"
 msgstr "Applicazioni"
 
-# empty strings from id 31012 to 31019
-msgctxt "#31020"
-msgid "Weather Conditions"
-msgstr "Condizioni meteo"
-
-msgctxt "#31021"
-msgid "Current Temp"
-msgstr "Temp attuale"
-
 msgctxt "#31022"
 msgid "Forecast"
 msgstr "Previsioni"
@@ -75,22 +66,9 @@ msgctxt "#31024"
 msgid "Current Temperature"
 msgstr "Temperatura attuale"
 
-msgctxt "#31025"
-msgid "Add-on manager"
-msgstr "Gestore add-on"
-
 msgctxt "#31026"
 msgid "Current"
 msgstr "Attuale"
-
-# empty strings from id 31027 to 31099
-msgctxt "#31100"
-msgid "Video - Files"
-msgstr "Video - File"
-
-msgctxt "#31101"
-msgid "Music - Files"
-msgstr "Musica - File"
 
 msgctxt "#31102"
 msgid "Power Options"
@@ -319,18 +297,6 @@ msgstr "Esci da Kodi"
 msgctxt "#31309"
 msgid "Hide Button - "
 msgstr "Nascondi pulsante - "
-
-msgctxt "#31310"
-msgid "Set Smart Playlist Shortcut"
-msgstr "Imposta collegamento alla playlist intelligente"
-
-msgctxt "#31311"
-msgid "Set Button Label"
-msgstr "Imposta etichetta pulsante"
-
-msgctxt "#31312"
-msgid "Set Button Icon"
-msgstr "Imposta icona pulsante"
 
 msgctxt "#31313"
 msgid "No Weather add-on enabled go to Settings/Weather to enable weather forecast"
@@ -594,3 +560,37 @@ msgstr "Livello impostazioni"
 msgctxt "#31554"
 msgid "Autologin"
 msgstr "Login automatico"
+
+# empty strings from id 31012 to 31019
+#~ msgctxt "#31020"
+#~ msgid "Weather Conditions"
+#~ msgstr "Condizioni meteo"
+
+#~ msgctxt "#31021"
+#~ msgid "Current Temp"
+#~ msgstr "Temp attuale"
+
+#~ msgctxt "#31025"
+#~ msgid "Add-on manager"
+#~ msgstr "Gestore add-on"
+
+# empty strings from id 31027 to 31099
+#~ msgctxt "#31100"
+#~ msgid "Video - Files"
+#~ msgstr "Video - File"
+
+#~ msgctxt "#31101"
+#~ msgid "Music - Files"
+#~ msgstr "Musica - File"
+
+#~ msgctxt "#31310"
+#~ msgid "Set Smart Playlist Shortcut"
+#~ msgstr "Imposta collegamento alla playlist intelligente"
+
+#~ msgctxt "#31311"
+#~ msgid "Set Button Label"
+#~ msgstr "Imposta etichetta pulsante"
+
+#~ msgctxt "#31312"
+#~ msgid "Set Button Icon"
+#~ msgstr "Imposta icona pulsante"

@@ -54,14 +54,6 @@ msgctxt "#31011"
 msgid "Applications"
 msgstr "Aplikacije"
 
-msgctxt "#31020"
-msgid "Weather Conditions"
-msgstr "Vremenski Uvjeti"
-
-msgctxt "#31021"
-msgid "Current Temp"
-msgstr "Trenutna Temp"
-
 msgctxt "#31022"
 msgid "Forecast"
 msgstr "Prognoza"
@@ -74,21 +66,9 @@ msgctxt "#31024"
 msgid "Current Temperature"
 msgstr "Trenutna Temperatura"
 
-msgctxt "#31025"
-msgid "Add-on manager"
-msgstr "Upravitelj Dod."
-
 msgctxt "#31026"
 msgid "Current"
 msgstr "Trenutno"
-
-msgctxt "#31100"
-msgid "Video - Files"
-msgstr "Video - Datoteke"
-
-msgctxt "#31101"
-msgid "Music - Files"
-msgstr "Muzicke - Datoteke"
 
 msgctxt "#31102"
 msgid "Power Options"
@@ -315,18 +295,6 @@ msgstr "Zatvori Kodi"
 msgctxt "#31309"
 msgid "Hide Button - "
 msgstr "Sakri Gumb - "
-
-msgctxt "#31310"
-msgid "Set Smart Playlist Shortcut"
-msgstr "Postavi Precac Pametne Playliste"
-
-msgctxt "#31311"
-msgid "Set Button Label"
-msgstr "Postavi Naziv Gumba"
-
-msgctxt "#31312"
-msgid "Set Button Icon"
-msgstr "Postavi Ikonu Gumba"
 
 msgctxt "#31313"
 msgid "No Weather add-on enabled go to Settings/Weather to enable weather forecast"
@@ -588,6 +556,38 @@ msgstr "Razina postavki"
 msgctxt "#31554"
 msgid "Autologin"
 msgstr "Automatska prijava"
+
+#~ msgctxt "#31020"
+#~ msgid "Weather Conditions"
+#~ msgstr "Vremenski Uvjeti"
+
+#~ msgctxt "#31021"
+#~ msgid "Current Temp"
+#~ msgstr "Trenutna Temp"
+
+#~ msgctxt "#31025"
+#~ msgid "Add-on manager"
+#~ msgstr "Upravitelj Dod."
+
+#~ msgctxt "#31100"
+#~ msgid "Video - Files"
+#~ msgstr "Video - Datoteke"
+
+#~ msgctxt "#31101"
+#~ msgid "Music - Files"
+#~ msgstr "Muzicke - Datoteke"
+
+#~ msgctxt "#31310"
+#~ msgid "Set Smart Playlist Shortcut"
+#~ msgstr "Postavi Precac Pametne Playliste"
+
+#~ msgctxt "#31311"
+#~ msgid "Set Button Label"
+#~ msgstr "Postavi Naziv Gumba"
+
+#~ msgctxt "#31312"
+#~ msgid "Set Button Icon"
+#~ msgstr "Postavi Ikonu Gumba"
 
 #~ msgctxt "#31006"
 #~ msgid "Media"

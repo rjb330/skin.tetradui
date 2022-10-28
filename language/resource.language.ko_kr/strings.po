@@ -54,14 +54,6 @@ msgctxt "#31011"
 msgid "Applications"
 msgstr "프로그램"
 
-msgctxt "#31020"
-msgid "Weather Conditions"
-msgstr "현재 날씨"
-
-msgctxt "#31021"
-msgid "Current Temp"
-msgstr "현재 기온"
-
 msgctxt "#31022"
 msgid "Forecast"
 msgstr "예보"
@@ -74,21 +66,9 @@ msgctxt "#31024"
 msgid "Current Temperature"
 msgstr "현재 기온"
 
-msgctxt "#31025"
-msgid "Add-on manager"
-msgstr "추가기능 관리"
-
 msgctxt "#31026"
 msgid "Current"
 msgstr "현재"
-
-msgctxt "#31100"
-msgid "Video - Files"
-msgstr "비디오 - 파일"
-
-msgctxt "#31101"
-msgid "Music - Files"
-msgstr "음악 - 파일"
 
 msgctxt "#31102"
 msgid "Power Options"
@@ -315,18 +295,6 @@ msgstr "Kodi 종료"
 msgctxt "#31309"
 msgid "Hide Button - "
 msgstr "버튼 숨김 - "
-
-msgctxt "#31310"
-msgid "Set Smart Playlist Shortcut"
-msgstr "지능형 재생목록 바로가기 설정"
-
-msgctxt "#31311"
-msgid "Set Button Label"
-msgstr "버튼 제목 설정"
-
-msgctxt "#31312"
-msgid "Set Button Icon"
-msgstr "버튼 아이콘 설정"
 
 msgctxt "#31313"
 msgid "No Weather add-on enabled go to Settings/Weather to enable weather forecast"
@@ -588,6 +556,38 @@ msgstr "설정 수준"
 msgctxt "#31554"
 msgid "Autologin"
 msgstr "자동 로그인"
+
+#~ msgctxt "#31020"
+#~ msgid "Weather Conditions"
+#~ msgstr "현재 날씨"
+
+#~ msgctxt "#31021"
+#~ msgid "Current Temp"
+#~ msgstr "현재 기온"
+
+#~ msgctxt "#31025"
+#~ msgid "Add-on manager"
+#~ msgstr "추가기능 관리"
+
+#~ msgctxt "#31100"
+#~ msgid "Video - Files"
+#~ msgstr "비디오 - 파일"
+
+#~ msgctxt "#31101"
+#~ msgid "Music - Files"
+#~ msgstr "음악 - 파일"
+
+#~ msgctxt "#31310"
+#~ msgid "Set Smart Playlist Shortcut"
+#~ msgstr "지능형 재생목록 바로가기 설정"
+
+#~ msgctxt "#31311"
+#~ msgid "Set Button Label"
+#~ msgstr "버튼 제목 설정"
+
+#~ msgctxt "#31312"
+#~ msgid "Set Button Icon"
+#~ msgstr "버튼 아이콘 설정"
 
 #~ msgctxt "#31006"
 #~ msgid "Media"
