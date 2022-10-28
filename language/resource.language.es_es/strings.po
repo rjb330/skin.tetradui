@@ -54,14 +54,6 @@ msgctxt "#31011"
 msgid "Applications"
 msgstr "Aplicaciones"
 
-msgctxt "#31020"
-msgid "Weather Conditions"
-msgstr "Condiciones Climaticas"
-
-msgctxt "#31021"
-msgid "Current Temp"
-msgstr "Temperatura Actual"
-
 msgctxt "#31022"
 msgid "Forecast"
 msgstr "Pronostico"
@@ -74,21 +66,9 @@ msgctxt "#31024"
 msgid "Current Temperature"
 msgstr "Temperatura Actual"
 
-msgctxt "#31025"
-msgid "Add-on manager"
-msgstr "Gestion de Accesorios"
-
 msgctxt "#31026"
 msgid "Current"
 msgstr "Actual"
-
-msgctxt "#31100"
-msgid "Video - Files"
-msgstr "Video - Files"
-
-msgctxt "#31101"
-msgid "Music - Files"
-msgstr "Archivos - música"
 
 msgctxt "#31102"
 msgid "Power Options"
@@ -315,18 +295,6 @@ msgstr "Terminar Kodi"
 msgctxt "#31309"
 msgid "Hide Button - "
 msgstr "Ocultar Boton - "
-
-msgctxt "#31310"
-msgid "Set Smart Playlist Shortcut"
-msgstr "Fijar atajo para Smart Playlist"
-
-msgctxt "#31311"
-msgid "Set Button Label"
-msgstr "Fijar rotulo para Boton"
-
-msgctxt "#31312"
-msgid "Set Button Icon"
-msgstr "Fijar Icono para Boton"
 
 msgctxt "#31313"
 msgid "No Weather add-on enabled go to Settings/Weather to enable weather forecast"
@@ -587,6 +555,38 @@ msgstr "Nivel de ajustes"
 msgctxt "#31554"
 msgid "Autologin"
 msgstr "Auto inicio de sesión"
+
+#~ msgctxt "#31020"
+#~ msgid "Weather Conditions"
+#~ msgstr "Condiciones Climaticas"
+
+#~ msgctxt "#31021"
+#~ msgid "Current Temp"
+#~ msgstr "Temperatura Actual"
+
+#~ msgctxt "#31025"
+#~ msgid "Add-on manager"
+#~ msgstr "Gestion de Accesorios"
+
+#~ msgctxt "#31100"
+#~ msgid "Video - Files"
+#~ msgstr "Video - Files"
+
+#~ msgctxt "#31101"
+#~ msgid "Music - Files"
+#~ msgstr "Archivos - música"
+
+#~ msgctxt "#31310"
+#~ msgid "Set Smart Playlist Shortcut"
+#~ msgstr "Fijar atajo para Smart Playlist"
+
+#~ msgctxt "#31311"
+#~ msgid "Set Button Label"
+#~ msgstr "Fijar rotulo para Boton"
+
+#~ msgctxt "#31312"
+#~ msgid "Set Button Icon"
+#~ msgstr "Fijar Icono para Boton"
 
 #~ msgctxt "#31006"
 #~ msgid "Media"

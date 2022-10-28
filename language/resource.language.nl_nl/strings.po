@@ -54,14 +54,6 @@ msgctxt "#31011"
 msgid "Applications"
 msgstr "Apps"
 
-msgctxt "#31020"
-msgid "Weather Conditions"
-msgstr "Weer Omstandigheden"
-
-msgctxt "#31021"
-msgid "Current Temp"
-msgstr "Huidige Temperatuur"
-
 msgctxt "#31022"
 msgid "Forecast"
 msgstr "Vooruitzicht"
@@ -74,21 +66,9 @@ msgctxt "#31024"
 msgid "Current Temperature"
 msgstr "Huidige Temperatuur"
 
-msgctxt "#31025"
-msgid "Add-on manager"
-msgstr "Add-on manager"
-
 msgctxt "#31026"
 msgid "Current"
 msgstr "Huidige"
-
-msgctxt "#31100"
-msgid "Video - Files"
-msgstr "Video - Bestanden"
-
-msgctxt "#31101"
-msgid "Music - Files"
-msgstr "Muziek - Bestanden"
 
 msgctxt "#31102"
 msgid "Power Options"
@@ -315,18 +295,6 @@ msgstr "Kodi Afsluiten"
 msgctxt "#31309"
 msgid "Hide Button - "
 msgstr "Knop Verbergen - "
-
-msgctxt "#31310"
-msgid "Set Smart Playlist Shortcut"
-msgstr ""
-
-msgctxt "#31311"
-msgid "Set Button Label"
-msgstr "Stel Knop Label In"
-
-msgctxt "#31312"
-msgid "Set Button Icon"
-msgstr "Stel Knop Icoon In"
 
 msgctxt "#31313"
 msgid "No Weather add-on enabled go to Settings/Weather to enable weather forecast"
@@ -587,6 +555,34 @@ msgstr "Instellingsniveau"
 msgctxt "#31554"
 msgid "Autologin"
 msgstr "Automatisch inloggen"
+
+#~ msgctxt "#31020"
+#~ msgid "Weather Conditions"
+#~ msgstr "Weer Omstandigheden"
+
+#~ msgctxt "#31021"
+#~ msgid "Current Temp"
+#~ msgstr "Huidige Temperatuur"
+
+#~ msgctxt "#31025"
+#~ msgid "Add-on manager"
+#~ msgstr "Add-on manager"
+
+#~ msgctxt "#31100"
+#~ msgid "Video - Files"
+#~ msgstr "Video - Bestanden"
+
+#~ msgctxt "#31101"
+#~ msgid "Music - Files"
+#~ msgstr "Muziek - Bestanden"
+
+#~ msgctxt "#31311"
+#~ msgid "Set Button Label"
+#~ msgstr "Stel Knop Label In"
+
+#~ msgctxt "#31312"
+#~ msgid "Set Button Icon"
+#~ msgstr "Stel Knop Icoon In"
 
 #~ msgctxt "#31006"
 #~ msgid "Media"

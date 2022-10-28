@@ -54,15 +54,6 @@ msgctxt "#31011"
 msgid "Applications"
 msgstr "Programmer"
 
-# empty strings from id 31012 to 31019
-msgctxt "#31020"
-msgid "Weather Conditions"
-msgstr "Vejrforhold"
-
-msgctxt "#31021"
-msgid "Current Temp"
-msgstr "Nuværende temperatur"
-
 msgctxt "#31022"
 msgid "Forecast"
 msgstr "Vejrudsigt"
@@ -75,22 +66,9 @@ msgctxt "#31024"
 msgid "Current Temperature"
 msgstr "Nuværende temperatur"
 
-msgctxt "#31025"
-msgid "Add-on manager"
-msgstr "Håndtering af add-ons"
-
 msgctxt "#31026"
 msgid "Current"
 msgstr "Nuværende"
-
-# empty strings from id 31027 to 31099
-msgctxt "#31100"
-msgid "Video - Files"
-msgstr "Video - Filer"
-
-msgctxt "#31101"
-msgid "Music - Files"
-msgstr "Musik - Filer"
 
 msgctxt "#31102"
 msgid "Power Options"
@@ -319,18 +297,6 @@ msgstr "Afslut Kodi"
 msgctxt "#31309"
 msgid "Hide Button - "
 msgstr "Skjul knap - "
-
-msgctxt "#31310"
-msgid "Set Smart Playlist Shortcut"
-msgstr "Indstil genvej til smart playliste"
-
-msgctxt "#31311"
-msgid "Set Button Label"
-msgstr "Indstil navn til knap"
-
-msgctxt "#31312"
-msgid "Set Button Icon"
-msgstr "Indstil billede til knap"
 
 msgctxt "#31313"
 msgid "No Weather add-on enabled go to Settings/Weather to enable weather forecast"
@@ -594,3 +560,37 @@ msgstr "Indstillingsniveau"
 msgctxt "#31554"
 msgid "Autologin"
 msgstr "Autologin"
+
+# empty strings from id 31012 to 31019
+#~ msgctxt "#31020"
+#~ msgid "Weather Conditions"
+#~ msgstr "Vejrforhold"
+
+#~ msgctxt "#31021"
+#~ msgid "Current Temp"
+#~ msgstr "Nuværende temperatur"
+
+#~ msgctxt "#31025"
+#~ msgid "Add-on manager"
+#~ msgstr "Håndtering af add-ons"
+
+# empty strings from id 31027 to 31099
+#~ msgctxt "#31100"
+#~ msgid "Video - Files"
+#~ msgstr "Video - Filer"
+
+#~ msgctxt "#31101"
+#~ msgid "Music - Files"
+#~ msgstr "Musik - Filer"
+
+#~ msgctxt "#31310"
+#~ msgid "Set Smart Playlist Shortcut"
+#~ msgstr "Indstil genvej til smart playliste"
+
+#~ msgctxt "#31311"
+#~ msgid "Set Button Label"
+#~ msgstr "Indstil navn til knap"
+
+#~ msgctxt "#31312"
+#~ msgid "Set Button Icon"
+#~ msgstr "Indstil billede til knap"

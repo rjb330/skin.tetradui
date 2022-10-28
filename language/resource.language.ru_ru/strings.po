@@ -54,15 +54,6 @@ msgctxt "#31011"
 msgid "Applications"
 msgstr "Приложения"
 
-# empty strings from id 31012 to 31019
-msgctxt "#31020"
-msgid "Weather Conditions"
-msgstr "Погодные условия"
-
-msgctxt "#31021"
-msgid "Current Temp"
-msgstr "Текущая температура"
-
 msgctxt "#31022"
 msgid "Forecast"
 msgstr "Прогноз"
@@ -75,22 +66,9 @@ msgctxt "#31024"
 msgid "Current Temperature"
 msgstr "Текущая температура"
 
-msgctxt "#31025"
-msgid "Add-on manager"
-msgstr "Менеджер надстроек"
-
 msgctxt "#31026"
 msgid "Current"
 msgstr "Текущий"
-
-# empty strings from id 31027 to 31099
-msgctxt "#31100"
-msgid "Video - Files"
-msgstr "Видео — Файлы"
-
-msgctxt "#31101"
-msgid "Music - Files"
-msgstr "Музыка - Файлы"
 
 msgctxt "#31102"
 msgid "Power Options"
@@ -320,18 +298,6 @@ msgstr "Выйти из Коди"
 msgctxt "#31309"
 msgid "Hide Button - "
 msgstr "Скрыть кнопку -"
-
-msgctxt "#31310"
-msgid "Set Smart Playlist Shortcut"
-msgstr "Установить ярлык смарт-плейлиста"
-
-msgctxt "#31311"
-msgid "Set Button Label"
-msgstr "Установить метку кнопки"
-
-msgctxt "#31312"
-msgid "Set Button Icon"
-msgstr "Установить значок кнопки"
 
 msgctxt "#31313"
 msgid "No Weather add-on enabled go to Settings/Weather to enable weather forecast"
@@ -598,3 +564,37 @@ msgstr "Уровень настроек"
 msgctxt "#31554"
 msgid "Autologin"
 msgstr "Автоматическая авторизация"
+
+# empty strings from id 31012 to 31019
+#~ msgctxt "#31020"
+#~ msgid "Weather Conditions"
+#~ msgstr "Погодные условия"
+
+#~ msgctxt "#31021"
+#~ msgid "Current Temp"
+#~ msgstr "Текущая температура"
+
+#~ msgctxt "#31025"
+#~ msgid "Add-on manager"
+#~ msgstr "Менеджер надстроек"
+
+# empty strings from id 31027 to 31099
+#~ msgctxt "#31100"
+#~ msgid "Video - Files"
+#~ msgstr "Видео — Файлы"
+
+#~ msgctxt "#31101"
+#~ msgid "Music - Files"
+#~ msgstr "Музыка - Файлы"
+
+#~ msgctxt "#31310"
+#~ msgid "Set Smart Playlist Shortcut"
+#~ msgstr "Установить ярлык смарт-плейлиста"
+
+#~ msgctxt "#31311"
+#~ msgid "Set Button Label"
+#~ msgstr "Установить метку кнопки"
+
+#~ msgctxt "#31312"
+#~ msgid "Set Button Icon"
+#~ msgstr "Установить значок кнопки"

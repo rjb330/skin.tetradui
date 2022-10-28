@@ -54,14 +54,6 @@ msgctxt "#31011"
 msgid "Applications"
 msgstr "Applications"
 
-msgctxt "#31020"
-msgid "Weather Conditions"
-msgstr "Conditions météo"
-
-msgctxt "#31021"
-msgid "Current Temp"
-msgstr "Temp. actuelle"
-
 msgctxt "#31022"
 msgid "Forecast"
 msgstr "Prévisions"
@@ -74,21 +66,9 @@ msgctxt "#31024"
 msgid "Current Temperature"
 msgstr "Température actuelle"
 
-msgctxt "#31025"
-msgid "Add-on manager"
-msgstr "Gestionnaire add-ons"
-
 msgctxt "#31026"
 msgid "Current"
 msgstr "Actuel"
-
-msgctxt "#31100"
-msgid "Video - Files"
-msgstr "Video - Fichiers"
-
-msgctxt "#31101"
-msgid "Music - Files"
-msgstr "Music - Fichiers"
 
 msgctxt "#31102"
 msgid "Power Options"
@@ -315,18 +295,6 @@ msgstr "Quitter Kodi"
 msgctxt "#31309"
 msgid "Hide Button - "
 msgstr "Masquer Bouton - "
-
-msgctxt "#31310"
-msgid "Set Smart Playlist Shortcut"
-msgstr "Définir le raccourci de la playliste intelligente"
-
-msgctxt "#31311"
-msgid "Set Button Label"
-msgstr "Définir l'étiquette du bouton"
-
-msgctxt "#31312"
-msgid "Set Button Icon"
-msgstr "Définir l'icône du bouton"
 
 msgctxt "#31313"
 msgid "No Weather add-on enabled go to Settings/Weather to enable weather forecast"
@@ -588,6 +556,38 @@ msgstr "Niveau de paramétrage"
 msgctxt "#31554"
 msgid "Autologin"
 msgstr "Connexion auto."
+
+#~ msgctxt "#31020"
+#~ msgid "Weather Conditions"
+#~ msgstr "Conditions météo"
+
+#~ msgctxt "#31021"
+#~ msgid "Current Temp"
+#~ msgstr "Temp. actuelle"
+
+#~ msgctxt "#31025"
+#~ msgid "Add-on manager"
+#~ msgstr "Gestionnaire add-ons"
+
+#~ msgctxt "#31100"
+#~ msgid "Video - Files"
+#~ msgstr "Video - Fichiers"
+
+#~ msgctxt "#31101"
+#~ msgid "Music - Files"
+#~ msgstr "Music - Fichiers"
+
+#~ msgctxt "#31310"
+#~ msgid "Set Smart Playlist Shortcut"
+#~ msgstr "Définir le raccourci de la playliste intelligente"
+
+#~ msgctxt "#31311"
+#~ msgid "Set Button Label"
+#~ msgstr "Définir l'étiquette du bouton"
+
+#~ msgctxt "#31312"
+#~ msgid "Set Button Icon"
+#~ msgstr "Définir l'icône du bouton"
 
 #~ msgctxt "#31006"
 #~ msgid "Media"
