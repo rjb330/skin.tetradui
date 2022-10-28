@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: Kodi Addons\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-10-25 10:33+0000\n"
-"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"PO-Revision-Date: 2022-10-28 19:44+0000\n"
+"Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
 "Language-Team: Italian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-tetradui/it_it/>\n"
 "Language: it_it\n"
 "MIME-Version: 1.0\n"
@@ -19,27 +19,27 @@ msgstr ""
 
 msgctxt "Addon Summary"
 msgid "TetradUI is a skin add-on for Kodi media center"
-msgstr ""
+msgstr "TetradUI è un add-on della skin per Kodi media center"
 
 msgctxt "Addon Description"
 msgid "TetradUI is a skin add-on for Kodi media center. The aim with TetradUI is to create a fresh modern homage of the classic blades-style UI found in the original Xbox360 dashboard. Also seen in the works of Team Blackbolt and Jezz_X with projects MC360 and JX720 respectively. TetradUI is based on JX720 by Jezz_X.[CR]This add-on was created by Jezz_X and TeamUI."
-msgstr ""
+msgstr "TetradUI è un add-on della skin per Kodi media center. L'obiettivo con TetradUI è creare un omaggio moderno e fresco della classica interfaccia utente in stile blade che si trova nella dashboard originale di Xbox360. Visto anche nei lavori del Team Blackbolt e Jezz_X rispettivamente con i progetti MC360 e JX720. TetradUI è basato su JX720 di Jezz_X.[CR]Questo componente aggiuntivo è stato creato da Jezz_X e TeamUI."
 
 msgctxt "#31001"
 msgid "media"
-msgstr ""
+msgstr "media"
 
 msgctxt "#31002"
 msgid "apps"
-msgstr ""
+msgstr "app"
 
 msgctxt "#31003"
 msgid "system"
-msgstr ""
+msgstr "sistema"
 
 msgctxt "#31004"
 msgid "weather"
-msgstr ""
+msgstr "meteo"
 
 msgctxt "#31005"
 msgid "Apps"
@@ -48,20 +48,20 @@ msgstr "App"
 # empty strings from id 31006 to 31009
 msgctxt "#31010"
 msgid "TetradUI is a passion project made by TeamUI.[CR]It's a big project and it takes a [I]lot[/I] of effort to develop and maintain.[CR]Consider scanning this QR and make a donation to help keep this project healthy.[CR]Any amount helps greatly and is much appreciated."
-msgstr ""
+msgstr "TetradUI è un progetto di passione realizzato da TeamUI.[CR]È un grande progetto e ci vuole [I]molto[/I] sforzo per svilupparlo e mantenerlo.[CR]Considera la scansione di questo QR e fai una donazione per aiutare a mantenere questo progetto sano.[CR]Qualsiasi importo aiuta molto ed è molto apprezzato."
 
 msgctxt "#31011"
 msgid "Applications"
-msgstr ""
+msgstr "Applicazioni"
 
 # empty strings from id 31012 to 31019
 msgctxt "#31020"
 msgid "Weather Conditions"
-msgstr ""
+msgstr "Condizioni meteo"
 
 msgctxt "#31021"
 msgid "Current Temp"
-msgstr "Temperatura attuale"
+msgstr "Temp attuale"
 
 msgctxt "#31022"
 msgid "Forecast"
@@ -73,7 +73,7 @@ msgstr "Aggiornato:"
 
 msgctxt "#31024"
 msgid "Current Temperature"
-msgstr ""
+msgstr "Temperatura attuale"
 
 msgctxt "#31025"
 msgid "Add-on manager"
@@ -86,7 +86,7 @@ msgstr "Attuale"
 # empty strings from id 31027 to 31099
 msgctxt "#31100"
 msgid "Video - Files"
-msgstr ""
+msgstr "Video - File"
 
 msgctxt "#31101"
 msgid "Music - Files"
@@ -94,12 +94,12 @@ msgstr "Musica - File"
 
 msgctxt "#31102"
 msgid "Power Options"
-msgstr "Impostazioni Avanzate"
+msgstr "Opzioni alimentazione"
 
 # empty strings from id 31103 to 31199
 msgctxt "#31200"
 msgid "Items"
-msgstr "Oggetti"
+msgstr "Elementi"
 
 msgctxt "#31201"
 msgid "Page"
@@ -124,15 +124,15 @@ msgstr "Velocità rendering"
 
 msgctxt "#31212"
 msgid "Memory used"
-msgstr "Memoria usata"
+msgstr "Memoria utilizzata"
 
 msgctxt "#31213"
 msgid "Hardware decoding"
-msgstr "Decodifica Hardware"
+msgstr "Decodifica hardware"
 
 msgctxt "#31214"
 msgid "Pixel format"
-msgstr "Formato Pixel"
+msgstr "Formato pixel"
 
 msgctxt "#31215"
 msgid "Frames per second"
@@ -140,7 +140,7 @@ msgstr "Frame per secondo"
 
 msgctxt "#31216"
 msgid "aspect ratio"
-msgstr "rapporto d'aspetto"
+msgstr "proporzioni"
 
 msgctxt "#31217"
 msgid "Decoder"
@@ -160,7 +160,7 @@ msgstr "Informazioni elaborazione audio"
 
 msgctxt "#31221"
 msgid "Location"
-msgstr "Località"
+msgstr "Posizione"
 
 msgctxt "#31222"
 msgid "Play speed"
@@ -180,7 +180,7 @@ msgstr "Attiva/disattiva sottotitoli"
 
 msgctxt "#31226"
 msgid "Toggle audio stream"
-msgstr "Attiva/disattiva audio"
+msgstr "Attiva/disattiva flusso audio"
 
 msgctxt "#31227"
 msgid "available"
@@ -188,7 +188,7 @@ msgstr "disponibile"
 
 msgctxt "#31228"
 msgid "Add-on shortcut"
-msgstr ""
+msgstr "Scorciatoia add-on"
 
 msgctxt "#31229"
 msgid "Play speed"
@@ -204,15 +204,15 @@ msgstr "In pausa"
 
 msgctxt "#31232"
 msgid "FF"
-msgstr ""
+msgstr "FF"
 
 msgctxt "#31233"
 msgid "RW"
-msgstr ""
+msgstr "RW"
 
 msgctxt "#31234"
 msgid "Buffering"
-msgstr ""
+msgstr "Buffering"
 
 msgctxt "#31235"
 msgid "Now Playing"
@@ -220,27 +220,27 @@ msgstr "In riproduzione"
 
 msgctxt "#31236"
 msgid "End Time:"
-msgstr ""
+msgstr "Termina alle:"
 
 msgctxt "#31237"
 msgid "Welcome to TetradUI"
-msgstr ""
+msgstr "Benvenuto in TetradUI"
 
 msgctxt "#31238"
 msgid "Navigation is done using the top logo button.[CR]Using the skin setting it can either be placed top left or center.[CR][CR][B]Top logo button[/B][CR]Navigating between the blades is done using [I]left[/I] and [I]right[/I].[CR]Clicking the logo button will open a shortcuts sideblade.[CR][CR][B]Menu lists[/B][CR]If no widgets or submenus are present, you can navigate between the blades using [I]left[/I] and [I]right[/I] from the menu lists.[CR][CR][B]Widgets[/B][CR]If widgets are present, [I]left[/I] from the menu lists will take you to the widgets.[CR][I]Left[/I] or [I]right[/I] will take you back to the menu lists.[CR][CR][B]Submenu lists[/B][CR]If submenus are present, [I]right[/I] from the menu lists will take you there.[CR][I]Left[/I] from the submenus will take you back to the menu and [I]right[/I] will take you to the widgets.[CR]If no widgets are present, [I]right[/I] will switch blade."
-msgstr ""
+msgstr "La navigazione avviene utilizzando il pulsante con il logo in alto.[CR]Usando l'impostazione della skin può essere posizionato in alto a sinistra o al centro.[CR][CR][B]Pulsante logo in alto[/B][CR]La navigazione tra le lame viene eseguita utilizzando [I]sinistra[/I] e [I]destra[/I].[CR]Facendo clic sul pulsante del logo si apriranno delle scorciatoie alla lama laterale.[CR][CR][B]Elenchi di menu[/B][CR]Se non sono presenti widget o sottomenu, puoi navigare tra le lame utilizzando [I]sinistra[/I] e [I]destra[/I] dagli elenchi dei menu.[CR][CR][B]Widget[/B][CR]Se sono presenti widget, [I]sinistra[/I] dagli elenchi dei menu ti riporterà ai widget.[CR][I]Sinistra[/I] o [I]destra[/I] ti riporterà al liste di menu.[CR][CR][B]Elenchi di sottomenu[/B][CR]Se sono presenti sottomenu, [I]destra[/I] dagli elenchi di menu ti porterà lì.[CR][I]Sinistra[/I] dai sottomenu ti riporterà al menu e [I]destra[/I] ti riporterà ai widget.[CR]Se non sono presenti widget, [I]destra[/I] cambierà lama."
 
 msgctxt "#31239"
 msgid "Never show again"
-msgstr ""
+msgstr "Non mostrare mai più"
 
 msgctxt "#31240"
 msgid "Hidden channels"
-msgstr ""
+msgstr "Canali nascosti"
 
 msgctxt "#31241"
 msgid "Navigation"
-msgstr ""
+msgstr "Navigazione"
 
 msgctxt "#31242"
 msgid "Available groups"
@@ -248,7 +248,7 @@ msgstr "Gruppi disponibili"
 
 msgctxt "#31243"
 msgid "Hidden channels"
-msgstr ""
+msgstr "Canali nascosti"
 
 msgctxt "#31244"
 msgid "Add group"
@@ -260,7 +260,7 @@ msgstr "Rinomina gruppo"
 
 msgctxt "#31246"
 msgid "Delete group"
-msgstr "Cancella gruppo"
+msgstr "Elimina gruppo"
 
 msgctxt "#31247"
 msgid "Timeshift"
@@ -268,7 +268,7 @@ msgstr "Timeshift"
 
 msgctxt "#31248"
 msgid "Channel group"
-msgstr "Gruppo Canali"
+msgstr "Gruppo canali"
 
 msgctxt "#31249"
 msgid "Recently played"
@@ -276,7 +276,7 @@ msgstr "Riprodotti di recente"
 
 msgctxt "#31250"
 msgid "Poster Big"
-msgstr ""
+msgstr "Poster grande"
 
 msgctxt "#31251"
 msgid "Thumb Info"
@@ -289,7 +289,7 @@ msgstr "Per favore scegli una sorgente Musica!"
 
 msgctxt "#31301"
 msgid "Please setup[CR]movie and tv show sources!"
-msgstr ""
+msgstr "Imposta sorgenti[CR]di film e programmi TV!"
 
 msgctxt "#31302"
 msgid "Working"
@@ -297,11 +297,11 @@ msgstr "Attendere"
 
 msgctxt "#31303"
 msgid "Last logged on"
-msgstr ""
+msgstr "Ultimo accesso"
 
 msgctxt "#31304"
 msgid "Memory Usage"
-msgstr "Utilizzo Memoria"
+msgstr "Utilizzo memoria"
 
 msgctxt "#31305"
 msgid "Reset"
@@ -309,40 +309,40 @@ msgstr ""
 
 msgctxt "#31306"
 msgid "Power off"
-msgstr ""
+msgstr "Spegni"
 
 msgctxt "#31307"
 msgid "Quit Kodi"
-msgstr ""
+msgstr "Esci da Kodi"
 
 # empty string with id 31308
 msgctxt "#31309"
 msgid "Hide Button - "
-msgstr ""
+msgstr "Nascondi pulsante - "
 
 msgctxt "#31310"
 msgid "Set Smart Playlist Shortcut"
-msgstr ""
+msgstr "Imposta collegamento alla playlist intelligente"
 
 msgctxt "#31311"
 msgid "Set Button Label"
-msgstr ""
+msgstr "Imposta etichetta pulsante"
 
 msgctxt "#31312"
 msgid "Set Button Icon"
-msgstr ""
+msgstr "Imposta icona pulsante"
 
 msgctxt "#31313"
 msgid "No Weather add-on enabled go to Settings/Weather to enable weather forecast"
-msgstr ""
+msgstr "Nessun add-on meteo abilitato, vai su Impostazioni/Meteo per abilitare le previsioni del tempo"
 
 msgctxt "#31314"
 msgid "Hide widgets"
-msgstr ""
+msgstr "Nascondi widget"
 
 msgctxt "#31315"
 msgid "Install add-ons"
-msgstr ""
+msgstr "Installa add-on"
 
 msgctxt "#31316"
 msgid "Search add-ons"
@@ -350,11 +350,11 @@ msgstr "Cerca add-on"
 
 msgctxt "#31317"
 msgid "Center top logo button"
-msgstr ""
+msgstr "Pulsante logo in alto al centro"
 
 msgctxt "#31318"
 msgid "RDS"
-msgstr ""
+msgstr "RDS"
 
 # empty strings from id 31319 to 31389
 msgctxt "#31390"
@@ -363,17 +363,17 @@ msgstr "Predefinito della skin"
 
 msgctxt "#31391"
 msgid "Arial based (best for Non-English)"
-msgstr ""
+msgstr "Basato su Arial (meglio per non inglese)"
 
 # empty strings from id 31392 to 31399
 msgctxt "#31400"
 msgid "Edit your display settings, including:[CR][CR]* Skin selection[CR]* View options[CR]* Screensaver[CR]* Date & time"
-msgstr ""
+msgstr "Modifica le impostazioni di visualizzazione, tra cui:[CR][CR]* Selezione skin[CR]* Opzioni di visualizzazione[CR]* Salvaschermo[CR]* Data e ora"
 
 # empty string with id 31401
 msgctxt "#31402"
 msgid "Watch and manage the logging of Kodi events, including:[CR][CR]* Failed video library scraping[CR]* Add-on updates[CR]* PVR activities"
-msgstr ""
+msgstr "Guarda e gestisci la registrazione degli eventi di Kodi, tra cui:[CR][CR]* Scraping della libreria video non riuscito[CR]* Aggiornamenti add-on[CR]* Attività PVR"
 
 msgctxt "#31403"
 msgid "Configure network and sharing settings, including:[CR][CR]* Proxy & DNS[CR]* Samba file sharing[CR]* UPNP server[CR]* Web server[CR]* External app control"
@@ -441,11 +441,11 @@ msgstr "In evidenza"
 
 msgctxt "#31502"
 msgid "Blades"
-msgstr ""
+msgstr "Lame"
 
 msgctxt "#31503"
 msgid "Image packs"
-msgstr ""
+msgstr "Pacchetti di immagini"
 
 msgctxt "#31504"
 msgid "Change mode"
@@ -478,11 +478,11 @@ msgstr "Playlist video"
 # empty strings from id 31511 to 31517
 msgctxt "#31518"
 msgid "Game Settings Menu"
-msgstr "Menu Impostazioni Giochi"
+msgstr "Menu impostazioni di gioco"
 
 msgctxt "#31519"
 msgid "Show splash screen"
-msgstr ""
+msgstr "Mostra schermata iniziale"
 
 msgctxt "#31520"
 msgid "Show now playing video in the background"
@@ -547,7 +547,7 @@ msgstr "Altro"
 
 msgctxt "#31539"
 msgid "Supported add-ons"
-msgstr ""
+msgstr "Add-on supportati"
 
 msgctxt "#31540"
 msgid "Set Default Lyric fetching add-on for Music OSD"
@@ -593,4 +593,4 @@ msgstr "Livello impostazioni"
 
 msgctxt "#31554"
 msgid "Autologin"
-msgstr "Login Automatico"
+msgstr "Login automatico"

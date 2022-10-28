@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: Kodi Addons\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-10-25 10:33+0000\n"
-"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"PO-Revision-Date: 2022-10-28 19:44+0000\n"
+"Last-Translator: Alfonso Cachero <alfonso.cachero@gmail.com>\n"
 "Language-Team: Spanish (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-tetradui/es_es/>\n"
 "Language: es_es\n"
 "MIME-Version: 1.0\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 msgctxt "Addon Summary"
 msgid "TetradUI is a skin add-on for Kodi media center"
-msgstr ""
+msgstr "TetradUI es un Add-on de skin para el centro multimedia Kodi"
 
 msgctxt "Addon Description"
 msgid "TetradUI is a skin add-on for Kodi media center. The aim with TetradUI is to create a fresh modern homage of the classic blades-style UI found in the original Xbox360 dashboard. Also seen in the works of Team Blackbolt and Jezz_X with projects MC360 and JX720 respectively. TetradUI is based on JX720 by Jezz_X.[CR]This add-on was created by Jezz_X and TeamUI."
-msgstr ""
+msgstr "TetradUI es un Add-on de skin para Kodi. El objetivo de TetradUI es crear un homenaje fresco y moderno de las IU clásicas encontradas en el panel original de Xbox360. También vistas en los trabajos de Team Blackbolt y Jezz_X con los proyectos MC360 y JX720 respectivamente. TetradUI esta basado en JX720 de Jezz_X.[CR] Este add-on fué creado por Jezz_X y TeamUI."
 
 msgctxt "#31001"
 msgid "media"
@@ -48,7 +48,7 @@ msgstr "Aplic"
 # empty strings from id 31006 to 31009
 msgctxt "#31010"
 msgid "TetradUI is a passion project made by TeamUI.[CR]It's a big project and it takes a [I]lot[/I] of effort to develop and maintain.[CR]Consider scanning this QR and make a donation to help keep this project healthy.[CR]Any amount helps greatly and is much appreciated."
-msgstr ""
+msgstr "TetradUI es un proyecto pasional hecho por TeamUI.[CR] es un proyecto grande y requiere un [I]montón[/I] de esfuerzo para desarrollarlo y mantenerlo.[CR]Considera escanear este QR y hacer una donacion para ayudarnos a mantener arriba el proyecto.[CR]Cualquier cantidad ayuda mucho y es muy apreciada."
 
 msgctxt "#31011"
 msgid "Applications"
@@ -185,7 +185,7 @@ msgstr "disponible"
 
 msgctxt "#31228"
 msgid "Add-on shortcut"
-msgstr ""
+msgstr "Atajo de Add-on"
 
 msgctxt "#31229"
 msgid "Play speed"
@@ -221,23 +221,23 @@ msgstr "Hora Acabado:"
 
 msgctxt "#31237"
 msgid "Welcome to TetradUI"
-msgstr ""
+msgstr "Bienvenido a TetradUI"
 
 msgctxt "#31238"
 msgid "Navigation is done using the top logo button.[CR]Using the skin setting it can either be placed top left or center.[CR][CR][B]Top logo button[/B][CR]Navigating between the blades is done using [I]left[/I] and [I]right[/I].[CR]Clicking the logo button will open a shortcuts sideblade.[CR][CR][B]Menu lists[/B][CR]If no widgets or submenus are present, you can navigate between the blades using [I]left[/I] and [I]right[/I] from the menu lists.[CR][CR][B]Widgets[/B][CR]If widgets are present, [I]left[/I] from the menu lists will take you to the widgets.[CR][I]Left[/I] or [I]right[/I] will take you back to the menu lists.[CR][CR][B]Submenu lists[/B][CR]If submenus are present, [I]right[/I] from the menu lists will take you there.[CR][I]Left[/I] from the submenus will take you back to the menu and [I]right[/I] will take you to the widgets.[CR]If no widgets are present, [I]right[/I] will switch blade."
-msgstr ""
+msgstr "La navegación se hace con el botón superior del logo .[CR]Usando un ajuste de la skin se puede poner arriba a la izquierda o en el centro.[CR][CR][B]Botón superior de logo[/B][CR]Para navegar entre las hojas se usa [I]izquierda[/I] y [I]derecha[/I].[CR]Al pulsar el botón del logo se abrirá una hoja lateral de atajos.[CR][CR][B]Listas de menú[/B][CR]Si no hay widgets o submenúes, se puede navegar entre hojas usando [I]izquierda[/I] y [I]derecha[/I] desde las listas de menú.[CR][CR][B]Widgets[/B][CR]Si hay widgets, al ir a la [I]izquierda[/I] desde las listas de menú irá a los widgets.[CR][I]Izquierda[/I] o [I]derecha[/I] volverá a las listas del menú.[CR][CR][B]Listas de submenú[/B][CR]Si hay submenúes. [I]derecha[/I] llevara de la lista del menú a ahí.[CR][I]Izquierda[/I] desde el submenú volverá al menú y [I]derecha[/I] llevará a los widgets.[CR]Si no hubiera widgets, [I]derecha[/I] cambiará de hoja."
 
 msgctxt "#31239"
 msgid "Never show again"
-msgstr ""
+msgstr "No mostrar más"
 
 msgctxt "#31240"
 msgid "Hidden channels"
-msgstr ""
+msgstr "Canales ocultos"
 
 msgctxt "#31241"
 msgid "Navigation"
-msgstr ""
+msgstr "Navegación"
 
 msgctxt "#31242"
 msgid "Available groups"
@@ -245,7 +245,7 @@ msgstr "Grupos disponibles"
 
 msgctxt "#31243"
 msgid "Hidden channels"
-msgstr ""
+msgstr "Canales ocultos"
 
 msgctxt "#31244"
 msgid "Add group"
@@ -286,7 +286,7 @@ msgstr "¡Por favor, configura una fuente para Música!"
 
 msgctxt "#31301"
 msgid "Please setup[CR]movie and tv show sources!"
-msgstr ""
+msgstr "¡Por favor, configure[CR]los origenes de películas y series de TV!"
 
 msgctxt "#31302"
 msgid "Working"
@@ -330,15 +330,15 @@ msgstr "Fijar Icono para Boton"
 
 msgctxt "#31313"
 msgid "No Weather add-on enabled go to Settings/Weather to enable weather forecast"
-msgstr ""
+msgstr "No hay ningún add-on de Meteorología activado. Vaya a Ajustes/Meteorología para activar el pronóstico meteorológico"
 
 msgctxt "#31314"
 msgid "Hide widgets"
-msgstr ""
+msgstr "Ocultar widgets"
 
 msgctxt "#31315"
 msgid "Install add-ons"
-msgstr ""
+msgstr "Instalar add-ons"
 
 msgctxt "#31316"
 msgid "Search add-ons"
@@ -346,11 +346,11 @@ msgstr "Buscar Add-ons"
 
 msgctxt "#31317"
 msgid "Center top logo button"
-msgstr ""
+msgstr "Botón superior de logo centrado"
 
 msgctxt "#31318"
 msgid "RDS"
-msgstr ""
+msgstr "RDS"
 
 msgctxt "#31390"
 msgid "Skin default"
@@ -358,7 +358,7 @@ msgstr "Skin por defecto"
 
 msgctxt "#31391"
 msgid "Arial based (best for Non-English)"
-msgstr ""
+msgstr "Basado en Arial (mejor para No-Inglés)"
 
 # empty strings from id 31392 to 31399
 msgctxt "#31400"
@@ -412,7 +412,7 @@ msgstr "Bienvenido a Kodi[CR]Escoja su Perfil y Autentiquese"
 
 msgctxt "#31461"
 msgid "Install add-ons"
-msgstr ""
+msgstr "Instalar add-ons"
 
 # empty strings from id 31462 to 31479
 msgctxt "#31480"
@@ -516,24 +516,24 @@ msgstr ""
 
 msgctxt "#31529"
 msgid "Blur backgrounds"
-msgstr ""
+msgstr "Difuminar fondos"
 
 msgctxt "#31530"
 msgid "Fanart only"
-msgstr ""
+msgstr "Solo Fanart"
 
 msgctxt "#31531"
 msgid "Backgrounds only"
-msgstr ""
+msgstr "Solo fondos"
 
 msgctxt "#31532"
 msgid "Fanart and backgrounds"
-msgstr ""
+msgstr "Fanart y fondos"
 
 # empty strings from id 31533 to 31536
 msgctxt "#31537"
 msgid "Movie set information"
-msgstr ""
+msgstr "Información de la película"
 
 msgctxt "#31538"
 msgid "About"
@@ -541,7 +541,7 @@ msgstr "Acerca de"
 
 msgctxt "#31539"
 msgid "Supported add-ons"
-msgstr ""
+msgstr "Add-ons soportados"
 
 msgctxt "#31540"
 msgid "Set Default Lyric fetching add-on for Music OSD"
@@ -550,7 +550,7 @@ msgstr "Ajustar la obtencion de data del Lyric add-on para la Musica en pantalla
 # empty string with id 31543
 msgctxt "#31542"
 msgid "In progress"
-msgstr ""
+msgstr "En progreso"
 
 msgctxt "#31543"
 msgid "In cinemas"
