@@ -541,14 +541,6 @@ msgctxt "#31547"
 msgid "Premiered"
 msgstr "1ère diffusion"
 
-msgctxt "#31551"
-msgid "Window custom smart playlist shortcuts"
-msgstr "Raccourcis de playliste intelligente personnalisés de l'écran"
-
-msgctxt "#31552"
-msgid "Window custom add-on shortcuts"
-msgstr "Raccourcis d'add-on personnalisés de l'écran"
-
 msgctxt "#31553"
 msgid "Settings level"
 msgstr "Niveau de paramétrage"
@@ -556,6 +548,14 @@ msgstr "Niveau de paramétrage"
 msgctxt "#31554"
 msgid "Autologin"
 msgstr "Connexion auto."
+
+#~ msgctxt "#31551"
+#~ msgid "Window custom smart playlist shortcuts"
+#~ msgstr "Raccourcis de playliste intelligente personnalisés de l'écran"
+
+#~ msgctxt "#31552"
+#~ msgid "Window custom add-on shortcuts"
+#~ msgstr "Raccourcis d'add-on personnalisés de l'écran"
 
 #~ msgctxt "#31020"
 #~ msgid "Weather Conditions"

@@ -541,14 +541,6 @@ msgctxt "#31547"
 msgid "Premiered"
 msgstr "Premiere"
 
-msgctxt "#31551"
-msgid "Window custom smart playlist shortcuts"
-msgstr "Vindu tilpasset smart spilleliste snarvei"
-
-msgctxt "#31552"
-msgid "Window custom add-on shortcuts"
-msgstr "Vindu tilpasset add-on snarvei"
-
 msgctxt "#31553"
 msgid "Settings level"
 msgstr "Nivå"
@@ -556,6 +548,14 @@ msgstr "Nivå"
 msgctxt "#31554"
 msgid "Autologin"
 msgstr ""
+
+#~ msgctxt "#31551"
+#~ msgid "Window custom smart playlist shortcuts"
+#~ msgstr "Vindu tilpasset smart spilleliste snarvei"
+
+#~ msgctxt "#31552"
+#~ msgid "Window custom add-on shortcuts"
+#~ msgstr "Vindu tilpasset add-on snarvei"
 
 #~ msgctxt "#31020"
 #~ msgid "Weather Conditions"

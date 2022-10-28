@@ -541,14 +541,6 @@ msgctxt "#31547"
 msgid "Premiered"
 msgstr "첫 방송"
 
-msgctxt "#31551"
-msgid "Window custom smart playlist shortcuts"
-msgstr "사용자 설정 지능형 재생목록 바로가기"
-
-msgctxt "#31552"
-msgid "Window custom add-on shortcuts"
-msgstr "사용자 추가기능 바로가기"
-
 msgctxt "#31553"
 msgid "Settings level"
 msgstr "설정 수준"
@@ -556,6 +548,14 @@ msgstr "설정 수준"
 msgctxt "#31554"
 msgid "Autologin"
 msgstr "자동 로그인"
+
+#~ msgctxt "#31551"
+#~ msgid "Window custom smart playlist shortcuts"
+#~ msgstr "사용자 설정 지능형 재생목록 바로가기"
+
+#~ msgctxt "#31552"
+#~ msgid "Window custom add-on shortcuts"
+#~ msgstr "사용자 추가기능 바로가기"
 
 #~ msgctxt "#31020"
 #~ msgid "Weather Conditions"

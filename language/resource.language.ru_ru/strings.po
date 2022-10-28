@@ -548,15 +548,6 @@ msgctxt "#31547"
 msgid "Premiered"
 msgstr "Премьера"
 
-# empty strings from id 31547 to 31550
-msgctxt "#31551"
-msgid "Window custom smart playlist shortcuts"
-msgstr "Настраиваемые ярлыки смарт-плейлистов в окнах"
-
-msgctxt "#31552"
-msgid "Window custom add-on shortcuts"
-msgstr "Пользовательские ярлыки оконных дополнений"
-
 msgctxt "#31553"
 msgid "Settings level"
 msgstr "Уровень настроек"
@@ -564,6 +555,15 @@ msgstr "Уровень настроек"
 msgctxt "#31554"
 msgid "Autologin"
 msgstr "Автоматическая авторизация"
+
+# empty strings from id 31547 to 31550
+#~ msgctxt "#31551"
+#~ msgid "Window custom smart playlist shortcuts"
+#~ msgstr "Настраиваемые ярлыки смарт-плейлистов в окнах"
+
+#~ msgctxt "#31552"
+#~ msgid "Window custom add-on shortcuts"
+#~ msgstr "Пользовательские ярлыки оконных дополнений"
 
 # empty strings from id 31012 to 31019
 #~ msgctxt "#31020"

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Kodi Addons\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-10-25 10:33+0000\n"
+"PO-Revision-Date: 2022-10-28 20:16+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: English (United States) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-tetradui/en_us/>\n"
 "Language: en_us\n"
@@ -154,7 +154,7 @@ msgstr "Select Program"
 
 msgctxt "#31225"
 msgid "Toggle subtitle"
-msgstr ""
+msgstr "Toggle subtitle"
 
 msgctxt "#31226"
 msgid "Toggle audio stream"
@@ -543,15 +543,6 @@ msgstr "Random movies"
 msgctxt "#31547"
 msgid "Premiered"
 msgstr "Premiered"
-
-# empty strings from id 31548 to 31550
-msgctxt "#31551"
-msgid "Window custom smart playlist shortcuts"
-msgstr ""
-
-msgctxt "#31552"
-msgid "Window custom add-on shortcuts"
-msgstr ""
 
 msgctxt "#31553"
 msgid "Settings level"
