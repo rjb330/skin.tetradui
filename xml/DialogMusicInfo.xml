@@ -499,8 +499,9 @@
 						<width>172</width>
 						<include>InfoDialogButtonCommonValues</include>
 						<label>208</label>
-						<onclick condition="String.IsEqual(ListItem.DBTYPE,song)">PlayMedia($INFO[ListItem.FileNameAndPath])</onclick>
-						<onclick condition="String.IsEqual(ListItem.DBTYPE,album)">PlayMedia($INFO[ListItem.FolderPath],isdir)</onclick>
+						<onclick condition="Player.HasAudio">PlayerControl(stop)</onclick>
+						<onclick condition="String.IsEqual(ListItem.DBTYPE,song)">PlayMedia($INFO[ListItem.FolderPath])</onclick>
+						<onclick condition="String.IsEqual(ListItem.DBTYPE,album)">PlayMedia(musicdb://albums/$INFO[ListItem.DBID]/)</onclick>
 						<visible>String.IsEqual(ListItem.DBTYPE,song) | String.IsEqual(ListItem.DBTYPE,album)</visible>
 					</control>
 					<control type="togglebutton" id="9002">

@@ -1005,7 +1005,7 @@
 				<onup>9000</onup>
 				<scrolltime>300</scrolltime>
 				<autoscroll time="5000" delay="5000" repeat="10000">true</autoscroll>
-				<onclick condition="Container(9000).HasFocus(6)">PlayMedia($INFO[ListItem.FolderPath],isdir)</onclick>
+				<onclick condition="Container(9000).HasFocus(6)">PlayMedia(musicdb://albums/$INFO[ListItem.DBID]/)</onclick>
 				<visible>Integer.IsGreater(Container($PARAM[id]).NumItems,0) | Container($PARAM[id]).IsUpdating</visible>
 				<itemlayout />
 				<focusedlayout />
