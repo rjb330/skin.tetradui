@@ -541,14 +541,6 @@ msgctxt "#31547"
 msgid "Premiered"
 msgstr ""
 
-msgctxt "#31551"
-msgid "Window custom smart playlist shortcuts"
-msgstr "Prozor prilagodeni precaci pametne playliste"
-
-msgctxt "#31552"
-msgid "Window custom add-on shortcuts"
-msgstr "Prozor prilagodeni precaci dodataka"
-
 msgctxt "#31553"
 msgid "Settings level"
 msgstr "Razina postavki"
@@ -556,6 +548,14 @@ msgstr "Razina postavki"
 msgctxt "#31554"
 msgid "Autologin"
 msgstr "Automatska prijava"
+
+#~ msgctxt "#31551"
+#~ msgid "Window custom smart playlist shortcuts"
+#~ msgstr "Prozor prilagodeni precaci pametne playliste"
+
+#~ msgctxt "#31552"
+#~ msgid "Window custom add-on shortcuts"
+#~ msgstr "Prozor prilagodeni precaci dodataka"
 
 #~ msgctxt "#31020"
 #~ msgid "Weather Conditions"

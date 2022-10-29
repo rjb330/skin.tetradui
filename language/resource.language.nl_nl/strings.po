@@ -540,14 +540,6 @@ msgctxt "#31547"
 msgid "Premiered"
 msgstr "Premiëre"
 
-msgctxt "#31551"
-msgid "Window custom smart playlist shortcuts"
-msgstr "Aangepaste Scherm slimme afspeellijst snelkoppeling"
-
-msgctxt "#31552"
-msgid "Window custom add-on shortcuts"
-msgstr "Aangepaste Scherm addon snelkoppeling"
-
 msgctxt "#31553"
 msgid "Settings level"
 msgstr "Instellingsniveau"
@@ -555,6 +547,14 @@ msgstr "Instellingsniveau"
 msgctxt "#31554"
 msgid "Autologin"
 msgstr "Automatisch inloggen"
+
+#~ msgctxt "#31551"
+#~ msgid "Window custom smart playlist shortcuts"
+#~ msgstr "Aangepaste Scherm slimme afspeellijst snelkoppeling"
+
+#~ msgctxt "#31552"
+#~ msgid "Window custom add-on shortcuts"
+#~ msgstr "Aangepaste Scherm addon snelkoppeling"
 
 #~ msgctxt "#31020"
 #~ msgid "Weather Conditions"
