@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>1</defaultcontrol>
-	<visible>Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Caching | Player.IsTempo | Player.Forwarding | Player.Rewinding</visible>
+	<visible>Player.Seeking | Player.HasPerformedSeek(3) | Player.Paused | Player.Caching | Player.IsTempo | Player.Forwarding | Player.Rewinding</visible>
 	<include>dialogeffect</include>
 	<coordinates>
 		<system>1</system>

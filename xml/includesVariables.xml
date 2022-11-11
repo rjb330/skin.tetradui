@@ -24,7 +24,7 @@
 	<variable name="SeekBarLabels">
 		<value condition="Player.Caching">$LOCALIZE[31234] $INFO[Player.CacheLevel]%</value>
 		<value condition="!String.IsEmpty(Player.SeekStepSize)">$LOCALIZE[773] $INFO[Player.SeekStepSize]</value>
-		<value condition="!String.IsEmpty(Player.SeekOffset) + Player.DisplayAfterSeek">$LOCALIZE[773] $INFO[Player.SeekOffset]</value>
+		<value condition="!String.IsEmpty(Player.SeekOffset) + Player.HasPerformedSeek(3)">$LOCALIZE[773] $INFO[Player.SeekOffset]</value>
 		<value condition="Player.Paused">$LOCALIZE[31231]</value>
 		<value condition="Player.Forwarding2x">$LOCALIZE[31232] x2</value>
 		<value condition="Player.Forwarding4x">$LOCALIZE[31232] x4</value>
