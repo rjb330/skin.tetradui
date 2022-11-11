@@ -30,6 +30,14 @@
 			<texture>flagging/videocodec/divx.png</texture>
 			<visible>String.StartsWith(ListItem.VideoCodec,div) | String.IsEqual(ListItem.VideoCodec,dx50)</visible>
 		</control>
+		<include content="CodecFlaggingImage">
+			<param name="visible" value="!String.IsEmpty(ListItem.HdrType) + !String.IsEqual(ListItem.HdrType,dolbyvision)" />
+			<param name="info" value="[UPPERCASE]$INFO[ListItem.HdrType][/UPPERCASE]" />
+		</include>
+		<include content="CodecFlaggingXtraSmallImage">
+			<param name="visible" value="String.IsEqual(ListItem.HdrType,dolbyvision)" />
+			<param name="info" value="$INFO[ListItem.HdrType]" />
+		</include>
 	</include>
 	<include name="AudioCodecFlagging">
 		<control type="image">
@@ -143,6 +151,14 @@
 			<texture>flagging/videocodec/divx.png</texture>
 			<visible>String.StartsWith(VideoPlayer.VideoCodec,div) | String.IsEqual(VideoPlayer.VideoCodec,dx50)</visible>
 		</control>
+		<include content="CodecFlaggingImage">
+			<param name="visible" value="!String.IsEmpty(VideoPlayer.HdrType) + !String.IsEqual(VideoPlayer.HdrType,dolbyvision)" />
+			<param name="info" value="[UPPERCASE]$INFO[VideoPlayer.HdrType][/UPPERCASE]" />
+		</include>
+		<include content="CodecFlaggingXtraSmallImage">
+			<param name="visible" value="String.IsEqual(VideoPlayer.HdrType,dolbyvision)" />
+			<param name="info" value="$INFO[VideoPlayer.HdrType]" />
+		</include>
 	</include>
 	<include name="VideoPlayerAudioCodecFlagging">
 		<control type="image" id="1">

@@ -1464,6 +1464,28 @@
 			</control>
 		</control>
 	</include>
+	<include name="CodecFlaggingXtraSmallImage">
+		<control type="group">
+			<visible>$PARAM[visible]</visible>
+			<animation effect="fade" end="80" condition="true">Conditional</animation>
+			<width>80</width>
+			<control type="image">
+				<width>80</width>
+				<height>35</height>
+				<texture>flagging/blank.png</texture>
+			</control>
+			<control type="label">
+				<left>8</left>
+				<width>64</width>
+				<height>35</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>codecflagging_xtra_small</font>
+				<textcolor>white</textcolor>
+				<label>$PARAM[info]</label>
+			</control>
+		</control>
+	</include>
 	<include name="CodecFlaggingRating">
 		<control type="group">
 			<visible>$PARAM[visible]</visible>
