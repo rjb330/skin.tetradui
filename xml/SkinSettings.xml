@@ -442,7 +442,7 @@
 							<height>196</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true" fallback="backgrounds/weather.png">$INFO[Skin.String(Background_Weather)]</texture>
-							<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
+							<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
 							<bordersize>18,2,18,2</bordersize>
 							<fadetime>IconCrossfadeTime</fadetime>
 						</control>
@@ -502,7 +502,7 @@
 							<height>196</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true" fallback="backgrounds/apps.png">$INFO[Skin.String(Background_Apps)]</texture>
-							<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
+							<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
 							<bordersize>18,2,18,2</bordersize>
 							<fadetime>IconCrossfadeTime</fadetime>
 						</control>
@@ -562,7 +562,7 @@
 							<height>196</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true" fallback="backgrounds/media.png">$INFO[Skin.String(Background_Media)]</texture>
-							<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
+							<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
 							<bordersize>18,2,18,2</bordersize>
 							<fadetime>IconCrossfadeTime</fadetime>
 						</control>
@@ -622,7 +622,7 @@
 							<height>196</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true" fallback="backgrounds/system.png">$INFO[Skin.String(Background_System)]</texture>
-							<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
+							<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
 							<bordersize>18,2,18,2</bordersize>
 							<fadetime>IconCrossfadeTime</fadetime>
 						</control>

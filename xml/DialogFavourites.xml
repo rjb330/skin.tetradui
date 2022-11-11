@@ -27,7 +27,7 @@
 					<aspectratio align="center">keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture>$INFO[ListItem.Icon]</texture>
-					<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
+					<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
 					<bordersize>18,2,18,2</bordersize>
 				</control>
 				<control type="list" id="450">

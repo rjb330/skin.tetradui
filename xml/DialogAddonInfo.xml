@@ -41,7 +41,7 @@
 					<height>300</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
-					<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
+					<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
 					<bordersize>18,2,18,2</bordersize>
 				</control>
 				
@@ -202,7 +202,6 @@
 							<height>25</height>
 							<label>$INFO[ListItem.AddonDisclaimer]</label>
 							<align>center</align>
-							<aligny>center</aligny>
 							<font>font12</font>
 							<scrollout>false</scrollout>
 							<pauseatend>2000</pauseatend>
@@ -223,14 +222,13 @@
 							<textcolor>orange</textcolor>
 						</control>
 						<control type="fadelabel">
-							<description>Boken Value</description>
+							<description>Broken Value</description>
 							<left>200</left>
 							<top>565</top>
 							<width>1040</width>
 							<height>25</height>
 							<label>$INFO[ListItem.AddonLifecycleDesc]</label>
 							<align>center</align>
-							<aligny>center</aligny>
 							<font>font12</font>
 							<scrollout>false</scrollout>
 							<pauseatend>2000</pauseatend>
@@ -267,7 +265,7 @@
 							<height>151</height>
 							<texture background="true" fallback="DefaultPicture.png">$INFO[Listitem.Icon]</texture>
 							<aspectratio>scale</aspectratio>
-							<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
+							<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
 							<bordersize>18,2,18,2</bordersize>
 						</control>
 					</itemlayout>
@@ -277,7 +275,7 @@
 							<height>151</height>
 							<texture background="true" fallback="DefaultPicture.png">$INFO[Listitem.Icon]</texture>
 							<aspectratio>scale</aspectratio>
-							<bordertexture border="19,3,19,3">thumb-border-focus.png</bordertexture>
+							<bordertexture border="19,3,19,3" infill="false">thumb-border-focus.png</bordertexture>
 							<bordersize>18,2,18,2</bordersize>
 						</control>
 					</focusedlayout>

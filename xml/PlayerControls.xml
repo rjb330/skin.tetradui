@@ -25,7 +25,7 @@
 				<height>130</height>
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[MusicPlayer.Cover]</texture>
-				<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
+				<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
 				<bordersize>18,2,18,2</bordersize>
 			</control>
 			<control type="label">
@@ -96,7 +96,7 @@
 					<height>145</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$INFO[VideoPlayer.Cover]</texture>
-					<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
+					<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
 					<bordersize>18,2,18,2</bordersize>
 				</control>
 				<control type="label">
@@ -163,7 +163,7 @@
 					<height>130</height>
 					<aspectratio>scale</aspectratio>
 					<texture background="true">$INFO[VideoPlayer.Cover]</texture>
-					<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
+					<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
 					<bordersize>18,2,18,2</bordersize>
 					<visible>VideoPlayer.Content(Episodes)</visible>
 				</control>
@@ -174,7 +174,7 @@
 					<height>130</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$INFO[VideoPlayer.Cover]</texture>
-					<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
+					<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
 					<bordersize>18,2,18,2</bordersize>
 					<visible>!VideoPlayer.Content(Episodes)</visible>
 				</control>

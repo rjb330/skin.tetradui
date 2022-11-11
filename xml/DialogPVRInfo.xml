@@ -39,7 +39,7 @@
 					<height>300</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
-					<bordertexture border="19,3,19,3">thumb-border.png</bordertexture>
+					<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
 					<bordersize>18,2,18,2</bordersize>
 				</control>
 				<control type="panel" id="9001">
