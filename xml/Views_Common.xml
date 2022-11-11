@@ -568,6 +568,7 @@
 		<value condition="Container.Content(Addons) + !String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]</value>
 		<value condition="Container.Content(Albums) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
 		<value condition="Container.Content(Artists) + !String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
+		<value condition="Container.Content(Favourites)">$INFO[ListItem.Property(favourite.action),$LOCALIZE[15217]: ,[CR]]$INFO[ListItem.Property(favourite.provider),$LOCALIZE[15225]: ,]</value>
 		<value>$INFO[ListItem.Plot]</value>
 	</variable>
 	<variable name="ThumbnailInfoViewTitle">

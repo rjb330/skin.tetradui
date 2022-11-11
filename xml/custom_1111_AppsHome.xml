@@ -168,7 +168,7 @@
 						</item>
 						<item id="4">
 							<label>1036</label>
-							<onclick>ActivateWindow(Favourites)</onclick>
+							<onclick>ActivateWindow(favouritesbrowser)</onclick>
 							<icon>button_icons/icon-favourites.png</icon>
 							<visible>!Skin.HasSetting(AppsBlade_HideFavourites)</visible>
 						</item>
