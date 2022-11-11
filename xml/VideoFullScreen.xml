@@ -191,13 +191,22 @@
 					<visible>VideoPlayer.HasEpg</visible>
 				</control>
 				<control type="ranges" id="1">
-					<description>CutList</description>
+					<description>Editlist</description>
 					<left>100</left>
 					<top>18</top>
 					<width>720</width>
 					<height>4</height>
-					<info>Player.CutList</info>
+					<info>Player.Editlist</info>
 					<righttexture border="1">progress_chapter.png</righttexture>
+				</control>
+				<control type="ranges" id="1">
+					<description>Cuts</description>
+					<left>100</left>
+					<top>24</top>
+					<width>720</width>
+					<height>4</height>
+					<info>Player.Cuts</info>
+					<righttexture border="1" colordiffuse="ffff0000">progress_chapter.png</righttexture>
 				</control>
 				<control type="ranges" id="1">
 					<description>Chapters</description>
