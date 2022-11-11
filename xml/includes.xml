@@ -1399,15 +1399,6 @@
 	</include>
 	
 	<include name="KeyboardButton">
-		<width>50</width>
-		<height>50</height>
-		<texturenofocus border="12">buttons/keyboard-nofocus.png</texturenofocus>
-		<texturefocus border="12">buttons/keyboard-focus.png</texturefocus>
-		<align>center</align>
-		<aligny>center</aligny>
-		<font>font12</font>
-	</include>
-	<include name="KeyboardButtonBig">
 		<width>60</width>
 		<height>60</height>
 		<texturenofocus border="12">buttons/keyboard-nofocus.png</texturenofocus>

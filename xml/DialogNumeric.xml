@@ -49,7 +49,7 @@
 			<top>150</top>
 			<control type="button" id="11">
 				<description>1 button</description>
-				<include>KeyboardButtonBig</include>
+				<include>KeyboardButton</include>
 				<label>12311</label>
 				<onleft>23</onleft>
 				<onright>12</onright>
@@ -59,7 +59,7 @@
 			<control type="button" id="12">
 				<description>2 button</description>
 				<left>60</left>
-				<include>KeyboardButtonBig</include>
+				<include>KeyboardButton</include>
 				<label>12312</label>
 				<onleft>11</onleft>
 				<onright>13</onright>
@@ -69,7 +69,7 @@
 			<control type="button" id="13">
 				<description>3 button</description>
 				<left>120</left>
-				<include>KeyboardButtonBig</include>
+				<include>KeyboardButton</include>
 				<label>12313</label>
 				<onleft>12</onleft>
 				<onright>23</onright>
@@ -82,7 +82,7 @@
 				<height>120</height>
 				<textwidth>94</textwidth>
 				<font>font10</font>
-				<include>KeyboardButtonBig</include>
+				<include>KeyboardButton</include>
 				<label>20181</label>
 				<angle>270</angle>
 				<onleft>13</onleft>
@@ -93,7 +93,7 @@
 			<control type="button" id="14">
 				<description>4 button</description>
 				<top>60</top>
-				<include>KeyboardButtonBig</include>
+				<include>KeyboardButton</include>
 				<label>12314</label>
 				<onleft>23</onleft>
 				<onright>15</onright>
@@ -104,7 +104,7 @@
 				<description>5 button</description>
 				<left>60</left>
 				<top>60</top>
-				<include>KeyboardButtonBig</include>
+				<include>KeyboardButton</include>
 				<label>12315</label>
 				<onleft>14</onleft>
 				<onright>16</onright>
@@ -115,7 +115,7 @@
 				<description>6 button</description>
 				<left>120</left>
 				<top>60</top>
-				<include>KeyboardButtonBig</include>
+				<include>KeyboardButton</include>
 				<label>12316</label>
 				<onleft>15</onleft>
 				<onright>23</onright>
@@ -125,7 +125,7 @@
 			<control type="button" id="17">
 				<description>7 button</description>
 				<top>120</top>
-				<include>KeyboardButtonBig</include>
+				<include>KeyboardButton</include>
 				<label>12317</label>
 				<onleft>21</onleft>
 				<onright>18</onright>
@@ -136,7 +136,7 @@
 				<description>8 button</description>
 				<left>60</left>
 				<top>120</top>
-				<include>KeyboardButtonBig</include>
+				<include>KeyboardButton</include>
 				<label>12318</label>
 				<onleft>17</onleft>
 				<onright>19</onright>
@@ -147,7 +147,7 @@
 				<description>9 button</description>
 				<left>120</left>
 				<top>120</top>
-				<include>KeyboardButtonBig</include>
+				<include>KeyboardButton</include>
 				<label>12319</label>
 				<onleft>18</onleft>
 				<onright>21</onright>
@@ -161,7 +161,7 @@
 				<height>120</height>
 				<textwidth>94</textwidth>
 				<font>font10</font>
-				<include>KeyboardButtonBig</include>
+				<include>KeyboardButton</include>
 				<label>20177</label>
 				<angle>270</angle>
 				<onleft>19</onleft>
@@ -173,7 +173,7 @@
 				<description>prev button</description>
 				<top>180</top>
 				<label>&lt;&lt;</label>
-				<include>KeyboardButtonBig</include>
+				<include>KeyboardButton</include>
 				<onleft>21</onleft>
 				<onright>10</onright>
 				<onup>17</onup>
@@ -183,7 +183,7 @@
 				<description>0 button</description>
 				<left>60</left>
 				<top>180</top>
-				<include>KeyboardButtonBig</include>
+				<include>KeyboardButton</include>
 				<label>12310</label>
 				<onleft>20</onleft>
 				<onright>22</onright>
@@ -195,7 +195,7 @@
 				<left>120</left>
 				<top>180</top>
 				<label>&gt;&gt;</label>
-				<include>KeyboardButtonBig</include>
+				<include>KeyboardButton</include>
 				<onleft>10</onleft>
 				<onright>21</onright>
 				<onup>19</onup>
