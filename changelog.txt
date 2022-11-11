@@ -3,6 +3,8 @@
 - Use infill=false on transparent textures
 - Add Player.Cuts to video OSD
 - Add Favourites browser support
+- Add support for Dolby Vision, HDR10 and HLG codec flagging
+- Update screen calibration window
 
 [B]Version 1.3.6[/B]
 - Fix album and song information window play button
