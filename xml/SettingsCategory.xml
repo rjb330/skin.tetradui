@@ -168,6 +168,10 @@
 			<include>SettingsButtonCommonValues</include>
 			<aligny>center</aligny>
 		</control>
+		<control type="colorbutton" id="15">
+			<description>Default Colorbutton</description>
+			<include>SettingsButtonCommonValues</include>
+		</control>
 		<control type="label" id="14">
 			<description>Separator label</description>
 			<label />

@@ -5,6 +5,9 @@
 - Add Favourites browser support
 - Add support for Dolby Vision, HDR10 and HLG codec flagging
 - Update screen calibration window
+- Update home submenu icons
+- Add support for color button
+- Add color picker dialog
 
 [B]Version 1.3.6[/B]
 - Fix album and song information window play button

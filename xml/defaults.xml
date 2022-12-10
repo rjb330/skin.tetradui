@@ -145,6 +145,19 @@
 		<textureslidernib>slider_nibFO.png</textureslidernib>
 		<textureslidernibfocus>slider_nibFO.png</textureslidernibfocus>
 	</default>
+	<default type="colorbutton">
+		<font>font13</font>
+		<textcolor>white</textcolor>
+		<focusedcolor>white</focusedcolor>
+		<disabledcolor>disabled</disabledcolor>
+		<textoffsetx>15</textoffsetx>
+		<aligny>center</aligny>
+		<pulseonselect>no</pulseonselect>
+		<texturecolormask border="5">white.png</texturecolormask>
+		<texturecolordisabledmask border="5" colordiffuse="60FFFFFF">white.png</texturecolordisabledmask>
+		<colorwidth>50</colorwidth>
+		<colorheight>28</colorheight>
+	</default>
 	<default type="resize">
 		<texturefocus>buttons/button-focus.png</texturefocus>
 		<texturenofocus>buttons/button-nofocus.png</texturenofocus>
