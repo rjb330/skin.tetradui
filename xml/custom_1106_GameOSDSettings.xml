@@ -6,11 +6,11 @@
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(DialogSelect.xml) | Window.IsVisible(GameControllers) | Window.IsActive(AddonSettings) | Window.IsActive(OKDialog)">Conditional</animation>
 			<left>340</left>
-			<top>151</top>
+			<top>129</top>
 			<control type="image">
 				<description>background image</description>
 				<width>600</width>
-				<height>418</height>
+				<height>463</height>
 				<colordiffuse>EEFFFFFF</colordiffuse>
 				<texture border="50,100,50,50">dialogs/Dialog.png</texture>
 			</control>
@@ -109,6 +109,10 @@
 						<onclick>ActivateWindow(GameControllers)</onclick>
 					</item>
 					<item>
+						<label>$LOCALIZE[35110]</label>
+						<onclick>ActivateWindow(GamePorts)</onclick>
+					</item>
+					<item>
 						<label>$LOCALIZE[10140]</label>
 						<onclick>ActivateWindow(GameAdvancedSettings)</onclick>
 					</item>
@@ -116,7 +120,7 @@
 			</control>
 			<control type="button" id="9011">
 				<left>200</left>
-				<top>328</top>
+				<top>373</top>
 				<label>15067</label>
 				<include>DialogButton2CommonValues</include>
 				<font>font12</font>

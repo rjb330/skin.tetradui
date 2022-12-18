@@ -4,6 +4,7 @@
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesCommonWindowBuilding.xml" />
 	<include file="IncludesDialogSelect.xml" />
+	<include file="IncludesGames.xml" />
 	<include file="IncludesVariables.xml" />
 	<include file="Views_Common.xml" />
 

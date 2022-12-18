@@ -8,6 +8,8 @@
 - Update home submenu icons
 - Add support for color button
 - Add color picker dialog
+- Add game controllers port dialog
+- Add support for RetroPlayer savestate manager
 
 [B]Version 1.3.6[/B]
 - Fix album and song information window play button

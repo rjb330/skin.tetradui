@@ -87,11 +87,11 @@
 			</control>
 			<control type="group" id="20">
 				<visible>!System.GetBool(gamesgeneral.showosdhelp)</visible>
-				<top>151</top>
+				<top>129</top>
 				<control type="image">
 					<description>background image</description>
 					<width>600</width>
-					<height>418</height>
+					<height>463</height>
 					<colordiffuse>EEFFFFFF</colordiffuse>
 					<texture border="50,100,50,50">dialogs/Dialog.png</texture>
 				</control>
@@ -194,6 +194,10 @@
 							<onclick>ActivateWindow(GameVolume)</onclick>
 						</item>
 						<item>
+							<label>$LOCALIZE[35249]</label>
+							<onclick>ActivateWindow(InGameSaves)</onclick>
+						</item>
+						<item>
 							<label>$LOCALIZE[5]</label>
 							<onclick>ActivateWindow(1106)</onclick>
 						</item>
@@ -201,7 +205,7 @@
 				</control>
 				<control type="button" id="9002">
 					<left>200</left>
-					<top>328</top>
+					<top>373</top>
 					<label>15067</label>
 					<include>DialogButton2CommonValues</include>
 					<font>font12</font>
