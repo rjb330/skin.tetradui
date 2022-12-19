@@ -28,7 +28,7 @@
       <screenshot>resources/screenshot-09.png</screenshot>
       <screenshot>resources/screenshot-10.png</screenshot>
     </assets>
-    <news>[B]2.0.0[/B][CR]- Add show/hide password to keyboard dialog[CR]- Use infill=false on transparent textures[CR]- Add Player.Cuts to video OSD[CR]- Add Favourites browser support[CR]- Add support for Dolby Vision, HDR10 and HLG codec flagging[CR]- Update screen calibration window[CR]- Update home submenu icons[CR]- Add support for color button[CR]- Add color picker dialog[CR]- Add game controllers port dialog[CR]- Add support for RetroPlayer savestate manager</news>
+    <news>[B]2.0.0[/B][CR]- Add show/hide password to keyboard dialog[CR]- Use infill=false on transparent textures[CR]- Add Player.Cuts to video OSD[CR]- Add Favourites browser support[CR]- Add support for Dolby Vision, HDR10 and HLG codec flagging[CR]- Update screen calibration window[CR]- Update home submenu icons[CR]- Add support for color button[CR]- Add color picker dialog[CR]- Add game controllers port dialog[CR]- Add support for RetroPlayer savestate manager[CR]- Add scene markers to video OSD[CR]- PVR channel manager dialog will fade inactive channels</news>
     <summary lang="da_DK">TetradUI er et skin til Kodi mediecenter</summary>
     <summary lang="en_GB">TetradUI is a skin add-on for Kodi media center</summary>
     <summary lang="es_ES">TetradUI es un Add-on de skin para el centro multimedia Kodi</summary>
