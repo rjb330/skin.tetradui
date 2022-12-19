@@ -217,6 +217,15 @@
 					<info>Player.Chapters</info>
 					<righttexture border="1">progress_chapter.png</righttexture>
 				</control>
+				<control type="ranges" id="1">
+					<description>SceneMarkers</description>
+					<left>100</left>
+					<top>24</top>
+					<width>720</width>
+					<height>4</height>
+					<info>Player.SceneMarkers</info>
+					<righttexture border="1">progress_chapter.png</righttexture>
+				</control>
 				<control type="label" id="1">
 					<left>820</left>
 					<width>100</width>
