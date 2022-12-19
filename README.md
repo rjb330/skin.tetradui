@@ -6,7 +6,7 @@
 noun: a group or set of four
 
 ------------------------------------------------------------------------
-## ABOUT TETRADUI 1.x FOR KODI 19 MATRIX
+## ABOUT TETRADUI 1.x FOR KODI 20 NEXUS
 The aim with TetradUI is to create a fresh modern homage of the classic blades-style UI found in the original Xbox360 dashboard. Also seen in the works of Team Blackbolt and Jezz_X with projects MC360 and JX720 respectively. TetradUI is based from JX720 by Jezz_X.
   
 Created by Jezz_X and TeamUI 
