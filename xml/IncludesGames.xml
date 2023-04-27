@@ -2,21 +2,21 @@
 <includes>
 	<include name="GameDialogControllers">
 		<control type="group">
-			<left>19</left>
-			<top>18.5</top>
+			<left>28.5</left>
+			<top>28</top>
 			<control type="image">
 				<description>background image</description>
-				<width>1242</width>
-				<height>683</height>
-				<texture border="50,100,50,50">dialogs/Dialog.png</texture>
+				<width>1863</width>
+				<height>1024.5</height>
+				<texture border="75,150,75,75">dialogs/Dialog.png</texture>
 				<animation effect="fade" start="90" end="90" time="0" condition="Window.IsVisible(Visualisation)">Conditional</animation>
 			</control>
 			<control type="label" id="2">
 				<description>Heading label</description>
-				<left>50</left>
-				<top>50</top>
-				<width>1100</width>
-				<height>30</height>
+				<left>75</left>
+				<top>75</top>
+				<width>1650</width>
+				<height>45</height>
 				<align>center</align>
 				<font>font16</font>
 				<label>$LOCALIZE[35058]</label>
@@ -24,21 +24,21 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="group">
-				<left>50</left>
+				<left>75</left>
 				<control type="label">
-					<top>100</top>
+					<top>150</top>
 					<font>font12</font>
 					<textcolor>blue</textcolor>
-					<width>230</width>
-					<height>45</height>
+					<width>345</width>
+					<height>67.5</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[35050]</label>
 				</control>
 				<control type="grouplist" id="3">
-					<top>145</top>
-					<width>250</width>
-					<height>450</height>
+					<top>217.5</top>
+					<width>375</width>
+					<height>675</height>
 					<itemgap>0</itemgap>
 					<onup>60</onup>
 					<ondown>60</ondown>
@@ -47,7 +47,7 @@
 					<pagecontrol>60</pagecontrol>
 				</control>
 				<control type="button" id="10">
-					<width>250</width>
+					<width>375</width>
 					<include>DialogButtonCommonValues</include>
 				</control>
 				<include content="DialogGameControllersPagecontrol">
@@ -58,16 +58,16 @@
 				</include>
 			</control>
 			<control type="gamecontroller" id="31">
-				<top>145</top>
-				<left>305</left>
-				<width>330</width>
-				<height>330</height>
+				<top>217.5</top>
+				<left>457.5</left>
+				<width>495</width>
+				<height>495</height>
 			</control>
 			<control type="textbox" id="32">
-				<top>480</top>
-				<left>320</left>
-				<width>300</width>
-				<height>120</height>
+				<top>720</top>
+				<left>480</left>
+				<width>450</width>
+				<height>180</height>
 				<font>font10</font>
 				<textcolor>grey2</textcolor>
 				<align>center</align>
@@ -75,21 +75,21 @@
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 			</control>
 			<control type="group">
-				<left>650</left>
+				<left>975</left>
 				<control type="label">
-					<top>100</top>
+					<top>150</top>
 					<font>font12</font>
 					<textcolor>blue</textcolor>
-					<width>230</width>
-					<height>45</height>
+					<width>345</width>
+					<height>67.5</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[35059]</label>
 				</control>
 				<control type="grouplist" id="5">
-					<top>145</top>
-					<width>250</width>
-					<height>450</height>
+					<top>217.5</top>
+					<width>375</width>
+					<height>675</height>
 					<itemgap>0</itemgap>
 					<onup>61</onup>
 					<ondown>61</ondown>
@@ -98,19 +98,19 @@
 					<pagecontrol>61</pagecontrol>
 				</control>
 				<control type="button" id="7">
-					<width>250</width>
+					<width>375</width>
 					<include>DialogButtonCommonValues</include>
 				</control>
 				<control type="label" id="8">
 					<description>Default Controller Types Label</description>
-					<width>250</width>
-					<height>45</height>
+					<width>375</width>
+					<height>67.5</height>
 					<font>font12</font>
 					<textcolor>grey</textcolor>
 					<aligny>center</aligny>
 				</control>
 				<control type="image" id="9">
-					<height>45</height>
+					<height>67.5</height>
 					<texture />
 				</control>
 				<include content="DialogGameControllersPagecontrol">
@@ -121,51 +121,51 @@
 				</include>
 			</control>
 			<control type="grouplist" id="9000">
-				<left>904</left>
-				<top>145</top>
-				<width>290</width>
+				<left>1356</left>
+				<top>217.5</top>
+				<width>435</width>
 				<itemgap>0</itemgap>
 				<onleft>5</onleft>
 				<onright>3</onright>
 				<control type="button" id="18">
 					<description>Ok Button</description>
 					<label>$LOCALIZE[186]</label>
-					<width>290</width>
+					<width>435</width>
 					<align>center</align>
 					<include>DialogButton3CommonValues</include>
 				</control>
 				<control type="button" id="19">
 					<description>Reset Button</description>
 					<label>$LOCALIZE[13007]</label>
-					<width>290</width>
+					<width>435</width>
 					<align>center</align>
 					<include>DialogButton3CommonValues</include>
 				</control>
 				<control type="button" id="20">
 					<description>Install more controllers Button</description>
 					<label>$LOCALIZE[21452]</label>
-					<width>290</width>
+					<width>435</width>
 					<align>center</align>
 					<include>DialogButton3CommonValues</include>
 				</control>
 				<control type="button" id="22">
 					<description>Install all Button</description>
 					<label>$LOCALIZE[35021]</label>
-					<width>290</width>
+					<width>435</width>
 					<align>center</align>
 					<include>DialogButton3CommonValues</include>
 				</control>
 				<control type="button" id="21">
 					<description>Fix skipping Button</description>
 					<label>$LOCALIZE[35019]</label>
-					<width>290</width>
+					<width>435</width>
 					<align>center</align>
 					<include>DialogButton3CommonValues</include>
 				</control>
 				<control type="button" id="17">
 					<description>Help Button</description>
 					<label>$LOCALIZE[10043]</label>
-					<width>290</width>
+					<width>435</width>
 					<align>center</align>
 					<include>DialogButton3CommonValues</include>
 				</control>
@@ -174,20 +174,20 @@
 	</include>
 	<include name="GameDialogPorts">
 		<control type="group">
-			<left>210</left>
-			<top>60</top>
+			<left>315</left>
+			<top>90</top>
 			<control type="image">
 				<description>background image</description>
-				<width>860</width>
-				<height>600</height>
-				<texture border="50,100,50,50">dialogs/Dialog.png</texture>
+				<width>1290</width>
+				<height>900</height>
+				<texture border="75,150,75,75">dialogs/Dialog.png</texture>
 			</control>
 			<control type="label" id="2">
 				<description>heading label</description>
-				<left>50</left>
-				<top>50</top>
-				<width>760</width>
-				<height>30</height>
+				<left>75</left>
+				<top>75</top>
+				<width>1140</width>
+				<height>45</height>
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font16</font>
@@ -195,62 +195,62 @@
 				<textcolor>orange</textcolor>
 			</control>
 			<control type="list" id="3">
-				<left>50</left>
-				<top>100</top>
-				<width>550</width>
-				<height>405</height>
+				<left>75</left>
+				<top>150</top>
+				<width>825</width>
+				<height>608</height>
 				<onup>61</onup>
 				<ondown>61</ondown>
 				<onleft>61</onleft>
 				<onright>9011</onright>
 				<pagecontrol>61</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="45">
+				<itemlayout height="67.5">
 					<control type="image">
-						<width>550</width>
-						<height>45</height>
-						<texture border="10">buttons/list-nofocus.png</texture>
+						<width>825</width>
+						<height>67.5</height>
+						<texture border="15">buttons/list-nofocus.png</texture>
 					</control>
 					<control type="image">
-						<left>5</left>
-						<top>5</top>
-						<width>40</width>
-						<height>35</height>
+						<left>7.5</left>
+						<top>7.5</top>
+						<width>60</width>
+						<height>52.5</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-						<left>50</left>
-						<width>490</width>
-						<height>45</height>
+						<left>75</left>
+						<width>735</width>
+						<height>67.5</height>
 						<font>font12</font>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
-				<focusedlayout height="45">
+				<focusedlayout height="67.5">
 					<control type="image">
-						<width>550</width>
-						<height>45</height>
+						<width>825</width>
+						<height>67.5</height>
 						<visible>!Control.HasFocus(3)</visible>
-						<texture border="10">buttons/list-nofocus.png</texture>
+						<texture border="15">buttons/list-nofocus.png</texture>
 					</control>
 					<control type="image">
-						<width>550</width>
-						<height>45</height>
+						<width>825</width>
+						<height>67.5</height>
 						<visible>Control.HasFocus(3)</visible>
-						<texture border="10">buttons/list-focus.png</texture>
+						<texture border="15">buttons/list-focus.png</texture>
 					</control>
 					<control type="image">
-						<left>5</left>
-						<top>5</top>
-						<width>40</width>
-						<height>35</height>
+						<left>7.5</left>
+						<top>7.5</top>
+						<width>60</width>
+						<height>52.5</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-						<left>50</left>
-						<width>490</width>
-						<height>45</height>
+						<left>75</left>
+						<width>735</width>
+						<height>67.5</height>
 						<font>font12</font>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
@@ -258,20 +258,20 @@
 				</focusedlayout>
 			</control>
 			<control type="image">
-				<left>610</left>
-				<top>100</top>
-				<width>200</width>
-				<height>200</height>
+				<left>915</left>
+				<top>150</top>
+				<width>300</width>
+				<height>300</height>
 				<texture>$INFO[Container(3).ListItem.Icon]</texture>
-				<bordertexture border="3">black-back.png</bordertexture>
-				<bordersize>2</bordersize>
+				<bordertexture border="4">black-back.png</bordertexture>
+				<bordersize>3</bordersize>
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="label">
 				<description>Currently Selected Title</description>
-				<left>610</left>
-				<top>308</top>
-				<width>200</width>
+				<left>915</left>
+				<top>462</top>
+				<width>300</width>
 				<font>font12</font>
 				<align>center</align>
 				<scroll>true</scroll>
@@ -280,10 +280,10 @@
 			</control>
 			<control type="textbox">
 				<description>Currently Selected Summary</description>
-				<left>610</left>
-				<top>338</top>
-				<width>200</width>
-				<height>100</height>
+				<left>915</left>
+				<top>507</top>
+				<width>300</width>
+				<height>150</height>
 				<font>font10</font>
 				<align>left</align>
 				<textcolor>grey</textcolor>
@@ -292,8 +292,8 @@
 			</control>
 			<control type="spincontrol" id="61">
 				<description>Next page Spinner</description>
-				<left>540</left>
-				<top>514</top>
+				<left>810</left>
+				<top>771</top>
 				<subtype>page</subtype>
 				<font />
 				<onleft>3</onleft>
@@ -303,16 +303,16 @@
 				<showonepage>true</showonepage>
 			</control>
 			<include content="PageLabel">
-				<param name="left" value="215" />
-				<param name="top" value="512" />
-				<param name="width" value="320" />
+				<param name="left" value="322.5" />
+				<param name="top" value="768" />
+				<param name="width" value="480" />
 				<param name="label" value="$LOCALIZE[31201] $INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages]" />
 				<param name="id" value="61" />
 			</include>
 			<control type="grouplist" id="9011">
-				<left>610</left>
-				<top>460</top>
-				<height>135</height>
+				<left>915</left>
+				<top>690</top>
+				<height>202.5</height>
 				<itemgap>0</itemgap>
 				<onleft>61</onleft>
 				<onright>3</onright>

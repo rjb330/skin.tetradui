@@ -4,22 +4,22 @@
 	<include>dialogeffect</include>
 	<coordinates>
 		<system>2</system>
-		<left>470</left>
-		<top>140</top>
+		<left>705</left>
+		<top>210</top>
 	</coordinates>
 	<controls>
 		<control type="image">
 			<description>background image</description>
-			<width>340</width>
-			<height>440</height>
-			<texture border="50,100,50,50">dialogs/Dialog.png</texture>
+			<width>510</width>
+			<height>660</height>
+			<texture border="75,150,75,75">dialogs/Dialog.png</texture>
 		</control>
 		<control type="label" id="1">
 			<description>heading label</description>
-			<left>50</left>
-			<top>50</top>
-			<width>240</width>
-			<height>30</height>
+			<left>75</left>
+			<top>75</top>
+			<width>360</width>
+			<height>45</height>
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>font13</font>
@@ -28,25 +28,25 @@
 		</control>
 		<control type="image">
 			<description>edit text underlay Image</description>
-			<left>50</left>
-			<top>100</top>
-			<width>240</width>
-			<height>45</height>
-			<texture border="10">buttons/list-nofocus.png</texture>
+			<left>75</left>
+			<top>150</top>
+			<width>360</width>
+			<height>67.5</height>
+			<texture border="15">buttons/list-nofocus.png</texture>
 		</control>
 		<control type="label" id="4">
 			<description>Edit Text</description>
-			<left>50</left>
-			<top>100</top>
-			<width>240</width>
-			<height>40</height>
+			<left>75</left>
+			<top>150</top>
+			<width>360</width>
+			<height>60</height>
 			<font>font12</font>
 			<align>center</align>
 			<aligny>center</aligny>
 		</control>
 		<control type="group">
-			<left>50</left>
-			<top>150</top>
+			<left>75</left>
+			<top>225</top>
 			<control type="button" id="11">
 				<description>1 button</description>
 				<include>KeyboardButton</include>
@@ -58,7 +58,7 @@
 			</control>
 			<control type="button" id="12">
 				<description>2 button</description>
-				<left>60</left>
+				<left>90</left>
 				<include>KeyboardButton</include>
 				<label>12312</label>
 				<onleft>11</onleft>
@@ -68,7 +68,7 @@
 			</control>
 			<control type="button" id="13">
 				<description>3 button</description>
-				<left>120</left>
+				<left>180</left>
 				<include>KeyboardButton</include>
 				<label>12313</label>
 				<onleft>12</onleft>
@@ -78,9 +78,9 @@
 			</control>
 			<control type="button" id="23">
 				<description>Backspace button</description>
-				<left>180</left>
-				<height>120</height>
-				<textwidth>94</textwidth>
+				<left>270</left>
+				<height>180</height>
+				<textwidth>141</textwidth>
 				<font>font10</font>
 				<include>KeyboardButton</include>
 				<label>20181</label>
@@ -92,7 +92,7 @@
 			</control>
 			<control type="button" id="14">
 				<description>4 button</description>
-				<top>60</top>
+				<top>90</top>
 				<include>KeyboardButton</include>
 				<label>12314</label>
 				<onleft>23</onleft>
@@ -102,8 +102,8 @@
 			</control>
 			<control type="button" id="15">
 				<description>5 button</description>
-				<left>60</left>
-				<top>60</top>
+				<left>90</left>
+				<top>90</top>
 				<include>KeyboardButton</include>
 				<label>12315</label>
 				<onleft>14</onleft>
@@ -113,8 +113,8 @@
 			</control>
 			<control type="button" id="16">
 				<description>6 button</description>
-				<left>120</left>
-				<top>60</top>
+				<left>180</left>
+				<top>90</top>
 				<include>KeyboardButton</include>
 				<label>12316</label>
 				<onleft>15</onleft>
@@ -124,7 +124,7 @@
 			</control>
 			<control type="button" id="17">
 				<description>7 button</description>
-				<top>120</top>
+				<top>180</top>
 				<include>KeyboardButton</include>
 				<label>12317</label>
 				<onleft>21</onleft>
@@ -134,8 +134,8 @@
 			</control>
 			<control type="button" id="18">
 				<description>8 button</description>
-				<left>60</left>
-				<top>120</top>
+				<left>90</left>
+				<top>180</top>
 				<include>KeyboardButton</include>
 				<label>12318</label>
 				<onleft>17</onleft>
@@ -145,8 +145,8 @@
 			</control>
 			<control type="button" id="19">
 				<description>9 button</description>
-				<left>120</left>
-				<top>120</top>
+				<left>180</left>
+				<top>180</top>
 				<include>KeyboardButton</include>
 				<label>12319</label>
 				<onleft>18</onleft>
@@ -156,10 +156,10 @@
 			</control>
 			<control type="button" id="21">
 				<description>Done button</description>
-				<left>180</left>
-				<top>120</top>
-				<height>120</height>
-				<textwidth>94</textwidth>
+				<left>270</left>
+				<top>180</top>
+				<height>180</height>
+				<textwidth>141</textwidth>
 				<font>font10</font>
 				<include>KeyboardButton</include>
 				<label>20177</label>
@@ -171,7 +171,7 @@
 			</control>
 			<control type="button" id="20">
 				<description>prev button</description>
-				<top>180</top>
+				<top>270</top>
 				<label>&lt;&lt;</label>
 				<include>KeyboardButton</include>
 				<onleft>21</onleft>
@@ -181,8 +181,8 @@
 			</control>
 			<control type="button" id="10">
 				<description>0 button</description>
-				<left>60</left>
-				<top>180</top>
+				<left>90</left>
+				<top>270</top>
 				<include>KeyboardButton</include>
 				<label>12310</label>
 				<onleft>20</onleft>
@@ -192,8 +192,8 @@
 			</control>
 			<control type="button" id="22">
 				<description>next button</description>
-				<left>120</left>
-				<top>180</top>
+				<left>180</left>
+				<top>270</top>
 				<label>&gt;&gt;</label>
 				<include>KeyboardButton</include>
 				<onleft>10</onleft>

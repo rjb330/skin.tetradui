@@ -5,21 +5,21 @@
 	<controls>
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(DialogSelect.xml) | Window.IsVisible(GameControllers) | Window.IsActive(AddonSettings) | Window.IsActive(OKDialog)">Conditional</animation>
-			<left>298</left>
-			<top>34</top>
+			<left>447</left>
+			<top>51</top>
 			<control type="image">
 				<description>background image</description>
-				<width>684</width>
-				<height>652</height>
+				<width>1026</width>
+				<height>978</height>
 				<colordiffuse>EEFFFFFF</colordiffuse>
-				<texture border="50,100,50,50">dialogs/Dialog.png</texture>
+				<texture border="75,150,75,75">dialogs/Dialog.png</texture>
 			</control>
 			<control type="label">
 				<description>heading label</description>
-				<left>50</left>
-				<top>50</top>
-				<width>584</width>
-				<height>30</height>
+				<left>75</left>
+				<top>75</top>
+				<width>876</width>
+				<height>45</height>
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font16</font>
@@ -27,38 +27,38 @@
 				<textcolor>orange</textcolor>
 			</control>
 			<control type="togglebutton" id="9010">
-				<left>50</left>
-				<top>100</top>
-				<width>584</width>
-				<height>45</height>
+				<left>75</left>
+				<top>150</top>
+				<width>876</width>
+				<height>67.5</height>
 				<ondown>9011</ondown>
 				<onup>9011</onup>
 				<onleft>9011</onleft>
 				<onright>9011</onright>
-				<texturefocus border="10">buttons/list-focus.png</texturefocus>
-				<texturenofocus border="10">buttons/list-nofocus.png</texturenofocus>
-				<alttexturefocus border="10">buttons/list-focus.png</alttexturefocus>
-				<alttexturenofocus border="10">buttons/list-nofocus.png</alttexturenofocus>
+				<texturefocus border="15">buttons/list-focus.png</texturefocus>
+				<texturenofocus border="15">buttons/list-nofocus.png</texturenofocus>
+				<alttexturefocus border="15">buttons/list-focus.png</alttexturefocus>
+				<alttexturenofocus border="15">buttons/list-nofocus.png</alttexturenofocus>
 				<label>$LOCALIZE[20141] $NUMBER[1]</label>
 				<altlabel>$LOCALIZE[20141] $NUMBER[2]</altlabel>
-				<textoffsetx>15</textoffsetx>
-				<textwidth>470</textwidth>
+				<textoffsetx>22.5</textoffsetx>
+				<textwidth>705</textwidth>
 				<onclick>Skin.ToggleSetting(UseDefaultBackground2)</onclick>
 			</control>
 			<control type="group">
-				<top>155</top>
-				<left>50</left>
+				<top>232.5</top>
+				<left>75</left>
 				<control type="image">
-					<width>288</width>
-					<height>195</height>
+					<width>432</width>
+					<height>292.5</height>
 					<colordiffuse>BBFFFFFF</colordiffuse>
 					<texture>back-fade.png</texture>
 				</control>
 				<control type="label">
-					<left>10</left>
-					<top>5</top>
-					<width>268</width>
-					<height>20</height>
+					<left>15</left>
+					<top>7.5</top>
+					<width>402</width>
+					<height>30</height>
 					<font>font12</font>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -66,30 +66,30 @@
 					<label>$LOCALIZE[8]</label>
 				</control>
 				<control type="image">
-					<top>25</top>
-					<width>288</width>
-					<height>162</height>
+					<top>37.5</top>
+					<width>432</width>
+					<height>243</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$VAR[Background_Weather]</texture>
-					<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
-					<bordersize>18,2,18,2</bordersize>
+					<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
+					<bordersize>27,3,27,3</bordersize>
 					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
 			</control>
 			<control type="group">
-				<top>155</top>
-				<left>345</left>
+				<top>232.5</top>
+				<left>517.5</left>
 				<control type="image">
-					<width>288</width>
-					<height>195</height>
+					<width>432</width>
+					<height>292.5</height>
 					<colordiffuse>BBFFFFFF</colordiffuse>
 					<texture>back-fade.png</texture>
 				</control>
 				<control type="label">
-					<left>10</left>
-					<top>5</top>
-					<width>268</width>
-					<height>20</height>
+					<left>15</left>
+					<top>7.5</top>
+					<width>402</width>
+					<height>30</height>
 					<font>font12</font>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -97,30 +97,30 @@
 					<label>$LOCALIZE[31005]</label>
 				</control>
 				<control type="image">
-					<top>25</top>
-					<width>288</width>
-					<height>162</height>
+					<top>37.5</top>
+					<width>432</width>
+					<height>243</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$VAR[Background_Apps]</texture>
-					<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
-					<bordersize>18,2,18,2</bordersize>
+					<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
+					<bordersize>27,3,27,3</bordersize>
 					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
 			</control>
 			<control type="group">
-				<top>358</top>
-				<left>50</left>
+				<top>537</top>
+				<left>75</left>
 				<control type="image">
-					<width>288</width>
-					<height>195</height>
+					<width>432</width>
+					<height>292.5</height>
 					<colordiffuse>BBFFFFFF</colordiffuse>
 					<texture>back-fade.png</texture>
 				</control>
 				<control type="label">
-					<left>10</left>
-					<top>5</top>
-					<width>268</width>
-					<height>20</height>
+					<left>15</left>
+					<top>7.5</top>
+					<width>402</width>
+					<height>30</height>
 					<font>font12</font>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -128,30 +128,30 @@
 					<label>$LOCALIZE[14211]</label>
 				</control>
 				<control type="image">
-					<top>25</top>
-					<width>288</width>
-					<height>162</height>
+					<top>37.5</top>
+					<width>432</width>
+					<height>243</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$VAR[Background_Media]</texture>
-					<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
-					<bordersize>18,2,18,2</bordersize>
+					<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
+					<bordersize>27,3,27,3</bordersize>
 					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
 			</control>
 			<control type="group">
-				<top>358</top>
-				<left>345</left>
+				<top>537</top>
+				<left>517.5</left>
 				<control type="image">
-					<width>288</width>
-					<height>195</height>
+					<width>432</width>
+					<height>292</height>
 					<colordiffuse>BBFFFFFF</colordiffuse>
 					<texture>back-fade.png</texture>
 				</control>
 				<control type="label">
-					<left>10</left>
-					<top>5</top>
-					<width>268</width>
-					<height>20</height>
+					<left>15</left>
+					<top>7.5</top>
+					<width>402</width>
+					<height>30</height>
 					<font>font12</font>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -159,19 +159,19 @@
 					<label>$LOCALIZE[13000]</label>
 				</control>
 				<control type="image">
-					<top>25</top>
-					<width>288</width>
-					<height>162</height>
+					<top>37.5</top>
+					<width>432</width>
+					<height>243</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$VAR[Background_System]</texture>
-					<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
-					<bordersize>18,2,18,2</bordersize>
+					<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
+					<bordersize>27,3,27,3</bordersize>
 					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
 			</control>
 			<control type="button" id="9011">
-				<left>242</left>
-				<top>560</top>
+				<left>363</left>
+				<top>840</top>
 				<label>15067</label>
 				<include>DialogButton2CommonValues</include>
 				<font>font12</font>

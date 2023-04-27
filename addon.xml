@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="skin.tetradui" version="2.0.1" name="TetradUI" provider-name="Jezz_X, TeamUI">
+<addon id="skin.tetradui" version="2.1.0" name="TetradUI" provider-name="Jezz_X, TeamUI">
   <requires>
     <import addon="xbmc.gui" version="5.15.00" />
 	<import addon="script.embuary.helper" version="2.0.2"/>
   </requires>
   <extension point="xbmc.gui.skin" defaultthemename="textures.xbt" debugging="false" effectslowdown="1.0">
-    <res width="1280" height="720" aspect="16:9" default="true" folder="xml" />
+    <res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -28,7 +28,7 @@
       <screenshot>resources/screenshot-09.png</screenshot>
       <screenshot>resources/screenshot-10.png</screenshot>
     </assets>
-    <news>[B]2.0.1[/B][CR]- Add 2 sets of default backgrounds, skin setting and select dialog[CR]- Home screen top guide button is now centered by default</news>
+    <news>[B]2.1.0[/B][CR]- Update skin to 1080 resolution</news>
     <summary lang="da_DK">TetradUI er et skin til Kodi mediecenter</summary>
     <summary lang="en_GB">TetradUI is a skin add-on for Kodi media center</summary>
     <summary lang="es_ES">TetradUI es un Add-on de skin para el centro multimedia Kodi</summary>

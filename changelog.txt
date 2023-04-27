@@ -1,3 +1,6 @@
+[B]Version 2.1.0[/B]
+- Update skin to 1080 resolution
+
 [B]Version 2.0.1[/B]
 - Add 2 sets of default backgrounds, skin setting and select dialog
 - Home screen top guide button is now centered by default
