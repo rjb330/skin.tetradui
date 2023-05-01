@@ -12,7 +12,8 @@
 			<description>background image</description>
 			<width>1200</width>
 			<height>519</height>
-			<texture border="75,150,75,75">dialogs/Dialog.png</texture>
+			<texture border="50,150,50,50">dialogs/Dialog.png</texture>
+			<bordersize>19</bordersize>
 		</control>
 		<control type="label">
 			<description>heading label</description>
@@ -31,7 +32,7 @@
 			<left>75</left>
 			<top>142.5</top>
 			<width>1050</width>
-			<height>67.5</height>
+			<height>65.5</height>
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>font12</font>
@@ -43,7 +44,7 @@
 				<left>75</left>
 				<top>210</top>
 				<width>522</width>
-				<height>67.5</height>
+				<height>65.5</height>
 				<font>font13</font>
 				<texturefocus border="15">buttons/list-focus.png</texturefocus>
 				<texturenofocus border="15">buttons/list-nofocus.png</texturenofocus>
@@ -57,7 +58,7 @@
 				<left>606</left>
 				<top>210</top>
 				<width>522</width>
-				<height>67.5</height>
+				<height>65.5</height>
 				<font>font13</font>
 				<texturefocus border="15">buttons/list-focus.png</texturefocus>
 				<texturenofocus border="15">buttons/list-nofocus.png</texturenofocus>
@@ -72,7 +73,7 @@
 			<left>75</left>
 			<top>279</top>
 			<width>822</width>
-			<height>67.5</height>
+			<height>65.5</height>
 			<font>font12</font>
 			<textoffsetx>18</textoffsetx>
 			<textwidth>382</textwidth>
@@ -90,7 +91,7 @@
 			<left>906</left>
 			<top>279</top>
 			<width>222</width>
-			<height>67.5</height>
+			<height>65.5</height>
 			<align>center</align>
 			<aligny>center</aligny>
 			<texturefocus border="15">buttons/list-focus.png</texturefocus>

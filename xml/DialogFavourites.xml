@@ -28,7 +28,7 @@
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture>$INFO[ListItem.Icon]</texture>
 					<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-					<bordersize>27,3,27,3</bordersize>
+					<bordersize>18,2,18,2</bordersize>
 				</control>
 				<control type="list" id="450">
 					<left>270</left>
@@ -44,13 +44,13 @@
 					<itemlayout height="67.5">
 						<control type="image">
 							<width>525</width>
-							<height>67.5</height>
+							<height>65.5</height>
 							<texture border="15">buttons/list-nofocus.png</texture>
 						</control>
 						<control type="label">
 							<left>15</left>
 							<width>495</width>
-							<height>67.5</height>
+							<height>65.5</height>
 							<aligny>center</aligny>
 							<selectedcolor>orange</selectedcolor>
 							<info>ListItem.Label</info>
@@ -59,20 +59,20 @@
 					<focusedlayout height="67.5">
 						<control type="image">
 							<width>525</width>
-							<height>67.5</height>
+							<height>65.5</height>
 							<visible>!Control.HasFocus(450)</visible>
 							<texture border="4">buttons/list-nofocus.png</texture>
 						</control>
 						<control type="image">
 							<width>525</width>
-							<height>67.5</height>
+							<height>65.5</height>
 							<visible>Control.HasFocus(450)</visible>
 							<texture border="4">buttons/list-focus.png</texture>
 						</control>
 						<control type="label">
 							<left>15</left>
 							<width>495</width>
-							<height>67.5</height>
+							<height>65.5</height>
 							<aligny>center</aligny>
 							<selectedcolor>orange</selectedcolor>
 							<info>ListItem.Label</info>

@@ -15,7 +15,8 @@
 				<width>1050</width>
 				<height>1003.5</height>
 				<colordiffuse>EEFFFFFF</colordiffuse>
-				<texture border="75,150,75,75">dialogs/Dialog.png</texture>
+				<texture border="50,150,50,50">dialogs/Dialog.png</texture>
+				<bordersize>19</bordersize>
 			</control>
 			<control type="label" id="2">
 				<description>heading label</description>

@@ -95,7 +95,7 @@
 				<itemlayout height="60">
 					<control type="image">
 						<width>810</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<texture border="15">buttons/button-nofocus.png</texture>
 					</control>
 					<control type="image">
@@ -130,13 +130,13 @@
 				<focusedlayout height="60">
 					<control type="image">
 						<width>810</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<visible>!Control.HasFocus(50)</visible>
 						<texture border="15">buttons/button-nofocus.png</texture>
 					</control>
 					<control type="image">
 						<width>810</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<visible>Control.HasFocus(50)</visible>
 						<texture border="15">buttons/button-focus.png</texture>
 					</control>
@@ -230,7 +230,7 @@
 				<itemlayout height="60">
 					<control type="image">
 						<width>810</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<texture border="15">buttons/button-nofocus.png</texture>
 					</control>
 					<control type="image">
@@ -265,13 +265,13 @@
 				<focusedlayout height="60">
 					<control type="image">
 						<width>810</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<visible>!Control.HasFocus(100)</visible>
 						<texture border="15">buttons/button-nofocus.png</texture>
 					</control>
 					<control type="image">
 						<width>810</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<visible>Control.HasFocus(100)</visible>
 						<texture border="15">buttons/button-focus.png</texture>
 					</control>

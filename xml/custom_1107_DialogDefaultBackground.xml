@@ -12,7 +12,8 @@
 				<width>1026</width>
 				<height>978</height>
 				<colordiffuse>EEFFFFFF</colordiffuse>
-				<texture border="75,150,75,75">dialogs/Dialog.png</texture>
+				<texture border="50,150,50,50">dialogs/Dialog.png</texture>
+				<bordersize>19</bordersize>
 			</control>
 			<control type="label">
 				<description>heading label</description>
@@ -66,13 +67,13 @@
 					<label>$LOCALIZE[8]</label>
 				</control>
 				<control type="image">
-					<top>37.5</top>
+					<top>50</top>
 					<width>432</width>
-					<height>243</height>
+					<height>218</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$VAR[Background_Weather]</texture>
-					<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-					<bordersize>27,3,27,3</bordersize>
+					<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
+					<bordersize>18,2,18,2</bordersize>
 					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
 			</control>
@@ -97,13 +98,13 @@
 					<label>$LOCALIZE[31005]</label>
 				</control>
 				<control type="image">
-					<top>37.5</top>
+					<top>50</top>
 					<width>432</width>
-					<height>243</height>
+					<height>218</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$VAR[Background_Apps]</texture>
-					<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-					<bordersize>27,3,27,3</bordersize>
+					<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
+					<bordersize>18,2,18,2</bordersize>
 					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
 			</control>
@@ -128,13 +129,13 @@
 					<label>$LOCALIZE[14211]</label>
 				</control>
 				<control type="image">
-					<top>37.5</top>
+					<top>50</top>
 					<width>432</width>
-					<height>243</height>
+					<height>218</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$VAR[Background_Media]</texture>
-					<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-					<bordersize>27,3,27,3</bordersize>
+					<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
+					<bordersize>18,2,18,2</bordersize>
 					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
 			</control>
@@ -159,13 +160,13 @@
 					<label>$LOCALIZE[13000]</label>
 				</control>
 				<control type="image">
-					<top>37.5</top>
+					<top>50</top>
 					<width>432</width>
-					<height>243</height>
+					<height>218</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$VAR[Background_System]</texture>
-					<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-					<bordersize>27,3,27,3</bordersize>
+					<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
+					<bordersize>18,2,18,2</bordersize>
 					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
 			</control>

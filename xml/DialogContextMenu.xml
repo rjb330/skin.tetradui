@@ -13,7 +13,8 @@
 			<top>-67.5</top>
 			<width>570</width>
 			<height max="1080">auto</height>
-			<texture border="60,67.5,67.5,82.5">dialogs/context_menu.png</texture>
+			<texture border="40,45,45,55">dialogs/context_menu.png</texture>
+			<bordersize>16</bordersize>
 		</control>
 		<control type="grouplist" id="996">
 			<description>grouplist for context buttons</description>

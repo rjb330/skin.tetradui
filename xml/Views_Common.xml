@@ -71,7 +71,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$VAR[ListItemPosterVar]</texture>
 				<bordertexture border="28.5,4,28.5,4">thumb-border.png</bordertexture>
-				<bordersize>27,3,27,3</bordersize>
+				<bordersize>18,2,18,2</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
 			</control>
 			<control type="image">
@@ -496,8 +496,8 @@
 					<bordertexture border="15">thumb-focus.png</bordertexture>
 					<bordersize>15</bordersize>
 					<texture background="true">$VAR[ListItemPosterVar]</texture>
-					<animation reversible="false" effect="zoom" start="0,0,218,310" end="-45,-45,278,370" time="200">focus</animation>
-					<animation reversible="false" effect="zoom" end="0,0,218,310" start="-45,-45,278,370" time="200">unfocus</animation>
+					<animation reversible="false" effect="zoom" start="0,0,327,465" end="-45,-45,417,555" time="200">focus</animation>
+					<animation reversible="false" effect="zoom" end="0,0,327,465" start="-45,-45,417,555" time="200">unfocus</animation>
 				</control>
 				<control type="image">
 					<left>255</left>

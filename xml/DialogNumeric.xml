@@ -12,7 +12,8 @@
 			<description>background image</description>
 			<width>510</width>
 			<height>660</height>
-			<texture border="75,150,75,75">dialogs/Dialog.png</texture>
+			<texture border="50,150,50,50">dialogs/Dialog.png</texture>
+			<bordersize>19</bordersize>
 		</control>
 		<control type="label" id="1">
 			<description>heading label</description>

@@ -42,7 +42,7 @@
 					<texture background="true">$INFO[Listitem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 					<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-					<bordersize>27,3,27,3</bordersize>
+					<bordersize>18,2,18,2</bordersize>
 				</control>
 				
 				<control type="group">
@@ -265,7 +265,7 @@
 							<texture background="true" fallback="DefaultPicture.png">$INFO[Listitem.Icon]</texture>
 							<aspectratio>scale</aspectratio>
 							<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-							<bordersize>27,3,27,3</bordersize>
+							<bordersize>18,2,18,2</bordersize>
 						</control>
 					</itemlayout>
 					<focusedlayout width="375" height="248">
@@ -275,7 +275,7 @@
 							<texture background="true" fallback="DefaultPicture.png">$INFO[Listitem.Icon]</texture>
 							<aspectratio>scale</aspectratio>
 							<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border-focus.png</bordertexture>
-							<bordersize>27,3,27,3</bordersize>
+							<bordersize>18,2,18,2</bordersize>
 						</control>
 					</focusedlayout>
 				</control>

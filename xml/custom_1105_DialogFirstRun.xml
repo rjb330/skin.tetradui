@@ -13,7 +13,8 @@
 			<description>Dialog Back</description>
 			<width>1350</width>
 			<height>990</height>
-			<texture border="75,150,75,75">dialogs/Dialog.png</texture>
+			<texture border="50,150,50,50">dialogs/Dialog.png</texture>
+			<bordersize>19</bordersize>
 		</control>
 		<control type="label">
 			<description>Heading label</description>

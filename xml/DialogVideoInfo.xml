@@ -44,7 +44,7 @@
 							<texture background="true">$VAR[ListItemPosterVar]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-							<bordersize>27,3,27,3</bordersize>
+							<bordersize>18,2,18,2</bordersize>
 						</control>
 						<control type="panel" id="49">
 							<left>465</left>
@@ -171,7 +171,7 @@
 							<texture background="true">$VAR[ListItemBannerVar]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-							<bordersize>27,3,27,3</bordersize>
+							<bordersize>18,2,18,2</bordersize>
 						</control>
 						<control type="panel" id="49">
 							<left>75</left>
@@ -269,7 +269,7 @@
 							<texture background="true">$INFO[ListItem.Thumb]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-							<bordersize>27,3,27,3</bordersize>
+							<bordersize>18,2,18,2</bordersize>
 						</control>
 						<control type="panel" id="49">
 							<left>615</left>
@@ -392,7 +392,7 @@
 							<texture background="true">$VAR[ListItemPosterVar]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-							<bordersize>27,3,27,3</bordersize>
+							<bordersize>18,2,18,2</bordersize>
 						</control>
 						<control type="panel" id="49">
 							<left>615</left>

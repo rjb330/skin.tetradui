@@ -111,7 +111,7 @@
 					<itemlayout height="67.5" width="967.5">
 						<control type="image">
 							<width>967.5</width>
-							<height>67.5</height>
+							<height>65.5</height>
 							<texture border="15">buttons/list-nofocus.png</texture>
 						</control>
 						<control type="image">
@@ -124,7 +124,7 @@
 						<control type="label">
 							<left>82.5</left>
 							<width>870</width>
-							<height>67.5</height>
+							<height>65.5</height>
 							<font>font13</font>
 							<aligny>center</aligny>
 							<info>ListItem.Label</info>
@@ -133,7 +133,7 @@
 					<focusedlayout height="67.5" width="967.5">
 						<control type="image">
 							<width>967.5</width>
-							<height>67.5</height>
+							<height>65.5</height>
 							<texture border="15">buttons/list-focus.png</texture>
 						</control>
 						<control type="image">
@@ -146,7 +146,7 @@
 						<control type="label">
 							<left>82.5</left>
 							<width>870</width>
-							<height>67.5</height>
+							<height>65.5</height>
 							<font>font13</font>
 							<aligny>center</aligny>
 							<info>ListItem.Label</info>
@@ -166,7 +166,7 @@
 					<itemlayout height="67.5" width="967.5">
 						<control type="image">
 							<width>967.5</width>
-							<height>67.5</height>
+							<height>65.5</height>
 							<texture border="15">buttons/list-nofocus.png</texture>
 						</control>
 						<control type="image">
@@ -179,7 +179,7 @@
 						<control type="label">
 							<left>82.5</left>
 							<width>870</width>
-							<height>67.5</height>
+							<height>65.5</height>
 							<font>font13</font>
 							<aligny>center</aligny>
 							<info>ListItem.Label</info>
@@ -188,7 +188,7 @@
 					<focusedlayout height="67.5" width="967.5">
 						<control type="image">
 							<width>967.5</width>
-							<height>67.5</height>
+							<height>65.5</height>
 							<texture border="15">buttons/list-focus.png</texture>
 						</control>
 						<control type="image">
@@ -201,7 +201,7 @@
 						<control type="label">
 							<left>82.5</left>
 							<width>870</width>
-							<height>67.5</height>
+							<height>65.5</height>
 							<font>font13</font>
 							<aligny>center</aligny>
 							<info>ListItem.Label</info>

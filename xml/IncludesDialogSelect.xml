@@ -9,7 +9,8 @@
 				<description>background image</description>
 				<width>975</width>
 				<height>975</height>
-				<texture border="75,150,75,75">dialogs/Dialog.png</texture>
+				<texture border="50,150,50,50">dialogs/Dialog.png</texture>
+				<bordersize>19</bordersize>
 				<animation effect="fade" start="90" end="90" time="0" condition="Window.IsVisible(Visualisation)">Conditional</animation>
 				<visible>Control.IsVisible(3)</visible>
 			</control>
@@ -17,7 +18,8 @@
 				<description>background image</description>
 				<width>1290</width>
 				<height>975</height>
-				<texture border="75,150,75,75">dialogs/Dialog.png</texture>
+				<texture border="50,150,50,50">dialogs/Dialog.png</texture>
+				<bordersize>19</bordersize>
 				<animation effect="fade" start="90" end="90" time="0" condition="Window.IsVisible(Visualisation)">Conditional</animation>
 				<visible>Control.IsVisible(6)</visible>
 			</control>
@@ -48,13 +50,13 @@
 				<itemlayout height="67.5">
 					<control type="image">
 						<width>825</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<texture border="15">buttons/list-nofocus.png</texture>
 					</control>
 					<control type="label">
 						<left>15</left>
 						<width>795</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<font>font12</font>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
@@ -63,20 +65,20 @@
 				<focusedlayout height="67.5">
 					<control type="image">
 						<width>825</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<visible>!Control.HasFocus(3)</visible>
 						<texture border="15">buttons/list-nofocus.png</texture>
 					</control>
 					<control type="image">
 						<width>825</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<visible>Control.HasFocus(3)</visible>
 						<texture border="15">buttons/list-focus.png</texture>
 					</control>
 					<control type="label">
 						<left>15</left>
 						<width>795</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<font>font12</font>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
@@ -97,7 +99,7 @@
 				<itemlayout height="67.5">
 					<control type="image">
 						<width>825</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<texture border="15">buttons/list-nofocus.png</texture>
 					</control>
 					<control type="image">
@@ -110,7 +112,7 @@
 					<control type="label">
 						<left>75</left>
 						<width>735</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<font>font12</font>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
@@ -119,13 +121,13 @@
 				<focusedlayout height="67.5">
 					<control type="image">
 						<width>825</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<visible>!Control.HasFocus(6)</visible>
 						<texture border="15">buttons/list-nofocus.png</texture>
 					</control>
 					<control type="image">
 						<width>825</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<visible>Control.HasFocus(6)</visible>
 						<texture border="15">buttons/list-focus.png</texture>
 					</control>
@@ -139,7 +141,7 @@
 					<control type="label">
 						<left>75</left>
 						<width>735</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<font>font12</font>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
@@ -542,7 +544,7 @@
 				<itemlayout height="67.5">
 					<control type="image">
 						<width>825</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<texture border="15">buttons/list-nofocus.png</texture>
 					</control>
 					<control type="image">
@@ -555,7 +557,7 @@
 					<control type="label">
 						<left>75</left>
 						<width>735</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<font>font12</font>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
@@ -564,13 +566,13 @@
 				<focusedlayout height="67.5">
 					<control type="image">
 						<width>825</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<visible>!Control.HasFocus(6)</visible>
 						<texture border="15">buttons/list-nofocus.png</texture>
 					</control>
 					<control type="image">
 						<width>825</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<visible>Control.HasFocus(6)</visible>
 						<texture border="15">buttons/list-focus.png</texture>
 					</control>
@@ -584,7 +586,7 @@
 					<control type="label">
 						<left>75</left>
 						<width>735</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<font>font12</font>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>

@@ -621,7 +621,7 @@
 		</control>
 	</include>
 	<include name="ButtonCommonValues">
-		<height>67.5</height>
+		<height>65.5</height>
 		<width>315</width>
 		<aligny>center</aligny>
 		<font>font12</font>
@@ -643,14 +643,14 @@
 		<texturenofocus border="6,9,6,12">buttons/button-dialog-nofocus.png</texturenofocus>
 	</include>
 	<include name="DialogButtonCommonValues">
-		<height>67.5</height>
+		<height>65.5</height>
 		<font>font12</font>
 		<texturefocus border="15">buttons/list-focus.png</texturefocus>
 		<texturenofocus border="15">buttons/list-nofocus.png</texturenofocus>
 	</include>
 	<include name="DialogButton2CommonValues">
 		<width>300</width>
-		<height>67.5</height>
+		<height>65.5</height>
 		<font>font12</font>
 		<align>center</align>
 		<aligny>center</aligny>
@@ -660,21 +660,21 @@
 	</include>
 	<include name="DialogButton3CommonValues">
 		<width>450</width>
-		<height>67.5</height>
+		<height>65.5</height>
 		<font>font12</font>
 		<aligny>center</aligny>
 		<texturefocus border="15">buttons/button-dialog-focus.png</texturefocus>
 		<texturenofocus border="15">buttons/button-dialog-nofocus.png</texturenofocus>
 	</include>
 	<include name="SettingsButtonCommonValues">
-		<height>67.5</height>
+		<height>65.5</height>
 		<font>font13</font>
 		<textoffsetx>15</textoffsetx>
 		<texturefocus border="15">buttons/list-focus.png</texturefocus>
 		<texturenofocus />
 	</include>
 	<include name="SkinSettingsButtonCommonValues">
-		<height>67.5</height>
+		<height>65.5</height>
 		<width>1185</width>
 		<font>font13</font>
 		<texturefocus border="15">buttons/list-focus.png</texturefocus>
@@ -962,7 +962,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$PARAM[thumb]</texture>
 				<bordertexture border="28.5,4,28.5,4">thumb-border.png</bordertexture>
-				<bordersize>27,3,27,3</bordersize>
+				<bordersize>18,2,18,2</bordersize>
 				<fadetime>200</fadetime>
 				<visible>!Control.HasFocus($PARAM[id])</visible>
 			</control>
@@ -974,7 +974,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$PARAM[thumb]</texture>
 				<bordertexture border="28.5,4,28.5,4">thumb-border-focus.png</bordertexture>
-				<bordersize>27,3,27,3</bordersize>
+				<bordersize>18,2,18,2</bordersize>
 				<fadetime>200</fadetime>
 				<visible>Control.HasFocus($PARAM[id])</visible>
 			</control>
@@ -1033,7 +1033,7 @@
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Thumb]</texture>
 					<bordertexture border="28.5,4,28.5,4">thumb-border.png</bordertexture>
-					<bordersize>27,3,27,3</bordersize>
+					<bordersize>18,2,18,2</bordersize>
 				</control>
 				<control type="label">
 					<left>22.5</left>
@@ -1053,7 +1053,7 @@
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Thumb]</texture>
 					<bordertexture border="28.5,4,28.5,4">thumb-border-focus.png</bordertexture>
-					<bordersize>27,3,27,3</bordersize>
+					<bordersize>18,2,18,2</bordersize>
 				</control>
 				<control type="label">
 					<left>22.5</left>
@@ -1399,10 +1399,10 @@
 	</include>
 	
 	<include name="KeyboardButton">
-		<width>90</width>
-		<height>90</height>
-		<texturenofocus border="18">buttons/keyboard-nofocus.png</texturenofocus>
-		<texturefocus border="18">buttons/keyboard-focus.png</texturefocus>
+		<width>88</width>
+		<height>88</height>
+		<texturenofocus border="12">buttons/keyboard-nofocus.png</texturenofocus>
+		<texturefocus border="12">buttons/keyboard-focus.png</texturefocus>
 		<align>center</align>
 		<aligny>center</aligny>
 		<font>font12</font>
@@ -1971,7 +1971,7 @@
 			<font>font12</font>
 			<textcolor>blue</textcolor>
 			<width>390</width>
-			<height>67.5</height>
+			<height>65.5</height>
 			<align>center</align>
 			<aligny>center</aligny>
 			<label>$PARAM[header_label]</label>
@@ -1990,7 +1990,7 @@
 			<itemlayout height="67.5">
 				<control type="image">
 					<width>435</width>
-					<height>67.5</height>
+					<height>65.5</height>
 					<texture border="15">buttons/list-nofocus.png</texture>
 				</control>
 				<control type="image">
@@ -2004,7 +2004,7 @@
 				<control type="label">
 					<left>75</left>
 					<width>345</width>
-					<height>67.5</height>
+					<height>65.5</height>
 					<font>font12</font>
 					<aligny>center</aligny>
 					<label>$PARAM[label]</label>
@@ -2013,13 +2013,13 @@
 			<focusedlayout height="67.5">
 				<control type="image">
 					<width>435</width>
-					<height>67.5</height>
+					<height>65.5</height>
 					<visible>!Control.HasFocus($PARAM[id])</visible>
 					<texture border="15">buttons/list-nofocus.png</texture>
 				</control>
 				<control type="image">
 					<width>435</width>
-					<height>67.5</height>
+					<height>65.5</height>
 					<visible>Control.HasFocus($PARAM[id])</visible>
 					<texture border="15">buttons/list-focus.png</texture>
 				</control>
@@ -2034,7 +2034,7 @@
 				<control type="label">
 					<left>75</left>
 					<width>345</width>
-					<height>67.5</height>
+					<height>65.5</height>
 					<font>font12</font>
 					<aligny>center</aligny>
 					<label>$PARAM[label]</label>
@@ -2238,7 +2238,7 @@
 	<include name="RDSContent">
 		<control type="label">
 			<width>225</width>
-			<height>67.5</height>
+			<height>65.5</height>
 			<font>font12</font>
 			<align>left</align>
 			<aligny>center</aligny>
@@ -2248,7 +2248,7 @@
 		<control type="label">
 			<left>232.5</left>
 			<width>487.5</width>
-			<height>67.5</height>
+			<height>65.5</height>
 			<font>font12</font>
 			<aligny>center</aligny>
 			<info>ListItem.Label2</info>

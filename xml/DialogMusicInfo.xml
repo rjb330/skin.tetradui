@@ -44,7 +44,7 @@
 							<texture background="true">$INFO[Listitem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-							<bordersize>27,3,27,3</bordersize>
+							<bordersize>18,2,18,2</bordersize>
 						</control>
 						<control type="panel" id="49">
 							<left>465</left>
@@ -172,7 +172,7 @@
 							<texture background="true">$INFO[Listitem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-							<bordersize>27,3,27,3</bordersize>
+							<bordersize>18,2,18,2</bordersize>
 						</control>
 						<control type="panel" id="49">
 							<left>465</left>
@@ -290,7 +290,7 @@
 							<texture background="true">$INFO[Listitem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-							<bordersize>27,3,27,3</bordersize>
+							<bordersize>18,2,18,2</bordersize>
 						</control>
 						<control type="panel" id="49">
 							<left>465</left>

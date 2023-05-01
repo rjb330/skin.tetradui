@@ -14,7 +14,8 @@
 				<description>background image</description>
 				<width>1200</width>
 				<height>1057.5</height>
-				<texture border="75,150,75,75">dialogs/Dialog.png</texture>
+				<texture border="50,150,50,50">dialogs/Dialog.png</texture>
+				<bordersize>19</bordersize>
 			</control>
 			<control type="label" id="2">
 				<description>heading label</description>
@@ -32,7 +33,7 @@
 				<left>75</left>
 				<top>150</top>
 				<width>1050</width>
-				<height>67.5</height>
+				<height>65.5</height>
 				<font>font12</font>
 				<label>467</label>
 				<texturefocus border="15">buttons/list-focus.png</texturefocus>
@@ -56,7 +57,7 @@
 				<left>75</left>
 				<top>270</top>
 				<width>1050</width>
-				<height>67.5</height>
+				<height>65.5</height>
 				<font>font12</font>
 				<aligny>center</aligny>
 				<texturefocus border="15">buttons/list-focus.png</texturefocus>
@@ -87,38 +88,38 @@
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<ondown>16</ondown>
-				<itemlayout width="817.5" height="60">
+				<itemlayout width="817.5" height="67.5">
 					<control type="image">
 						<width>817.5</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<texture border="15">buttons/list-nofocus.png</texture>
 					</control>
 					<control type="label">
 						<left>15</left>
 						<width>802</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
 						<font>font12</font>
 					</control>
 				</itemlayout>
-				<focusedlayout width="817.5" height="60">
+				<focusedlayout width="817.5" height="67.5">
 					<control type="image">
 						<width>817.5</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<texture border="15">buttons/list-focus.png</texture>
 						<visible>Control.HasFocus(10)</visible>
 					</control>
 					<control type="image">
 						<width>817.5</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<texture border="15">buttons/list-nofocus.png</texture>
 						<visible>!Control.HasFocus(10)</visible>
 					</control>
 					<control type="label">
 						<left>15</left>
 						<width>802</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
 						<font>font12</font>
@@ -128,7 +129,7 @@
 			<control type="grouplist" id="9000">
 				<left>900</left>
 				<top>390</top>
-				<itemgap>0</itemgap>
+				<itemgap>2</itemgap>
 				<orientation>vertical</orientation>
 				<onup>17</onup>
 				<ondown>16</ondown>
@@ -157,7 +158,7 @@
 				<left>75</left>
 				<top>608</top>
 				<width>1050</width>
-				<height>67.5</height>
+				<height>65.5</height>
 				<label>21424</label>
 				<font>font12</font>
 				<texturefocus border="15">buttons/list-focus.png</texturefocus>
@@ -171,7 +172,7 @@
 				<left>75</left>
 				<top>675</top>
 				<width>1050</width>
-				<height>67.5</height>
+				<height>65.5</height>
 				<label>21427</label>
 				<font>font12</font>
 				<texturefocus border="15">buttons/list-focus.png</texturefocus>
@@ -185,7 +186,7 @@
 				<left>75</left>
 				<top>742.5</top>
 				<width>817.5</width>
-				<height>67.5</height>
+				<height>65.5</height>
 				<label>21429</label>
 				<font>font12</font>
 				<texturefocus border="15">buttons/list-focus.png</texturefocus>
@@ -199,7 +200,7 @@
 				<left>900</left>
 				<top>742.5</top>
 				<width>225</width>
-				<height>67.5</height>
+				<height>65.5</height>
 				<font>font12</font>
 				<label />
 				<align>center</align>
@@ -214,7 +215,7 @@
 				<left>75</left>
 				<top>810</top>
 				<width>817.5</width>
-				<height>67.5</height>
+				<height>65.5</height>
 				<font>font12</font>
 				<label>21458</label>
 				<texturefocus border="15">buttons/list-focus.png</texturefocus>
@@ -228,7 +229,7 @@
 				<left>900</left>
 				<top>810</top>
 				<width>225</width>
-				<height>67.5</height>
+				<height>65.5</height>
 				<font>font12</font>
 				<align>center</align>
 				<texturefocus border="15">buttons/list-focus.png</texturefocus>

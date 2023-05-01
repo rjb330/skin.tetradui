@@ -98,7 +98,7 @@
 							<left>45</left>
 							<top>1.5</top>
 							<width>595.5</width>
-							<height>67.5</height>
+							<height>65.5</height>
 							<texture>buttons/button.png</texture>
 							<animation effect="slide" start="0,-68" time="200" tween="sine" easing="out" condition="Container(9000).OnNext" reversible="false">Focus</animation>
 							<animation effect="slide" start="0,68" time="200" tween="sine" easing="out" condition="Container(9000).OnPrevious" reversible="false">Focus</animation>

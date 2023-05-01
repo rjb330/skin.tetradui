@@ -120,7 +120,7 @@
 	</default>
 	<default type="edit">
 		<width>450</width>
-		<height>67.5</height>
+		<height>65.5</height>
 		<textoffsetx>22.5</textoffsetx>
 		<textcolor>white</textcolor>
 		<focusedcolor>white</focusedcolor>

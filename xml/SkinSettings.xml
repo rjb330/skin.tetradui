@@ -434,14 +434,14 @@
 						<label>$LOCALIZE[8]</label>
 					</control>
 					<control type="image">
-						<left>15</left>
-						<top>37.5</top>
-						<width>525</width>
-						<height>294</height>
+						<left>18</left>
+						<top>50</top>
+						<width>520</width>
+						<height>270</height>
 						<aspectratio>keep</aspectratio>
 						<texture background="true">$VAR[Background_Weather]</texture>
-						<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-						<bordersize>27,3,27,3</bordersize>
+						<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
+						<bordersize>18,2,18,2</bordersize>
 						<fadetime>IconCrossfadeTime</fadetime>
 					</control>
 					<control type="button" id="501">
@@ -494,14 +494,14 @@
 							<label>$LOCALIZE[31005]</label>
 						</control>
 						<control type="image">
-							<left>15</left>
-							<top>37.5</top>
-							<width>525</width>
-							<height>294</height>
+							<left>18</left>
+							<top>50</top>
+							<width>520</width>
+							<height>270</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$VAR[Background_Apps]</texture>
-							<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-							<bordersize>27,3,27,3</bordersize>
+							<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
+							<bordersize>18,2,18,2</bordersize>
 							<fadetime>IconCrossfadeTime</fadetime>
 						</control>
 						<control type="button" id="511">
@@ -554,14 +554,14 @@
 							<label>$LOCALIZE[14211]</label>
 						</control>
 						<control type="image">
-							<left>15</left>
-							<top>37.5</top>
-							<width>525</width>
-							<height>294</height>
+							<left>18</left>
+							<top>50</top>
+							<width>520</width>
+							<height>270</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$VAR[Background_Media]</texture>
-							<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-							<bordersize>27,3,27,3</bordersize>
+							<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
+							<bordersize>18,2,18,2</bordersize>
 							<fadetime>IconCrossfadeTime</fadetime>
 						</control>
 						<control type="button" id="521">
@@ -614,14 +614,14 @@
 							<label>$LOCALIZE[13000]</label>
 						</control>
 						<control type="image">
-							<left>15</left>
-							<top>37.5</top>
-							<width>525</width>
-							<height>294</height>
+							<left>18</left>
+							<top>50</top>
+							<width>520</width>
+							<height>270</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$VAR[Background_System]</texture>
-							<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-							<bordersize>27,3,27,3</bordersize>
+							<bordertexture border="19,3,19,3" infill="false">thumb-border.png</bordertexture>
+							<bordersize>18,2,18,2</bordersize>
 							<fadetime>IconCrossfadeTime</fadetime>
 						</control>
 						<control type="button" id="531">
@@ -734,12 +734,12 @@
 					<visible>Skin.String(SkinSettings,7)</visible>
 					<description>control area</description>
 					<left>405</left>
-					<top>172.5</top>
+					<top>162.5</top>
 					<width>1185</width>
 					<height>750</height>
 					<itemgap>-3</itemgap>
 					<control type="image">
-						<height>120</height>
+						<height>130</height>
 						<width>1185</width>
 						<aspectratio align="center">keep</aspectratio>
 						<texture>tetradui_logo.png</texture>

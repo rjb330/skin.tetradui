@@ -8,7 +8,8 @@
 				<description>background image</description>
 				<width>1863</width>
 				<height>1024.5</height>
-				<texture border="75,150,75,75">dialogs/Dialog.png</texture>
+				<texture border="50,150,50,50">dialogs/Dialog.png</texture>
+				<bordersize>19</bordersize>
 				<animation effect="fade" start="90" end="90" time="0" condition="Window.IsVisible(Visualisation)">Conditional</animation>
 			</control>
 			<control type="label" id="2">
@@ -30,7 +31,7 @@
 					<font>font12</font>
 					<textcolor>blue</textcolor>
 					<width>345</width>
-					<height>67.5</height>
+					<height>65.5</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[35050]</label>
@@ -39,7 +40,7 @@
 					<top>217.5</top>
 					<width>375</width>
 					<height>675</height>
-					<itemgap>0</itemgap>
+					<itemgap>2</itemgap>
 					<onup>60</onup>
 					<ondown>60</ondown>
 					<onleft>9000</onleft>
@@ -81,7 +82,7 @@
 					<font>font12</font>
 					<textcolor>blue</textcolor>
 					<width>345</width>
-					<height>67.5</height>
+					<height>65.5</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[35059]</label>
@@ -90,7 +91,7 @@
 					<top>217.5</top>
 					<width>375</width>
 					<height>675</height>
-					<itemgap>0</itemgap>
+					<itemgap>2</itemgap>
 					<onup>61</onup>
 					<ondown>61</ondown>
 					<onleft>3</onleft>
@@ -104,13 +105,13 @@
 				<control type="label" id="8">
 					<description>Default Controller Types Label</description>
 					<width>375</width>
-					<height>67.5</height>
+					<height>65.5</height>
 					<font>font12</font>
 					<textcolor>grey</textcolor>
 					<aligny>center</aligny>
 				</control>
 				<control type="image" id="9">
-					<height>67.5</height>
+					<height>65.5</height>
 					<texture />
 				</control>
 				<include content="DialogGameControllersPagecontrol">
@@ -124,7 +125,7 @@
 				<left>1356</left>
 				<top>217.5</top>
 				<width>435</width>
-				<itemgap>0</itemgap>
+				<itemgap>2</itemgap>
 				<onleft>5</onleft>
 				<onright>3</onright>
 				<control type="button" id="18">
@@ -180,7 +181,8 @@
 				<description>background image</description>
 				<width>1290</width>
 				<height>900</height>
-				<texture border="75,150,75,75">dialogs/Dialog.png</texture>
+				<texture border="50,150,50,50">dialogs/Dialog.png</texture>
+				<bordersize>19</bordersize>
 			</control>
 			<control type="label" id="2">
 				<description>heading label</description>
@@ -208,7 +210,7 @@
 				<itemlayout height="67.5">
 					<control type="image">
 						<width>825</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<texture border="15">buttons/list-nofocus.png</texture>
 					</control>
 					<control type="image">
@@ -221,7 +223,7 @@
 					<control type="label">
 						<left>75</left>
 						<width>735</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<font>font12</font>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
@@ -230,13 +232,13 @@
 				<focusedlayout height="67.5">
 					<control type="image">
 						<width>825</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<visible>!Control.HasFocus(3)</visible>
 						<texture border="15">buttons/list-nofocus.png</texture>
 					</control>
 					<control type="image">
 						<width>825</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<visible>Control.HasFocus(3)</visible>
 						<texture border="15">buttons/list-focus.png</texture>
 					</control>
@@ -250,7 +252,7 @@
 					<control type="label">
 						<left>75</left>
 						<width>735</width>
-						<height>67.5</height>
+						<height>65.5</height>
 						<font>font12</font>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>

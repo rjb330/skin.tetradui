@@ -12,7 +12,8 @@
 			<description>background image</description>
 			<width>1732.5</width>
 			<height>990</height>
-			<texture border="75,150,75,75">dialogs/Dialog.png</texture>
+			<texture border="50,150,50,50">dialogs/Dialog.png</texture>
+			<bordersize>19</bordersize>
 			<animation effect="fade" start="90" end="90" time="0" condition="Window.IsVisible(Visualisation)">Conditional</animation>
 		</control>
 		<control type="label" id="2">
@@ -33,7 +34,7 @@
 			<top>150</top>
 			<width>300</width>
 			<height>675</height>
-			<itemgap>0</itemgap>
+			<itemgap>2</itemgap>
 			<onup>20</onup>
 			<ondown>20</ondown>
 			<onleft>9001</onleft>
@@ -55,7 +56,7 @@
 			<top>150</top>
 			<width>952.5</width>
 			<height>675</height>
-			<itemgap>0</itemgap>
+			<itemgap>2</itemgap>
 			<pagecontrol>60</pagecontrol>
 			<onup>60</onup>
 			<ondown>60</ondown>
@@ -82,7 +83,7 @@
 			<left>1357.5</left>
 			<top>150</top>
 			<orientation>vertical</orientation>
-			<itemgap>0</itemgap>
+			<itemgap>2</itemgap>
 			<onleft>5</onleft>
 			<onright>3</onright>
 			<control type="button" id="28">
@@ -126,7 +127,7 @@
 		<control type="label" id="14">
 			<description>Separator label</description>
 			<label />
-			<height>67.5</height>
+			<height>65.5</height>
 			<font>font12</font>
 			<align>center</align>
 			<aligny>center</aligny>

@@ -14,7 +14,8 @@
 				<description>background image</description>
 				<width>1680</width>
 				<height>840</height>
-				<texture border="75,150,75,75">dialogs/Dialog.png</texture>
+				<texture border="50,150,50,50">dialogs/Dialog.png</texture>
+				<bordersize>19</bordersize>
 			</control>
 			<control type="label" id="311">
 				<description>heading label</description>
@@ -34,7 +35,7 @@
 				<top>150</top>
 				<width>1530</width>
 				<height>67.5</height>
-				<texture border="15">buttons/list-nofocus.png</texture>
+				<texture border="10">buttons/list-nofocus.png</texture>
 			</control>
 			<control type="edit" id="312">
 				<description>Edit Text</description>
@@ -54,7 +55,7 @@
 				<width>1530</width>
 				<align>center</align>
 				<orientation>horizontal</orientation>
-				<itemgap>0</itemgap>
+				<itemgap>2</itemgap>
 				<control type="button" id="309">
 					<description>Layout button</description>
 					<width>360</width>
@@ -108,7 +109,7 @@
 				<left>75</left>
 				<top>315</top>
 				<orientation>horizontal</orientation>
-				<itemgap>0</itemgap>
+				<itemgap>2</itemgap>
 				<control type="button" id="300">
 					<description>DONE button</description>
 					<width>360</width>
@@ -211,7 +212,7 @@
 				<left>75</left>
 				<top>405</top>
 				<orientation>horizontal</orientation>
-				<itemgap>0</itemgap>
+				<itemgap>2</itemgap>
 				<control type="radiobutton" id="302">
 					<description>SHIFT button</description>
 					<width>360</width>
@@ -306,7 +307,7 @@
 				<left>75</left>
 				<top>495</top>
 				<orientation>horizontal</orientation>
-				<itemgap>0</itemgap>
+				<itemgap>2</itemgap>
 				<control type="radiobutton" id="303">
 					<description>CAPS LOCK button</description>
 					<width>360</width>
@@ -401,7 +402,7 @@
 				<left>75</left>
 				<top>585</top>
 				<orientation>horizontal</orientation>
-				<itemgap>0</itemgap>
+				<itemgap>2</itemgap>
 				<control type="radiobutton" id="304">
 					<description>Symbols button</description>
 					<width>360</width>
@@ -496,7 +497,7 @@
 				<left>75</left>
 				<top>675</top>
 				<orientation>horizontal</orientation>
-				<itemgap>0</itemgap>
+				<itemgap>2</itemgap>
 				<control type="button" id="307">
 					<description>IP Input button</description>
 					<width>360</width>
@@ -531,7 +532,8 @@
 					<description>background image</description>
 					<width>1680</width>
 					<height>270</height>
-					<texture border="75,75,75,75">dialogs/Dialog.png</texture>
+					<texture border="50,150,50,50">dialogs/Dialog.png</texture>
+					<bordersize>19</bordersize>
 				</control>
 				<control type="image">
 					<description>edit text underlay Image</description>

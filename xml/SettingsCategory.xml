@@ -173,7 +173,7 @@
 		<control type="label" id="14">
 			<description>Separator label</description>
 			<label />
-			<height>67.5</height>
+			<height>65.5</height>
 			<font>font13</font>
 			<align>center</align>
 			<aligny>center</aligny>

@@ -12,7 +12,8 @@
 		<control type="image">
 			<width>900</width>
 			<height>450</height>
-			<texture border="75,150,75,75">dialogs/Dialog.png</texture>
+			<texture border="50,150,50,50">dialogs/Dialog.png</texture>
+			<bordersize>19</bordersize>
 		</control>
 		<control type="group">
 			<left>75</left>
@@ -26,7 +27,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[MusicPlayer.Cover]</texture>
 				<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-				<bordersize>27,3,27,3</bordersize>
+				<bordersize>18,2,18,2</bordersize>
 			</control>
 			<control type="label">
 				<description>Artist label</description>
@@ -97,7 +98,7 @@
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$INFO[VideoPlayer.Cover]</texture>
 					<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-					<bordersize>27,3,27,3</bordersize>
+					<bordersize>18,2,18,2</bordersize>
 				</control>
 				<control type="label">
 					<description>Studio label</description>
@@ -164,7 +165,7 @@
 					<aspectratio>scale</aspectratio>
 					<texture background="true">$INFO[VideoPlayer.Cover]</texture>
 					<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-					<bordersize>27,3,27,3</bordersize>
+					<bordersize>18,2,18,2</bordersize>
 					<visible>VideoPlayer.Content(Episodes)</visible>
 				</control>
 				<control type="image">
@@ -175,7 +176,7 @@
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$INFO[VideoPlayer.Cover]</texture>
 					<bordertexture border="28.5,4,28.5,4" infill="false">thumb-border.png</bordertexture>
-					<bordersize>27,3,27,3</bordersize>
+					<bordersize>18,2,18,2</bordersize>
 					<visible>!VideoPlayer.Content(Episodes)</visible>
 				</control>
 				<control type="label">
