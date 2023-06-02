@@ -1194,6 +1194,7 @@
 					<width>235.5</width>
 					<height>262.5</height>
 					<texture>$VAR[PlayerPosterVar]</texture>
+					<aspectratio aligny="bottom">keep</aspectratio>
 					<bordertexture border="28.5,4,28.5,4">thumb-border.png</bordertexture>
 					<bordersize>17,1,17,1</bordersize>
 				</control>
@@ -1205,6 +1206,7 @@
 						<top>-19.5</top>
 						<width>660</width>
 						<height>118.5</height>
+						<bordersize>5,5,5,10</bordersize>
 						<texture border="30,30,30,45">dialogs/Dialog2.png</texture>
 					</control>
 					<control type="image">

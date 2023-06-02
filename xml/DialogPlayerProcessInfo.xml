@@ -19,6 +19,7 @@
 				<width>1740</width>
 				<height>352.5</height>
 				<texture border="30,30,30,45">dialogs/Dialog2.png</texture>
+				<bordersize>5,5,5,10</bordersize>
 				<visible>![[Pvr.IsPlayingTv + Window.IsActive(FullscreenVideo)] | [Pvr.IsPlayingRadio | Window.IsActive(visualisation)]]</visible>
 			</control>
 			<control type="image">
@@ -26,6 +27,7 @@
 				<width>1740</width>
 				<height>589.5</height>
 				<texture border="30,30,30,45">dialogs/Dialog2.png</texture>
+				<bordersize>5,5,5,10</bordersize>
 				<visible>[Pvr.IsPlayingTv + Window.IsActive(FullscreenVideo)] | [Pvr.IsPlayingRadio | Window.IsActive(visualisation)]</visible>
 			</control>
 			<control type="grouplist">

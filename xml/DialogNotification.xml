@@ -14,6 +14,7 @@
 				<description>background</description>
 				<width>600</width>
 				<height>135</height>
+				<bordersize>5,5,5,10</bordersize>
 				<texture border="30,30,30,45">dialogs/Dialog2.png</texture>
 			</control>
 			<control type="image" id="400">
