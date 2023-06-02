@@ -1488,28 +1488,6 @@
 			</control>
 		</control>
 	</include>
-	<include name="CodecFlaggingRating">
-		<control type="group">
-			<visible>$PARAM[visible]</visible>
-			<width>150</width>
-			<control type="image">
-				<description>Rating back</description>
-				<width>150</width>
-				<height>52.5</height>
-				<texture>flagging/blank.png</texture>
-				<animation effect="fade" end="80" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<description>Rating</description>
-				<left>10.5</left>
-				<top>7.5</top>
-				<width>129</width>
-				<height>37.5</height>
-				<aspectratio>keep</aspectratio>
-				<texture>$PARAM[info]</texture>
-			</control>
-		</control>
-	</include>
 	
 	<include name="FullscreenMusicInfo">
 		<control type="image">
@@ -1672,10 +1650,14 @@
 					<texture>flagging/rds/rds.png</texture>
 					<visible>RDS.HasRDS</visible>
 				</control>
-				<include content="CodecFlaggingRating">
-					<param name="visible" value="!String.IsEmpty(MusicPlayer.Rating)" />
-					<param name="info" value="$VAR[PlayerStarRating]" />
-				</include>
+				<control type="image">
+					<description>Ratings Image</description>
+					<width>120</width>
+					<height>52.5</height>
+					<aspectratio align="right">keep</aspectratio>
+					<texture colordiffuse="ddffffff">$VAR[PlayerStarRating]</texture>
+					<visible>!String.IsEmpty(MusicPlayer.Rating)</visible>
+				</control>
 			</control>
 			<control type="label">
 				<top>222</top>
