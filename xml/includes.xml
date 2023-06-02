@@ -1195,7 +1195,7 @@
 					<height>262.5</height>
 					<texture>$VAR[PlayerPosterVar]</texture>
 					<bordertexture border="28.5,4,28.5,4">thumb-border.png</bordertexture>
-					<bordersize>25.5,1.5,25.5,1.5</bordersize>
+					<bordersize>17,1,17,1</bordersize>
 				</control>
 				<control type="group">
 					<left>1020</left>
@@ -1267,7 +1267,7 @@
 					<aspectratio>keep</aspectratio>
 					<texture>$VAR[PlayerPosterVar]</texture>
 					<bordertexture border="28.5,4,28.5,4">thumb-border.png</bordertexture>
-					<bordersize>25.5,1.5,25.5,1.5</bordersize>
+					<bordersize>17,1,17,1</bordersize>
 				</control>
 				<control type="group">
 					<left>930</left>
@@ -1590,7 +1590,7 @@
 			<texture>$VAR[MusicVisualisationCover]</texture>
 			<aspectratio aligny="bottom">keep</aspectratio>
 			<bordertexture border="28.5,4,28.5,4">thumb-border.png</bordertexture>
-			<bordersize>25.5,1.5,25.5,1.5</bordersize>
+			<bordersize>17,1,17,1</bordersize>
 		</control>
 		<control type="group">
 			<left>495</left>

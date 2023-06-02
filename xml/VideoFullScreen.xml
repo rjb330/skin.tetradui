@@ -71,7 +71,7 @@
 				<texture>$INFO[Player.Art(thumb)]</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<bordertexture border="28.5,4,28.5,4">thumb-border.png</bordertexture>
-				<bordersize>25.5,1.5,25.5,1.5</bordersize>
+				<bordersize>17,1,17,1</bordersize>
 				<visible>!VideoPlayer.Content(Movies)</visible>
 			</control>
 			<control type="image" id="1">
@@ -83,7 +83,7 @@
 				<texture>$VAR[PosterImageOSD]</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<bordertexture border="28.5,4,28.5,4">thumb-border.png</bordertexture>
-				<bordersize>25.5,1.5,25.5,1.5</bordersize>
+				<bordersize>17,1,17,1</bordersize>
 				<visible>VideoPlayer.Content(Movies)</visible>
 			</control>
 			<control type="group" id="1">

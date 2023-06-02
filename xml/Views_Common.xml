@@ -340,7 +340,7 @@
 					<height>141</height>
 					<texture background="true">$VAR[ListItemBannerVar]</texture>
 					<bordertexture>black-back.png</bordertexture>
-					<bordersize>1.5</bordersize>
+					<bordersize>1</bordersize>
 					<aspectratio>scale</aspectratio>
 				</control>
 				<control type="label">

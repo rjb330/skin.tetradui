@@ -79,7 +79,7 @@
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<bordertexture border="7.5">black-back.png</bordertexture>
-							<bordersize>3</bordersize>
+							<bordersize>2</bordersize>
 						</control>
 					</itemlayout>
 					<focusedlayout height="390" width="327">
@@ -105,7 +105,7 @@
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<bordertexture border="7.5">black-back.png</bordertexture>
-							<bordersize>3</bordersize>
+							<bordersize>2</bordersize>
 						</control>
 						<control type="label">
 							<description>Last Login label</description>
