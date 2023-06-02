@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Kodi Addons\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-03-25 16:16+0000\n"
+"PO-Revision-Date: 2023-06-02 09:15+0000\n"
 "Last-Translator: Konrad W <kondiwxd@gmail.com>\n"
 "Language-Team: Polish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-tetradui/pl_pl/>\n"
 "Language: pl_pl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15.2\n"
+"X-Generator: Weblate 4.17\n"
 
 msgctxt "Addon Summary"
 msgid "TetradUI is a skin add-on for Kodi media center"
@@ -23,7 +23,7 @@ msgstr "TetradUI to skin add-on dla Kodi media center"
 
 msgctxt "Addon Description"
 msgid "TetradUI is a skin add-on for Kodi media center. The aim with TetradUI is to create a fresh modern homage of the classic blades-style UI found in the original Xbox360 dashboard. Also seen in the works of Team Blackbolt and Jezz_X with projects MC360 and JX720 respectively. TetradUI is based on JX720 by Jezz_X.[CR]This add-on was created by Jezz_X and TeamUI."
-msgstr "TetradUI jest to skin add-on (skórką) dla Kodi media center. Naszym celem za pośrednictwem TetradUI jest stworzenie świeżego i współczesnego wizerunku klasycznego blades UI znanego z oryginalnego pulpitu Xboxa 360. Inspiracje tym stylem można było znaleźć w pracach Team Blackbolt i Jezz_X w projektach MC360 i JX720. TetradUI bazuje na JX720 stworzonym przez Jezz_X.[CR]Ten add-on (dodatek) został stworzony przez Jezz_X i TeamUI."
+msgstr "TetradUI jest to skin add-on (skórka) dla Kodi media center. Naszym celem za pośrednictwem TetradUI jest stworzenie świeżego i współczesnego wizerunku klasycznego blades UI znanego z oryginalnego pulpitu Xboxa 360. Inspiracje tym stylem można było znaleźć w pracach Team Blackbolt i Jezz_X w projektach MC360 i JX720. TetradUI bazuje na JX720 stworzonym przez Jezz_X.[CR]Ten add-on (dodatek) został stworzony przez Jezz_X i TeamUI."
 
 msgctxt "#31001"
 msgid "media"
@@ -48,7 +48,7 @@ msgstr "Aplikacje"
 # empty strings from id 31006 to 31009
 msgctxt "#31010"
 msgid "TetradUI is a passion project made by TeamUI.[CR]It's a big project and it takes a [I]lot[/I] of effort to develop and maintain.[CR]Consider scanning this QR and make a donation to help keep this project healthy.[CR]Any amount helps greatly and is much appreciated."
-msgstr "TetradUI to powstały z pasji projekt i wykonany przez TeamUI.[CR]To duży projekt wymagający [I]wiele[/I] wysiłku do tworzenia oraz utrzymania.[CR]Rozważ skanowanie tego kodu QR, aby zostawić datek, który pomoże utrzymać ten projekt .[CR]Każda suma będzie pomocna i doceniona."
+msgstr "TetradUI to projekt powstały z pasji i wykonany przez TeamUI.[CR]To duży projekt wymagający [I]wiele[/I] wysiłku do tworzenia oraz utrzymania.[CR]Rozważ skanowanie poniższego kodu QR, aby zostawić datek, który pomoże utrzymać ten projekt.[CR]Każda suma będzie pomocna i doceniona."
 
 msgctxt "#31011"
 msgid "Applications"
@@ -443,6 +443,10 @@ msgctxt "#31510"
 msgid "Video playlist"
 msgstr "Playlista wideo"
 
+msgctxt "#31511"
+msgid "Select default background"
+msgstr "Ustaw domyślne tło"
+
 # empty strings from id 31511 to 31517
 msgctxt "#31518"
 msgid "Game Settings Menu"
@@ -485,9 +489,10 @@ msgctxt "#31527"
 msgid "Animate fanart backgrounds for music playing"
 msgstr "Animuj tła fanart podczas odtwarzania muzyki"
 
+#, fuzzy
 msgctxt "#31528"
 msgid "Enable Artist Slideshow fanart backgrounds"
-msgstr ""
+msgstr "Włącz pokaz slajdów tła artystów"
 
 msgctxt "#31529"
 msgid "Blur backgrounds"
