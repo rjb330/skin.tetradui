@@ -60,7 +60,7 @@
 				<include>HeaderTextCommons</include>
 			</control>
 			<include content="ClockTextCommons">
-				<param name="left" value="540" />
+				<param name="left" value="810" />
 			</include>
 			<control type="group">
 				<top>195</top>
