@@ -2,6 +2,7 @@
 <window id="1112">
 	<defaultcontrol always="true">9050</defaultcontrol>
 	<onload>Skin.SetString(PersistentHome,1112)</onload>
+	<previouswindow>1112</previouswindow>
 	<onload condition="!String.IsEmpty(Skin.String(SubBladeType))">Skin.Reset(SubBladeType)</onload>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(1)">WindowClose</animation>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(2)">WindowClose</animation>

@@ -32,8 +32,8 @@
 				<top>19.5</top>
 				<width>67.5</width>
 				<height>67.5</height>
-				<texturefocus>tetradui_logo_clean.png</texturefocus>
-				<texturenofocus>tetradui_logo_clean.png</texturenofocus>
+				<texturefocus></texturefocus>
+				<texturenofocus></texturenofocus>
 				<onleft condition="!Window.IsVisible(Weather)">1</onleft>
 				<onright condition="Window.IsVisible(Weather)">1</onright>
 				<onright condition="!Window.IsVisible(Settings.xml)">2</onright>
@@ -41,8 +41,24 @@
 				<ondown condition="Window.IsVisible(Weather)">3</ondown>
 				<ondown condition="Window.IsVisible(loginscreen)">52</ondown>
 				<onclick>ActivateWindow(1103)</onclick>
-				<animation effect="zoom" start="100" end="115" time="100" center="auto">Focus</animation>
-				<animation effect="zoom" start="115" end="100" time="100" center="auto">UnFocus</animation>
+			</control>
+			<control type="image">
+				<visible>!Skin.HasSetting(Blades_UseProfilePicture)</visible>
+				<left>-12</left>
+				<top>19.5</top>
+				<width>67.5</width>
+				<height>67.5</height>
+				<texture>$INFO[System.ProfileThumb]</texture>
+				<animation effect="zoom" start="100" end="115" time="100" center="auto" condition="Control.HasFocus(9050)">Conditional</animation>
+			</control>
+			<control type="image">
+				<visible>Skin.HasSetting(Blades_UseProfilePicture)</visible>
+				<left>-12</left>
+				<top>19.5</top>
+				<width>67.5</width>
+				<height>67.5</height>
+				<texture>tetradui_logo_clean.png</texture>
+				<animation effect="zoom" start="100" end="115" time="100" center="auto" condition="Control.HasFocus(9050)">Conditional</animation>
 			</control>
 		</control>
 	</include>

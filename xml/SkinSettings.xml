@@ -237,9 +237,15 @@
 					</control>
 					<control type="radiobutton" id="302">
 						<include>SkinSettingsRadioButtonCommonValues</include>
-						<label>$LOCALIZE[31317]</label>
+						<label>Center top home button</label>
 						<onclick>Skin.ToggleSetting(Blades_CenterLogoButton)</onclick>
 						<selected>!Skin.HasSetting(Blades_CenterLogoButton)</selected>
+					</control>
+					<control type="radiobutton" id="304">
+						<include>SkinSettingsRadioButtonCommonValues</include>
+						<label>Use profile picture for home button</label>
+						<onclick>Skin.ToggleSetting(Blades_UseProfilePicture)</onclick>
+						<selected>!Skin.HasSetting(Blades_UseProfilePicture)</selected>
 					</control>
 					<control type="radiobutton" id="303">
 						<include>SkinSettingsRadioButtonCommonValues</include>
