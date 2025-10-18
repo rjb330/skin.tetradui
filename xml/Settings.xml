@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">9050</defaultcontrol>
+	<onload>Skin.SetString(PersistentHome,Settings)</onload>
 	<previouswindow>Settings</previouswindow>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(1)">WindowClose</animation>
 	<animation effect="fade" start="100" end="100" time="30" condition="Control.HasFocus(2)">WindowClose</animation>
@@ -294,7 +295,7 @@
 		</control>
 		<include content="BlankBladeSlideRight">
 			<param name="id" value="1" />
-			<param name="action" value="ActivateWindow(Home)" />
+			<param name="action" value="ActivateWindow(1112)" />
 		</include>
 		<control type="group">
 			<visible>!Control.HasFocus(1)</visible>

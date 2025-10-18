@@ -102,7 +102,7 @@
 				</control>
 				<control type="label" id="1">
 					<description>Studio label</description>
-					<left>30</left>
+					<left>0</left>
 					<top>45</top>
 					<width>1365</width>
 					<height>37.5</height>
@@ -113,7 +113,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label" id="1">
-					<left>30</left>
+					<left>0</left>
 					<top>85.5</top>
 					<width min="15" max="1080">auto</width>
 					<height>45</height>
@@ -125,7 +125,7 @@
 					<scroll>true</scroll>
 				</control>
 				<control type="grouplist" id="1">
-					<left>27</left>
+					<left>0</left>
 					<top>135</top>
 					<width>1365</width>
 					<height>52.5</height>
